@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31005.135
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MARAFON", "MARAFON\MARAFON.csproj", "{B4E66A74-7B79-44E9-85BF-E160D3E9D27F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B4E66A74-7B79-44E9-85BF-E160D3E9D27F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B4E66A74-7B79-44E9-85BF-E160D3E9D27F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B4E66A74-7B79-44E9-85BF-E160D3E9D27F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B4E66A74-7B79-44E9-85BF-E160D3E9D27F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0FAA1EE5-B9BA-4B15-A840-AD63E6896F3E}
+	EndGlobalSection
+EndGlobal
