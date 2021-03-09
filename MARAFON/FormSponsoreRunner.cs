@@ -53,21 +53,6 @@ namespace MARAFON
                 labelResultSumm.Text = "$" + (nowSumm - 10).ToString();
             }
         }
-        private void addDonate()
-        {
-            string name = textBoxNameData.Text;
-            string cardNumber = textBoxNumberCardData.Text;
-            string cardCVC = textBoxCVCData.Text;
-            string money = textBoxSummDonate.Text;
-            string authorCard = textBoxAuthorCardData.Text;
-            int cardMonth = Convert.ToInt32(textBoxMonthCardData.Text);
-            int cardYear = Convert.ToInt32(textBoxDayCardData.Text);
-            checkField(name, authorCard, cardNumber, cardMonth, cardYear, cardCVC);
-            if (String.IsNullOrEmpty(this.messageError))
-            {
-                MessageBox.Show("Ошибка!", this.messageError, MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-        }
 
         private void buttonCancelDonate_Click(object sender, EventArgs e)
         {
@@ -94,8 +79,9 @@ namespace MARAFON
             catch { }
             finally { connection.Close(); }
         }
-        private void checkField(string name, string authorCard, string numberCard, int cardMonth, int cardYear, string cvc)
+        private void checkField(string name, string authorCard, string numberCard, int cardMonth, int cardYear, string cvc, int money)
         {
+            this.messageError = "";
             if (String.IsNullOrEmpty(name))
             {
                 this.messageError = "Заполните обязательное поле Имя!";
@@ -107,6 +93,35 @@ namespace MARAFON
             else if (cvc.Length != 3)
             {
                 this.messageError = "CVC код должен содержать 3 цифры";
+            }
+            else if (money <= 0)
+            {
+                this.messageError = "Невозможно пожертвовать 0$";
+            }
+        }
+
+        private void buttonAddDonate_Click(object sender, EventArgs e)
+        {
+            string name = textBoxNameData.Text;
+            string cardNumber = textBoxNumberCardData.Text;
+            string cardCVC = textBoxCVCData.Text;
+            int money = Convert.ToInt32(textBoxSummDonate.Text);
+            string authorCard = textBoxAuthorCardData.Text;
+            int cardMonth = Convert.ToInt32(textBoxMonthCardData.Text);
+            int cardYear = Convert.ToInt32(textBoxYearCardData.Text);
+            checkField(name, authorCard, cardNumber, cardMonth, cardYear, cardCVC, money);
+            if (!String.IsNullOrEmpty(this.messageError))
+            {
+                MessageBox.Show(this.messageError,"Ошибка!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            else
+            {
+                int idRunner = Convert.ToInt32(comboBoxRunnerData.SelectedItem.ToString().Split('.')[0]);
+                string sql = String.Format("INSERT INTO Sponsorship (SponsorName, RegistrationId, Amount) VALUES ('{0}', '{1}', '{2}')", name, idRunner, money);
+                connection.Open();
+                MySqlCommand command = new MySqlCommand(sql, connection);
+                command.ExecuteNonQuery();
+                connection.Close();
             }
         }
     }
