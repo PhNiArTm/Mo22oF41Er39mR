@@ -13,6 +13,11 @@ namespace MARAFON
 {
     public partial class FormSponsoreRunner : Form
     {
+        MySqlConnection connection = new MySqlConnection("server=" +
+            "141.8.192.26;" +
+            "user=a0521760_users;" +
+            "database=a0521760_practicke;" +
+            "password=PR02022002");
         MySqlDataAdapter da;
         DataTable dt;
         string messageError;
@@ -74,8 +79,8 @@ namespace MARAFON
             try
             {
                 comboBoxRunnerData.Items.Clear();
-                Program.connection.Open();
-                MySqlCommand command = new MySqlCommand("SELECT Registration.RegistrationId, User.LastName, User.FirstName FROM Registration, User WHERE Registration.RunnerId = (SELECT Runner.RunnerId FROM Runner WHERE Runner.Email = User.Email)", Program.connection);
+                connection.Open();
+                MySqlCommand command = new MySqlCommand("SELECT Registration.RegistrationId, User.LastName, User.FirstName FROM Registration, User WHERE Registration.RunnerId = (SELECT Runner.RunnerId FROM Runner WHERE Runner.Email = User.Email)", connection);
                 da = new MySqlDataAdapter();
                 da.SelectCommand = command;
                 dt = new DataTable();
@@ -87,7 +92,7 @@ namespace MARAFON
                 }
             }
             catch { }
-            finally { Program.connection.Close(); }
+            finally { connection.Close(); }
         }
         private void checkField(string name, string authorCard, string numberCard, int cardMonth, int cardYear, string cvc)
         {
@@ -103,12 +108,6 @@ namespace MARAFON
             {
                 this.messageError = "CVC код должен содержать 3 цифры";
             }
-        }
-
-        private void FormSponsoreRunner_FormClosed(object sender, FormClosedEventArgs e)
-        {
-            FormMain formMain = new FormMain();
-            formMain.Show();
         }
     }
 }
