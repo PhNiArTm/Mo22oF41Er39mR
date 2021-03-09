@@ -13,11 +13,6 @@ namespace MARAFON
 {
     public partial class FormSponsoreRunner : Form
     {
-        MySqlConnection connection = new MySqlConnection("server=" +
-            "141.8.192.26;" +
-            "user=a0521760_users;" +
-            "database=a0521760_practicke;" +
-            "password=PR02022002");
         MySqlDataAdapter da;
         DataTable dt;
         string messageError;
@@ -64,8 +59,8 @@ namespace MARAFON
             try
             {
                 comboBoxRunnerData.Items.Clear();
-                connection.Open();
-                MySqlCommand command = new MySqlCommand("SELECT Registration.RegistrationId, User.LastName, User.FirstName FROM Registration, User WHERE Registration.RunnerId = (SELECT Runner.RunnerId FROM Runner WHERE Runner.Email = User.Email)", connection);
+                Program.connection.Open();
+                MySqlCommand command = new MySqlCommand("SELECT Registration.RegistrationId, User.LastName, User.FirstName FROM Registration, User WHERE Registration.RunnerId = (SELECT Runner.RunnerId FROM Runner WHERE Runner.Email = User.Email)", Program.connection);
                 da = new MySqlDataAdapter();
                 da.SelectCommand = command;
                 dt = new DataTable();
@@ -77,7 +72,7 @@ namespace MARAFON
                 }
             }
             catch { }
-            finally { connection.Close(); }
+            finally { Program.connection.Close(); }
         }
         private void checkField(string name, string authorCard, string numberCard, int cardMonth, int cardYear, string cvc, int money)
         {
@@ -118,11 +113,17 @@ namespace MARAFON
             {
                 int idRunner = Convert.ToInt32(comboBoxRunnerData.SelectedItem.ToString().Split('.')[0]);
                 string sql = String.Format("INSERT INTO Sponsorship (SponsorName, RegistrationId, Amount) VALUES ('{0}', '{1}', '{2}')", name, idRunner, money);
-                connection.Open();
-                MySqlCommand command = new MySqlCommand(sql, connection);
+                Program.connection.Open();
+                MySqlCommand command = new MySqlCommand(sql, Program.connection);
                 command.ExecuteNonQuery();
-                connection.Close();
+                Program.connection.Close();
             }
+        }
+
+        private void FormSponsoreRunner_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            FormMain formMain = new FormMain();
+            formMain.Show();
         }
     }
 }

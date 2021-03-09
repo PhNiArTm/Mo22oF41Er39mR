@@ -38,6 +38,12 @@ namespace MARAFON
         {
             Form frm = new FormSponsoreRunner();
             frm.Show();
+            this.Hide();
+        }
+
+        private void FormMain_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

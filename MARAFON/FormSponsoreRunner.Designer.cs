@@ -84,7 +84,7 @@ namespace MARAFON
             // textBoxNameData
             // 
             this.textBoxNameData.Location = new System.Drawing.Point(125, 171);
-            this.textBoxNameData.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBoxNameData.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxNameData.Multiline = true;
             this.textBoxNameData.Name = "textBoxNameData";
             this.textBoxNameData.Size = new System.Drawing.Size(139, 19);
@@ -117,7 +117,7 @@ namespace MARAFON
             // 
             this.comboBoxRunnerData.FormattingEnabled = true;
             this.comboBoxRunnerData.Location = new System.Drawing.Point(125, 201);
-            this.comboBoxRunnerData.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.comboBoxRunnerData.Margin = new System.Windows.Forms.Padding(2);
             this.comboBoxRunnerData.Name = "comboBoxRunnerData";
             this.comboBoxRunnerData.Size = new System.Drawing.Size(139, 21);
             this.comboBoxRunnerData.TabIndex = 5;
@@ -137,7 +137,7 @@ namespace MARAFON
             // textBoxAuthorCardData
             // 
             this.textBoxAuthorCardData.Location = new System.Drawing.Point(125, 235);
-            this.textBoxAuthorCardData.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBoxAuthorCardData.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxAuthorCardData.Multiline = true;
             this.textBoxAuthorCardData.Name = "textBoxAuthorCardData";
             this.textBoxAuthorCardData.Size = new System.Drawing.Size(139, 19);
@@ -157,7 +157,7 @@ namespace MARAFON
             // textBoxNumberCardData
             // 
             this.textBoxNumberCardData.Location = new System.Drawing.Point(125, 266);
-            this.textBoxNumberCardData.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBoxNumberCardData.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxNumberCardData.Multiline = true;
             this.textBoxNumberCardData.Name = "textBoxNumberCardData";
             this.textBoxNumberCardData.Size = new System.Drawing.Size(139, 19);
@@ -177,7 +177,7 @@ namespace MARAFON
             // textBoxMonthCardData
             // 
             this.textBoxMonthCardData.Location = new System.Drawing.Point(125, 298);
-            this.textBoxMonthCardData.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBoxMonthCardData.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxMonthCardData.Multiline = true;
             this.textBoxMonthCardData.Name = "textBoxMonthCardData";
             this.textBoxMonthCardData.Size = new System.Drawing.Size(33, 19);
@@ -187,7 +187,7 @@ namespace MARAFON
             // textBoxYearCardData
             // 
             this.textBoxYearCardData.Location = new System.Drawing.Point(162, 298);
-            this.textBoxYearCardData.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBoxYearCardData.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxYearCardData.Multiline = true;
             this.textBoxYearCardData.Name = "textBoxYearCardData";
             this.textBoxYearCardData.Size = new System.Drawing.Size(43, 19);
@@ -208,7 +208,7 @@ namespace MARAFON
             // textBoxCVCData
             // 
             this.textBoxCVCData.Location = new System.Drawing.Point(125, 326);
-            this.textBoxCVCData.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBoxCVCData.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxCVCData.Multiline = true;
             this.textBoxCVCData.Name = "textBoxCVCData";
             this.textBoxCVCData.Size = new System.Drawing.Size(57, 19);
@@ -278,7 +278,7 @@ namespace MARAFON
             this.buttonMinusSumm.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonMinusSumm.Font = new System.Drawing.Font("Consolas", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.buttonMinusSumm.Location = new System.Drawing.Point(363, 284);
-            this.buttonMinusSumm.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.buttonMinusSumm.Margin = new System.Windows.Forms.Padding(2);
             this.buttonMinusSumm.Name = "buttonMinusSumm";
             this.buttonMinusSumm.Size = new System.Drawing.Size(53, 30);
             this.buttonMinusSumm.TabIndex = 20;
@@ -294,7 +294,7 @@ namespace MARAFON
             this.buttonPlusSumm.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonPlusSumm.Font = new System.Drawing.Font("Consolas", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.buttonPlusSumm.Location = new System.Drawing.Point(500, 284);
-            this.buttonPlusSumm.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.buttonPlusSumm.Margin = new System.Windows.Forms.Padding(2);
             this.buttonPlusSumm.Name = "buttonPlusSumm";
             this.buttonPlusSumm.Size = new System.Drawing.Size(53, 30);
             this.buttonPlusSumm.TabIndex = 21;
@@ -306,7 +306,7 @@ namespace MARAFON
             // 
             this.textBoxSummDonate.Font = new System.Drawing.Font("Consolas", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.textBoxSummDonate.Location = new System.Drawing.Point(421, 284);
-            this.textBoxSummDonate.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBoxSummDonate.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxSummDonate.Multiline = true;
             this.textBoxSummDonate.Name = "textBoxSummDonate";
             this.textBoxSummDonate.Size = new System.Drawing.Size(76, 31);
@@ -374,9 +374,11 @@ namespace MARAFON
             this.Controls.Add(this.labelSponsoreInfo);
             this.Controls.Add(this.labelSponsoreTitle);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "FormSponsoreRunner";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Спонсор бегуна";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FormSponsoreRunner_FormClosed);
             this.ResumeLayout(false);
             this.PerformLayout();
 
