@@ -125,5 +125,14 @@ namespace MARAFON
             FormMain formMain = new FormMain();
             formMain.Show();
         }
+
+        private void textBoxNumberCardData_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            char num = e.KeyChar;
+            if (!Char.IsDigit(num) && num != 8 || num == 127)
+            {
+                e.Handled = true;
+            }
+        }
     }
 }
