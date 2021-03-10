@@ -16,17 +16,12 @@ namespace MARAFON
         public FormMain()
         {
             InitializeComponent();
-            timer1.Tick += timerEvent_Tick;
-            timer1.Interval = 1000;
-            timer1.Enabled = true;
-            timer1.Start();
         }
-        Timer timer1 = new Timer();
 
         private void timerEvent_Tick(object sender, EventArgs e)
         {
             TimeSpan TimeRemaining = voteTime - DateTime.Now;
-            labelEventTime.Text = TimeRemaining.Days + " дней " + TimeRemaining.Hours + " часов " + TimeRemaining.Minutes + " минут " + TimeRemaining.Seconds + " минут.";
+            labelEventTime.Text = TimeRemaining.Days + " дней " + TimeRemaining.Hours + " часов " + TimeRemaining.Minutes + " минут " + TimeRemaining.Seconds + " секунд.";
         }
 
         private void buttonSponsore_Click(object sender, EventArgs e)
@@ -46,6 +41,12 @@ namespace MARAFON
             FormLogin formLogin = new FormLogin();
             formLogin.Show();
             Program.formMain.Hide();
+        }
+        private void buttonRunner_Click(object sender, EventArgs e)
+        {
+            FormRegisterAsARunner formRegisterAsARunner = new FormRegisterAsARunner();
+            this.Hide();
+            formRegisterAsARunner.Show();
         }
     }
 }

@@ -46,13 +46,14 @@ namespace MARAFON
             this.buttonRunner.FlatAppearance.BorderSize = 2;
             this.buttonRunner.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonRunner.Font = new System.Drawing.Font("Consolas", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.buttonRunner.Location = new System.Drawing.Point(38, 46);
-            this.buttonRunner.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.buttonRunner.Location = new System.Drawing.Point(21, 49);
+            this.buttonRunner.Margin = new System.Windows.Forms.Padding(2);
             this.buttonRunner.Name = "buttonRunner";
             this.buttonRunner.Size = new System.Drawing.Size(499, 70);
             this.buttonRunner.TabIndex = 0;
             this.buttonRunner.Text = "Я хочу стать бегуном";
             this.buttonRunner.UseVisualStyleBackColor = false;
+            this.buttonRunner.Click += new System.EventHandler(this.buttonRunner_Click);
             // 
             // buttonSponsore
             // 
@@ -63,6 +64,10 @@ namespace MARAFON
             this.buttonSponsore.Font = new System.Drawing.Font("Consolas", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.buttonSponsore.Location = new System.Drawing.Point(38, 147);
             this.buttonSponsore.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+
+            this.buttonSponsore.Location = new System.Drawing.Point(21, 131);
+            this.buttonSponsore.Margin = new System.Windows.Forms.Padding(2);
+
             this.buttonSponsore.Name = "buttonSponsore";
             this.buttonSponsore.Size = new System.Drawing.Size(499, 70);
             this.buttonSponsore.TabIndex = 1;
@@ -77,8 +82,13 @@ namespace MARAFON
             this.button1.FlatAppearance.BorderSize = 2;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Consolas", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+
             this.button1.Location = new System.Drawing.Point(38, 244);
             this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+
+            this.button1.Location = new System.Drawing.Point(21, 210);
+            this.button1.Margin = new System.Windows.Forms.Padding(2);
+
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(499, 70);
             this.button1.TabIndex = 2;
@@ -87,6 +97,8 @@ namespace MARAFON
             // 
             // timerEvent
             // 
+            this.timerEvent.Enabled = true;
+            this.timerEvent.Interval = 1000;
             this.timerEvent.Tick += new System.EventHandler(this.timerEvent_Tick);
             // 
             // labelEventTime
@@ -132,7 +144,11 @@ namespace MARAFON
             this.Controls.Add(this.buttonSponsore);
             this.Controls.Add(this.buttonRunner);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
+
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+
+            this.Margin = new System.Windows.Forms.Padding(2);
+
             this.Name = "FormMain";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Главное меню";

@@ -162,6 +162,7 @@ namespace MARAFON
             this.textBoxNumberCardData.Name = "textBoxNumberCardData";
             this.textBoxNumberCardData.Size = new System.Drawing.Size(139, 19);
             this.textBoxNumberCardData.TabIndex = 9;
+            this.textBoxNumberCardData.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBoxNumberCardData_KeyPress);
             // 
             // labelDurationCard
             // 

@@ -100,6 +100,12 @@
     <Compile Include="FormMenuAdmin.Designer.cs">
       <DependentUpon>FormMenuAdmin.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormRegisterAsARunner.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormRegisterAsARunner.Designer.cs">
+      <DependentUpon>FormRegisterAsARunner.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormRegistrationRunner.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -182,6 +188,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormMenuAdmin.resx">
       <DependentUpon>FormMenuAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormRegisterAsARunner.resx">
+      <DependentUpon>FormRegisterAsARunner.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormRegistrationRunner.resx">
       <DependentUpon>FormRegistrationRunner.cs</DependentUpon>
