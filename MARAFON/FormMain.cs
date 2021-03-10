@@ -16,11 +16,6 @@ namespace MARAFON
         public FormMain()
         {
             InitializeComponent();
-            //foreach (User role in Program.dateBases.User)
-            //{
-            //    MessageBox.Show(role.Email);
-            //}
-            InitializeComponent();
             timer1.Tick += timerEvent_Tick;
             timer1.Interval = 1000;
             timer1.Enabled = true;
@@ -44,6 +39,13 @@ namespace MARAFON
         private void FormMain_FormClosed(object sender, FormClosedEventArgs e)
         {
             Application.Exit();
+        }
+
+        private void buttonLogin_Click(object sender, EventArgs e)
+        {
+            FormLogin formLogin = new FormLogin();
+            formLogin.Show();
+            Program.formMain.Hide();
         }
     }
 }
