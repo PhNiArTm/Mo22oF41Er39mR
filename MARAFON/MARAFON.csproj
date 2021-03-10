@@ -94,6 +94,12 @@
     <Compile Include="FormMenuAdmin.Designer.cs">
       <DependentUpon>FormMenuAdmin.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormRegistrationConfirmation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormRegistrationConfirmation.Designer.cs">
+      <DependentUpon>FormRegistrationConfirmation.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormSponsoreRunner.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -161,6 +167,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormMenuAdmin.resx">
       <DependentUpon>FormMenuAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormRegistrationConfirmation.resx">
+      <DependentUpon>FormRegistrationConfirmation.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormSponsoreRunner.resx">
       <DependentUpon>FormSponsoreRunner.cs</DependentUpon>

@@ -31,7 +31,7 @@ namespace MARAFON
         private void timerEvent_Tick(object sender, EventArgs e)
         {
             TimeSpan TimeRemaining = voteTime - DateTime.Now;
-            labelEventTime.Text = TimeRemaining.Days + " дней " + TimeRemaining.Hours + " часов " + TimeRemaining.Minutes + " минут " + TimeRemaining.Seconds + " минут.";
+            labelEventTime.Text = TimeRemaining.Days + " дней " + TimeRemaining.Hours + " часов " + TimeRemaining.Minutes + " минут " + TimeRemaining.Seconds + " секунд.";
         }
 
         private void buttonSponsore_Click(object sender, EventArgs e)
