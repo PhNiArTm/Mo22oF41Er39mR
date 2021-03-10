@@ -168,6 +168,9 @@
     <EmbeddedResource Include="FormMenuAdmin.resx">
       <DependentUpon>FormMenuAdmin.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormRegistrationRunner.resx">
+      <DependentUpon>FormRegistrationRunner.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormSponsoreRunner.resx">
       <DependentUpon>FormSponsoreRunner.cs</DependentUpon>
     </EmbeddedResource>
