@@ -76,6 +76,12 @@
     <Compile Include="FormConfirmDonate.Designer.cs">
       <DependentUpon>FormConfirmDonate.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormCoordinator.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCoordinator.Designer.cs">
+      <DependentUpon>FormCoordinator.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormDetailInfo.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -158,6 +164,9 @@
     </Compile>
     <EmbeddedResource Include="FormConfirmDonate.resx">
       <DependentUpon>FormConfirmDonate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCoordinator.resx">
+      <DependentUpon>FormCoordinator.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormDetailInfo.resx">
       <DependentUpon>FormDetailInfo.cs</DependentUpon>
