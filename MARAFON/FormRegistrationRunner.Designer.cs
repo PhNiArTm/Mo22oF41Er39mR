@@ -34,9 +34,6 @@ namespace MARAFON
             this.buttonBack = new System.Windows.Forms.Button();
             this.labelNameTag = new System.Windows.Forms.Label();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
-            this.pictureBoxPhoto = new System.Windows.Forms.PictureBox();
-            this.labelRegistration = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
             this.comboBoxCountry = new System.Windows.Forms.ComboBox();
             this.labelCountry = new System.Windows.Forms.Label();
             this.labelDateBirthday = new System.Windows.Forms.Label();
@@ -54,10 +51,13 @@ namespace MARAFON
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.labelRegistration = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.textBoxEmail = new System.Windows.Forms.TextBox();
             this.comboBoxGender = new System.Windows.Forms.ComboBox();
             this.dateTimePickerBirthday = new System.Windows.Forms.DateTimePicker();
+            this.pictureBoxPhoto = new System.Windows.Forms.PictureBox();
             this.labelTimer = new System.Windows.Forms.Label();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
@@ -124,7 +124,7 @@ namespace MARAFON
             this.labelNameTag.Location = new System.Drawing.Point(83, 10);
             this.labelNameTag.Margin = new System.Windows.Forms.Padding(2, 10, 10, 0);
             this.labelNameTag.Name = "labelNameTag";
-            this.labelNameTag.Size = new System.Drawing.Size(250, 57);
+            this.labelNameTag.Size = new System.Drawing.Size(315, 57);
             this.labelNameTag.TabIndex = 1;
             this.labelNameTag.Text = "MARATHON SKILLS 2021";
             this.labelNameTag.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -178,47 +178,6 @@ namespace MARAFON
             this.tableLayoutPanel3.Size = new System.Drawing.Size(678, 337);
             this.tableLayoutPanel3.TabIndex = 1;
             // 
-            // pictureBoxPhoto
-            // 
-            this.pictureBoxPhoto.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.pictureBoxPhoto.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBoxPhoto.Location = new System.Drawing.Point(539, 78);
-            this.pictureBoxPhoto.Margin = new System.Windows.Forms.Padding(28, 0, 26, 0);
-            this.pictureBoxPhoto.Name = "pictureBoxPhoto";
-            this.tableLayoutPanel3.SetRowSpan(this.pictureBoxPhoto, 3);
-            this.pictureBoxPhoto.Size = new System.Drawing.Size(102, 102);
-            this.pictureBoxPhoto.TabIndex = 19;
-            this.pictureBoxPhoto.TabStop = false;
-            // 
-            // labelRegistration
-            // 
-            this.labelRegistration.AutoSize = true;
-            this.tableLayoutPanel3.SetColumnSpan(this.labelRegistration, 4);
-            this.labelRegistration.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.labelRegistration.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.labelRegistration.Location = new System.Drawing.Point(3, 3);
-            this.labelRegistration.Margin = new System.Windows.Forms.Padding(3);
-            this.labelRegistration.Name = "labelRegistration";
-            this.labelRegistration.Size = new System.Drawing.Size(672, 19);
-            this.labelRegistration.TabIndex = 0;
-            this.labelRegistration.Text = "Регистрация бегуна";
-            this.labelRegistration.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.tableLayoutPanel3.SetColumnSpan(this.label3, 4);
-            this.label3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label3.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label3.Location = new System.Drawing.Point(3, 28);
-            this.label3.Margin = new System.Windows.Forms.Padding(3);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(672, 47);
-            this.label3.TabIndex = 1;
-            this.label3.Text = "Пожалуйста заполните всю информацию, чтобы зарегестрироватсья в качестве \r\nбегуна" +
-    "";
-            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
             // comboBoxCountry
             // 
             this.comboBoxCountry.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -227,7 +186,7 @@ namespace MARAFON
             this.comboBoxCountry.Location = new System.Drawing.Point(514, 251);
             this.comboBoxCountry.Margin = new System.Windows.Forms.Padding(3, 3, 10, 3);
             this.comboBoxCountry.Name = "comboBoxCountry";
-            this.comboBoxCountry.Size = new System.Drawing.Size(154, 26);
+            this.comboBoxCountry.Size = new System.Drawing.Size(154, 30);
             this.comboBoxCountry.TabIndex = 23;
             // 
             // labelCountry
@@ -276,7 +235,7 @@ namespace MARAFON
             this.textBoxPhotoPath.Location = new System.Drawing.Point(370, 183);
             this.textBoxPhotoPath.Margin = new System.Windows.Forms.Padding(13, 3, 2, 0);
             this.textBoxPhotoPath.Name = "textBoxPhotoPath";
-            this.textBoxPhotoPath.Size = new System.Drawing.Size(139, 25);
+            this.textBoxPhotoPath.Size = new System.Drawing.Size(139, 29);
             this.textBoxPhotoPath.TabIndex = 17;
             // 
             // labelPhotoPath
@@ -298,7 +257,7 @@ namespace MARAFON
             this.textBoxSurname.Location = new System.Drawing.Point(167, 217);
             this.textBoxSurname.Margin = new System.Windows.Forms.Padding(0, 3, 0, 0);
             this.textBoxSurname.Name = "textBoxSurname";
-            this.textBoxSurname.Size = new System.Drawing.Size(155, 25);
+            this.textBoxSurname.Size = new System.Drawing.Size(155, 29);
             this.textBoxSurname.TabIndex = 14;
             // 
             // textBoxName
@@ -308,7 +267,7 @@ namespace MARAFON
             this.textBoxName.Location = new System.Drawing.Point(167, 183);
             this.textBoxName.Margin = new System.Windows.Forms.Padding(0, 3, 0, 0);
             this.textBoxName.Name = "textBoxName";
-            this.textBoxName.Size = new System.Drawing.Size(155, 25);
+            this.textBoxName.Size = new System.Drawing.Size(155, 29);
             this.textBoxName.TabIndex = 13;
             // 
             // textBoxPassword
@@ -318,7 +277,7 @@ namespace MARAFON
             this.textBoxPassword.Location = new System.Drawing.Point(167, 115);
             this.textBoxPassword.Margin = new System.Windows.Forms.Padding(0, 3, 0, 0);
             this.textBoxPassword.Name = "textBoxPassword";
-            this.textBoxPassword.Size = new System.Drawing.Size(155, 25);
+            this.textBoxPassword.Size = new System.Drawing.Size(155, 29);
             this.textBoxPassword.TabIndex = 12;
             // 
             // textBoxRepeatPassword
@@ -328,7 +287,7 @@ namespace MARAFON
             this.textBoxRepeatPassword.Location = new System.Drawing.Point(167, 149);
             this.textBoxRepeatPassword.Margin = new System.Windows.Forms.Padding(0, 3, 0, 0);
             this.textBoxRepeatPassword.Name = "textBoxRepeatPassword";
-            this.textBoxRepeatPassword.Size = new System.Drawing.Size(155, 25);
+            this.textBoxRepeatPassword.Size = new System.Drawing.Size(155, 29);
             this.textBoxRepeatPassword.TabIndex = 11;
             // 
             // buttonCancel
@@ -423,6 +382,35 @@ namespace MARAFON
             this.label5.Text = "Пароль:";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.tableLayoutPanel3.SetColumnSpan(this.label3, 4);
+            this.label3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label3.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label3.Location = new System.Drawing.Point(3, 28);
+            this.label3.Margin = new System.Windows.Forms.Padding(3);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(672, 47);
+            this.label3.TabIndex = 1;
+            this.label3.Text = "Пожалуйста заполните всю информацию, чтобы зарегестрироватсья в качестве \r\nбегуна" +
+    "";
+            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // labelRegistration
+            // 
+            this.labelRegistration.AutoSize = true;
+            this.tableLayoutPanel3.SetColumnSpan(this.labelRegistration, 4);
+            this.labelRegistration.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.labelRegistration.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelRegistration.Location = new System.Drawing.Point(3, 3);
+            this.labelRegistration.Margin = new System.Windows.Forms.Padding(3);
+            this.labelRegistration.Name = "labelRegistration";
+            this.labelRegistration.Size = new System.Drawing.Size(672, 19);
+            this.labelRegistration.TabIndex = 0;
+            this.labelRegistration.Text = "Регистрация бегуна";
+            this.labelRegistration.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
             // label4
             // 
             this.label4.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -441,7 +429,7 @@ namespace MARAFON
             this.textBoxEmail.Location = new System.Drawing.Point(167, 81);
             this.textBoxEmail.Margin = new System.Windows.Forms.Padding(0, 3, 0, 0);
             this.textBoxEmail.Name = "textBoxEmail";
-            this.textBoxEmail.Size = new System.Drawing.Size(190, 25);
+            this.textBoxEmail.Size = new System.Drawing.Size(190, 29);
             this.textBoxEmail.TabIndex = 10;
             // 
             // comboBoxGender
@@ -451,7 +439,7 @@ namespace MARAFON
             this.comboBoxGender.Location = new System.Drawing.Point(167, 251);
             this.comboBoxGender.Margin = new System.Windows.Forms.Padding(0, 3, 0, 0);
             this.comboBoxGender.Name = "comboBoxGender";
-            this.comboBoxGender.Size = new System.Drawing.Size(120, 26);
+            this.comboBoxGender.Size = new System.Drawing.Size(120, 30);
             this.comboBoxGender.TabIndex = 15;
             // 
             // dateTimePickerBirthday
@@ -463,9 +451,21 @@ namespace MARAFON
             this.dateTimePickerBirthday.MaxDate = new System.DateTime(2011, 3, 10, 0, 0, 0, 0);
             this.dateTimePickerBirthday.MinDate = new System.DateTime(1951, 3, 10, 0, 0, 0, 0);
             this.dateTimePickerBirthday.Name = "dateTimePickerBirthday";
-            this.dateTimePickerBirthday.Size = new System.Drawing.Size(154, 25);
+            this.dateTimePickerBirthday.Size = new System.Drawing.Size(154, 29);
             this.dateTimePickerBirthday.TabIndex = 21;
             this.dateTimePickerBirthday.Value = new System.DateTime(2000, 1, 1, 0, 0, 0, 0);
+            // 
+            // pictureBoxPhoto
+            // 
+            this.pictureBoxPhoto.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.pictureBoxPhoto.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBoxPhoto.Location = new System.Drawing.Point(539, 78);
+            this.pictureBoxPhoto.Margin = new System.Windows.Forms.Padding(28, 0, 26, 0);
+            this.pictureBoxPhoto.Name = "pictureBoxPhoto";
+            this.tableLayoutPanel3.SetRowSpan(this.pictureBoxPhoto, 3);
+            this.pictureBoxPhoto.Size = new System.Drawing.Size(102, 102);
+            this.pictureBoxPhoto.TabIndex = 19;
+            this.pictureBoxPhoto.TabStop = false;
             // 
             // labelTimer
             // 
