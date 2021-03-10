@@ -21,7 +21,6 @@ namespace MARAFON
             InitializeComponent();
             ShowGenders();
             ShowCountry();
-
         }
         private void ShowGenders()
         {
@@ -39,6 +38,7 @@ namespace MARAFON
                     string[] items = new string[] { dataTable.Rows[i]["Gender"].ToString()};
                     comboBoxGender.Items.Add(string.Join(" ", items));
                 }
+                comboBoxGender.SelectedIndex = 0;
             }
             catch 
             {
@@ -61,6 +61,7 @@ namespace MARAFON
                 dataTable = new DataTable();
                 mySqlDataAdapter.Fill(dataTable);
                 for (int i = 0; i < dataTable.Rows.Count; i++) comboBoxCountry.Items.Add(string.Join(" ", dataTable.Rows[i]["CountryName"]));
+                comboBoxCountry.SelectedIndex = 0;
             }
             catch
             {
@@ -77,12 +78,10 @@ namespace MARAFON
             this.Hide();
             formRegisterAsARunner.Show();
         }
-
         private void FormRegistrationRunner_FormClosed(object sender, FormClosedEventArgs e)
         {
             formMain.Show();
         }
-
         private void buttonCancel_Click(object sender, EventArgs e)
         {
             formMain.Show();
@@ -90,7 +89,15 @@ namespace MARAFON
         }
         private void buttonRegistration_Click(object sender, EventArgs e)
         {
-            
+            if (CheckForNullOrEmpty()) MessageBox.Show("Заполните все поля!", "Ошибка заполнения", MessageBoxButtons.OK, MessageBoxIcon.Error);
+        }
+        private bool CheckForCorrectData()
+        {
+            return true;
+        }
+        private bool CheckForNullOrEmpty()
+        {
+            return (String.IsNullOrEmpty(textBoxEmail.Text) || String.IsNullOrEmpty(textBoxName.Text) || String.IsNullOrEmpty(textBoxRepeatPassword.Text) || String.IsNullOrEmpty(textBoxPassword.Text) || String.IsNullOrEmpty(textBoxSurname.Text) || comboBoxCountry.SelectedIndex != 0);
         }
     }
 }
