@@ -16,8 +16,9 @@ namespace MARAFON
     {
         public MySqlConnection mycon;
         public MySqlCommand mycom;
-        
+
         public SD.DataSet ds;
+        private bool checkCancelButton = false;
 
         public FormVolunteers()
         {
@@ -66,7 +67,7 @@ namespace MARAFON
         }
         private void Update(int i)
         {
-            string[] words = {"FirstName","LastName", "CountryCode", "Gender" };
+            string[] words = { "FirstName", "LastName", "CountryCode", "Gender" };
             string sql = $"SELECT FirstName, LastName, CountryCode, Gender FROM Volunteer ORDER BY {words[i]}";
             MySqlCommand sqlCommand = new MySqlCommand(sql, Program.connection);
             MySqlDataReader sqlDataReader = null;
@@ -88,6 +89,20 @@ namespace MARAFON
             Program.connection.Close();
             sqlDataReader.Close();
         }
-        
+
+        private void FormVolunteers_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            if (!this.checkCancelButton)
+            {
+                Application.Exit();
+            }
+        }
+
+        private void buttonBack_Click(object sender, EventArgs e)
+        {
+            this.checkCancelButton = true;
+            Program.formMain.Show();
+            this.Close();
+        }
     }
 }
