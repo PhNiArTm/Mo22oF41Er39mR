@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace MARAFON
 {
-    public partial class FormRegistrationOnMarafon : Form
+    public partial class FormInfoMarathon : Form
     {
-        public FormRegistrationOnMarafon()
+        public FormInfoMarathon()
         {
             InitializeComponent();
         }
