@@ -34,16 +34,16 @@ namespace MARAFON
             this.buttonVolunteer = new System.Windows.Forms.Button();
             this.buttonDonateCompany = new System.Windows.Forms.Button();
             this.buttonInventory = new System.Windows.Forms.Button();
+            this.buttonCancel = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // labelTitleForm
             // 
             this.labelTitleForm.AutoSize = true;
             this.labelTitleForm.Font = new System.Drawing.Font("Consolas", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.labelTitleForm.Location = new System.Drawing.Point(51, 34);
-            this.labelTitleForm.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelTitleForm.Location = new System.Drawing.Point(68, 42);
             this.labelTitleForm.Name = "labelTitleForm";
-            this.labelTitleForm.Size = new System.Drawing.Size(359, 37);
+            this.labelTitleForm.Size = new System.Drawing.Size(438, 47);
             this.labelTitleForm.TabIndex = 4;
             this.labelTitleForm.Text = "Меню администратора";
             // 
@@ -54,10 +54,10 @@ namespace MARAFON
             this.buttonUser.FlatAppearance.BorderSize = 2;
             this.buttonUser.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonUser.Font = new System.Drawing.Font("Consolas", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.buttonUser.Location = new System.Drawing.Point(11, 88);
-            this.buttonUser.Margin = new System.Windows.Forms.Padding(2);
+            this.buttonUser.Location = new System.Drawing.Point(15, 108);
+            this.buttonUser.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.buttonUser.Name = "buttonUser";
-            this.buttonUser.Size = new System.Drawing.Size(229, 67);
+            this.buttonUser.Size = new System.Drawing.Size(305, 82);
             this.buttonUser.TabIndex = 5;
             this.buttonUser.Text = "Пользователи";
             this.buttonUser.UseVisualStyleBackColor = false;
@@ -69,10 +69,10 @@ namespace MARAFON
             this.buttonVolunteer.FlatAppearance.BorderSize = 2;
             this.buttonVolunteer.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonVolunteer.Font = new System.Drawing.Font("Consolas", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.buttonVolunteer.Location = new System.Drawing.Point(249, 88);
-            this.buttonVolunteer.Margin = new System.Windows.Forms.Padding(2);
+            this.buttonVolunteer.Location = new System.Drawing.Point(332, 108);
+            this.buttonVolunteer.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.buttonVolunteer.Name = "buttonVolunteer";
-            this.buttonVolunteer.Size = new System.Drawing.Size(220, 67);
+            this.buttonVolunteer.Size = new System.Drawing.Size(293, 82);
             this.buttonVolunteer.TabIndex = 6;
             this.buttonVolunteer.Text = "Волонтёры";
             this.buttonVolunteer.UseVisualStyleBackColor = false;
@@ -85,10 +85,10 @@ namespace MARAFON
             this.buttonDonateCompany.FlatAppearance.BorderSize = 2;
             this.buttonDonateCompany.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonDonateCompany.Font = new System.Drawing.Font("Consolas", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.buttonDonateCompany.Location = new System.Drawing.Point(11, 168);
-            this.buttonDonateCompany.Margin = new System.Windows.Forms.Padding(2);
+            this.buttonDonateCompany.Location = new System.Drawing.Point(15, 207);
+            this.buttonDonateCompany.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.buttonDonateCompany.Name = "buttonDonateCompany";
-            this.buttonDonateCompany.Size = new System.Drawing.Size(229, 67);
+            this.buttonDonateCompany.Size = new System.Drawing.Size(305, 82);
             this.buttonDonateCompany.TabIndex = 7;
             this.buttonDonateCompany.Text = "Благотворительные организации";
             this.buttonDonateCompany.UseVisualStyleBackColor = false;
@@ -100,29 +100,42 @@ namespace MARAFON
             this.buttonInventory.FlatAppearance.BorderSize = 2;
             this.buttonInventory.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonInventory.Font = new System.Drawing.Font("Consolas", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.buttonInventory.Location = new System.Drawing.Point(249, 168);
-            this.buttonInventory.Margin = new System.Windows.Forms.Padding(2);
+            this.buttonInventory.Location = new System.Drawing.Point(332, 207);
+            this.buttonInventory.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.buttonInventory.Name = "buttonInventory";
-            this.buttonInventory.Size = new System.Drawing.Size(220, 67);
+            this.buttonInventory.Size = new System.Drawing.Size(293, 82);
             this.buttonInventory.TabIndex = 8;
             this.buttonInventory.Text = "Инвентарь";
             this.buttonInventory.UseVisualStyleBackColor = false;
             // 
+            // buttonCancel
+            // 
+            this.buttonCancel.Location = new System.Drawing.Point(12, 16);
+            this.buttonCancel.Name = "buttonCancel";
+            this.buttonCancel.Size = new System.Drawing.Size(75, 23);
+            this.buttonCancel.TabIndex = 9;
+            this.buttonCancel.Text = "Cancel";
+            this.buttonCancel.UseVisualStyleBackColor = true;
+            this.buttonCancel.Click += new System.EventHandler(this.buttonCancel_Click);
+            // 
             // FormMenuAdmin
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.ClientSize = new System.Drawing.Size(477, 312);
+            this.ClientSize = new System.Drawing.Size(636, 384);
+            this.Controls.Add(this.buttonCancel);
             this.Controls.Add(this.buttonInventory);
             this.Controls.Add(this.buttonDonateCompany);
             this.Controls.Add(this.buttonVolunteer);
             this.Controls.Add(this.buttonUser);
             this.Controls.Add(this.labelTitleForm);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "FormMenuAdmin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormMenuAdmin";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FormMenuAdmin_FormClosed);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -135,5 +148,6 @@ namespace MARAFON
         private System.Windows.Forms.Button buttonVolunteer;
         private System.Windows.Forms.Button buttonDonateCompany;
         private System.Windows.Forms.Button buttonInventory;
+        private System.Windows.Forms.Button buttonCancel;
     }
 }

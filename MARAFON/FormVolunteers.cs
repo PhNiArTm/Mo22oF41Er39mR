@@ -89,7 +89,6 @@ namespace MARAFON
             Program.connection.Close();
             sqlDataReader.Close();
         }
-
         private void FormVolunteers_FormClosed(object sender, FormClosedEventArgs e)
         {
             if (!this.checkCancelButton)
