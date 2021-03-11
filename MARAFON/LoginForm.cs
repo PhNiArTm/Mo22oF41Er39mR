@@ -33,7 +33,8 @@ namespace MARAFON
                         //string sql = "SELECT Email, Password FROM User WHERE Email=\"a.adkin@dayrep.net\" AND Password=\"jwZh2x@p\"";
                         MySqlCommand sqlCommand = new MySqlCommand(sql, Program.connection);
                         Program.sqlDataReader = sqlCommand.ExecuteReader();
-                        Program.userInfo = new User(Program.sqlDataReader.GetString("Email"), Program.sqlDataReader.GetString("Password"));
+                        Program.userInfo.Email = Program.sqlDataReader.GetString("Email");
+                        Program.userInfo.Password = Program.sqlDataReader.GetString("Password");
                         Program.connection.Close();
                         Program.sqlDataReader.Close();
                     }

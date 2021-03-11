@@ -14,18 +14,12 @@ namespace MARAFON
     
     public partial class User
     {
-        private string Email { get; set; }
-        private string Password { get; set; }
-        private string FirstName { get; set; }
-        private string LastName { get; set; }
-        private string RoleId { get; set; }
-        private string Login { get; set; }
+        public string Email { get; set; }
+        public string Password { get; set; }
+        public string FirstName { get; set; }
+        public string LastName { get; set; }
+        public string RoleId { get; set; }
+        public string Login { get; set; }
         public virtual Role Role { get; set; }
-
-        public User(string email, string password)
-        {
-            this.Email = email;
-            this.Password = password;
-        }
     }
 }
