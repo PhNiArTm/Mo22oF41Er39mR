@@ -26,28 +26,21 @@ namespace MARAFON
         private void buttonBack_Click(object sender, EventArgs e)
         {
             this.Close();
-            formMain.Show();
         }
         private void FormRegisterAsARunner_FormClosed(object sender, FormClosedEventArgs e)
         {
-            formMain.Show();
         }
         private void buttonOldUser_Click(object sender, EventArgs e)
         {
-            //LoginForm loginForm = new LoginForm();
-            //loginForm.Show();
             this.Close();
         }
         private void buttonNewUser_Click(object sender, EventArgs e)
         {
             FormRegistrationRunner formRegistrationRunner = new FormRegistrationRunner();
             formRegistrationRunner.Show();
-            this.Hide();
         }
         private void buttonLogin_Click(object sender, EventArgs e)
         {
-            //LoginForm loginForm = new LoginForm();
-            //loginForm.Show();
             this.Close();
         }
     }
