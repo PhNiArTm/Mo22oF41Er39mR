@@ -28,19 +28,22 @@ namespace MARAFON
                     if (Regex.IsMatch(textBoxEmail.Text, @"^([\w\.\-]+)@([\w\-]+)((\.(\w){2,3})+)$"))
                     {
                         Program.connection.Open();
-                        string sql = String.Format("SELECT Email, Password FROM User WHERE Email=\"{0}\" AND Password=\"{1}\"", textBoxEmail.Text, textBoxPassword.Text);
+                        string sql = String.Format("SELECT Email, Password FROM User WHERE Email='{0}' AND Password='{1}'", textBoxEmail.Text, textBoxPassword.Text);
                         //Строка для тестирования авторизации
-                        //string sql = "SELECT Email, Password FROM User WHERE Email=\"a.adkin@dayrep.net\" AND Password=\"jwZh2x@p\"";
+                        //string sql = "SELECT Email, Password FROM User WHERE Email='a.adkin@dayrep.net' AND Password='jwZh2x@p'";
                         MySqlCommand sqlCommand = new MySqlCommand(sql, Program.connection);
+                        //Program.sqlDataReader;
                         Program.sqlDataReader = sqlCommand.ExecuteReader();
+                        Program.sqlDataReader.Read();
                         Program.userInfo.Email = Program.sqlDataReader.GetString("Email");
                         Program.userInfo.Password = Program.sqlDataReader.GetString("Password");
                         Program.connection.Close();
                         Program.sqlDataReader.Close();
+                        MessageBox.Show("Вы авторизовались!", "Закрыть", MessageBoxButtons.OKCancel, MessageBoxIcon.Information);
                     }
                     else
                     {
-                        MessageBox.Show("Не верно введена почта!", "Закрыть", MessageBoxButtons.OKCancel, MessageBoxIcon.Information);
+                        MessageBox.Show("Не валидна введена почта!", "Закрыть", MessageBoxButtons.OKCancel, MessageBoxIcon.Information);
                     }
                 }
                 catch
