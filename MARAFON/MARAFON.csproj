@@ -118,12 +118,6 @@
     <Compile Include="FormRegisterAsARunner.Designer.cs">
       <DependentUpon>FormRegisterAsARunner.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormRegistrationOnMarafon.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FormRegistrationOnMarafon.Designer.cs">
-      <DependentUpon>FormRegistrationOnMarafon.cs</DependentUpon>
-    </Compile>
     <Compile Include="FormRegistrationRunner.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -218,9 +212,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormRegisterAsARunner.resx">
       <DependentUpon>FormRegisterAsARunner.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FormRegistrationOnMarafon.resx">
-      <DependentUpon>FormRegistrationOnMarafon.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormRegistrationRunner.resx">
       <DependentUpon>FormRegistrationRunner.cs</DependentUpon>
