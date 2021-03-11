@@ -59,6 +59,7 @@ namespace MARAFON
             this.dateTimePickerBirthday = new System.Windows.Forms.DateTimePicker();
             this.pictureBoxPhoto = new System.Windows.Forms.PictureBox();
             this.labelTimer = new System.Windows.Forms.Label();
+            this.listViewVolonters = new System.Windows.Forms.ListView();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
@@ -160,6 +161,7 @@ namespace MARAFON
             this.tableLayoutPanel3.Controls.Add(this.comboBoxGender, 1, 7);
             this.tableLayoutPanel3.Controls.Add(this.dateTimePickerBirthday, 3, 6);
             this.tableLayoutPanel3.Controls.Add(this.pictureBoxPhoto, 3, 2);
+            this.tableLayoutPanel3.Controls.Add(this.listViewVolonters, 1, 8);
             this.tableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel3.Location = new System.Drawing.Point(0, 67);
             this.tableLayoutPanel3.Margin = new System.Windows.Forms.Padding(0);
@@ -479,6 +481,15 @@ namespace MARAFON
             this.labelTimer.TabIndex = 2;
             this.labelTimer.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // listViewVolonters
+            // 
+            this.listViewVolonters.HideSelection = false;
+            this.listViewVolonters.Location = new System.Drawing.Point(170, 285);
+            this.listViewVolonters.Name = "listViewVolonters";
+            this.listViewVolonters.Size = new System.Drawing.Size(121, 11);
+            this.listViewVolonters.TabIndex = 24;
+            this.listViewVolonters.UseCompatibleStateImageBehavior = false;
+            // 
             // FormRegistrationRunner
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -535,5 +546,6 @@ namespace MARAFON
         private System.Windows.Forms.PictureBox pictureBoxPhoto;
         private System.Windows.Forms.DateTimePicker dateTimePickerBirthday;
         private System.Windows.Forms.Label labelTimer;
+        private System.Windows.Forms.ListView listViewVolonters;
     }
 }
