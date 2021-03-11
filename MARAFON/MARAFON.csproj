@@ -100,6 +100,18 @@
     <Compile Include="FormMenuAdmin.Designer.cs">
       <DependentUpon>FormMenuAdmin.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormRegisterAsARunner.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormRegisterAsARunner.Designer.cs">
+      <DependentUpon>FormRegisterAsARunner.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormRegistrationRunner.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormRegistrationRunner.Designer.cs">
+      <DependentUpon>FormRegistrationRunner.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormSponsoreRunner.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -183,8 +195,17 @@
     <EmbeddedResource Include="FormMenuAdmin.resx">
       <DependentUpon>FormMenuAdmin.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormRegisterAsARunner.resx">
+      <DependentUpon>FormRegisterAsARunner.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormRegistrationRunner.resx">
+      <DependentUpon>FormRegistrationRunner.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormSponsoreRunner.resx">
       <DependentUpon>FormSponsoreRunner.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginForm.resx">
+      <DependentUpon>LoginForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
