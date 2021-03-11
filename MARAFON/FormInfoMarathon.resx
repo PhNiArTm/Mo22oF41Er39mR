@@ -117,20 +117,32 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="marathon-skills-2016-marathon-map" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\bin\Debug\image\marathon-skills-2016-marathon-map.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="marathon-image" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\bin\Debug\image\marathon-image.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="ibirapuera-park-lake" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\bin\Debug\image\ibirapuera-park-lake.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="teatro-municipal" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\bin\Debug\image\teatro-municipal.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="banco-banespa" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\bin\Debug\image\banco-banespa.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="labelSponsoreInfo.Text" xml:space="preserve">
+    <value>О Marathon Skills 2016
+
+Marathon Skills - фестиваль бега, проводимый каждый год в разных частях мира. 
+Может быть три зачета: Полный Марафон, Полумарафон 
+и  забег для новичков - таким образом фестиваль подходит всем.
+
+В прошлых годах марафон был проведен в:
+Осаке, Япония (2014); Лейпциг, Германия (2013); 
+Ханой, Вьетнам (2012) и Йорк, Англия (2011).
+
+В этом году, Marathon Skills очень зрелищно, продет в  Сан-Паоло, Бразилия, 
+он должен быть самым большим фестивалем бега. Это финансовый центр Бразилии 
+и самый большой город в Южной Америке.Сан-Пауло увидят тысячи бегунов, которые 
+будут бежать мимо небоскребов, зеленые парки и великолепная архитектура.
+Этот фестиваль привлек рекордное количество бегунов со всего мира.  особое внимание 
+будет обращено на участников из Кении и Ямайки, поскольку мы надеемся увидеть победителя. 
+Атмосфера праздника обещает развлечения для всех зрителей.
+
+События:
+- Программа "Самба" Полный Марафон начнется в Руа-Ду-Американо в 6 утра.
+- Программа "Джонго" Полумарафон начнет в 7 утра Бегуны будут стартовать от недалеко 
+от пересечения улицы Руа Ciniciata и Авенида.
+- Программа "Капоэйра" в 5 км забег для новичков начнется в 15 часов Наши новички побегут 
+от Мемориала Унинове.
+
+Спасибо всем волонтерам, которые будут помогать нам проводить марафон!</value>
   </data>
 </root>

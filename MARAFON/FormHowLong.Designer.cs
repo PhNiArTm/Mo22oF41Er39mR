@@ -1,0 +1,455 @@
+﻿
+namespace MARAFON
+{
+    partial class FormHowLong
+    {
+        /// <summary>
+        /// Required designer variable.
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
+
+        /// <summary>
+        /// Clean up any resources being used.
+        /// </summary>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        #region Windows Form Designer generated code
+
+        /// <summary>
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
+        /// </summary>
+        private void InitializeComponent()
+        {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormHowLong));
+            this.labelSponsoreTitle = new System.Windows.Forms.Label();
+            this.labelNameLong = new System.Windows.Forms.Label();
+            this.tabControlLong = new System.Windows.Forms.TabControl();
+            this.tabPageSpeed = new System.Windows.Forms.TabPage();
+            this.tabPageDistance = new System.Windows.Forms.TabPage();
+            this.pictureBoxJaguar = new System.Windows.Forms.PictureBox();
+            this.pictureBoxCapybara = new System.Windows.Forms.PictureBox();
+            this.pictureBoxSloth = new System.Windows.Forms.PictureBox();
+            this.pictureBoxWorm = new System.Windows.Forms.PictureBox();
+            this.pictureBoxF1Car = new System.Windows.Forms.PictureBox();
+            this.pictureBoxMain = new System.Windows.Forms.PictureBox();
+            this.labelF1Car = new System.Windows.Forms.Label();
+            this.labelWorm = new System.Windows.Forms.Label();
+            this.labelJaguar = new System.Windows.Forms.Label();
+            this.labelCapybara = new System.Windows.Forms.Label();
+            this.labelSloth = new System.Windows.Forms.Label();
+            this.pictureBoxBus = new System.Windows.Forms.PictureBox();
+            this.pictureBoxRonaldinho = new System.Windows.Forms.PictureBox();
+            this.pictureBoxFootballField = new System.Windows.Forms.PictureBox();
+            this.pictureBoxPairOfHavaianas = new System.Windows.Forms.PictureBox();
+            this.pictureBoxAirbusA380 = new System.Windows.Forms.PictureBox();
+            this.labelBus = new System.Windows.Forms.Label();
+            this.labelAirbusA380 = new System.Windows.Forms.Label();
+            this.labelRonaldinho = new System.Windows.Forms.Label();
+            this.labelFootballField = new System.Windows.Forms.Label();
+            this.labelPairOfHavaianas = new System.Windows.Forms.Label();
+            this.labelInfo = new System.Windows.Forms.Label();
+            this.tabControlLong.SuspendLayout();
+            this.tabPageSpeed.SuspendLayout();
+            this.tabPageDistance.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxJaguar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxCapybara)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxSloth)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxWorm)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxF1Car)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxMain)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxBus)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxRonaldinho)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxFootballField)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxPairOfHavaianas)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxAirbusA380)).BeginInit();
+            this.SuspendLayout();
+            // 
+            // labelSponsoreTitle
+            // 
+            this.labelSponsoreTitle.AutoSize = true;
+            this.labelSponsoreTitle.Font = new System.Drawing.Font("Consolas", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelSponsoreTitle.Location = new System.Drawing.Point(133, 20);
+            this.labelSponsoreTitle.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelSponsoreTitle.Name = "labelSponsoreTitle";
+            this.labelSponsoreTitle.Size = new System.Drawing.Size(390, 32);
+            this.labelSponsoreTitle.TabIndex = 1;
+            this.labelSponsoreTitle.Text = "Насколько долгий марафон?";
+            // 
+            // labelNameLong
+            // 
+            this.labelNameLong.AutoSize = true;
+            this.labelNameLong.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelNameLong.Location = new System.Drawing.Point(128, 82);
+            this.labelNameLong.Name = "labelNameLong";
+            this.labelNameLong.Size = new System.Drawing.Size(150, 22);
+            this.labelNameLong.TabIndex = 3;
+            this.labelNameLong.Text = "Имя выбранного";
+            this.labelNameLong.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.labelNameLong.Click += new System.EventHandler(this.labelNameLong_Click);
+            // 
+            // tabControlLong
+            // 
+            this.tabControlLong.Controls.Add(this.tabPageSpeed);
+            this.tabControlLong.Controls.Add(this.tabPageDistance);
+            this.tabControlLong.Location = new System.Drawing.Point(379, 82);
+            this.tabControlLong.Name = "tabControlLong";
+            this.tabControlLong.SelectedIndex = 0;
+            this.tabControlLong.Size = new System.Drawing.Size(250, 314);
+            this.tabControlLong.TabIndex = 4;
+            // 
+            // tabPageSpeed
+            // 
+            this.tabPageSpeed.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.tabPageSpeed.Controls.Add(this.labelSloth);
+            this.tabPageSpeed.Controls.Add(this.labelCapybara);
+            this.tabPageSpeed.Controls.Add(this.labelJaguar);
+            this.tabPageSpeed.Controls.Add(this.labelWorm);
+            this.tabPageSpeed.Controls.Add(this.labelF1Car);
+            this.tabPageSpeed.Controls.Add(this.pictureBoxJaguar);
+            this.tabPageSpeed.Controls.Add(this.pictureBoxF1Car);
+            this.tabPageSpeed.Controls.Add(this.pictureBoxWorm);
+            this.tabPageSpeed.Controls.Add(this.pictureBoxCapybara);
+            this.tabPageSpeed.Controls.Add(this.pictureBoxSloth);
+            this.tabPageSpeed.Location = new System.Drawing.Point(4, 22);
+            this.tabPageSpeed.Name = "tabPageSpeed";
+            this.tabPageSpeed.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPageSpeed.Size = new System.Drawing.Size(242, 288);
+            this.tabPageSpeed.TabIndex = 0;
+            this.tabPageSpeed.Text = "Скорость";
+            // 
+            // tabPageDistance
+            // 
+            this.tabPageDistance.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.tabPageDistance.Controls.Add(this.labelPairOfHavaianas);
+            this.tabPageDistance.Controls.Add(this.labelFootballField);
+            this.tabPageDistance.Controls.Add(this.labelRonaldinho);
+            this.tabPageDistance.Controls.Add(this.labelAirbusA380);
+            this.tabPageDistance.Controls.Add(this.labelBus);
+            this.tabPageDistance.Controls.Add(this.pictureBoxBus);
+            this.tabPageDistance.Controls.Add(this.pictureBoxAirbusA380);
+            this.tabPageDistance.Controls.Add(this.pictureBoxRonaldinho);
+            this.tabPageDistance.Controls.Add(this.pictureBoxPairOfHavaianas);
+            this.tabPageDistance.Controls.Add(this.pictureBoxFootballField);
+            this.tabPageDistance.Location = new System.Drawing.Point(4, 22);
+            this.tabPageDistance.Name = "tabPageDistance";
+            this.tabPageDistance.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPageDistance.Size = new System.Drawing.Size(242, 288);
+            this.tabPageDistance.TabIndex = 1;
+            this.tabPageDistance.Text = "Дистанция";
+            // 
+            // pictureBoxJaguar
+            // 
+            this.pictureBoxJaguar.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxJaguar.Image")));
+            this.pictureBoxJaguar.Location = new System.Drawing.Point(7, 231);
+            this.pictureBoxJaguar.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBoxJaguar.Name = "pictureBoxJaguar";
+            this.pictureBoxJaguar.Size = new System.Drawing.Size(94, 48);
+            this.pictureBoxJaguar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBoxJaguar.TabIndex = 15;
+            this.pictureBoxJaguar.TabStop = false;
+            this.pictureBoxJaguar.Click += new System.EventHandler(this.pictureBoxJaguar_Click);
+            // 
+            // pictureBoxCapybara
+            // 
+            this.pictureBoxCapybara.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxCapybara.Image")));
+            this.pictureBoxCapybara.Location = new System.Drawing.Point(7, 63);
+            this.pictureBoxCapybara.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBoxCapybara.Name = "pictureBoxCapybara";
+            this.pictureBoxCapybara.Size = new System.Drawing.Size(94, 48);
+            this.pictureBoxCapybara.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBoxCapybara.TabIndex = 14;
+            this.pictureBoxCapybara.TabStop = false;
+            this.pictureBoxCapybara.Click += new System.EventHandler(this.pictureBoxCapybara_Click);
+            // 
+            // pictureBoxSloth
+            // 
+            this.pictureBoxSloth.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxSloth.Image")));
+            this.pictureBoxSloth.Location = new System.Drawing.Point(7, 7);
+            this.pictureBoxSloth.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBoxSloth.Name = "pictureBoxSloth";
+            this.pictureBoxSloth.Size = new System.Drawing.Size(94, 48);
+            this.pictureBoxSloth.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBoxSloth.TabIndex = 13;
+            this.pictureBoxSloth.TabStop = false;
+            this.pictureBoxSloth.Click += new System.EventHandler(this.pictureBoxSloth_Click);
+            // 
+            // pictureBoxWorm
+            // 
+            this.pictureBoxWorm.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxWorm.Image")));
+            this.pictureBoxWorm.Location = new System.Drawing.Point(7, 119);
+            this.pictureBoxWorm.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBoxWorm.Name = "pictureBoxWorm";
+            this.pictureBoxWorm.Size = new System.Drawing.Size(94, 48);
+            this.pictureBoxWorm.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBoxWorm.TabIndex = 12;
+            this.pictureBoxWorm.TabStop = false;
+            this.pictureBoxWorm.Click += new System.EventHandler(this.pictureBoxWorm_Click);
+            // 
+            // pictureBoxF1Car
+            // 
+            this.pictureBoxF1Car.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxF1Car.Image")));
+            this.pictureBoxF1Car.Location = new System.Drawing.Point(7, 175);
+            this.pictureBoxF1Car.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBoxF1Car.Name = "pictureBoxF1Car";
+            this.pictureBoxF1Car.Size = new System.Drawing.Size(94, 48);
+            this.pictureBoxF1Car.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBoxF1Car.TabIndex = 11;
+            this.pictureBoxF1Car.TabStop = false;
+            this.pictureBoxF1Car.Click += new System.EventHandler(this.pictureBoxF1Car_Click);
+            // 
+            // pictureBoxMain
+            // 
+            this.pictureBoxMain.Location = new System.Drawing.Point(35, 110);
+            this.pictureBoxMain.Name = "pictureBoxMain";
+            this.pictureBoxMain.Size = new System.Drawing.Size(322, 198);
+            this.pictureBoxMain.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBoxMain.TabIndex = 2;
+            this.pictureBoxMain.TabStop = false;
+            // 
+            // labelF1Car
+            // 
+            this.labelF1Car.AutoSize = true;
+            this.labelF1Car.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelF1Car.Location = new System.Drawing.Point(117, 190);
+            this.labelF1Car.Name = "labelF1Car";
+            this.labelF1Car.Size = new System.Drawing.Size(63, 19);
+            this.labelF1Car.TabIndex = 16;
+            this.labelF1Car.Text = "F1 Car";
+            // 
+            // labelWorm
+            // 
+            this.labelWorm.AutoSize = true;
+            this.labelWorm.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelWorm.Location = new System.Drawing.Point(117, 131);
+            this.labelWorm.Name = "labelWorm";
+            this.labelWorm.Size = new System.Drawing.Size(45, 19);
+            this.labelWorm.TabIndex = 17;
+            this.labelWorm.Text = "Worm";
+            // 
+            // labelJaguar
+            // 
+            this.labelJaguar.AutoSize = true;
+            this.labelJaguar.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelJaguar.Location = new System.Drawing.Point(117, 244);
+            this.labelJaguar.Name = "labelJaguar";
+            this.labelJaguar.Size = new System.Drawing.Size(63, 19);
+            this.labelJaguar.TabIndex = 18;
+            this.labelJaguar.Text = "Jaguar";
+            // 
+            // labelCapybara
+            // 
+            this.labelCapybara.AutoSize = true;
+            this.labelCapybara.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelCapybara.Location = new System.Drawing.Point(117, 75);
+            this.labelCapybara.Name = "labelCapybara";
+            this.labelCapybara.Size = new System.Drawing.Size(81, 19);
+            this.labelCapybara.TabIndex = 19;
+            this.labelCapybara.Text = "Capybara";
+            // 
+            // labelSloth
+            // 
+            this.labelSloth.AutoSize = true;
+            this.labelSloth.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelSloth.Location = new System.Drawing.Point(117, 19);
+            this.labelSloth.Name = "labelSloth";
+            this.labelSloth.Size = new System.Drawing.Size(54, 19);
+            this.labelSloth.TabIndex = 20;
+            this.labelSloth.Text = "Sloth";
+            // 
+            // pictureBoxBus
+            // 
+            this.pictureBoxBus.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxBus.Image")));
+            this.pictureBoxBus.Location = new System.Drawing.Point(7, 230);
+            this.pictureBoxBus.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBoxBus.Name = "pictureBoxBus";
+            this.pictureBoxBus.Size = new System.Drawing.Size(94, 48);
+            this.pictureBoxBus.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBoxBus.TabIndex = 25;
+            this.pictureBoxBus.TabStop = false;
+            this.pictureBoxBus.Click += new System.EventHandler(this.pictureBoxBus_Click);
+            // 
+            // pictureBoxRonaldinho
+            // 
+            this.pictureBoxRonaldinho.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxRonaldinho.Image")));
+            this.pictureBoxRonaldinho.Location = new System.Drawing.Point(7, 118);
+            this.pictureBoxRonaldinho.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBoxRonaldinho.Name = "pictureBoxRonaldinho";
+            this.pictureBoxRonaldinho.Size = new System.Drawing.Size(94, 48);
+            this.pictureBoxRonaldinho.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBoxRonaldinho.TabIndex = 24;
+            this.pictureBoxRonaldinho.TabStop = false;
+            this.pictureBoxRonaldinho.Click += new System.EventHandler(this.pictureBoxRonaldinho_Click);
+            // 
+            // pictureBoxFootballField
+            // 
+            this.pictureBoxFootballField.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxFootballField.Image")));
+            this.pictureBoxFootballField.Location = new System.Drawing.Point(7, 62);
+            this.pictureBoxFootballField.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBoxFootballField.Name = "pictureBoxFootballField";
+            this.pictureBoxFootballField.Size = new System.Drawing.Size(94, 48);
+            this.pictureBoxFootballField.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBoxFootballField.TabIndex = 23;
+            this.pictureBoxFootballField.TabStop = false;
+            this.pictureBoxFootballField.Click += new System.EventHandler(this.pictureBoxFootballField_Click);
+            // 
+            // pictureBoxPairOfHavaianas
+            // 
+            this.pictureBoxPairOfHavaianas.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxPairOfHavaianas.Image")));
+            this.pictureBoxPairOfHavaianas.Location = new System.Drawing.Point(7, 6);
+            this.pictureBoxPairOfHavaianas.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBoxPairOfHavaianas.Name = "pictureBoxPairOfHavaianas";
+            this.pictureBoxPairOfHavaianas.Size = new System.Drawing.Size(94, 48);
+            this.pictureBoxPairOfHavaianas.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBoxPairOfHavaianas.TabIndex = 22;
+            this.pictureBoxPairOfHavaianas.TabStop = false;
+            this.pictureBoxPairOfHavaianas.Click += new System.EventHandler(this.pictureBoxPairOfHavaianas_Click);
+            // 
+            // pictureBoxAirbusA380
+            // 
+            this.pictureBoxAirbusA380.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxAirbusA380.Image")));
+            this.pictureBoxAirbusA380.Location = new System.Drawing.Point(7, 174);
+            this.pictureBoxAirbusA380.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBoxAirbusA380.Name = "pictureBoxAirbusA380";
+            this.pictureBoxAirbusA380.Size = new System.Drawing.Size(94, 48);
+            this.pictureBoxAirbusA380.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBoxAirbusA380.TabIndex = 21;
+            this.pictureBoxAirbusA380.TabStop = false;
+            this.pictureBoxAirbusA380.Click += new System.EventHandler(this.pictureBoxAirbusA380_Click);
+            // 
+            // labelBus
+            // 
+            this.labelBus.AutoSize = true;
+            this.labelBus.Font = new System.Drawing.Font("Consolas", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelBus.Location = new System.Drawing.Point(108, 245);
+            this.labelBus.Name = "labelBus";
+            this.labelBus.Size = new System.Drawing.Size(28, 15);
+            this.labelBus.TabIndex = 26;
+            this.labelBus.Text = "Bus";
+            this.labelBus.Click += new System.EventHandler(this.label1_Click);
+            // 
+            // labelAirbusA380
+            // 
+            this.labelAirbusA380.AutoSize = true;
+            this.labelAirbusA380.Font = new System.Drawing.Font("Consolas", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelAirbusA380.Location = new System.Drawing.Point(108, 189);
+            this.labelAirbusA380.Name = "labelAirbusA380";
+            this.labelAirbusA380.Size = new System.Drawing.Size(84, 15);
+            this.labelAirbusA380.TabIndex = 27;
+            this.labelAirbusA380.Text = "Airbus A380";
+            // 
+            // labelRonaldinho
+            // 
+            this.labelRonaldinho.AutoSize = true;
+            this.labelRonaldinho.Font = new System.Drawing.Font("Consolas", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelRonaldinho.Location = new System.Drawing.Point(108, 131);
+            this.labelRonaldinho.Name = "labelRonaldinho";
+            this.labelRonaldinho.Size = new System.Drawing.Size(77, 15);
+            this.labelRonaldinho.TabIndex = 28;
+            this.labelRonaldinho.Text = "Ronaldinho";
+            // 
+            // labelFootballField
+            // 
+            this.labelFootballField.AutoSize = true;
+            this.labelFootballField.Font = new System.Drawing.Font("Consolas", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelFootballField.Location = new System.Drawing.Point(108, 74);
+            this.labelFootballField.Name = "labelFootballField";
+            this.labelFootballField.Size = new System.Drawing.Size(105, 15);
+            this.labelFootballField.TabIndex = 29;
+            this.labelFootballField.Text = "Football Field";
+            // 
+            // labelPairOfHavaianas
+            // 
+            this.labelPairOfHavaianas.AutoSize = true;
+            this.labelPairOfHavaianas.Font = new System.Drawing.Font("Consolas", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelPairOfHavaianas.Location = new System.Drawing.Point(108, 20);
+            this.labelPairOfHavaianas.Name = "labelPairOfHavaianas";
+            this.labelPairOfHavaianas.Size = new System.Drawing.Size(126, 15);
+            this.labelPairOfHavaianas.TabIndex = 30;
+            this.labelPairOfHavaianas.Text = "Pair of Havaianas";
+            // 
+            // labelInfo
+            // 
+            this.labelInfo.AutoSize = true;
+            this.labelInfo.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelInfo.Location = new System.Drawing.Point(147, 313);
+            this.labelInfo.Name = "labelInfo";
+            this.labelInfo.Size = new System.Drawing.Size(110, 22);
+            this.labelInfo.TabIndex = 5;
+            this.labelInfo.Text = "Информация";
+            this.labelInfo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // FormHowLong
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.ClientSize = new System.Drawing.Size(650, 420);
+            this.Controls.Add(this.labelInfo);
+            this.Controls.Add(this.tabControlLong);
+            this.Controls.Add(this.labelNameLong);
+            this.Controls.Add(this.pictureBoxMain);
+            this.Controls.Add(this.labelSponsoreTitle);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
+            this.Name = "FormHowLong";
+            this.Text = "Насколько долгий марафон?";
+            this.tabControlLong.ResumeLayout(false);
+            this.tabPageSpeed.ResumeLayout(false);
+            this.tabPageSpeed.PerformLayout();
+            this.tabPageDistance.ResumeLayout(false);
+            this.tabPageDistance.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxJaguar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxCapybara)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxSloth)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxWorm)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxF1Car)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxMain)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxBus)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxRonaldinho)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxFootballField)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxPairOfHavaianas)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxAirbusA380)).EndInit();
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
+        }
+
+        #endregion
+
+        private System.Windows.Forms.Label labelSponsoreTitle;
+        private System.Windows.Forms.PictureBox pictureBoxMain;
+        private System.Windows.Forms.Label labelNameLong;
+        private System.Windows.Forms.TabControl tabControlLong;
+        private System.Windows.Forms.TabPage tabPageSpeed;
+        private System.Windows.Forms.TabPage tabPageDistance;
+        private System.Windows.Forms.PictureBox pictureBoxJaguar;
+        private System.Windows.Forms.PictureBox pictureBoxCapybara;
+        private System.Windows.Forms.PictureBox pictureBoxSloth;
+        private System.Windows.Forms.PictureBox pictureBoxWorm;
+        private System.Windows.Forms.PictureBox pictureBoxF1Car;
+        private System.Windows.Forms.Label labelF1Car;
+        private System.Windows.Forms.Label labelJaguar;
+        private System.Windows.Forms.Label labelWorm;
+        private System.Windows.Forms.Label labelSloth;
+        private System.Windows.Forms.Label labelCapybara;
+        private System.Windows.Forms.PictureBox pictureBoxBus;
+        private System.Windows.Forms.PictureBox pictureBoxAirbusA380;
+        private System.Windows.Forms.PictureBox pictureBoxRonaldinho;
+        private System.Windows.Forms.PictureBox pictureBoxPairOfHavaianas;
+        private System.Windows.Forms.PictureBox pictureBoxFootballField;
+        private System.Windows.Forms.Label labelBus;
+        private System.Windows.Forms.Label labelPairOfHavaianas;
+        private System.Windows.Forms.Label labelFootballField;
+        private System.Windows.Forms.Label labelRonaldinho;
+        private System.Windows.Forms.Label labelAirbusA380;
+        private System.Windows.Forms.Label labelInfo;
+    }
+}
