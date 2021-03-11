@@ -49,6 +49,7 @@ namespace MARAFON
                             case "R":
                                 FormMenuAdmin formMenuAdmin = new FormMenuAdmin();
                                 formMenuAdmin.Show();
+                                checkCancelButton = true;
                                 break;
                         }
                         this.Close();
