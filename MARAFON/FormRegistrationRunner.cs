@@ -6,6 +6,7 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -60,7 +61,7 @@ namespace MARAFON
                 mySqlDataAdapter.SelectCommand = selectCountry;
                 dataTable = new DataTable();
                 mySqlDataAdapter.Fill(dataTable);
-                for (int i = 0; i < dataTable.Rows.Count; i++) comboBoxCountry.Items.Add(string.Join(" ", dataTable.Rows[i]["CountryName"]));
+                for (int i = 0; i < dataTable.Rows.Count; i++) comboBoxCountry.Items.Add(string.Join(" ", $"{dataTable.Rows[i]["CountryName"]}-{dataTable.Rows[i]["CountryCode"]}"));
                 comboBoxCountry.SelectedIndex = 0;
             }
             catch
@@ -89,11 +90,37 @@ namespace MARAFON
         }
         private void buttonRegistration_Click(object sender, EventArgs e)
         {
-            if (CheckForNullOrEmpty()) MessageBox.Show("Заполните все поля!", "Ошибка заполнения", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            //if (CheckForNullOrEmpty()) MessageBox.Show("Заполните все поля!", "Ошибка заполнения", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            //if (!CheckForCorrectData()) MessageBox.Show("Корректно введите Email!", "Ошибка заполнения", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            //if (!CheckForPassword()) MessageBox.Show("Введенные пароли не совпадают!", "Ошибка заполнения", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            //if (!CheckForDifficultPassword()) MessageBox.Show("Пароль твой - говно", "Ошибка заполнения", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            Program.connection.Open();
+            string countryCode = comboBoxCountry.SelectedItem.ToString();
+            int countryCodeLength = countryCode.Length-3;
+            string InsertUser = $"INSERT INTO `User` (`Email`,`Password`,`FirstName`,`LastName`,`RoleId`) VALUES ('{textBoxEmail.Text}','{textBoxPassword.Text}','{textBoxName.Text.ToUpper()}','{textBoxSurname.Text.ToUpper()}','R')";
+            string InsertRunner = $"INSERT INTO `Runner` (`Email`,`Gender`,`DateOfBirth`,`CountryCode`) VALUES ('{textBoxEmail.Text}','{comboBoxGender.SelectedItem}','{dateTimePickerBirthday.Value}','{countryCode.Remove(0, countryCodeLength)}')";
+            Program.userInfo.
+            MySqlCommand sqlCommand = new MySqlCommand(InsertUser, Program.connection);
+            MessageBox.Show(sqlCommand.ExecuteNonQuery().ToString());
+            sqlCommand = new MySqlCommand(InsertRunner, Program.connection);
+            MessageBox.Show(sqlCommand.ExecuteNonQuery().ToString());
+            Program.connection.Close();
         }
         private bool CheckForCorrectData()
         {
-            return true;
+            //мне конкретно поебать на эту константу взятую из инета. мой регекс нихуя не работает!
+            string pattern = @"^(?("")(""[^""]+?""@)|(([0-9a-z]((\.(?!\.))|[-!#\$%&'\*\+/=\?\^`\{\}\|~\w])*)(?<=[0-9a-z])@))" +
+                @"(?(\[)(\[(\d{1,3}\.){3}\d{1,3}\])|(([0-9a-z][-\w]*[0-9a-z]*\.)+[a-z0-9]{2,17}))$"; ;
+            return (Regex.IsMatch(textBoxEmail.Text, pattern));
+        }
+        private bool CheckForDifficultPassword()
+        {
+            string pattern = @"([A-Z]{6})(\d+)"; ;
+            return (Regex.IsMatch(textBoxPassword.Text, pattern));
+        }
+        private bool CheckForPassword()
+        {
+            return textBoxPassword.Text == textBoxRepeatPassword.Text;
         }
         private bool CheckForNullOrEmpty()
         {
