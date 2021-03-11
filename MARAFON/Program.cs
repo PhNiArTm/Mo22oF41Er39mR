@@ -15,7 +15,7 @@ namespace MARAFON
             "user=a0521760_users;" +
             "database=a0521760_practicke;" +
             "password=PR02022002");
-        public static User userInfo;
+        public static User userInfo = new User();
         public static MySqlDataReader sqlDataReader = null;
 
         //Общая главная форма для избежания создания дубликатов
