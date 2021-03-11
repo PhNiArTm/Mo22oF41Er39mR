@@ -16,5 +16,12 @@ namespace MARAFON
         {
             InitializeComponent();
         }
+
+        private void buttonVolunteer_Click(object sender, EventArgs e)
+        {
+            FormVolunteers formVolunteers = new FormVolunteers();
+            formVolunteers.Show();
+            this.Hide();
+        }
     }
 }

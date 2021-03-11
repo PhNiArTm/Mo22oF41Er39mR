@@ -76,6 +76,7 @@ namespace MARAFON
             this.buttonVolunteer.TabIndex = 6;
             this.buttonVolunteer.Text = "Волонтёры";
             this.buttonVolunteer.UseVisualStyleBackColor = false;
+            this.buttonVolunteer.Click += new System.EventHandler(this.buttonVolunteer_Click);
             // 
             // buttonDonateCompany
             // 

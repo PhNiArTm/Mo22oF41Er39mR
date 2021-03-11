@@ -11,15 +11,15 @@ namespace MARAFON
 {
     using System;
     using System.Collections.Generic;
-    
+
     public partial class User
     {
-        public string Email { get; set; }
-        public string Password { get; set; }
-        public string FirstName { get; set; }
-        public string LastName { get; set; }
-        public string RoleId { get; set; }
-    
+        public string Email = null;
+        public string Password = null;
+        public string FirstName = null;
+        public string LastName = null;
+        public string RoleId = null;
+        public string Login = null;
         public virtual Role Role { get; set; }
     }
 }

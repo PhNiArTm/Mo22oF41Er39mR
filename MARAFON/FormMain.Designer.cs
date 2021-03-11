@@ -36,6 +36,7 @@ namespace MARAFON
             this.timerEvent = new System.Windows.Forms.Timer(this.components);
             this.labelEventTime = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.buttonLogin = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // buttonRunner
@@ -46,12 +47,13 @@ namespace MARAFON
             this.buttonRunner.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonRunner.Font = new System.Drawing.Font("Consolas", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.buttonRunner.Location = new System.Drawing.Point(21, 49);
-            this.buttonRunner.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.buttonRunner.Margin = new System.Windows.Forms.Padding(2);
             this.buttonRunner.Name = "buttonRunner";
-            this.buttonRunner.Size = new System.Drawing.Size(374, 57);
+            this.buttonRunner.Size = new System.Drawing.Size(499, 70);
             this.buttonRunner.TabIndex = 0;
             this.buttonRunner.Text = "Я хочу стать бегуном";
             this.buttonRunner.UseVisualStyleBackColor = false;
+            this.buttonRunner.Click += new System.EventHandler(this.buttonRunner_Click);
             // 
             // buttonSponsore
             // 
@@ -60,10 +62,14 @@ namespace MARAFON
             this.buttonSponsore.FlatAppearance.BorderSize = 2;
             this.buttonSponsore.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonSponsore.Font = new System.Drawing.Font("Consolas", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.buttonSponsore.Location = new System.Drawing.Point(38, 147);
+            this.buttonSponsore.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+
             this.buttonSponsore.Location = new System.Drawing.Point(21, 131);
-            this.buttonSponsore.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.buttonSponsore.Margin = new System.Windows.Forms.Padding(2);
+
             this.buttonSponsore.Name = "buttonSponsore";
-            this.buttonSponsore.Size = new System.Drawing.Size(374, 57);
+            this.buttonSponsore.Size = new System.Drawing.Size(499, 70);
             this.buttonSponsore.TabIndex = 1;
             this.buttonSponsore.Text = "Я хочу стать спонсором бегуна";
             this.buttonSponsore.UseVisualStyleBackColor = false;
@@ -76,53 +82,73 @@ namespace MARAFON
             this.button1.FlatAppearance.BorderSize = 2;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Consolas", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+
+            this.button1.Location = new System.Drawing.Point(38, 244);
+            this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+
             this.button1.Location = new System.Drawing.Point(21, 210);
-            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button1.Margin = new System.Windows.Forms.Padding(2);
+
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(374, 57);
+            this.button1.Size = new System.Drawing.Size(499, 70);
             this.button1.TabIndex = 2;
             this.button1.Text = "Я хочу узнать о событии";
             this.button1.UseVisualStyleBackColor = false;
             // 
             // timerEvent
             // 
+            this.timerEvent.Enabled = true;
+            this.timerEvent.Interval = 1000;
             this.timerEvent.Tick += new System.EventHandler(this.timerEvent_Tick);
             // 
             // labelEventTime
             // 
             this.labelEventTime.AutoSize = true;
             this.labelEventTime.Font = new System.Drawing.Font("Consolas", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.labelEventTime.Location = new System.Drawing.Point(25, 301);
-            this.labelEventTime.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelEventTime.Location = new System.Drawing.Point(33, 370);
             this.labelEventTime.Name = "labelEventTime";
-            this.labelEventTime.Size = new System.Drawing.Size(0, 22);
+            this.labelEventTime.Size = new System.Drawing.Size(0, 28);
             this.labelEventTime.TabIndex = 3;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label1.Location = new System.Drawing.Point(117, 283);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Location = new System.Drawing.Point(70, 349);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(189, 19);
+            this.label1.Size = new System.Drawing.Size(230, 23);
             this.label1.TabIndex = 4;
             this.label1.Text = "До события осталось:";
             // 
+            // buttonLogin
+            // 
+            this.buttonLogin.Location = new System.Drawing.Point(451, 337);
+            this.buttonLogin.Name = "buttonLogin";
+            this.buttonLogin.Size = new System.Drawing.Size(75, 35);
+            this.buttonLogin.TabIndex = 5;
+            this.buttonLogin.Text = "Login";
+            this.buttonLogin.UseVisualStyleBackColor = true;
+            this.buttonLogin.Click += new System.EventHandler(this.buttonLogin_Click);
+            // 
             // FormMain
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.ClientSize = new System.Drawing.Size(428, 379);
+            this.ClientSize = new System.Drawing.Size(571, 466);
+            this.Controls.Add(this.buttonLogin);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.labelEventTime);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.buttonSponsore);
             this.Controls.Add(this.buttonRunner);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+
+            this.Margin = new System.Windows.Forms.Padding(2);
+
             this.Name = "FormMain";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Главное меню";
@@ -140,6 +166,7 @@ namespace MARAFON
         private System.Windows.Forms.Timer timerEvent;
         private System.Windows.Forms.Label labelEventTime;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button buttonLogin;
     }
 }
 

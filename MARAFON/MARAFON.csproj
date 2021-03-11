@@ -76,6 +76,12 @@
     <Compile Include="FormConfirmDonate.Designer.cs">
       <DependentUpon>FormConfirmDonate.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormCoordinator.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCoordinator.Designer.cs">
+      <DependentUpon>FormCoordinator.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormDetailInfo.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -94,20 +100,26 @@
     <Compile Include="FormMenuAdmin.Designer.cs">
       <DependentUpon>FormMenuAdmin.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormRegistrationConfirmation.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FormRegistrationConfirmation.Designer.cs">
-      <DependentUpon>FormRegistrationConfirmation.cs</DependentUpon>
-    </Compile>
     <Compile Include="FormSponsoreRunner.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FormSponsoreRunner.Designer.cs">
       <DependentUpon>FormSponsoreRunner.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormVolunteers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormVolunteers.Designer.cs">
+      <DependentUpon>FormVolunteers.cs</DependentUpon>
+    </Compile>
     <Compile Include="Gender.cs">
       <DependentUpon>Model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="LoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginForm.Designer.cs">
+      <DependentUpon>LoginForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Marathon.cs">
       <DependentUpon>Model.tt</DependentUpon>
@@ -159,6 +171,9 @@
     <EmbeddedResource Include="FormConfirmDonate.resx">
       <DependentUpon>FormConfirmDonate.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormCoordinator.resx">
+      <DependentUpon>FormCoordinator.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormDetailInfo.resx">
       <DependentUpon>FormDetailInfo.cs</DependentUpon>
     </EmbeddedResource>
@@ -167,9 +182,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormMenuAdmin.resx">
       <DependentUpon>FormMenuAdmin.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FormRegistrationConfirmation.resx">
-      <DependentUpon>FormRegistrationConfirmation.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormSponsoreRunner.resx">
       <DependentUpon>FormSponsoreRunner.cs</DependentUpon>
