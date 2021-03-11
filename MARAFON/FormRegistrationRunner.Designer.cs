@@ -29,17 +29,20 @@ namespace MARAFON
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.buttonBack = new System.Windows.Forms.Button();
             this.labelNameTag = new System.Windows.Forms.Label();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.comboBoxCountry = new System.Windows.Forms.ComboBox();
             this.labelCountry = new System.Windows.Forms.Label();
             this.labelDateBirthday = new System.Windows.Forms.Label();
             this.buttonPhotoReview = new System.Windows.Forms.Button();
             this.textBoxPhotoPath = new System.Windows.Forms.TextBox();
-            this.labelPhotoPath = new System.Windows.Forms.Label();
             this.textBoxSurname = new System.Windows.Forms.TextBox();
             this.textBoxName = new System.Windows.Forms.TextBox();
             this.textBoxPassword = new System.Windows.Forms.TextBox();
@@ -58,8 +61,8 @@ namespace MARAFON
             this.comboBoxGender = new System.Windows.Forms.ComboBox();
             this.dateTimePickerBirthday = new System.Windows.Forms.DateTimePicker();
             this.pictureBoxPhoto = new System.Windows.Forms.PictureBox();
-            this.labelTimer = new System.Windows.Forms.Label();
-            this.listViewVolonters = new System.Windows.Forms.ListView();
+            this.labelEventTime = new System.Windows.Forms.Label();
+            this.timer = new System.Windows.Forms.Timer(this.components);
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
@@ -72,7 +75,7 @@ namespace MARAFON
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel2, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel3, 0, 1);
-            this.tableLayoutPanel1.Controls.Add(this.labelTimer, 0, 2);
+            this.tableLayoutPanel1.Controls.Add(this.labelEventTime, 0, 2);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
@@ -137,12 +140,14 @@ namespace MARAFON
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 28.17109F));
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 22.86136F));
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 24.48378F));
-            this.tableLayoutPanel3.Controls.Add(this.comboBoxCountry, 2, 7);
+            this.tableLayoutPanel3.Controls.Add(this.label10, 2, 4);
+            this.tableLayoutPanel3.Controls.Add(this.label2, 2, 3);
+            this.tableLayoutPanel3.Controls.Add(this.label1, 2, 2);
+            this.tableLayoutPanel3.Controls.Add(this.comboBoxCountry, 3, 7);
             this.tableLayoutPanel3.Controls.Add(this.labelCountry, 2, 7);
             this.tableLayoutPanel3.Controls.Add(this.labelDateBirthday, 2, 6);
             this.tableLayoutPanel3.Controls.Add(this.buttonPhotoReview, 3, 5);
             this.tableLayoutPanel3.Controls.Add(this.textBoxPhotoPath, 2, 5);
-            this.tableLayoutPanel3.Controls.Add(this.labelPhotoPath, 2, 4);
             this.tableLayoutPanel3.Controls.Add(this.textBoxSurname, 1, 6);
             this.tableLayoutPanel3.Controls.Add(this.textBoxName, 1, 5);
             this.tableLayoutPanel3.Controls.Add(this.textBoxPassword, 1, 3);
@@ -161,7 +166,6 @@ namespace MARAFON
             this.tableLayoutPanel3.Controls.Add(this.comboBoxGender, 1, 7);
             this.tableLayoutPanel3.Controls.Add(this.dateTimePickerBirthday, 3, 6);
             this.tableLayoutPanel3.Controls.Add(this.pictureBoxPhoto, 3, 2);
-            this.tableLayoutPanel3.Controls.Add(this.listViewVolonters, 1, 8);
             this.tableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel3.Location = new System.Drawing.Point(0, 67);
             this.tableLayoutPanel3.Margin = new System.Windows.Forms.Padding(0);
@@ -179,6 +183,40 @@ namespace MARAFON
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10.20408F));
             this.tableLayoutPanel3.Size = new System.Drawing.Size(678, 337);
             this.tableLayoutPanel3.TabIndex = 1;
+            // 
+            // label10
+            // 
+            this.label10.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label10.Font = new System.Drawing.Font("Consolas", 9F);
+            this.label10.Location = new System.Drawing.Point(359, 148);
+            this.label10.Margin = new System.Windows.Forms.Padding(2);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(150, 30);
+            this.label10.TabIndex = 26;
+            this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // label2
+            // 
+            this.label2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label2.Font = new System.Drawing.Font("Consolas", 9F);
+            this.label2.Location = new System.Drawing.Point(359, 114);
+            this.label2.Margin = new System.Windows.Forms.Padding(2);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(150, 30);
+            this.label2.TabIndex = 25;
+            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.label2.MouseHover += new System.EventHandler(this.label2_MouseHover);
+            // 
+            // label1
+            // 
+            this.label1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label1.Font = new System.Drawing.Font("Consolas", 9F);
+            this.label1.Location = new System.Drawing.Point(359, 80);
+            this.label1.Margin = new System.Windows.Forms.Padding(2);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(150, 30);
+            this.label1.TabIndex = 24;
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // comboBoxCountry
             // 
@@ -240,18 +278,6 @@ namespace MARAFON
             this.textBoxPhotoPath.Size = new System.Drawing.Size(139, 25);
             this.textBoxPhotoPath.TabIndex = 17;
             // 
-            // labelPhotoPath
-            // 
-            this.labelPhotoPath.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.labelPhotoPath.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.labelPhotoPath.Location = new System.Drawing.Point(383, 148);
-            this.labelPhotoPath.Margin = new System.Windows.Forms.Padding(26, 2, 2, 2);
-            this.labelPhotoPath.Name = "labelPhotoPath";
-            this.labelPhotoPath.Size = new System.Drawing.Size(126, 30);
-            this.labelPhotoPath.TabIndex = 16;
-            this.labelPhotoPath.Text = "Фото файл:";
-            this.labelPhotoPath.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
-            // 
             // textBoxSurname
             // 
             this.textBoxSurname.Dock = System.Windows.Forms.DockStyle.Left;
@@ -279,8 +305,11 @@ namespace MARAFON
             this.textBoxPassword.Location = new System.Drawing.Point(167, 115);
             this.textBoxPassword.Margin = new System.Windows.Forms.Padding(0, 3, 0, 0);
             this.textBoxPassword.Name = "textBoxPassword";
+            this.textBoxPassword.PasswordChar = '*';
             this.textBoxPassword.Size = new System.Drawing.Size(155, 25);
             this.textBoxPassword.TabIndex = 12;
+            this.textBoxPassword.Enter += new System.EventHandler(this.textBoxPassword_Enter);
+            this.textBoxPassword.Leave += new System.EventHandler(this.textBoxPassword_Leave);
             // 
             // textBoxRepeatPassword
             // 
@@ -289,8 +318,10 @@ namespace MARAFON
             this.textBoxRepeatPassword.Location = new System.Drawing.Point(167, 149);
             this.textBoxRepeatPassword.Margin = new System.Windows.Forms.Padding(0, 3, 0, 0);
             this.textBoxRepeatPassword.Name = "textBoxRepeatPassword";
+            this.textBoxRepeatPassword.PasswordChar = '*';
             this.textBoxRepeatPassword.Size = new System.Drawing.Size(155, 25);
             this.textBoxRepeatPassword.TabIndex = 11;
+            this.textBoxRepeatPassword.Leave += new System.EventHandler(this.textBoxRepeatPassword_Leave);
             // 
             // buttonCancel
             // 
@@ -433,6 +464,7 @@ namespace MARAFON
             this.textBoxEmail.Name = "textBoxEmail";
             this.textBoxEmail.Size = new System.Drawing.Size(190, 25);
             this.textBoxEmail.TabIndex = 10;
+            this.textBoxEmail.Leave += new System.EventHandler(this.textBoxEmail_Leave);
             // 
             // comboBoxGender
             // 
@@ -469,26 +501,24 @@ namespace MARAFON
             this.pictureBoxPhoto.TabIndex = 19;
             this.pictureBoxPhoto.TabStop = false;
             // 
-            // labelTimer
+            // labelEventTime
             // 
-            this.labelTimer.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.labelTimer.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.labelTimer.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.labelTimer.Location = new System.Drawing.Point(0, 404);
-            this.labelTimer.Margin = new System.Windows.Forms.Padding(0);
-            this.labelTimer.Name = "labelTimer";
-            this.labelTimer.Size = new System.Drawing.Size(678, 46);
-            this.labelTimer.TabIndex = 2;
-            this.labelTimer.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.labelEventTime.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.labelEventTime.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.labelEventTime.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelEventTime.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.labelEventTime.Location = new System.Drawing.Point(0, 404);
+            this.labelEventTime.Margin = new System.Windows.Forms.Padding(0);
+            this.labelEventTime.Name = "labelEventTime";
+            this.labelEventTime.Size = new System.Drawing.Size(678, 46);
+            this.labelEventTime.TabIndex = 2;
+            this.labelEventTime.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // listViewVolonters
+            // timer
             // 
-            this.listViewVolonters.HideSelection = false;
-            this.listViewVolonters.Location = new System.Drawing.Point(170, 285);
-            this.listViewVolonters.Name = "listViewVolonters";
-            this.listViewVolonters.Size = new System.Drawing.Size(121, 11);
-            this.listViewVolonters.TabIndex = 24;
-            this.listViewVolonters.UseCompatibleStateImageBehavior = false;
+            this.timer.Enabled = true;
+            this.timer.Interval = 1000;
+            this.timer.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // FormRegistrationRunner
             // 
@@ -526,7 +556,6 @@ namespace MARAFON
         private System.Windows.Forms.Label labelDateBirthday;
         private System.Windows.Forms.Button buttonPhotoReview;
         private System.Windows.Forms.TextBox textBoxPhotoPath;
-        private System.Windows.Forms.Label labelPhotoPath;
         private System.Windows.Forms.TextBox textBoxSurname;
         private System.Windows.Forms.TextBox textBoxName;
         private System.Windows.Forms.TextBox textBoxPassword;
@@ -545,7 +574,10 @@ namespace MARAFON
         private System.Windows.Forms.ComboBox comboBoxGender;
         private System.Windows.Forms.PictureBox pictureBoxPhoto;
         private System.Windows.Forms.DateTimePicker dateTimePickerBirthday;
-        private System.Windows.Forms.Label labelTimer;
-        private System.Windows.Forms.ListView listViewVolonters;
+        private System.Windows.Forms.Label labelEventTime;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Timer timer;
     }
 }

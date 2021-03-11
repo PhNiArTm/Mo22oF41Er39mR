@@ -100,11 +100,23 @@
     <Compile Include="FormMenuAdmin.Designer.cs">
       <DependentUpon>FormMenuAdmin.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormPint.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPint.Designer.cs">
+      <DependentUpon>FormPint.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormRegisterAsARunner.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FormRegisterAsARunner.Designer.cs">
       <DependentUpon>FormRegisterAsARunner.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormRegistrationOnMarafon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormRegistrationOnMarafon.Designer.cs">
+      <DependentUpon>FormRegistrationOnMarafon.cs</DependentUpon>
     </Compile>
     <Compile Include="FormRegistrationRunner.cs">
       <SubType>Form</SubType>
@@ -189,8 +201,14 @@
     <EmbeddedResource Include="FormMenuAdmin.resx">
       <DependentUpon>FormMenuAdmin.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormPint.resx">
+      <DependentUpon>FormPint.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormRegisterAsARunner.resx">
       <DependentUpon>FormRegisterAsARunner.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormRegistrationOnMarafon.resx">
+      <DependentUpon>FormRegistrationOnMarafon.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormRegistrationRunner.resx">
       <DependentUpon>FormRegistrationRunner.cs</DependentUpon>

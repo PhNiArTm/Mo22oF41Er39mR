@@ -13,7 +13,7 @@ namespace MARAFON
     public partial class FormRegisterAsARunner : Form
     {
         DateTime voteTime = new DateTime(2021, 04, 24, 6, 0, 0);
-        FormMain formMain = new FormMain();
+        private bool checkCancelButton = false;
         public FormRegisterAsARunner()
         {
             InitializeComponent();
@@ -25,29 +25,29 @@ namespace MARAFON
         }
         private void buttonBack_Click(object sender, EventArgs e)
         {
-            this.Close();
+            checkCancelButton = true;
             Program.formMain.Show();
+            this.Close();
         }
         private void FormRegisterAsARunner_FormClosed(object sender, FormClosedEventArgs e)
         {
-            Program.formMain.Show();
+            if (!checkCancelButton)
+            {
+                Application.Exit();
+            }
         }
         private void buttonOldUser_Click(object sender, EventArgs e)
         {
+            checkCancelButton = true;
             FormLogin loginForm = new FormLogin();
             loginForm.Show();
             this.Close();
         }
         private void buttonNewUser_Click(object sender, EventArgs e)
         {
+            checkCancelButton = true;
             FormRegistrationRunner formRegistrationRunner = new FormRegistrationRunner();
             formRegistrationRunner.Show();
-            this.Close();
-        }
-        private void buttonLogin_Click(object sender, EventArgs e)
-        {
-            FormLogin loginForm = new FormLogin();
-            loginForm.Show();
             this.Close();
         }
     }

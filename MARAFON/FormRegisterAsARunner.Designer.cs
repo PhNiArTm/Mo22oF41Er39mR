@@ -36,7 +36,6 @@ namespace MARAFON
             this.buttonBack = new System.Windows.Forms.Button();
             this.tableLayoutPanelAll = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanelCenter = new System.Windows.Forms.TableLayoutPanel();
-            this.buttonLogin = new System.Windows.Forms.Button();
             this.buttonNewUser = new System.Windows.Forms.Button();
             this.buttonOldUser = new System.Windows.Forms.Button();
             this.timer = new System.Windows.Forms.Timer(this.components);
@@ -126,35 +125,18 @@ namespace MARAFON
             // 
             this.tableLayoutPanelCenter.ColumnCount = 1;
             this.tableLayoutPanelCenter.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanelCenter.Controls.Add(this.buttonLogin, 0, 2);
             this.tableLayoutPanelCenter.Controls.Add(this.buttonNewUser, 0, 1);
             this.tableLayoutPanelCenter.Controls.Add(this.buttonOldUser, 0, 0);
             this.tableLayoutPanelCenter.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanelCenter.Location = new System.Drawing.Point(0, 67);
             this.tableLayoutPanelCenter.Margin = new System.Windows.Forms.Padding(0);
             this.tableLayoutPanelCenter.Name = "tableLayoutPanelCenter";
-            this.tableLayoutPanelCenter.RowCount = 3;
-            this.tableLayoutPanelCenter.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 42.5F));
-            this.tableLayoutPanelCenter.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 42.5F));
-            this.tableLayoutPanelCenter.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 15F));
+            this.tableLayoutPanelCenter.RowCount = 2;
+            this.tableLayoutPanelCenter.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanelCenter.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanelCenter.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanelCenter.Size = new System.Drawing.Size(678, 337);
             this.tableLayoutPanelCenter.TabIndex = 2;
-            // 
-            // buttonLogin
-            // 
-            this.buttonLogin.BackColor = System.Drawing.Color.Silver;
-            this.buttonLogin.Dock = System.Windows.Forms.DockStyle.Right;
-            this.buttonLogin.FlatAppearance.BorderColor = System.Drawing.Color.Gray;
-            this.buttonLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonLogin.Location = new System.Drawing.Point(593, 296);
-            this.buttonLogin.Margin = new System.Windows.Forms.Padding(10);
-            this.buttonLogin.Name = "buttonLogin";
-            this.buttonLogin.Size = new System.Drawing.Size(75, 31);
-            this.buttonLogin.TabIndex = 3;
-            this.buttonLogin.TabStop = false;
-            this.buttonLogin.Text = "Login";
-            this.buttonLogin.UseVisualStyleBackColor = false;
-            this.buttonLogin.Click += new System.EventHandler(this.buttonLogin_Click);
             // 
             // buttonNewUser
             // 
@@ -162,11 +144,11 @@ namespace MARAFON
             this.buttonNewUser.Dock = System.Windows.Forms.DockStyle.Top;
             this.buttonNewUser.FlatAppearance.BorderColor = System.Drawing.Color.Gray;
             this.buttonNewUser.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonNewUser.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.buttonNewUser.Location = new System.Drawing.Point(175, 153);
+            this.buttonNewUser.Font = new System.Drawing.Font("Consolas", 16.75F);
+            this.buttonNewUser.Location = new System.Drawing.Point(175, 178);
             this.buttonNewUser.Margin = new System.Windows.Forms.Padding(175, 10, 175, 10);
             this.buttonNewUser.Name = "buttonNewUser";
-            this.buttonNewUser.Size = new System.Drawing.Size(328, 55);
+            this.buttonNewUser.Size = new System.Drawing.Size(328, 65);
             this.buttonNewUser.TabIndex = 2;
             this.buttonNewUser.TabStop = false;
             this.buttonNewUser.Text = "Я новый участник";
@@ -179,11 +161,11 @@ namespace MARAFON
             this.buttonOldUser.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.buttonOldUser.FlatAppearance.BorderColor = System.Drawing.Color.Gray;
             this.buttonOldUser.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonOldUser.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.buttonOldUser.Location = new System.Drawing.Point(175, 78);
+            this.buttonOldUser.Font = new System.Drawing.Font("Consolas", 16.75F);
+            this.buttonOldUser.Location = new System.Drawing.Point(175, 93);
             this.buttonOldUser.Margin = new System.Windows.Forms.Padding(175, 10, 175, 10);
             this.buttonOldUser.Name = "buttonOldUser";
-            this.buttonOldUser.Size = new System.Drawing.Size(328, 55);
+            this.buttonOldUser.Size = new System.Drawing.Size(328, 65);
             this.buttonOldUser.TabIndex = 1;
             this.buttonOldUser.TabStop = false;
             this.buttonOldUser.Text = "Я участвовал ранее";
@@ -226,7 +208,6 @@ namespace MARAFON
         private System.Windows.Forms.Button buttonBack;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanelAll;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanelCenter;
-        private System.Windows.Forms.Button buttonLogin;
         private System.Windows.Forms.Button buttonNewUser;
         private System.Windows.Forms.Button buttonOldUser;
         private System.Windows.Forms.Timer timer;
