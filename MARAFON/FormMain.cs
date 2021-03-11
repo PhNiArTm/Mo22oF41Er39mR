@@ -44,9 +44,9 @@ namespace MARAFON
         }
         private void buttonRunner_Click(object sender, EventArgs e)
         {
-            FormRegisterAsARunner formRegisterAsARunner = new FormRegisterAsARunner();
-            this.Hide();
-            formRegisterAsARunner.Show();
+            //FormRegisterAsARunner formRegisterAsARunner = new FormRegisterAsARunner();
+            //this.Hide();
+            //formRegisterAsARunner.Show();
         }
     }
 }

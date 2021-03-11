@@ -36,15 +36,15 @@ namespace MARAFON
             this.labelDowload = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.listViewVolonters = new System.Windows.Forms.ListView();
+            this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.button4 = new System.Windows.Forms.Button();
             this.labelManagingМolunteers = new System.Windows.Forms.Label();
             this.labelKolvoVolonterov = new System.Windows.Forms.Label();
             this.labelSearchPo = new System.Windows.Forms.Label();
             this.comboBoxSort = new System.Windows.Forms.ComboBox();
-            this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.labelNumberOfVolunteers = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
@@ -120,6 +120,26 @@ namespace MARAFON
             this.listViewVolonters.UseCompatibleStateImageBehavior = false;
             this.listViewVolonters.View = System.Windows.Forms.View.Details;
             // 
+            // columnHeader1
+            // 
+            this.columnHeader1.Text = "Имя";
+            this.columnHeader1.Width = 124;
+            // 
+            // columnHeader2
+            // 
+            this.columnHeader2.Text = "Фамилия";
+            this.columnHeader2.Width = 120;
+            // 
+            // columnHeader3
+            // 
+            this.columnHeader3.Text = "Страна";
+            this.columnHeader3.Width = 106;
+            // 
+            // columnHeader4
+            // 
+            this.columnHeader4.Text = "Пол";
+            this.columnHeader4.Width = 115;
+            // 
             // button4
             // 
             this.button4.Location = new System.Drawing.Point(398, 90);
@@ -160,34 +180,14 @@ namespace MARAFON
             // 
             this.comboBoxSort.FormattingEnabled = true;
             this.comboBoxSort.Items.AddRange(new object[] {
-            "Фамилия",
             "Имя",
+            "Фамилия",
             "Страна",
             "Пол"});
             this.comboBoxSort.Location = new System.Drawing.Point(105, 90);
             this.comboBoxSort.Name = "comboBoxSort";
             this.comboBoxSort.Size = new System.Drawing.Size(137, 21);
             this.comboBoxSort.TabIndex = 7;
-            // 
-            // columnHeader1
-            // 
-            this.columnHeader1.Text = "Имя";
-            this.columnHeader1.Width = 124;
-            // 
-            // columnHeader2
-            // 
-            this.columnHeader2.Text = "Фамилия";
-            this.columnHeader2.Width = 120;
-            // 
-            // columnHeader3
-            // 
-            this.columnHeader3.Text = "Страна";
-            this.columnHeader3.Width = 106;
-            // 
-            // columnHeader4
-            // 
-            this.columnHeader4.Text = "Пол";
-            this.columnHeader4.Width = 115;
             // 
             // labelNumberOfVolunteers
             // 
