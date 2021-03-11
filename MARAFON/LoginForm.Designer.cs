@@ -39,6 +39,7 @@ namespace MARAFON
             this.labelEmail = new System.Windows.Forms.Label();
             this.labelPassword = new System.Windows.Forms.Label();
             this.labelMarathonSkills2016 = new System.Windows.Forms.Label();
+            this.entityCommand1 = new System.Data.Entity.Core.EntityClient.EntityCommand();
             this.SuspendLayout();
             // 
             // textBoxEmail
@@ -131,6 +132,14 @@ namespace MARAFON
             this.labelMarathonSkills2016.TabIndex = 9;
             this.labelMarathonSkills2016.Text = "MARATHON SKILLS 2016";
             // 
+            // entityCommand1
+            // 
+            this.entityCommand1.CommandTimeout = 0;
+            this.entityCommand1.CommandTree = null;
+            this.entityCommand1.Connection = null;
+            this.entityCommand1.EnablePlanCaching = true;
+            this.entityCommand1.Transaction = null;
+            // 
             // FormLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -167,5 +176,6 @@ namespace MARAFON
         private System.Windows.Forms.Label labelEmail;
         private System.Windows.Forms.Label labelPassword;
         private System.Windows.Forms.Label labelMarathonSkills2016;
+        private System.Data.Entity.Core.EntityClient.EntityCommand entityCommand1;
     }
 }

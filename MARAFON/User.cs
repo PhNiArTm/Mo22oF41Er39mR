@@ -19,7 +19,6 @@ namespace MARAFON
         public string FirstName = null;
         public string LastName = null;
         public string RoleId = null;
-        public string Login = null;
-        public virtual Role Role { get; set; }
+        public string Role = null;
     }
 }

@@ -204,6 +204,9 @@
     <EmbeddedResource Include="FormSponsoreRunner.resx">
       <DependentUpon>FormSponsoreRunner.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormVolunteers.resx">
+      <DependentUpon>FormVolunteers.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="LoginForm.resx">
       <DependentUpon>LoginForm.cs</DependentUpon>
     </EmbeddedResource>

@@ -14,6 +14,8 @@ namespace MARAFON
 {
     public partial class FormLogin : Form
     {
+        private bool checkCancelButton = false;
+
         public FormLogin()
         {
             InitializeComponent();
@@ -28,7 +30,7 @@ namespace MARAFON
                     if (Regex.IsMatch(textBoxEmail.Text, @"^([\w\.\-]+)@([\w\-]+)((\.(\w){2,3})+)$"))
                     {
                         Program.connection.Open();
-                        string sql = String.Format("SELECT Email, Password FROM User WHERE Email='{0}' AND Password='{1}'", textBoxEmail.Text, textBoxPassword.Text);
+                        string sql = String.Format("SELECT * FROM User WHERE Email='{0}' AND Password='{1}'", textBoxEmail.Text, textBoxPassword.Text);
                         //Строка для тестирования авторизации
                         //string sql = "SELECT Email, Password FROM User WHERE Email='a.adkin@dayrep.net' AND Password='jwZh2x@p'";
                         MySqlCommand sqlCommand = new MySqlCommand(sql, Program.connection);
@@ -37,9 +39,19 @@ namespace MARAFON
                         Program.sqlDataReader.Read();
                         Program.userInfo.Email = Program.sqlDataReader.GetString("Email");
                         Program.userInfo.Password = Program.sqlDataReader.GetString("Password");
+                        Program.userInfo.RoleId = Program.sqlDataReader.GetString("RoleId");
                         Program.connection.Close();
                         Program.sqlDataReader.Close();
                         MessageBox.Show("Вы авторизовались!", "Закрыть", MessageBoxButtons.OKCancel, MessageBoxIcon.Information);
+
+                        switch (Program.userInfo.RoleId)
+                        {
+                            case "R":
+                                FormMenuAdmin formMenuAdmin = new FormMenuAdmin();
+                                formMenuAdmin.Show();
+                                break;
+                        }
+                        this.Close();
                     }
                     else
                     {
@@ -59,17 +71,24 @@ namespace MARAFON
 
         private void buttonCancel_Click(object sender, EventArgs e)
         {
+            this.checkCancelButton = true;
+            Program.formMain.Show();
             this.Close();
         }
 
         private void buttonMainCancel_Click(object sender, EventArgs e)
         {
+            this.checkCancelButton = true;
+            Program.formMain.Show();
             this.Close();
         }
 
         private void FormLogin_FormClosed(object sender, FormClosedEventArgs e)
         {
-            Program.formMain.Show();
+            if (!this.checkCancelButton)
+            {
+                Application.Exit();
+            }
         }
     }
 }

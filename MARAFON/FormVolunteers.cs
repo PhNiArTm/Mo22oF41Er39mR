@@ -18,6 +18,7 @@ namespace MARAFON
         public MySqlCommand mycom;
         public string connect = "server=" + "141.8.192.26;" + "user=a0521760_users;" + "database=a0521760_practicke;" + "password=PR02022002";
         public SD.DataSet ds;
+        private bool checkCancelButton = false;
 
         public FormVolunteers()
         {
@@ -87,6 +88,20 @@ namespace MARAFON
                 
             }
         }
-        
+
+        private void FormVolunteers_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            if (!this.checkCancelButton)
+            {
+                Application.Exit();
+            }
+        }
+
+        private void buttonBack_Click(object sender, EventArgs e)
+        {
+            this.checkCancelButton = true;
+            Program.formMain.Show();
+            this.Close();
+        }
     }
 }

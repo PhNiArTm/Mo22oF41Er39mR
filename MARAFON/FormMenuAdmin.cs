@@ -12,6 +12,7 @@ namespace MARAFON
 {
     public partial class FormMenuAdmin : Form
     {
+        private bool checkCancelButton = false;
         public FormMenuAdmin()
         {
             InitializeComponent();
@@ -21,7 +22,23 @@ namespace MARAFON
         {
             FormVolunteers formVolunteers = new FormVolunteers();
             formVolunteers.Show();
-            this.Hide();
+            Program.formMain.Show();
+            this.Close();
+        }
+
+        private void FormMenuAdmin_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            if (!this.checkCancelButton)
+            {
+                Application.Exit();
+            }
+        }
+
+        private void buttonCancel_Click(object sender, EventArgs e)
+        {
+            checkCancelButton = true;
+            Program.formMain.Show();
+            this.Close();
         }
     }
 }
