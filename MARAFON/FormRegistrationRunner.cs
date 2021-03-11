@@ -8,12 +8,15 @@ using System.Linq;
 using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
+using System.Threading;
 using System.Windows.Forms;
 
 namespace MARAFON
 {
     public partial class FormRegistrationRunner : Form
     {
+        DateTime voteTime = new DateTime(2021, 04, 24, 6, 0, 0);
+        private bool checkCancelButton = false;
         MySqlDataAdapter mySqlDataAdapter;
         DataTable dataTable;
         FormMain formMain = new FormMain();
@@ -74,6 +77,7 @@ namespace MARAFON
         }
         private void buttonBack_Click(object sender, EventArgs e)
         {
+            checkCancelButton = true;
             FormRegisterAsARunner formRegisterAsARunner = new FormRegisterAsARunner();
             this.Hide();
             formRegisterAsARunner.Show();
@@ -81,16 +85,21 @@ namespace MARAFON
 
         private void FormRegistrationRunner_FormClosed(object sender, FormClosedEventArgs e)
         {
-            formMain.Show();
+            if (!checkCancelButton)
+            {
+                Application.Exit();
+            }
         }
-
         private void buttonCancel_Click(object sender, EventArgs e)
         {
+            checkCancelButton = true;
             formMain.Show();
             this.Close();
         }
         private void buttonRegistration_Click(object sender, EventArgs e)
         {
+            string countryCode = comboBoxCountry.SelectedItem.ToString();
+            int countryCodeLength = countryCode.Length-3;
             if (CheckForNullOrEmpty()) MessageBox.Show("Заполните все поля!", "Ошибка заполнения", MessageBoxButtons.OK, MessageBoxIcon.Error);
             if (!CheckForCorrectData()) MessageBox.Show("Корректно введите Email!", "Ошибка заполнения", MessageBoxButtons.OK, MessageBoxIcon.Error);
             if (!CheckForPassword()) MessageBox.Show("Введенные пароли не совпадают!", "Ошибка заполнения", MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -98,14 +107,12 @@ namespace MARAFON
             else if(!CheckForNullOrEmpty() && CheckForCorrectData() && CheckForDifficultPassword(textBoxPassword.Text) && CheckForPassword())
             {
                 Program.connection.Open();
-                string countryCode = comboBoxCountry.SelectedItem.ToString();
-                int countryCodeLength = countryCode.Length-3;
                 string InsertUser = $"INSERT INTO `User` (`Email`,`Password`,`FirstName`,`LastName`,`RoleId`) VALUES ('{textBoxEmail.Text}','{textBoxPassword.Text}','{textBoxName.Text.ToUpper()}','{textBoxSurname.Text.ToUpper()}','R')";
                 string InsertRunner = $"INSERT INTO `Runner` (`Email`,`Gender`,`DateOfBirth`,`CountryCode`) VALUES ('{textBoxEmail.Text}','{comboBoxGender.SelectedItem}','{dateTimePickerBirthday.Value}','{countryCode.Remove(0, countryCodeLength)}')";
                 MySqlCommand sqlCommand = new MySqlCommand(InsertUser, Program.connection);
-                MessageBox.Show(sqlCommand.ExecuteNonQuery().ToString());
+                sqlCommand.ExecuteNonQuery().ToString();
                 sqlCommand = new MySqlCommand(InsertRunner, Program.connection);
-                MessageBox.Show(sqlCommand.ExecuteNonQuery().ToString());
+                sqlCommand.ExecuteNonQuery().ToString();
                 string SelectUser = $"SELECT Email, Password, FirstName, LastName, RoleId FROM User WHERE Email='{textBoxEmail.Text}'";
                 sqlCommand = new MySqlCommand(SelectUser, Program.connection);
                 Program.sqlDataReader = sqlCommand.ExecuteReader();
@@ -122,10 +129,8 @@ namespace MARAFON
         }
         private bool CheckForCorrectData()
         {
-            //мне конкретно поебать на эту константу взятую из инета. мой регекс нихуя не работает!
-            string pattern = @"^(?("")(""[^""]+?""@)|(([0-9a-z]((\.(?!\.))|[-!#\$%&'\*\+/=\?\^`\{\}\|~\w])*)(?<=[0-9a-z])@))" +
-                @"(?(\[)(\[(\d{1,3}\.){3}\d{1,3}\])|(([0-9a-z][-\w]*[0-9a-z]*\.)+[a-z0-9]{2,17}))$"; ;
-            return (Regex.IsMatch(textBoxEmail.Text, pattern));
+            string pattern = @"(@)(.+)$"; ;
+            return Regex.IsMatch(textBoxEmail.Text, pattern);
         }
         private bool CheckForDifficultPassword(string password)
         {
@@ -138,6 +143,47 @@ namespace MARAFON
         private bool CheckForNullOrEmpty()
         {
             return (String.IsNullOrEmpty(textBoxEmail.Text) || String.IsNullOrEmpty(textBoxName.Text) || String.IsNullOrEmpty(textBoxRepeatPassword.Text) || String.IsNullOrEmpty(textBoxPassword.Text) || String.IsNullOrEmpty(textBoxSurname.Text) || comboBoxCountry.SelectedItem.ToString() == "");
+        }
+        private void textBoxPassword_Leave(object sender, EventArgs e)
+        {
+            label2.Text = Regex.IsMatch(textBoxPassword.Text, @"([A-Z])") && Regex.IsMatch(textBoxPassword.Text, @"(\d+)") && (textBoxPassword.Text.Length >= 6 && textBoxPassword.Text.Length <= 100) && Regex.IsMatch(textBoxPassword.Text, @"[!@#$%^]+") ? "" : "Пароль простой";
+        }
+        private void textBoxRepeatPassword_Leave(object sender, EventArgs e)
+        {
+            label10.Text = textBoxPassword.Text == textBoxRepeatPassword.Text ? "" : "Пароли не совпадают";
+        }
+
+        public static int locX = 0;
+        public static int locY = 0;
+        private void label2_MouseHover(object sender, EventArgs e)
+        {
+            locX = Cursor.Position.X - 40;
+            locY = Cursor.Position.Y - 40;
+            if (!String.IsNullOrEmpty(label2.Text))
+            {
+                FormPint formPint = new FormPint();
+                formPint.Show();
+            }
+        }
+        private void textBoxPassword_Enter(object sender, EventArgs e)
+        {
+            label2.Text = null;
+        }
+
+        private void textBoxEmail_Leave(object sender, EventArgs e)
+        {
+            Program.connection.Open();
+            string checkSelectEmail = $@"SELECT Email FROM User WHERE Email='{textBoxEmail.Text}'";
+            MySqlCommand sqlCommand = new MySqlCommand(checkSelectEmail, Program.connection);
+            Program.sqlDataReader = sqlCommand.ExecuteReader();
+            label1.Text = Program.sqlDataReader.HasRows == true ? "Email занят!" : "";
+            Program.connection.Close();
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            TimeSpan TimeRemaining = voteTime - DateTime.Now;
+            labelEventTime.Text = TimeRemaining.Days + " дней " + TimeRemaining.Hours + " часов " + TimeRemaining.Minutes + " минут " + TimeRemaining.Seconds + " секунд.";
         }
     }
 }
