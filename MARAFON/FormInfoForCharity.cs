@@ -23,5 +23,10 @@ namespace MARAFON
         {
             this.Close();
         }
+
+        private void FormInfoForCharity_KeyDown(object sender, KeyEventArgs e)
+        {
+            if(e.KeyValue == (char)Keys.Escape) button1.PerformClick();
+        }
     }
 }

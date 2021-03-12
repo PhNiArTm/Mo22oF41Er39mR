@@ -38,9 +38,9 @@ namespace MARAFON
         private void buttonBack_Click(object sender, EventArgs e)
         {
             checkCancelButton = true;
-            FormRegisterAsARunner formRegisterAsARunner = new FormRegisterAsARunner();
+            FormMenuRunner formMenu = new FormMenuRunner();
             this.Close();
-            formRegisterAsARunner.Show();
+            formMenu.Show();
         }
         private void FormRegistrationOnMarafon_FormClosed(object sender, FormClosedEventArgs e)
         {
@@ -48,13 +48,6 @@ namespace MARAFON
             {
                 Application.Exit();
             }
-        }
-        private void buttonCancel_Click(object sender, EventArgs e)
-        {
-            checkCancelButton = true;
-            FormRegistrationOnMarafon formRegistrationOnMarafon = new FormRegistrationOnMarafon();
-            this.Hide();
-            formRegistrationOnMarafon.Show();
         }
         private void timer1_Tick(object sender, EventArgs e)
         {
@@ -107,17 +100,33 @@ namespace MARAFON
             }
             else if(textBox1.Text == "0")
             {
-                MessageBox.Show("Вы уверены, что хотите пожертвовать 0$?");
+                DialogResult result = MessageBox.Show("Вы уверены, что хотите пожертвовать 0$?", "", MessageBoxButtons.YesNo);
+                if (result == DialogResult.Yes)
+                {
+                    GoToMenu();
+                }
+                else
+                {
+                    return;
+                }
             }
             else
             {
+                GoToMenu();
+            }
+        }
+        void GoToMenu()
+        {
                 Program.connection.Open();
                 MySqlCommand command = new MySqlCommand($"INSERT INTO Registration (RunnerId, RegistrationDateTime, RaceKitOptionId, RegistrationStatusId, Cost, CharityId, SponsorshipTarget) VALUES ({Program.userInfo.RunnerId}, @Time, '{raceKitOption}', \"1\", {sum}, {comboBoxDeposit.SelectedIndex + 1}, {textBox1.Text})", Program.connection);
                 command.Parameters.AddWithValue("@Time", DateTime.UtcNow);
                 command.Prepare();
-                MessageBox.Show(command.ExecuteNonQuery().ToString());
+                command.ExecuteNonQuery();
                 Program.connection.Close();
-            }
+                FormMenuRunner formMenuRunner = new FormMenuRunner();
+                checkCancelButton = true;
+                formMenuRunner.Show();
+                this.Close();
         }
         private void button3_Click(object sender, EventArgs e)
         {
@@ -134,6 +143,14 @@ namespace MARAFON
             Program.connection.Close();
             FormInfoForCharity formInfoForCharity = new FormInfoForCharity();
             formInfoForCharity.Show();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            checkCancelButton = true;
+            FormMenuRunner formMenu = new FormMenuRunner();
+            this.Close();
+            formMenu.Show();
         }
     }
 }

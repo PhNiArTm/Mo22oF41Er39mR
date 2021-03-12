@@ -10,19 +10,21 @@ using System.Windows.Forms;
 
 namespace MARAFON
 {
-    public partial class FormMenuRunner : Form
+    public partial class FormConfirmROM : Form
     {
         DateTime voteTime = new DateTime(2021, 04, 24, 6, 0, 0);
         bool checkCancelButton = false;
-        public FormMenuRunner()
+        public FormConfirmROM()
         {
             InitializeComponent();
         }
+
         private void timer_Tick(object sender, EventArgs e)
         {
             TimeSpan TimeRemaining = voteTime - DateTime.Now;
             labelEventTime.Text = TimeRemaining.Days + " дней " + TimeRemaining.Hours + " часов " + TimeRemaining.Minutes + " минут " + TimeRemaining.Seconds + " секунд.";
         }
+
         private void button6_Click(object sender, EventArgs e)
         {
             Program.UserInfoClear();
@@ -31,33 +33,28 @@ namespace MARAFON
             this.Close();
         }
 
-        private void buttonBack_Click(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)
         {
+            FormMenuRunner formMenuRunner = new FormMenuRunner();
             checkCancelButton = true;
-            Program.formMain.Show();
+            formMenuRunner.Show();
             this.Close();
         }
 
-        private void FormMenuRunner_FormClosed(object sender, FormClosedEventArgs e)
+        private void buttonBack_Click(object sender, EventArgs e)
+        {
+            FormMenuRunner formMenuRunner = new FormMenuRunner();
+            checkCancelButton = true;
+            formMenuRunner.Show();
+            this.Close();
+        }
+
+        private void FormConfirmROM_FormClosed(object sender, FormClosedEventArgs e)
         {
             if (!checkCancelButton)
             {
                 Application.Exit();
             }
-        }
-        private void button1_Click(object sender, EventArgs e)
-        {
-            checkCancelButton = true;
-            FormRegistrationOnMarafon formRegistrationOnMarafon = new FormRegistrationOnMarafon();
-            formRegistrationOnMarafon.Show();
-            this.Close();
-        }
-        private void button5_Click(object sender, EventArgs e)
-        {
-            checkCancelButton = true;
-            FormEditRunnerProfile formEditRunner = new FormEditRunnerProfile();
-            formEditRunner.Show();
-            this.Close();
         }
     }
 }

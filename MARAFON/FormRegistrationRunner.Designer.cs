@@ -221,6 +221,7 @@ namespace MARAFON
             // comboBoxCountry
             // 
             this.comboBoxCountry.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.comboBoxCountry.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxCountry.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.comboBoxCountry.FormattingEnabled = true;
             this.comboBoxCountry.Location = new System.Drawing.Point(514, 250);
@@ -228,6 +229,7 @@ namespace MARAFON
             this.comboBoxCountry.Name = "comboBoxCountry";
             this.comboBoxCountry.Size = new System.Drawing.Size(154, 26);
             this.comboBoxCountry.TabIndex = 23;
+            this.comboBoxCountry.TabStop = false;
             // 
             // labelCountry
             // 
@@ -277,6 +279,7 @@ namespace MARAFON
             this.textBoxPhotoPath.Name = "textBoxPhotoPath";
             this.textBoxPhotoPath.Size = new System.Drawing.Size(139, 25);
             this.textBoxPhotoPath.TabIndex = 17;
+            this.textBoxPhotoPath.TabStop = false;
             // 
             // textBoxSurname
             // 
@@ -287,6 +290,7 @@ namespace MARAFON
             this.textBoxSurname.Name = "textBoxSurname";
             this.textBoxSurname.Size = new System.Drawing.Size(120, 25);
             this.textBoxSurname.TabIndex = 14;
+            this.textBoxSurname.TabStop = false;
             // 
             // textBoxName
             // 
@@ -297,6 +301,7 @@ namespace MARAFON
             this.textBoxName.Name = "textBoxName";
             this.textBoxName.Size = new System.Drawing.Size(120, 25);
             this.textBoxName.TabIndex = 13;
+            this.textBoxName.TabStop = false;
             // 
             // textBoxPassword
             // 
@@ -308,6 +313,8 @@ namespace MARAFON
             this.textBoxPassword.PasswordChar = '*';
             this.textBoxPassword.Size = new System.Drawing.Size(155, 25);
             this.textBoxPassword.TabIndex = 12;
+            this.textBoxPassword.TabStop = false;
+            this.textBoxPassword.TextChanged += new System.EventHandler(this.textBoxRepeatPassword_TextChanged);
             this.textBoxPassword.Enter += new System.EventHandler(this.textBoxPassword_Enter);
             this.textBoxPassword.Leave += new System.EventHandler(this.textBoxPassword_Leave);
             // 
@@ -321,6 +328,8 @@ namespace MARAFON
             this.textBoxRepeatPassword.PasswordChar = '*';
             this.textBoxRepeatPassword.Size = new System.Drawing.Size(155, 25);
             this.textBoxRepeatPassword.TabIndex = 11;
+            this.textBoxRepeatPassword.TabStop = false;
+            this.textBoxRepeatPassword.TextChanged += new System.EventHandler(this.textBoxRepeatPassword_TextChanged);
             this.textBoxRepeatPassword.Leave += new System.EventHandler(this.textBoxRepeatPassword_Leave);
             // 
             // buttonCancel
@@ -464,10 +473,12 @@ namespace MARAFON
             this.textBoxEmail.Name = "textBoxEmail";
             this.textBoxEmail.Size = new System.Drawing.Size(190, 25);
             this.textBoxEmail.TabIndex = 10;
+            this.textBoxEmail.TabStop = false;
             this.textBoxEmail.Leave += new System.EventHandler(this.textBoxEmail_Leave);
             // 
             // comboBoxGender
             // 
+            this.comboBoxGender.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxGender.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.comboBoxGender.FormattingEnabled = true;
             this.comboBoxGender.Location = new System.Drawing.Point(167, 250);
@@ -475,6 +486,7 @@ namespace MARAFON
             this.comboBoxGender.Name = "comboBoxGender";
             this.comboBoxGender.Size = new System.Drawing.Size(120, 26);
             this.comboBoxGender.TabIndex = 15;
+            this.comboBoxGender.TabStop = false;
             // 
             // dateTimePickerBirthday
             // 
@@ -487,6 +499,7 @@ namespace MARAFON
             this.dateTimePickerBirthday.Name = "dateTimePickerBirthday";
             this.dateTimePickerBirthday.Size = new System.Drawing.Size(154, 25);
             this.dateTimePickerBirthday.TabIndex = 21;
+            this.dateTimePickerBirthday.TabStop = false;
             this.dateTimePickerBirthday.Value = new System.DateTime(2000, 1, 1, 0, 0, 0, 0);
             // 
             // pictureBoxPhoto
@@ -527,6 +540,7 @@ namespace MARAFON
             this.Controls.Add(this.tableLayoutPanel1);
             this.Font = new System.Drawing.Font("Consolas", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.KeyPreview = true;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "FormRegistrationRunner";
@@ -534,6 +548,7 @@ namespace MARAFON
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormRegistrationRunner";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FormRegistrationRunner_FormClosed);
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.FormRegistrationRunner_KeyDown);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel2.ResumeLayout(false);
             this.tableLayoutPanel2.PerformLayout();
@@ -570,7 +585,6 @@ namespace MARAFON
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label labelRegistration;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBoxEmail;
         private System.Windows.Forms.ComboBox comboBoxGender;
         private System.Windows.Forms.PictureBox pictureBoxPhoto;
         private System.Windows.Forms.DateTimePicker dateTimePickerBirthday;
@@ -579,5 +593,6 @@ namespace MARAFON
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Timer timer;
+        private System.Windows.Forms.TextBox textBoxEmail;
     }
 }

@@ -115,11 +115,18 @@ namespace MARAFON
                 Program.userInfo.LastName = Program.sqlDataReader.GetString("LastName");
                 Program.userInfo.RoleId = Program.sqlDataReader.GetString("RoleId");
                 Program.sqlDataReader.Close();
-                string SelectRunner = $"SELECT RunnerId FROM Runner WHERE Email='{textBoxEmail.Text}'";
+                string SelectRunner = $"SELECT RunnerId, CountryCode, Gender FROM Runner WHERE Email='{textBoxEmail.Text}'";
                 sqlCommand = new MySqlCommand(SelectRunner, Program.connection);
                 Program.sqlDataReader = sqlCommand.ExecuteReader();
                 Program.sqlDataReader.Read();
+                Program.userInfo.Gender = Program.sqlDataReader.GetString("Gender");
+                Program.userInfo.CountryCode = Program.sqlDataReader.GetString("CountryCode");
                 Program.userInfo.RunnerId = Program.sqlDataReader.GetInt32("RunnerId");
+                Program.sqlDataReader.Close();
+                sqlCommand = new MySqlCommand($"SELECT CountryName FROM Country WHERE CountryCode='{Program.userInfo.CountryCode}'", Program.connection);
+                Program.sqlDataReader = sqlCommand.ExecuteReader();
+                Program.sqlDataReader.Read();
+                Program.userInfo.CountryName = Program.sqlDataReader.GetString("CountryName");
                 Program.connection.Close();
                 checkCancelButton = true;
                 FormMenuRunner formMenuRunner = new FormMenuRunner();
@@ -181,6 +188,16 @@ namespace MARAFON
         {
             TimeSpan TimeRemaining = voteTime - DateTime.Now;
             labelEventTime.Text = TimeRemaining.Days + " дней " + TimeRemaining.Hours + " часов " + TimeRemaining.Minutes + " минут " + TimeRemaining.Seconds + " секунд.";
+        }
+
+        private void textBoxRepeatPassword_TextChanged(object sender, EventArgs e)
+        {
+            label10.Text = textBoxPassword.Text == textBoxRepeatPassword.Text ? "" : "Пароли не совпадают";
+        }
+
+        private void FormRegistrationRunner_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyValue == (char)Keys.Enter) buttonRegistration.PerformClick();
         }
     }
 }
