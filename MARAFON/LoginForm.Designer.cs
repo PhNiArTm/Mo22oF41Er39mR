@@ -44,25 +44,25 @@ namespace MARAFON
             // textBoxEmail
             // 
             this.textBoxEmail.Location = new System.Drawing.Point(210, 143);
-            this.textBoxEmail.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBoxEmail.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxEmail.Name = "textBoxEmail";
             this.textBoxEmail.Size = new System.Drawing.Size(169, 20);
             this.textBoxEmail.TabIndex = 0;
-            this.textBoxEmail.Text = "a.aldrich@gmail.com";
+            this.textBoxEmail.Text = "aaron.whalen@hr.gov";
             // 
             // textBoxPassword
             // 
             this.textBoxPassword.Location = new System.Drawing.Point(210, 185);
-            this.textBoxPassword.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBoxPassword.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxPassword.Name = "textBoxPassword";
             this.textBoxPassword.Size = new System.Drawing.Size(169, 20);
             this.textBoxPassword.TabIndex = 1;
-            this.textBoxPassword.Text = "9ApEdKdo";
+            this.textBoxPassword.Text = "Aj4fC2477";
             // 
             // buttonMainCancel
             // 
             this.buttonMainCancel.Location = new System.Drawing.Point(9, 10);
-            this.buttonMainCancel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.buttonMainCancel.Margin = new System.Windows.Forms.Padding(2);
             this.buttonMainCancel.Name = "buttonMainCancel";
             this.buttonMainCancel.Size = new System.Drawing.Size(56, 19);
             this.buttonMainCancel.TabIndex = 2;
@@ -73,7 +73,7 @@ namespace MARAFON
             // buttonLogin
             // 
             this.buttonLogin.Location = new System.Drawing.Point(193, 238);
-            this.buttonLogin.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.buttonLogin.Margin = new System.Windows.Forms.Padding(2);
             this.buttonLogin.Name = "buttonLogin";
             this.buttonLogin.Size = new System.Drawing.Size(56, 19);
             this.buttonLogin.TabIndex = 3;
@@ -84,7 +84,7 @@ namespace MARAFON
             // buttonCancel
             // 
             this.buttonCancel.Location = new System.Drawing.Point(322, 238);
-            this.buttonCancel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.buttonCancel.Margin = new System.Windows.Forms.Padding(2);
             this.buttonCancel.Name = "buttonCancel";
             this.buttonCancel.Size = new System.Drawing.Size(56, 19);
             this.buttonCancel.TabIndex = 4;
@@ -158,7 +158,7 @@ namespace MARAFON
             this.Controls.Add(this.buttonMainCancel);
             this.Controls.Add(this.textBoxPassword);
             this.Controls.Add(this.textBoxEmail);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "FormLogin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Аворизация";

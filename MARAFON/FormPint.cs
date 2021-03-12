@@ -15,7 +15,8 @@ namespace MARAFON
         public FormPint()
         {
             InitializeComponent();
-            this.Location = new Point(FormRegistrationRunner.locX, FormRegistrationRunner.locY);
+            if (FormRegistrationRunner.locX == 0) this.Location = new Point(FormEditRunnerProfile.locXE, FormEditRunnerProfile.locYE);
+            else this.Location = new Point(FormRegistrationRunner.locX, FormRegistrationRunner.locY);
         }
         private void label1_MouseLeave(object sender, EventArgs e)
         {

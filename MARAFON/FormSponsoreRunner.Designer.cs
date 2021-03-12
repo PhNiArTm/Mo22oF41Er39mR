@@ -115,6 +115,7 @@ namespace MARAFON
             // 
             // comboBoxRunnerData
             // 
+            this.comboBoxRunnerData.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxRunnerData.FormattingEnabled = true;
             this.comboBoxRunnerData.Location = new System.Drawing.Point(125, 201);
             this.comboBoxRunnerData.Margin = new System.Windows.Forms.Padding(2);

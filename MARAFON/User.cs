@@ -13,13 +13,16 @@ namespace MARAFON
     using System.Collections.Generic;
 
     public partial class User
-    {
+    { 
         public int RunnerId = 0;
+        public string Gender = null;
+        public string CountryCode = null;
         public string Email = null;
         public string Password = null;
         public string FirstName = null;
         public string LastName = null;
         public string RoleId = null;
         public string Role = null;
+        public string CountryName = null;
     }
 }

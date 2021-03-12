@@ -9,7 +9,6 @@ namespace MARAFON
 {
     static class Program
     {
-        //public static MARAFONEntities1 dateBases = new MARAFONEntities1();
         public static MySqlConnection connection = new MySqlConnection("server=" +
             "141.8.192.26;" +
             "user=a0521760_users;" +
@@ -19,7 +18,7 @@ namespace MARAFON
         public static MySqlDataReader sqlDataReader = null;
 
         //Общая главная форма для избежания создания дубликатов
-        public static FormMain formMain;
+        public static FormInformAboutMarafon formMain;
         /// <summary>
         /// Главная точка входа для приложения.
         /// </summary>
@@ -28,8 +27,17 @@ namespace MARAFON
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            formMain = new FormMain();
+            formMain = new FormInformAboutMarafon();
             Application.Run(formMain);
+        }
+        public static void UserInfoClear()
+        {
+            userInfo.Email = null;
+            userInfo.FirstName = null;
+            userInfo.LastName = null;
+            userInfo.Password = null;
+            userInfo.RoleId = null;
+            userInfo.RunnerId = 0;
         }
     }
 }

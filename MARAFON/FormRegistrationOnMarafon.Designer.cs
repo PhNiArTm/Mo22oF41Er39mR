@@ -197,6 +197,7 @@ namespace MARAFON
             this.button2.TabStop = false;
             this.button2.Text = "Отмена";
             this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button1
             // 
@@ -495,6 +496,7 @@ namespace MARAFON
             // comboBoxDeposit
             // 
             this.comboBoxDeposit.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.comboBoxDeposit.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxDeposit.FormattingEnabled = true;
             this.comboBoxDeposit.Location = new System.Drawing.Point(2, 4);
             this.comboBoxDeposit.Margin = new System.Windows.Forms.Padding(2, 4, 0, 0);

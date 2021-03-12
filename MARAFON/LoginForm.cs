@@ -31,19 +31,28 @@ namespace MARAFON
                     {
                         Program.connection.Open();
                         string sql = String.Format("SELECT * FROM User WHERE Email='{0}' AND Password='{1}'", textBoxEmail.Text, textBoxPassword.Text);
-                        //Строка для тестирования авторизации
-                        //string sql = "SELECT Email, Password FROM User WHERE Email='a.adkin@dayrep.net' AND Password='jwZh2x@p'";
                         MySqlCommand sqlCommand = new MySqlCommand(sql, Program.connection);
-                        //Program.sqlDataReader;
                         Program.sqlDataReader = sqlCommand.ExecuteReader();
                         Program.sqlDataReader.Read();
                         Program.userInfo.Email = Program.sqlDataReader.GetString("Email");
                         Program.userInfo.Password = Program.sqlDataReader.GetString("Password");
+                        Program.userInfo.FirstName = Program.sqlDataReader.GetString("FirstName");
+                        Program.userInfo.LastName = Program.sqlDataReader.GetString("LastName");
                         Program.userInfo.RoleId = Program.sqlDataReader.GetString("RoleId");
-                        Program.connection.Close();
                         Program.sqlDataReader.Close();
+                        sqlCommand = new MySqlCommand($"SELECT RunnerId, Gender, CountryCode FROM Runner WHERE Email='{textBoxEmail.Text}'", Program.connection);
+                        Program.sqlDataReader = sqlCommand.ExecuteReader();
+                        Program.sqlDataReader.Read();
+                        Program.userInfo.Gender = Program.sqlDataReader.GetString("Gender");
+                        Program.userInfo.CountryCode = Program.sqlDataReader.GetString("CountryCode");
+                        Program.userInfo.RunnerId = Program.sqlDataReader.GetInt32("RunnerId");
+                        Program.sqlDataReader.Close();
+                        sqlCommand = new MySqlCommand($"SELECT CountryName FROM Country WHERE CountryCode='{Program.userInfo.CountryCode}'", Program.connection);
+                        Program.sqlDataReader = sqlCommand.ExecuteReader();
+                        Program.sqlDataReader.Read();
+                        Program.userInfo.CountryName = Program.sqlDataReader.GetString("CountryName");
+                        Program.connection.Close();
                         MessageBox.Show("Вы авторизовались!", "Закрыть", MessageBoxButtons.OKCancel, MessageBoxIcon.Information);
-
                         switch (Program.userInfo.RoleId)
                         {
                             case "R":
@@ -62,6 +71,7 @@ namespace MARAFON
                 catch
                 {
                     MessageBox.Show("Не верные Email или пароль", "Закрыть", MessageBoxButtons.OKCancel, MessageBoxIcon.Information);
+                    Program.connection.Close();
                 }
             }
             else

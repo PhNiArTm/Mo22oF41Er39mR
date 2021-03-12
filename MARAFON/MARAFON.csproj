@@ -70,11 +70,29 @@
     <Compile Include="EventType.cs">
       <DependentUpon>Model.tt</DependentUpon>
     </Compile>
+    <Compile Include="FormCompanyDonate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCompanyDonate.Designer.cs">
+      <DependentUpon>FormCompanyDonate.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormConfirmDonate.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FormConfirmDonate.Designer.cs">
       <DependentUpon>FormConfirmDonate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormConfirmROM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormConfirmROM.Designer.cs">
+      <DependentUpon>FormConfirmROM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormContactCoordinatore.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormContactCoordinatore.Designer.cs">
+      <DependentUpon>FormContactCoordinatore.cs</DependentUpon>
     </Compile>
     <Compile Include="FormCoordinator.cs">
       <SubType>Form</SubType>
@@ -88,6 +106,12 @@
     <Compile Include="FormDetailInfo.Designer.cs">
       <DependentUpon>FormDetailInfo.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormEditRunnerProfile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormEditRunnerProfile.Designer.cs">
+      <DependentUpon>FormEditRunnerProfile.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormHowLong.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -99,6 +123,18 @@
     </Compile>
     <Compile Include="FormInfoForCharity.Designer.cs">
       <DependentUpon>FormInfoForCharity.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormInformAboutMarafon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormInformAboutMarafon.Designer.cs">
+      <DependentUpon>FormInformAboutMarafon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormInteractionMap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormInteractionMap.Designer.cs">
+      <DependentUpon>FormInteractionMap.cs</DependentUpon>
     </Compile>
     <Compile Include="FormMain.cs">
       <SubType>Form</SubType>
@@ -210,8 +246,17 @@
     <Compile Include="Volunteer.cs">
       <DependentUpon>Model.tt</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="FormCompanyDonate.resx">
+      <DependentUpon>FormCompanyDonate.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormConfirmDonate.resx">
       <DependentUpon>FormConfirmDonate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormConfirmROM.resx">
+      <DependentUpon>FormConfirmROM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormContactCoordinatore.resx">
+      <DependentUpon>FormContactCoordinatore.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormCoordinator.resx">
       <DependentUpon>FormCoordinator.cs</DependentUpon>
@@ -219,8 +264,14 @@
     <EmbeddedResource Include="FormDetailInfo.resx">
       <DependentUpon>FormDetailInfo.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormEditRunnerProfile.resx">
+      <DependentUpon>FormEditRunnerProfile.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormInfoForCharity.resx">
       <DependentUpon>FormInfoForCharity.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormInteractionMap.resx">
+      <DependentUpon>FormInteractionMap.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormMain.resx">
       <DependentUpon>FormMain.cs</DependentUpon>
@@ -257,6 +308,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EntityDeploy Include="Model.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
@@ -293,6 +345,9 @@
       <DependentUpon>Model.edmx</DependentUpon>
       <LastGenOutput>Model.cs</LastGenOutput>
     </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resources\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
