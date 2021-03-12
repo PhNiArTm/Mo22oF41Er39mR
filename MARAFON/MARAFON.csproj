@@ -124,6 +124,12 @@
     <Compile Include="FormInfoForCharity.Designer.cs">
       <DependentUpon>FormInfoForCharity.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormInventory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormInventory.Designer.cs">
+      <DependentUpon>FormInventory.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormInformAboutMarafon.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -282,8 +288,8 @@
     <EmbeddedResource Include="FormInfoForCharity.resx">
       <DependentUpon>FormInfoForCharity.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormInteractionMap.resx">
-      <DependentUpon>FormInteractionMap.cs</DependentUpon>
+    <EmbeddedResource Include="FormInventory.resx">
+      <DependentUpon>FormInventory.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormMain.resx">
       <DependentUpon>FormMain.cs</DependentUpon>
