@@ -29,7 +29,8 @@ namespace MARAFON
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             formMain = new FormMain();
-            Application.Run(formMain);
+            Form frm = new FormMySponsore();
+            Application.Run(frm);
         }
     }
 }

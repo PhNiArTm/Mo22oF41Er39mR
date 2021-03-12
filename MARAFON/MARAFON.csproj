@@ -70,11 +70,23 @@
     <Compile Include="EventType.cs">
       <DependentUpon>Model.tt</DependentUpon>
     </Compile>
+    <Compile Include="FormCompanyDonate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCompanyDonate.Designer.cs">
+      <DependentUpon>FormCompanyDonate.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormConfirmDonate.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FormConfirmDonate.Designer.cs">
       <DependentUpon>FormConfirmDonate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormContactCoordinatore.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormContactCoordinatore.Designer.cs">
+      <DependentUpon>FormContactCoordinatore.cs</DependentUpon>
     </Compile>
     <Compile Include="FormCoordinator.cs">
       <SubType>Form</SubType>
@@ -117,6 +129,12 @@
     </Compile>
     <Compile Include="FormMenuRunner.Designer.cs">
       <DependentUpon>FormMenuRunner.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormMySponsore.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMySponsore.Designer.cs">
+      <DependentUpon>FormMySponsore.cs</DependentUpon>
     </Compile>
     <Compile Include="FormPint.cs">
       <SubType>Form</SubType>
@@ -210,14 +228,23 @@
     <Compile Include="Volunteer.cs">
       <DependentUpon>Model.tt</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="FormCompanyDonate.resx">
+      <DependentUpon>FormCompanyDonate.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormConfirmDonate.resx">
       <DependentUpon>FormConfirmDonate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormContactCoordinatore.resx">
+      <DependentUpon>FormContactCoordinatore.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormCoordinator.resx">
       <DependentUpon>FormCoordinator.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormDetailInfo.resx">
       <DependentUpon>FormDetailInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormHowLong.resx">
+      <DependentUpon>FormHowLong.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormInfoForCharity.resx">
       <DependentUpon>FormInfoForCharity.cs</DependentUpon>
@@ -230,6 +257,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormMenuRunner.resx">
       <DependentUpon>FormMenuRunner.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMySponsore.resx">
+      <DependentUpon>FormMySponsore.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormPint.resx">
       <DependentUpon>FormPint.cs</DependentUpon>
