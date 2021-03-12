@@ -47,8 +47,8 @@ namespace MARAFON
                         switch (Program.userInfo.RoleId)
                         {
                             case "R":
-                                FormMenuAdmin formMenuAdmin = new FormMenuAdmin();
-                                formMenuAdmin.Show();
+                                FormMenuRunner formMenuRunner = new FormMenuRunner();
+                                formMenuRunner.Show();
                                 checkCancelButton = true;
                                 break;
                         }

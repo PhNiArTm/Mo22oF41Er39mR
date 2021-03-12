@@ -43,23 +43,28 @@ namespace MARAFON
             // 
             // textBoxEmail
             // 
-            this.textBoxEmail.Location = new System.Drawing.Point(280, 176);
+            this.textBoxEmail.Location = new System.Drawing.Point(210, 143);
+            this.textBoxEmail.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.textBoxEmail.Name = "textBoxEmail";
-            this.textBoxEmail.Size = new System.Drawing.Size(224, 22);
+            this.textBoxEmail.Size = new System.Drawing.Size(169, 20);
             this.textBoxEmail.TabIndex = 0;
+            this.textBoxEmail.Text = "a.aldrich@gmail.com";
             // 
             // textBoxPassword
             // 
-            this.textBoxPassword.Location = new System.Drawing.Point(280, 228);
+            this.textBoxPassword.Location = new System.Drawing.Point(210, 185);
+            this.textBoxPassword.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.textBoxPassword.Name = "textBoxPassword";
-            this.textBoxPassword.Size = new System.Drawing.Size(224, 22);
+            this.textBoxPassword.Size = new System.Drawing.Size(169, 20);
             this.textBoxPassword.TabIndex = 1;
+            this.textBoxPassword.Text = "9ApEdKdo";
             // 
             // buttonMainCancel
             // 
-            this.buttonMainCancel.Location = new System.Drawing.Point(12, 12);
+            this.buttonMainCancel.Location = new System.Drawing.Point(9, 10);
+            this.buttonMainCancel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.buttonMainCancel.Name = "buttonMainCancel";
-            this.buttonMainCancel.Size = new System.Drawing.Size(75, 23);
+            this.buttonMainCancel.Size = new System.Drawing.Size(56, 19);
             this.buttonMainCancel.TabIndex = 2;
             this.buttonMainCancel.Text = "Назад";
             this.buttonMainCancel.UseVisualStyleBackColor = true;
@@ -67,9 +72,10 @@ namespace MARAFON
             // 
             // buttonLogin
             // 
-            this.buttonLogin.Location = new System.Drawing.Point(257, 293);
+            this.buttonLogin.Location = new System.Drawing.Point(193, 238);
+            this.buttonLogin.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.buttonLogin.Name = "buttonLogin";
-            this.buttonLogin.Size = new System.Drawing.Size(75, 23);
+            this.buttonLogin.Size = new System.Drawing.Size(56, 19);
             this.buttonLogin.TabIndex = 3;
             this.buttonLogin.Text = "Логин";
             this.buttonLogin.UseVisualStyleBackColor = true;
@@ -77,9 +83,10 @@ namespace MARAFON
             // 
             // buttonCancel
             // 
-            this.buttonCancel.Location = new System.Drawing.Point(429, 293);
+            this.buttonCancel.Location = new System.Drawing.Point(322, 238);
+            this.buttonCancel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.buttonCancel.Name = "buttonCancel";
-            this.buttonCancel.Size = new System.Drawing.Size(75, 23);
+            this.buttonCancel.Size = new System.Drawing.Size(56, 19);
             this.buttonCancel.TabIndex = 4;
             this.buttonCancel.Text = "Cancel";
             this.buttonCancel.UseVisualStyleBackColor = true;
@@ -88,18 +95,20 @@ namespace MARAFON
             // labelFormAuth
             // 
             this.labelFormAuth.AutoSize = true;
-            this.labelFormAuth.Location = new System.Drawing.Point(315, 76);
+            this.labelFormAuth.Location = new System.Drawing.Point(236, 62);
+            this.labelFormAuth.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelFormAuth.Name = "labelFormAuth";
-            this.labelFormAuth.Size = new System.Drawing.Size(143, 17);
+            this.labelFormAuth.Size = new System.Drawing.Size(112, 13);
             this.labelFormAuth.TabIndex = 5;
             this.labelFormAuth.Text = "Форма авторизации";
             // 
             // labelAuthInfo
             // 
             this.labelAuthInfo.AutoSize = true;
-            this.labelAuthInfo.Location = new System.Drawing.Point(85, 118);
+            this.labelAuthInfo.Location = new System.Drawing.Point(64, 96);
+            this.labelAuthInfo.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelAuthInfo.Name = "labelAuthInfo";
-            this.labelAuthInfo.Size = new System.Drawing.Size(612, 17);
+            this.labelAuthInfo.Size = new System.Drawing.Size(472, 13);
             this.labelAuthInfo.TabIndex = 6;
             this.labelAuthInfo.Text = "Пожалуйста, авторизуйтесь в системе, используя ваш адрес электронной почты и паро" +
     "ль.";
@@ -107,35 +116,38 @@ namespace MARAFON
             // labelEmail
             // 
             this.labelEmail.AutoSize = true;
-            this.labelEmail.Location = new System.Drawing.Point(200, 181);
+            this.labelEmail.Location = new System.Drawing.Point(150, 147);
+            this.labelEmail.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelEmail.Name = "labelEmail";
-            this.labelEmail.Size = new System.Drawing.Size(46, 17);
+            this.labelEmail.Size = new System.Drawing.Size(35, 13);
             this.labelEmail.TabIndex = 7;
             this.labelEmail.Text = "Email:";
             // 
             // labelPassword
             // 
             this.labelPassword.AutoSize = true;
-            this.labelPassword.Location = new System.Drawing.Point(200, 231);
+            this.labelPassword.Location = new System.Drawing.Point(150, 188);
+            this.labelPassword.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelPassword.Name = "labelPassword";
-            this.labelPassword.Size = new System.Drawing.Size(73, 17);
+            this.labelPassword.Size = new System.Drawing.Size(56, 13);
             this.labelPassword.TabIndex = 8;
             this.labelPassword.Text = "Password:";
             // 
             // labelMarathonSkills2016
             // 
             this.labelMarathonSkills2016.AutoSize = true;
-            this.labelMarathonSkills2016.Location = new System.Drawing.Point(150, 18);
+            this.labelMarathonSkills2016.Location = new System.Drawing.Point(112, 15);
+            this.labelMarathonSkills2016.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelMarathonSkills2016.Name = "labelMarathonSkills2016";
-            this.labelMarathonSkills2016.Size = new System.Drawing.Size(173, 17);
+            this.labelMarathonSkills2016.Size = new System.Drawing.Size(135, 13);
             this.labelMarathonSkills2016.TabIndex = 9;
             this.labelMarathonSkills2016.Text = "MARATHON SKILLS 2016";
             // 
             // FormLogin
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(756, 399);
+            this.ClientSize = new System.Drawing.Size(567, 324);
             this.Controls.Add(this.labelMarathonSkills2016);
             this.Controls.Add(this.labelPassword);
             this.Controls.Add(this.labelEmail);
@@ -146,6 +158,7 @@ namespace MARAFON
             this.Controls.Add(this.buttonMainCancel);
             this.Controls.Add(this.textBoxPassword);
             this.Controls.Add(this.textBoxEmail);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "FormLogin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Аворизация";

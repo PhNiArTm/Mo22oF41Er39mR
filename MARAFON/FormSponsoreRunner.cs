@@ -13,8 +13,6 @@ namespace MARAFON
 {
     public partial class FormSponsoreRunner : Form
     {
-        MySqlDataAdapter da;
-        DataTable dt;
         string messageError;
         public FormSponsoreRunner()
         {
@@ -61,15 +59,12 @@ namespace MARAFON
                 comboBoxRunnerData.Items.Clear();
                 Program.connection.Open();
                 MySqlCommand command = new MySqlCommand("SELECT Registration.RegistrationId, User.LastName, User.FirstName FROM Registration, User WHERE Registration.RunnerId = (SELECT Runner.RunnerId FROM Runner WHERE Runner.Email = User.Email)", Program.connection);
-                da = new MySqlDataAdapter();
-                da.SelectCommand = command;
-                dt = new DataTable();
-                da.Fill(dt);
-                for (int i = 0; i < dt.Rows.Count; i++)
+                MySqlDataReader reader = command.ExecuteReader();
+                while (reader.Read())
                 {
-                    string[] items = new string[] { dt.Rows[i]["RegistrationId"].ToString() + ". " + dt.Rows[i]["FirstName"].ToString() + " " + dt.Rows[i]["LastName"].ToString() };
-                    comboBoxRunnerData.Items.Add(string.Join(" ", items));
+                    comboBoxRunnerData.Items.Add($"{reader.GetString("RegistrationId")}. {reader.GetString("FirstName")}  {reader.GetString("LastName")}");
                 }
+                comboBoxRunnerData.SelectedIndex = 0;
             }
             catch { }
             finally { Program.connection.Close(); }

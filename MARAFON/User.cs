@@ -14,6 +14,7 @@ namespace MARAFON
 
     public partial class User
     {
+        public int RunnerId = 0;
         public string Email = null;
         public string Password = null;
         public string FirstName = null;

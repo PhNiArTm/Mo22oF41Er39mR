@@ -24,7 +24,6 @@ namespace MARAFON
             Capybara,
             PairOfHavaianas,
             FootballField,
-
         }
         public FormHowLong()
         {

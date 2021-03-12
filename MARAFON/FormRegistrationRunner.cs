@@ -17,15 +17,11 @@ namespace MARAFON
     {
         DateTime voteTime = new DateTime(2021, 04, 24, 6, 0, 0);
         private bool checkCancelButton = false;
-        MySqlDataAdapter mySqlDataAdapter;
-        DataTable dataTable;
-        FormMain formMain = new FormMain();
         public FormRegistrationRunner()
         {
             InitializeComponent();
             ShowGenders();
             ShowCountry();
-
         }
         private void ShowGenders()
         {
@@ -34,24 +30,20 @@ namespace MARAFON
                 comboBoxGender.Items.Clear();
                 Program.connection.Open();
                 MySqlCommand selectGender = new MySqlCommand("SELECT Gender FROM Gender", Program.connection);
-                mySqlDataAdapter = new MySqlDataAdapter();
-                mySqlDataAdapter.SelectCommand = selectGender;
-                dataTable = new DataTable();
-                mySqlDataAdapter.Fill(dataTable);
-                for (int i = 0; i < dataTable.Rows.Count; i++)
+                MySqlDataReader reader = selectGender.ExecuteReader();
+                while (reader.Read())
                 {
-                    string[] items = new string[] { dataTable.Rows[i]["Gender"].ToString()};
-                    comboBoxGender.Items.Add(string.Join(" ", items));
+                    comboBoxGender.Items.Add(reader.GetString("Gender"));
                 }
                 comboBoxGender.SelectedIndex = 0;
             }
-            catch 
+            catch
             {
 
             }
-            finally 
-            { 
-                Program.connection.Close(); 
+            finally
+            {
+                Program.connection.Close();
             }
         }
         private void ShowCountry()
@@ -60,11 +52,13 @@ namespace MARAFON
             {
                 comboBoxCountry.Items.Clear();
                 Program.connection.Open();
-                MySqlCommand selectCountry = new MySqlCommand("SELECT CountryCode, CountryName FROM Country", Program.connection);
-                mySqlDataAdapter = new MySqlDataAdapter();
-                mySqlDataAdapter.SelectCommand = selectCountry;
-                dataTable = new DataTable();
-                mySqlDataAdapter.Fill(dataTable);
+                MySqlCommand selectCountry = new MySqlCommand("SELECT CountryName, CountryCode FROM Country", Program.connection);
+                MySqlDataReader reader = selectCountry.ExecuteReader();
+                while (reader.Read())
+                {
+                    comboBoxCountry.Items.Add($"{reader.GetString("CountryName")} {reader.GetString("CountryCode")}");
+                }
+                comboBoxCountry.SelectedIndex = 0;
             }
             catch
             {
@@ -79,10 +73,9 @@ namespace MARAFON
         {
             checkCancelButton = true;
             FormRegisterAsARunner formRegisterAsARunner = new FormRegisterAsARunner();
-            this.Hide();
+            this.Close();
             formRegisterAsARunner.Show();
         }
-
         private void FormRegistrationRunner_FormClosed(object sender, FormClosedEventArgs e)
         {
             if (!checkCancelButton)
@@ -93,26 +86,25 @@ namespace MARAFON
         private void buttonCancel_Click(object sender, EventArgs e)
         {
             checkCancelButton = true;
-            formMain.Show();
+            Program.formMain.Show();
             this.Close();
         }
         private void buttonRegistration_Click(object sender, EventArgs e)
         {
             string countryCode = comboBoxCountry.SelectedItem.ToString();
-            int countryCodeLength = countryCode.Length-3;
-            if (CheckForNullOrEmpty()) MessageBox.Show("Заполните все поля!", "Ошибка заполнения", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            if (!CheckForCorrectData()) MessageBox.Show("Корректно введите Email!", "Ошибка заполнения", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            if (!CheckForPassword()) MessageBox.Show("Введенные пароли не совпадают!", "Ошибка заполнения", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            if (!CheckForDifficultPassword(textBoxPassword.Text)) MessageBox.Show("Пароль твой - говно", "Ошибка заполнения", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            else if(!CheckForNullOrEmpty() && CheckForCorrectData() && CheckForDifficultPassword(textBoxPassword.Text) && CheckForPassword())
+            int countryCodeLength = countryCode.Length - 3;
+            if (!CheckData()) MessageBox.Show("Исправьте ошибки!");
+            else if (CheckForNullOrEmpty()) MessageBox.Show("Заполните все поля!");
+            else if (!CheckForCorrectData()) MessageBox.Show("Корректно введите Email!");
+            else
             {
                 Program.connection.Open();
                 string InsertUser = $"INSERT INTO `User` (`Email`,`Password`,`FirstName`,`LastName`,`RoleId`) VALUES ('{textBoxEmail.Text}','{textBoxPassword.Text}','{textBoxName.Text.ToUpper()}','{textBoxSurname.Text.ToUpper()}','R')";
-                string InsertRunner = $"INSERT INTO `Runner` (`Email`,`Gender`,`DateOfBirth`,`CountryCode`) VALUES ('{textBoxEmail.Text}','{comboBoxGender.SelectedItem}','{dateTimePickerBirthday.Value}','{countryCode.Remove(0, countryCodeLength)}')";
                 MySqlCommand sqlCommand = new MySqlCommand(InsertUser, Program.connection);
-                sqlCommand.ExecuteNonQuery().ToString();
+                sqlCommand.ExecuteNonQuery();
+                string InsertRunner = $"INSERT INTO `Runner` (`Email`,`Gender`,`DateOfBirth`,`CountryCode`) VALUES ('{textBoxEmail.Text}','{comboBoxGender.SelectedItem}','{dateTimePickerBirthday.Value}','{countryCode.Remove(0, countryCodeLength)}')";
                 sqlCommand = new MySqlCommand(InsertRunner, Program.connection);
-                sqlCommand.ExecuteNonQuery().ToString();
+                sqlCommand.ExecuteNonQuery();
                 string SelectUser = $"SELECT Email, Password, FirstName, LastName, RoleId FROM User WHERE Email='{textBoxEmail.Text}'";
                 sqlCommand = new MySqlCommand(SelectUser, Program.connection);
                 Program.sqlDataReader = sqlCommand.ExecuteReader();
@@ -123,22 +115,29 @@ namespace MARAFON
                 Program.userInfo.LastName = Program.sqlDataReader.GetString("LastName");
                 Program.userInfo.RoleId = Program.sqlDataReader.GetString("RoleId");
                 Program.sqlDataReader.Close();
+                string SelectRunner = $"SELECT RunnerId FROM Runner WHERE Email='{textBoxEmail.Text}'";
+                sqlCommand = new MySqlCommand(SelectRunner, Program.connection);
+                Program.sqlDataReader = sqlCommand.ExecuteReader();
+                Program.sqlDataReader.Read();
+                Program.userInfo.RunnerId = Program.sqlDataReader.GetInt32("RunnerId");
                 Program.connection.Close();
-
+                checkCancelButton = true;
+                FormMenuRunner formMenuRunner = new FormMenuRunner();
+                formMenuRunner.Show();
+                this.Close();
             }
+        }
+        private bool CheckData()
+        {
+            bool checkEmail = String.IsNullOrEmpty(label1.Text);
+            bool checkPassword = String.IsNullOrEmpty(label2.Text);
+            bool checkRepeatPassword = String.IsNullOrEmpty(label10.Text);
+            return checkEmail && checkPassword && checkRepeatPassword;
         }
         private bool CheckForCorrectData()
         {
-            string pattern = @"(@)(.+)$"; ;
+            string pattern = @"^([\w\.\-]+)@([\w\-]+)((\.(\w){2,17})+)$"; ;
             return Regex.IsMatch(textBoxEmail.Text, pattern);
-        }
-        private bool CheckForDifficultPassword(string password)
-        {
-            return Regex.IsMatch(password, @"([A-Z])") && Regex.IsMatch(password, @"(\d+)") && (password.Length >= 6 && password.Length <= 100) && Regex.IsMatch(password, @"[!@#$%^]+");
-        }
-        private bool CheckForPassword()
-        {
-            return textBoxPassword.Text == textBoxRepeatPassword.Text;
         }
         private bool CheckForNullOrEmpty()
         {
@@ -152,7 +151,6 @@ namespace MARAFON
         {
             label10.Text = textBoxPassword.Text == textBoxRepeatPassword.Text ? "" : "Пароли не совпадают";
         }
-
         public static int locX = 0;
         public static int locY = 0;
         private void label2_MouseHover(object sender, EventArgs e)
@@ -169,7 +167,6 @@ namespace MARAFON
         {
             label2.Text = null;
         }
-
         private void textBoxEmail_Leave(object sender, EventArgs e)
         {
             Program.connection.Open();

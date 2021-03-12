@@ -94,6 +94,12 @@
     <Compile Include="FormHowLong.Designer.cs">
       <DependentUpon>FormHowLong.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormInfoForCharity.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormInfoForCharity.Designer.cs">
+      <DependentUpon>FormInfoForCharity.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormMain.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -106,6 +112,12 @@
     <Compile Include="FormMenuAdmin.Designer.cs">
       <DependentUpon>FormMenuAdmin.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormMenuRunner.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMenuRunner.Designer.cs">
+      <DependentUpon>FormMenuRunner.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormPint.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -117,6 +129,12 @@
     </Compile>
     <Compile Include="FormRegisterAsARunner.Designer.cs">
       <DependentUpon>FormRegisterAsARunner.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormRegistrationOnMarafon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormRegistrationOnMarafon.Designer.cs">
+      <DependentUpon>FormRegistrationOnMarafon.cs</DependentUpon>
     </Compile>
     <Compile Include="FormRegistrationRunner.cs">
       <SubType>Form</SubType>
@@ -201,11 +219,17 @@
     <EmbeddedResource Include="FormDetailInfo.resx">
       <DependentUpon>FormDetailInfo.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormInfoForCharity.resx">
+      <DependentUpon>FormInfoForCharity.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormMain.resx">
       <DependentUpon>FormMain.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormMenuAdmin.resx">
       <DependentUpon>FormMenuAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMenuRunner.resx">
+      <DependentUpon>FormMenuRunner.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormPint.resx">
       <DependentUpon>FormPint.cs</DependentUpon>
@@ -213,11 +237,17 @@
     <EmbeddedResource Include="FormRegisterAsARunner.resx">
       <DependentUpon>FormRegisterAsARunner.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormRegistrationOnMarafon.resx">
+      <DependentUpon>FormRegistrationOnMarafon.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormRegistrationRunner.resx">
       <DependentUpon>FormRegistrationRunner.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormSponsoreRunner.resx">
       <DependentUpon>FormSponsoreRunner.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginForm.resx">
+      <DependentUpon>LoginForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
