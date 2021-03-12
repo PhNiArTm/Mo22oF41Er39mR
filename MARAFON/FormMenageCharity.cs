@@ -12,11 +12,11 @@ using MySql.Data.MySqlClient;
 
 namespace MARAFON
 {
-    public partial class FormMenageCharities : Form
+    public partial class FormMenageCharity : Form
     {
         MySqlDataAdapter da;
         DataTable dt;
-        public FormMenageCharities()
+        public FormMenageCharity()
         {
             InitializeComponent();
             loadData();
