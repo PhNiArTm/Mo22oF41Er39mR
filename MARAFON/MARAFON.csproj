@@ -142,11 +142,11 @@
     <Compile Include="FormMain.Designer.cs">
       <DependentUpon>FormMain.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormMenageCharities.cs">
+    <Compile Include="FormMenageCharity.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormMenageCharities.Designer.cs">
-      <DependentUpon>FormMenageCharities.cs</DependentUpon>
+    <Compile Include="FormMenageCharity.Designer.cs">
+      <DependentUpon>FormMenageCharity.cs</DependentUpon>
     </Compile>
     <Compile Include="FormMenuAdmin.cs">
       <SubType>Form</SubType>
@@ -160,11 +160,11 @@
     <Compile Include="FormMenuRunner.Designer.cs">
       <DependentUpon>FormMenuRunner.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormMySponsore.cs">
+    <Compile Include="FormMySponsors.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormMySponsore.Designer.cs">
-      <DependentUpon>FormMySponsore.cs</DependentUpon>
+    <Compile Include="FormMySponsors.Designer.cs">
+      <DependentUpon>FormMySponsors.cs</DependentUpon>
     </Compile>
     <Compile Include="FormPint.cs">
       <SubType>Form</SubType>
@@ -288,17 +288,11 @@
     <EmbeddedResource Include="FormMain.resx">
       <DependentUpon>FormMain.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormMenageCharities.resx">
-      <DependentUpon>FormMenageCharities.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="FormMenuAdmin.resx">
       <DependentUpon>FormMenuAdmin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormMenuRunner.resx">
       <DependentUpon>FormMenuRunner.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FormMySponsore.resx">
-      <DependentUpon>FormMySponsore.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormPint.resx">
       <DependentUpon>FormPint.cs</DependentUpon>
