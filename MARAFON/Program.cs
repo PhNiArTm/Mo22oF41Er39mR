@@ -32,6 +32,9 @@ namespace MARAFON
         }
         public static void UserInfoClear()
         {
+            userInfo.CountryCode = null;
+            userInfo.CountryName = null;
+            userInfo.Gender = null;
             userInfo.Email = null;
             userInfo.FirstName = null;
             userInfo.LastName = null;
