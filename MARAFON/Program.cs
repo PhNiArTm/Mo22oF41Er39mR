@@ -17,7 +17,7 @@ namespace MARAFON
             "password=PR02022002");
         public static User userInfo = new User();
         public static MySqlDataReader sqlDataReader = null;
-
+        public static string nameCompany=null;
         //Общая главная форма для избежания создания дубликатов
         public static FormMain formMain;
         /// <summary>
