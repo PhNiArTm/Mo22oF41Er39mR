@@ -129,7 +129,7 @@ namespace MARAFON
             this.labelNameTag.Location = new System.Drawing.Point(83, 10);
             this.labelNameTag.Margin = new System.Windows.Forms.Padding(2, 10, 10, 0);
             this.labelNameTag.Name = "labelNameTag";
-            this.labelNameTag.Size = new System.Drawing.Size(250, 57);
+            this.labelNameTag.Size = new System.Drawing.Size(315, 57);
             this.labelNameTag.TabIndex = 1;
             this.labelNameTag.Text = "MARATHON SKILLS 2021";
             this.labelNameTag.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -295,7 +295,7 @@ namespace MARAFON
             this.checkBox1.Location = new System.Drawing.Point(35, 3);
             this.checkBox1.Margin = new System.Windows.Forms.Padding(35, 3, 3, 3);
             this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(251, 22);
+            this.checkBox1.Size = new System.Drawing.Size(276, 26);
             this.checkBox1.TabIndex = 0;
             this.checkBox1.Text = "42 км. Полный марафон (145$)";
             this.checkBox1.UseVisualStyleBackColor = true;
@@ -308,7 +308,7 @@ namespace MARAFON
             this.checkBox2.Location = new System.Drawing.Point(35, 35);
             this.checkBox2.Margin = new System.Windows.Forms.Padding(35, 3, 3, 3);
             this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(219, 22);
+            this.checkBox2.Size = new System.Drawing.Size(272, 26);
             this.checkBox2.TabIndex = 1;
             this.checkBox2.Text = "21 км. Полумарафон (75$)";
             this.checkBox2.UseVisualStyleBackColor = true;
@@ -321,7 +321,7 @@ namespace MARAFON
             this.checkBox3.Location = new System.Drawing.Point(35, 67);
             this.checkBox3.Margin = new System.Windows.Forms.Padding(35, 3, 3, 3);
             this.checkBox3.Name = "checkBox3";
-            this.checkBox3.Size = new System.Drawing.Size(243, 22);
+            this.checkBox3.Size = new System.Drawing.Size(276, 26);
             this.checkBox3.TabIndex = 2;
             this.checkBox3.Text = "5 км. Малая Дистанция (20$)";
             this.checkBox3.UseVisualStyleBackColor = true;
@@ -405,10 +405,10 @@ namespace MARAFON
             // 
             this.label7.AutoSize = true;
             this.label7.Dock = System.Windows.Forms.DockStyle.Right;
-            this.label7.Location = new System.Drawing.Point(112, 232);
+            this.label7.Location = new System.Drawing.Point(98, 232);
             this.label7.Margin = new System.Windows.Forms.Padding(0, 3, 0, 5);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(49, 23);
+            this.label7.Size = new System.Drawing.Size(63, 23);
             this.label7.TabIndex = 8;
             this.label7.Text = "Взнос:";
             this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -417,10 +417,10 @@ namespace MARAFON
             // 
             this.label8.AutoSize = true;
             this.label8.Dock = System.Windows.Forms.DockStyle.Right;
-            this.label8.Location = new System.Drawing.Point(63, 270);
+            this.label8.Location = new System.Drawing.Point(35, 270);
             this.label8.Margin = new System.Windows.Forms.Padding(0, 10, 0, 10);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(98, 18);
+            this.label8.Size = new System.Drawing.Size(126, 18);
             this.label8.TabIndex = 9;
             this.label8.Text = "Сумма взноса:";
             this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -431,7 +431,7 @@ namespace MARAFON
             this.textBox1.Location = new System.Drawing.Point(163, 270);
             this.textBox1.Margin = new System.Windows.Forms.Padding(2, 10, 0, 0);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(151, 23);
+            this.textBox1.Size = new System.Drawing.Size(151, 27);
             this.textBox1.TabIndex = 10;
             this.textBox1.Text = "0";
             // 
@@ -499,7 +499,7 @@ namespace MARAFON
             this.comboBoxDeposit.Location = new System.Drawing.Point(2, 4);
             this.comboBoxDeposit.Margin = new System.Windows.Forms.Padding(2, 4, 0, 0);
             this.comboBoxDeposit.Name = "comboBoxDeposit";
-            this.comboBoxDeposit.Size = new System.Drawing.Size(122, 23);
+            this.comboBoxDeposit.Size = new System.Drawing.Size(122, 27);
             this.comboBoxDeposit.TabIndex = 12;
             // 
             // button3
