@@ -19,7 +19,7 @@ namespace MARAFON
         public static string companyName = null;
 
         //Общая главная форма для избежания создания дубликатов
-        public static FormMenageCharity formMain;
+        public static FormMain formMain;
         /// <summary>
         /// Главная точка входа для приложения.
         /// </summary>
@@ -28,8 +28,14 @@ namespace MARAFON
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            formMain = new FormMenageCharity();
+            formMain = new FormMain();
+
+            //Заменить нижние две строки для теста переходов между формами
+            //FormInventory form = new FormInventory();
+            //form.Show();
+
             Application.Run(formMain);
+
         }
         public static void UserInfoClear()
         {

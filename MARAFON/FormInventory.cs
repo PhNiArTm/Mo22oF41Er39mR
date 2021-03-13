@@ -13,13 +13,14 @@ namespace MARAFON
 {
     public partial class FormInventory : Form
     {
+        private bool checkCancelButton = false;
         public int[] counts = new int[3];
         public char[] Ids = new char[3] { 'A', 'B', 'C' };
         public FormInventory()
         {
             InitializeComponent();
-            //Program.formMain.label = labelTimer;
-            //Program.formMain.timerEvent_Tick(Program.formMain.sender, Program.formMain.e);
+            Program.formMain.label = labelTimer;
+            Program.formMain.timerEvent_Tick(Program.formMain.sender, Program.formMain.e);
             int count_reg_runners = getCountRunners();
             labelCountRunners.Text = count_reg_runners.ToString();
             fillPanel();
@@ -140,21 +141,29 @@ namespace MARAFON
         {
             FormInventoryReceipt form = new FormInventoryReceipt();
             form.Show();
+            this.checkCancelButton = true;
+            this.Close();
+        }
+
+        private void FormInventory_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            if (!this.checkCancelButton)
+            {
+                Application.Exit();
+            }
+        }
+
+        private void buttonCancel_Click(object sender, EventArgs e)
+        {
+            this.checkCancelButton = true;
             this.Close();
         }
 
         private void buttonLogout_Click(object sender, EventArgs e)
         {
             Program.UserInfoClear();
-            FormMain frm = new FormMain();
-            frm.Show();
-            this.Close();
-        }
-
-        private void buttonCancel_Click(object sender, EventArgs e)
-        {
-            FormMenuAdmin frm = new FormMenuAdmin();
-            frm.Show();
+            checkCancelButton = true;
+            Program.formMain.Show();
             this.Close();
         }
     }

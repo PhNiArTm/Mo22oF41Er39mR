@@ -37,8 +37,18 @@ namespace MARAFON
         private void buttonCancel_Click(object sender, EventArgs e)
         {
             checkCancelButton = true;
-            Program.formMain.Show();
+            
             this.Close();
+
+            Program.formMain.Show();
+        }
+
+        private void buttonInventory_Click(object sender, EventArgs e)
+        {
+            checkCancelButton = true;
+            FormInventory form = new FormInventory();
+            this.Close();
+            form.Show();
         }
     }
 }
