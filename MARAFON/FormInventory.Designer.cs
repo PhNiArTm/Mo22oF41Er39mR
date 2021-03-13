@@ -50,6 +50,35 @@ namespace MARAFON
             this.labelCount = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.tableLayoutPanel = new System.Windows.Forms.TableLayoutPanel();
+            this.labelRemains7 = new System.Windows.Forms.Label();
+            this.labelSum7 = new System.Windows.Forms.Label();
+            this.labelC7 = new System.Windows.Forms.Label();
+            this.labelRemains6 = new System.Windows.Forms.Label();
+            this.labelSum6 = new System.Windows.Forms.Label();
+            this.labelC6 = new System.Windows.Forms.Label();
+            this.labelRemains5 = new System.Windows.Forms.Label();
+            this.labelSum5 = new System.Windows.Forms.Label();
+            this.labelC5 = new System.Windows.Forms.Label();
+            this.labelB5 = new System.Windows.Forms.Label();
+            this.labelRemains4 = new System.Windows.Forms.Label();
+            this.labelSum4 = new System.Windows.Forms.Label();
+            this.labelC4 = new System.Windows.Forms.Label();
+            this.labelB4 = new System.Windows.Forms.Label();
+            this.labelRemains3 = new System.Windows.Forms.Label();
+            this.labelSum3 = new System.Windows.Forms.Label();
+            this.labelC3 = new System.Windows.Forms.Label();
+            this.labelB3 = new System.Windows.Forms.Label();
+            this.labelA3 = new System.Windows.Forms.Label();
+            this.labelRemains2 = new System.Windows.Forms.Label();
+            this.labelSum2 = new System.Windows.Forms.Label();
+            this.labelC2 = new System.Windows.Forms.Label();
+            this.labelB2 = new System.Windows.Forms.Label();
+            this.labelA2 = new System.Windows.Forms.Label();
+            this.labelRemains1 = new System.Windows.Forms.Label();
+            this.labelSum1 = new System.Windows.Forms.Label();
+            this.labelC1 = new System.Windows.Forms.Label();
+            this.labelB1 = new System.Windows.Forms.Label();
+            this.labelA1 = new System.Windows.Forms.Label();
             this.labelBlock1 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
@@ -57,35 +86,6 @@ namespace MARAFON
             this.label11 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
-            this.labelA1 = new System.Windows.Forms.Label();
-            this.labelB1 = new System.Windows.Forms.Label();
-            this.labelC1 = new System.Windows.Forms.Label();
-            this.labelSum1 = new System.Windows.Forms.Label();
-            this.labelRemains1 = new System.Windows.Forms.Label();
-            this.labelA2 = new System.Windows.Forms.Label();
-            this.labelB2 = new System.Windows.Forms.Label();
-            this.labelC2 = new System.Windows.Forms.Label();
-            this.labelSum2 = new System.Windows.Forms.Label();
-            this.labelRemains2 = new System.Windows.Forms.Label();
-            this.labelA3 = new System.Windows.Forms.Label();
-            this.labelB3 = new System.Windows.Forms.Label();
-            this.labelC3 = new System.Windows.Forms.Label();
-            this.labelSum3 = new System.Windows.Forms.Label();
-            this.labelRemains3 = new System.Windows.Forms.Label();
-            this.labelB4 = new System.Windows.Forms.Label();
-            this.labelC4 = new System.Windows.Forms.Label();
-            this.labelSum4 = new System.Windows.Forms.Label();
-            this.labelRemains4 = new System.Windows.Forms.Label();
-            this.labelB5 = new System.Windows.Forms.Label();
-            this.labelC5 = new System.Windows.Forms.Label();
-            this.labelSum5 = new System.Windows.Forms.Label();
-            this.labelRemains5 = new System.Windows.Forms.Label();
-            this.labelC6 = new System.Windows.Forms.Label();
-            this.labelSum6 = new System.Windows.Forms.Label();
-            this.labelRemains6 = new System.Windows.Forms.Label();
-            this.labelC7 = new System.Windows.Forms.Label();
-            this.labelSum7 = new System.Windows.Forms.Label();
-            this.labelRemains7 = new System.Windows.Forms.Label();
             this.tableLayoutPanel.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -124,6 +124,7 @@ namespace MARAFON
             this.buttonLogout.TabIndex = 4;
             this.buttonLogout.Text = "Logout";
             this.buttonLogout.UseVisualStyleBackColor = true;
+            this.buttonLogout.Click += new System.EventHandler(this.buttonLogout_Click);
             // 
             // buttonCancel
             // 
@@ -133,6 +134,7 @@ namespace MARAFON
             this.buttonCancel.TabIndex = 5;
             this.buttonCancel.Text = "Назад";
             this.buttonCancel.UseVisualStyleBackColor = true;
+            this.buttonCancel.Click += new System.EventHandler(this.buttonCancel_Click);
             // 
             // buttonEntrance
             // 
@@ -393,6 +395,354 @@ namespace MARAFON
             this.tableLayoutPanel.Size = new System.Drawing.Size(786, 399);
             this.tableLayoutPanel.TabIndex = 0;
             // 
+            // labelRemains7
+            // 
+            this.labelRemains7.AutoSize = true;
+            this.labelRemains7.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.labelRemains7.Location = new System.Drawing.Point(651, 354);
+            this.labelRemains7.Margin = new System.Windows.Forms.Padding(1);
+            this.labelRemains7.Name = "labelRemains7";
+            this.labelRemains7.Size = new System.Drawing.Size(134, 44);
+            this.labelRemains7.TabIndex = 50;
+            this.labelRemains7.Text = "Остаток";
+            this.labelRemains7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // labelSum7
+            // 
+            this.labelSum7.AutoSize = true;
+            this.labelSum7.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.labelSum7.Location = new System.Drawing.Point(521, 354);
+            this.labelSum7.Margin = new System.Windows.Forms.Padding(1);
+            this.labelSum7.Name = "labelSum7";
+            this.labelSum7.Size = new System.Drawing.Size(128, 44);
+            this.labelSum7.TabIndex = 49;
+            this.labelSum7.Text = "Сумма";
+            this.labelSum7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // labelC7
+            // 
+            this.labelC7.AutoSize = true;
+            this.labelC7.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.labelC7.Location = new System.Drawing.Point(391, 354);
+            this.labelC7.Margin = new System.Windows.Forms.Padding(1);
+            this.labelC7.Name = "labelC7";
+            this.labelC7.Size = new System.Drawing.Size(128, 44);
+            this.labelC7.TabIndex = 48;
+            this.labelC7.Text = "123";
+            this.labelC7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // labelRemains6
+            // 
+            this.labelRemains6.AutoSize = true;
+            this.labelRemains6.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.labelRemains6.Location = new System.Drawing.Point(651, 313);
+            this.labelRemains6.Margin = new System.Windows.Forms.Padding(1);
+            this.labelRemains6.Name = "labelRemains6";
+            this.labelRemains6.Size = new System.Drawing.Size(134, 39);
+            this.labelRemains6.TabIndex = 47;
+            this.labelRemains6.Text = "Остаток";
+            this.labelRemains6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // labelSum6
+            // 
+            this.labelSum6.AutoSize = true;
+            this.labelSum6.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.labelSum6.Location = new System.Drawing.Point(521, 313);
+            this.labelSum6.Margin = new System.Windows.Forms.Padding(1);
+            this.labelSum6.Name = "labelSum6";
+            this.labelSum6.Size = new System.Drawing.Size(128, 39);
+            this.labelSum6.TabIndex = 46;
+            this.labelSum6.Text = "Сумма";
+            this.labelSum6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // labelC6
+            // 
+            this.labelC6.AutoSize = true;
+            this.labelC6.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.labelC6.Location = new System.Drawing.Point(391, 313);
+            this.labelC6.Margin = new System.Windows.Forms.Padding(1);
+            this.labelC6.Name = "labelC6";
+            this.labelC6.Size = new System.Drawing.Size(128, 39);
+            this.labelC6.TabIndex = 45;
+            this.labelC6.Text = "123";
+            this.labelC6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // labelRemains5
+            // 
+            this.labelRemains5.AutoSize = true;
+            this.labelRemains5.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.labelRemains5.Location = new System.Drawing.Point(651, 272);
+            this.labelRemains5.Margin = new System.Windows.Forms.Padding(1);
+            this.labelRemains5.Name = "labelRemains5";
+            this.labelRemains5.Size = new System.Drawing.Size(134, 39);
+            this.labelRemains5.TabIndex = 44;
+            this.labelRemains5.Text = "Остаток";
+            this.labelRemains5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // labelSum5
+            // 
+            this.labelSum5.AutoSize = true;
+            this.labelSum5.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.labelSum5.Location = new System.Drawing.Point(521, 272);
+            this.labelSum5.Margin = new System.Windows.Forms.Padding(1);
+            this.labelSum5.Name = "labelSum5";
+            this.labelSum5.Size = new System.Drawing.Size(128, 39);
+            this.labelSum5.TabIndex = 43;
+            this.labelSum5.Text = "Сумма";
+            this.labelSum5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // labelC5
+            // 
+            this.labelC5.AutoSize = true;
+            this.labelC5.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.labelC5.Location = new System.Drawing.Point(391, 272);
+            this.labelC5.Margin = new System.Windows.Forms.Padding(1);
+            this.labelC5.Name = "labelC5";
+            this.labelC5.Size = new System.Drawing.Size(128, 39);
+            this.labelC5.TabIndex = 42;
+            this.labelC5.Text = "123";
+            this.labelC5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // labelB5
+            // 
+            this.labelB5.AutoSize = true;
+            this.labelB5.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.labelB5.Location = new System.Drawing.Point(261, 272);
+            this.labelB5.Margin = new System.Windows.Forms.Padding(1);
+            this.labelB5.Name = "labelB5";
+            this.labelB5.Size = new System.Drawing.Size(128, 39);
+            this.labelB5.TabIndex = 41;
+            this.labelB5.Text = "123";
+            this.labelB5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // labelRemains4
+            // 
+            this.labelRemains4.AutoSize = true;
+            this.labelRemains4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.labelRemains4.Location = new System.Drawing.Point(651, 231);
+            this.labelRemains4.Margin = new System.Windows.Forms.Padding(1);
+            this.labelRemains4.Name = "labelRemains4";
+            this.labelRemains4.Size = new System.Drawing.Size(134, 39);
+            this.labelRemains4.TabIndex = 40;
+            this.labelRemains4.Text = "Остаток";
+            this.labelRemains4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // labelSum4
+            // 
+            this.labelSum4.AutoSize = true;
+            this.labelSum4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.labelSum4.Location = new System.Drawing.Point(521, 231);
+            this.labelSum4.Margin = new System.Windows.Forms.Padding(1);
+            this.labelSum4.Name = "labelSum4";
+            this.labelSum4.Size = new System.Drawing.Size(128, 39);
+            this.labelSum4.TabIndex = 39;
+            this.labelSum4.Text = "Сумма";
+            this.labelSum4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // labelC4
+            // 
+            this.labelC4.AutoSize = true;
+            this.labelC4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.labelC4.Location = new System.Drawing.Point(391, 231);
+            this.labelC4.Margin = new System.Windows.Forms.Padding(1);
+            this.labelC4.Name = "labelC4";
+            this.labelC4.Size = new System.Drawing.Size(128, 39);
+            this.labelC4.TabIndex = 38;
+            this.labelC4.Text = "123";
+            this.labelC4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // labelB4
+            // 
+            this.labelB4.AutoSize = true;
+            this.labelB4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.labelB4.Location = new System.Drawing.Point(261, 231);
+            this.labelB4.Margin = new System.Windows.Forms.Padding(1);
+            this.labelB4.Name = "labelB4";
+            this.labelB4.Size = new System.Drawing.Size(128, 39);
+            this.labelB4.TabIndex = 37;
+            this.labelB4.Text = "123";
+            this.labelB4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // labelRemains3
+            // 
+            this.labelRemains3.AutoSize = true;
+            this.labelRemains3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.labelRemains3.Location = new System.Drawing.Point(651, 190);
+            this.labelRemains3.Margin = new System.Windows.Forms.Padding(1);
+            this.labelRemains3.Name = "labelRemains3";
+            this.labelRemains3.Size = new System.Drawing.Size(134, 39);
+            this.labelRemains3.TabIndex = 36;
+            this.labelRemains3.Text = "Остаток";
+            this.labelRemains3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // labelSum3
+            // 
+            this.labelSum3.AutoSize = true;
+            this.labelSum3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.labelSum3.Location = new System.Drawing.Point(521, 190);
+            this.labelSum3.Margin = new System.Windows.Forms.Padding(1);
+            this.labelSum3.Name = "labelSum3";
+            this.labelSum3.Size = new System.Drawing.Size(128, 39);
+            this.labelSum3.TabIndex = 35;
+            this.labelSum3.Text = "Сумма";
+            this.labelSum3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // labelC3
+            // 
+            this.labelC3.AutoSize = true;
+            this.labelC3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.labelC3.Location = new System.Drawing.Point(391, 190);
+            this.labelC3.Margin = new System.Windows.Forms.Padding(1);
+            this.labelC3.Name = "labelC3";
+            this.labelC3.Size = new System.Drawing.Size(128, 39);
+            this.labelC3.TabIndex = 34;
+            this.labelC3.Text = "123";
+            this.labelC3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // labelB3
+            // 
+            this.labelB3.AutoSize = true;
+            this.labelB3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.labelB3.Location = new System.Drawing.Point(261, 190);
+            this.labelB3.Margin = new System.Windows.Forms.Padding(1);
+            this.labelB3.Name = "labelB3";
+            this.labelB3.Size = new System.Drawing.Size(128, 39);
+            this.labelB3.TabIndex = 33;
+            this.labelB3.Text = "123";
+            this.labelB3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // labelA3
+            // 
+            this.labelA3.AutoSize = true;
+            this.labelA3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.labelA3.Location = new System.Drawing.Point(131, 190);
+            this.labelA3.Margin = new System.Windows.Forms.Padding(1);
+            this.labelA3.Name = "labelA3";
+            this.labelA3.Size = new System.Drawing.Size(128, 39);
+            this.labelA3.TabIndex = 32;
+            this.labelA3.Text = "123";
+            this.labelA3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // labelRemains2
+            // 
+            this.labelRemains2.AutoSize = true;
+            this.labelRemains2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.labelRemains2.Location = new System.Drawing.Point(651, 149);
+            this.labelRemains2.Margin = new System.Windows.Forms.Padding(1);
+            this.labelRemains2.Name = "labelRemains2";
+            this.labelRemains2.Size = new System.Drawing.Size(134, 39);
+            this.labelRemains2.TabIndex = 31;
+            this.labelRemains2.Text = "Остаток";
+            this.labelRemains2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // labelSum2
+            // 
+            this.labelSum2.AutoSize = true;
+            this.labelSum2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.labelSum2.Location = new System.Drawing.Point(521, 149);
+            this.labelSum2.Margin = new System.Windows.Forms.Padding(1);
+            this.labelSum2.Name = "labelSum2";
+            this.labelSum2.Size = new System.Drawing.Size(128, 39);
+            this.labelSum2.TabIndex = 30;
+            this.labelSum2.Text = "Сумма";
+            this.labelSum2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // labelC2
+            // 
+            this.labelC2.AutoSize = true;
+            this.labelC2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.labelC2.Location = new System.Drawing.Point(391, 149);
+            this.labelC2.Margin = new System.Windows.Forms.Padding(1);
+            this.labelC2.Name = "labelC2";
+            this.labelC2.Size = new System.Drawing.Size(128, 39);
+            this.labelC2.TabIndex = 29;
+            this.labelC2.Text = "123";
+            this.labelC2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // labelB2
+            // 
+            this.labelB2.AutoSize = true;
+            this.labelB2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.labelB2.Location = new System.Drawing.Point(261, 149);
+            this.labelB2.Margin = new System.Windows.Forms.Padding(1);
+            this.labelB2.Name = "labelB2";
+            this.labelB2.Size = new System.Drawing.Size(128, 39);
+            this.labelB2.TabIndex = 28;
+            this.labelB2.Text = "123";
+            this.labelB2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // labelA2
+            // 
+            this.labelA2.AutoSize = true;
+            this.labelA2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.labelA2.Location = new System.Drawing.Point(131, 149);
+            this.labelA2.Margin = new System.Windows.Forms.Padding(1);
+            this.labelA2.Name = "labelA2";
+            this.labelA2.Size = new System.Drawing.Size(128, 39);
+            this.labelA2.TabIndex = 27;
+            this.labelA2.Text = "123";
+            this.labelA2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // labelRemains1
+            // 
+            this.labelRemains1.AutoSize = true;
+            this.labelRemains1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.labelRemains1.Location = new System.Drawing.Point(651, 42);
+            this.labelRemains1.Margin = new System.Windows.Forms.Padding(1);
+            this.labelRemains1.Name = "labelRemains1";
+            this.labelRemains1.Size = new System.Drawing.Size(134, 64);
+            this.labelRemains1.TabIndex = 26;
+            this.labelRemains1.Text = "Остаток";
+            this.labelRemains1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // labelSum1
+            // 
+            this.labelSum1.AutoSize = true;
+            this.labelSum1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.labelSum1.Location = new System.Drawing.Point(521, 42);
+            this.labelSum1.Margin = new System.Windows.Forms.Padding(1);
+            this.labelSum1.Name = "labelSum1";
+            this.labelSum1.Size = new System.Drawing.Size(128, 64);
+            this.labelSum1.TabIndex = 25;
+            this.labelSum1.Text = "Сумма";
+            this.labelSum1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // labelC1
+            // 
+            this.labelC1.AutoSize = true;
+            this.labelC1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.labelC1.Location = new System.Drawing.Point(391, 42);
+            this.labelC1.Margin = new System.Windows.Forms.Padding(1);
+            this.labelC1.Name = "labelC1";
+            this.labelC1.Size = new System.Drawing.Size(128, 64);
+            this.labelC1.TabIndex = 24;
+            this.labelC1.Text = "123";
+            this.labelC1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // labelB1
+            // 
+            this.labelB1.AutoSize = true;
+            this.labelB1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.labelB1.Location = new System.Drawing.Point(261, 42);
+            this.labelB1.Margin = new System.Windows.Forms.Padding(1);
+            this.labelB1.Name = "labelB1";
+            this.labelB1.Size = new System.Drawing.Size(128, 64);
+            this.labelB1.TabIndex = 23;
+            this.labelB1.Text = "123";
+            this.labelB1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // labelA1
+            // 
+            this.labelA1.AutoSize = true;
+            this.labelA1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.labelA1.Location = new System.Drawing.Point(131, 42);
+            this.labelA1.Margin = new System.Windows.Forms.Padding(1);
+            this.labelA1.Name = "labelA1";
+            this.labelA1.Size = new System.Drawing.Size(128, 64);
+            this.labelA1.TabIndex = 8;
+            this.labelA1.Text = "123";
+            this.labelA1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // labelBlock1
             // 
             this.labelBlock1.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -472,354 +822,6 @@ namespace MARAFON
             this.label13.Text = "--------";
             this.label13.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // labelA1
-            // 
-            this.labelA1.AutoSize = true;
-            this.labelA1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.labelA1.Location = new System.Drawing.Point(131, 42);
-            this.labelA1.Margin = new System.Windows.Forms.Padding(1);
-            this.labelA1.Name = "labelA1";
-            this.labelA1.Size = new System.Drawing.Size(128, 64);
-            this.labelA1.TabIndex = 8;
-            this.labelA1.Text = "123";
-            this.labelA1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // labelB1
-            // 
-            this.labelB1.AutoSize = true;
-            this.labelB1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.labelB1.Location = new System.Drawing.Point(261, 42);
-            this.labelB1.Margin = new System.Windows.Forms.Padding(1);
-            this.labelB1.Name = "labelB1";
-            this.labelB1.Size = new System.Drawing.Size(128, 64);
-            this.labelB1.TabIndex = 23;
-            this.labelB1.Text = "123";
-            this.labelB1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // labelC1
-            // 
-            this.labelC1.AutoSize = true;
-            this.labelC1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.labelC1.Location = new System.Drawing.Point(391, 42);
-            this.labelC1.Margin = new System.Windows.Forms.Padding(1);
-            this.labelC1.Name = "labelC1";
-            this.labelC1.Size = new System.Drawing.Size(128, 64);
-            this.labelC1.TabIndex = 24;
-            this.labelC1.Text = "123";
-            this.labelC1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // labelSum1
-            // 
-            this.labelSum1.AutoSize = true;
-            this.labelSum1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.labelSum1.Location = new System.Drawing.Point(521, 42);
-            this.labelSum1.Margin = new System.Windows.Forms.Padding(1);
-            this.labelSum1.Name = "labelSum1";
-            this.labelSum1.Size = new System.Drawing.Size(128, 64);
-            this.labelSum1.TabIndex = 25;
-            this.labelSum1.Text = "Сумма";
-            this.labelSum1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // labelRemains1
-            // 
-            this.labelRemains1.AutoSize = true;
-            this.labelRemains1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.labelRemains1.Location = new System.Drawing.Point(651, 42);
-            this.labelRemains1.Margin = new System.Windows.Forms.Padding(1);
-            this.labelRemains1.Name = "labelRemains1";
-            this.labelRemains1.Size = new System.Drawing.Size(134, 64);
-            this.labelRemains1.TabIndex = 26;
-            this.labelRemains1.Text = "Остаток";
-            this.labelRemains1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // labelA2
-            // 
-            this.labelA2.AutoSize = true;
-            this.labelA2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.labelA2.Location = new System.Drawing.Point(131, 149);
-            this.labelA2.Margin = new System.Windows.Forms.Padding(1);
-            this.labelA2.Name = "labelA2";
-            this.labelA2.Size = new System.Drawing.Size(128, 39);
-            this.labelA2.TabIndex = 27;
-            this.labelA2.Text = "123";
-            this.labelA2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // labelB2
-            // 
-            this.labelB2.AutoSize = true;
-            this.labelB2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.labelB2.Location = new System.Drawing.Point(261, 149);
-            this.labelB2.Margin = new System.Windows.Forms.Padding(1);
-            this.labelB2.Name = "labelB2";
-            this.labelB2.Size = new System.Drawing.Size(128, 39);
-            this.labelB2.TabIndex = 28;
-            this.labelB2.Text = "123";
-            this.labelB2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // labelC2
-            // 
-            this.labelC2.AutoSize = true;
-            this.labelC2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.labelC2.Location = new System.Drawing.Point(391, 149);
-            this.labelC2.Margin = new System.Windows.Forms.Padding(1);
-            this.labelC2.Name = "labelC2";
-            this.labelC2.Size = new System.Drawing.Size(128, 39);
-            this.labelC2.TabIndex = 29;
-            this.labelC2.Text = "123";
-            this.labelC2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // labelSum2
-            // 
-            this.labelSum2.AutoSize = true;
-            this.labelSum2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.labelSum2.Location = new System.Drawing.Point(521, 149);
-            this.labelSum2.Margin = new System.Windows.Forms.Padding(1);
-            this.labelSum2.Name = "labelSum2";
-            this.labelSum2.Size = new System.Drawing.Size(128, 39);
-            this.labelSum2.TabIndex = 30;
-            this.labelSum2.Text = "Сумма";
-            this.labelSum2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // labelRemains2
-            // 
-            this.labelRemains2.AutoSize = true;
-            this.labelRemains2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.labelRemains2.Location = new System.Drawing.Point(651, 149);
-            this.labelRemains2.Margin = new System.Windows.Forms.Padding(1);
-            this.labelRemains2.Name = "labelRemains2";
-            this.labelRemains2.Size = new System.Drawing.Size(134, 39);
-            this.labelRemains2.TabIndex = 31;
-            this.labelRemains2.Text = "Остаток";
-            this.labelRemains2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // labelA3
-            // 
-            this.labelA3.AutoSize = true;
-            this.labelA3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.labelA3.Location = new System.Drawing.Point(131, 190);
-            this.labelA3.Margin = new System.Windows.Forms.Padding(1);
-            this.labelA3.Name = "labelA3";
-            this.labelA3.Size = new System.Drawing.Size(128, 39);
-            this.labelA3.TabIndex = 32;
-            this.labelA3.Text = "123";
-            this.labelA3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // labelB3
-            // 
-            this.labelB3.AutoSize = true;
-            this.labelB3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.labelB3.Location = new System.Drawing.Point(261, 190);
-            this.labelB3.Margin = new System.Windows.Forms.Padding(1);
-            this.labelB3.Name = "labelB3";
-            this.labelB3.Size = new System.Drawing.Size(128, 39);
-            this.labelB3.TabIndex = 33;
-            this.labelB3.Text = "123";
-            this.labelB3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // labelC3
-            // 
-            this.labelC3.AutoSize = true;
-            this.labelC3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.labelC3.Location = new System.Drawing.Point(391, 190);
-            this.labelC3.Margin = new System.Windows.Forms.Padding(1);
-            this.labelC3.Name = "labelC3";
-            this.labelC3.Size = new System.Drawing.Size(128, 39);
-            this.labelC3.TabIndex = 34;
-            this.labelC3.Text = "123";
-            this.labelC3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // labelSum3
-            // 
-            this.labelSum3.AutoSize = true;
-            this.labelSum3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.labelSum3.Location = new System.Drawing.Point(521, 190);
-            this.labelSum3.Margin = new System.Windows.Forms.Padding(1);
-            this.labelSum3.Name = "labelSum3";
-            this.labelSum3.Size = new System.Drawing.Size(128, 39);
-            this.labelSum3.TabIndex = 35;
-            this.labelSum3.Text = "Сумма";
-            this.labelSum3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // labelRemains3
-            // 
-            this.labelRemains3.AutoSize = true;
-            this.labelRemains3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.labelRemains3.Location = new System.Drawing.Point(651, 190);
-            this.labelRemains3.Margin = new System.Windows.Forms.Padding(1);
-            this.labelRemains3.Name = "labelRemains3";
-            this.labelRemains3.Size = new System.Drawing.Size(134, 39);
-            this.labelRemains3.TabIndex = 36;
-            this.labelRemains3.Text = "Остаток";
-            this.labelRemains3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // labelB4
-            // 
-            this.labelB4.AutoSize = true;
-            this.labelB4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.labelB4.Location = new System.Drawing.Point(261, 231);
-            this.labelB4.Margin = new System.Windows.Forms.Padding(1);
-            this.labelB4.Name = "labelB4";
-            this.labelB4.Size = new System.Drawing.Size(128, 39);
-            this.labelB4.TabIndex = 37;
-            this.labelB4.Text = "123";
-            this.labelB4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // labelC4
-            // 
-            this.labelC4.AutoSize = true;
-            this.labelC4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.labelC4.Location = new System.Drawing.Point(391, 231);
-            this.labelC4.Margin = new System.Windows.Forms.Padding(1);
-            this.labelC4.Name = "labelC4";
-            this.labelC4.Size = new System.Drawing.Size(128, 39);
-            this.labelC4.TabIndex = 38;
-            this.labelC4.Text = "123";
-            this.labelC4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // labelSum4
-            // 
-            this.labelSum4.AutoSize = true;
-            this.labelSum4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.labelSum4.Location = new System.Drawing.Point(521, 231);
-            this.labelSum4.Margin = new System.Windows.Forms.Padding(1);
-            this.labelSum4.Name = "labelSum4";
-            this.labelSum4.Size = new System.Drawing.Size(128, 39);
-            this.labelSum4.TabIndex = 39;
-            this.labelSum4.Text = "Сумма";
-            this.labelSum4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // labelRemains4
-            // 
-            this.labelRemains4.AutoSize = true;
-            this.labelRemains4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.labelRemains4.Location = new System.Drawing.Point(651, 231);
-            this.labelRemains4.Margin = new System.Windows.Forms.Padding(1);
-            this.labelRemains4.Name = "labelRemains4";
-            this.labelRemains4.Size = new System.Drawing.Size(134, 39);
-            this.labelRemains4.TabIndex = 40;
-            this.labelRemains4.Text = "Остаток";
-            this.labelRemains4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // labelB5
-            // 
-            this.labelB5.AutoSize = true;
-            this.labelB5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.labelB5.Location = new System.Drawing.Point(261, 272);
-            this.labelB5.Margin = new System.Windows.Forms.Padding(1);
-            this.labelB5.Name = "labelB5";
-            this.labelB5.Size = new System.Drawing.Size(128, 39);
-            this.labelB5.TabIndex = 41;
-            this.labelB5.Text = "123";
-            this.labelB5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // labelC5
-            // 
-            this.labelC5.AutoSize = true;
-            this.labelC5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.labelC5.Location = new System.Drawing.Point(391, 272);
-            this.labelC5.Margin = new System.Windows.Forms.Padding(1);
-            this.labelC5.Name = "labelC5";
-            this.labelC5.Size = new System.Drawing.Size(128, 39);
-            this.labelC5.TabIndex = 42;
-            this.labelC5.Text = "123";
-            this.labelC5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // labelSum5
-            // 
-            this.labelSum5.AutoSize = true;
-            this.labelSum5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.labelSum5.Location = new System.Drawing.Point(521, 272);
-            this.labelSum5.Margin = new System.Windows.Forms.Padding(1);
-            this.labelSum5.Name = "labelSum5";
-            this.labelSum5.Size = new System.Drawing.Size(128, 39);
-            this.labelSum5.TabIndex = 43;
-            this.labelSum5.Text = "Сумма";
-            this.labelSum5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // labelRemains5
-            // 
-            this.labelRemains5.AutoSize = true;
-            this.labelRemains5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.labelRemains5.Location = new System.Drawing.Point(651, 272);
-            this.labelRemains5.Margin = new System.Windows.Forms.Padding(1);
-            this.labelRemains5.Name = "labelRemains5";
-            this.labelRemains5.Size = new System.Drawing.Size(134, 39);
-            this.labelRemains5.TabIndex = 44;
-            this.labelRemains5.Text = "Остаток";
-            this.labelRemains5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // labelC6
-            // 
-            this.labelC6.AutoSize = true;
-            this.labelC6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.labelC6.Location = new System.Drawing.Point(391, 313);
-            this.labelC6.Margin = new System.Windows.Forms.Padding(1);
-            this.labelC6.Name = "labelC6";
-            this.labelC6.Size = new System.Drawing.Size(128, 39);
-            this.labelC6.TabIndex = 45;
-            this.labelC6.Text = "123";
-            this.labelC6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // labelSum6
-            // 
-            this.labelSum6.AutoSize = true;
-            this.labelSum6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.labelSum6.Location = new System.Drawing.Point(521, 313);
-            this.labelSum6.Margin = new System.Windows.Forms.Padding(1);
-            this.labelSum6.Name = "labelSum6";
-            this.labelSum6.Size = new System.Drawing.Size(128, 39);
-            this.labelSum6.TabIndex = 46;
-            this.labelSum6.Text = "Сумма";
-            this.labelSum6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // labelRemains6
-            // 
-            this.labelRemains6.AutoSize = true;
-            this.labelRemains6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.labelRemains6.Location = new System.Drawing.Point(651, 313);
-            this.labelRemains6.Margin = new System.Windows.Forms.Padding(1);
-            this.labelRemains6.Name = "labelRemains6";
-            this.labelRemains6.Size = new System.Drawing.Size(134, 39);
-            this.labelRemains6.TabIndex = 47;
-            this.labelRemains6.Text = "Остаток";
-            this.labelRemains6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // labelC7
-            // 
-            this.labelC7.AutoSize = true;
-            this.labelC7.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.labelC7.Location = new System.Drawing.Point(391, 354);
-            this.labelC7.Margin = new System.Windows.Forms.Padding(1);
-            this.labelC7.Name = "labelC7";
-            this.labelC7.Size = new System.Drawing.Size(128, 44);
-            this.labelC7.TabIndex = 48;
-            this.labelC7.Text = "123";
-            this.labelC7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // labelSum7
-            // 
-            this.labelSum7.AutoSize = true;
-            this.labelSum7.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.labelSum7.Location = new System.Drawing.Point(521, 354);
-            this.labelSum7.Margin = new System.Windows.Forms.Padding(1);
-            this.labelSum7.Name = "labelSum7";
-            this.labelSum7.Size = new System.Drawing.Size(128, 44);
-            this.labelSum7.TabIndex = 49;
-            this.labelSum7.Text = "Сумма";
-            this.labelSum7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // labelRemains7
-            // 
-            this.labelRemains7.AutoSize = true;
-            this.labelRemains7.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.labelRemains7.Location = new System.Drawing.Point(651, 354);
-            this.labelRemains7.Margin = new System.Windows.Forms.Padding(1);
-            this.labelRemains7.Name = "labelRemains7";
-            this.labelRemains7.Size = new System.Drawing.Size(134, 44);
-            this.labelRemains7.TabIndex = 50;
-            this.labelRemains7.Text = "Остаток";
-            this.labelRemains7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
             // FormInventory
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -836,6 +838,7 @@ namespace MARAFON
             this.Name = "FormInventory";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Остаток";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FormInventory_FormClosed);
             this.tableLayoutPanel.ResumeLayout(false);
             this.tableLayoutPanel.PerformLayout();
             this.ResumeLayout(false);

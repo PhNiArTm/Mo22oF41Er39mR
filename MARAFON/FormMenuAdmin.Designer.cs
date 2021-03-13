@@ -107,6 +107,7 @@ namespace MARAFON
             this.buttonInventory.TabIndex = 8;
             this.buttonInventory.Text = "Инвентарь";
             this.buttonInventory.UseVisualStyleBackColor = false;
+            this.buttonInventory.Click += new System.EventHandler(this.buttonInventory_Click);
             // 
             // buttonCancel
             // 
@@ -131,7 +132,7 @@ namespace MARAFON
             this.Controls.Add(this.buttonUser);
             this.Controls.Add(this.labelTitleForm);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FormMenuAdmin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormMenuAdmin";
