@@ -495,7 +495,7 @@ namespace MARAFON
             this.dateTimePickerBirthday.Location = new System.Drawing.Point(514, 216);
             this.dateTimePickerBirthday.Margin = new System.Windows.Forms.Padding(3, 3, 10, 3);
             this.dateTimePickerBirthday.MaxDate = new System.DateTime(2011, 3, 10, 0, 0, 0, 0);
-            this.dateTimePickerBirthday.MinDate = new System.DateTime(1951, 3, 10, 0, 0, 0, 0);
+            this.dateTimePickerBirthday.MinDate = new System.DateTime(1921, 3, 10, 0, 0, 0, 0);
             this.dateTimePickerBirthday.Name = "dateTimePickerBirthday";
             this.dateTimePickerBirthday.Size = new System.Drawing.Size(154, 25);
             this.dateTimePickerBirthday.TabIndex = 21;

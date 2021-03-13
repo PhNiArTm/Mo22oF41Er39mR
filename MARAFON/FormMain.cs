@@ -12,17 +12,35 @@ namespace MARAFON
 {
     public partial class FormMain : Form
     {
-        static DateTime voteTime = new DateTime(2021, 04, 24, 6, 0, 0);
+        public object sender = null;
+        public EventArgs e = null;
+        public Label label = null;
+        DateTime voteTime = new DateTime(2021, 04, 24, 6, 0, 0);
         public FormMain()
         {
             InitializeComponent();
             timerEvent.Start();
+            FillDate();
         }
-        private void timerEvent_Tick(object sender, EventArgs e)
+        private void FillDate()
         {
-            TimeSpan TimeRemaining = voteTime - DateTime.Now;
-            labelEventTime.Text = TimeRemaining.Days + " дней " + TimeRemaining.Hours + " часов " + TimeRemaining.Minutes + " минут " + TimeRemaining.Seconds + " секунд.";
+            labelNameTag.Text += $"Москва, Россия  \n{DateTime.Now.ToLongDateString()}";
         }
+
+        public void timerEvent_Tick(object sender, EventArgs e)
+        {
+            if (label == null)
+            {
+                TimeSpan TimeRemaining = voteTime - DateTime.Now;
+                labelEventTime.Text = TimeRemaining.Days + " дней " + TimeRemaining.Hours + " часов " + TimeRemaining.Minutes + " минут " + TimeRemaining.Seconds + " секунд.";
+            }
+            else
+            {
+                TimeSpan TimeRemaining = voteTime - DateTime.Now;
+                label.Text = TimeRemaining.Days + " дней " + TimeRemaining.Hours + " часов " + TimeRemaining.Minutes + " минут " + TimeRemaining.Seconds + " секунд.";
+            }
+        }
+
         private void buttonSponsore_Click(object sender, EventArgs e)
         {
             Form frm = new FormSponsoreRunner();

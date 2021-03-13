@@ -17,6 +17,7 @@ namespace MARAFON
         public FormMenuRunner()
         {
             InitializeComponent();
+            label1.Text += $"\n[{Program.userInfo.FirstName} {Program.userInfo.LastName}]";
         }
         private void timer_Tick(object sender, EventArgs e)
         {
@@ -47,10 +48,17 @@ namespace MARAFON
         }
         private void button1_Click(object sender, EventArgs e)
         {
-            checkCancelButton = true;
-            FormRegistrationOnMarafon formRegistrationOnMarafon = new FormRegistrationOnMarafon();
-            formRegistrationOnMarafon.Show();
-            this.Close();
+            if (Program.userInfo.checkIsRegisterOnMarafon)
+            {
+                MessageBox.Show("Вы уже зарегестрировались на марафон!","",MessageBoxButtons.OK);
+            }
+            else
+            {
+                checkCancelButton = true;
+                FormRegistrationOnMarafon formRegistrationOnMarafon = new FormRegistrationOnMarafon();
+                formRegistrationOnMarafon.Show();
+                this.Close();
+            }
         }
         private void button5_Click(object sender, EventArgs e)
         {
@@ -58,6 +66,21 @@ namespace MARAFON
             FormEditRunnerProfile formEditRunner = new FormEditRunnerProfile();
             formEditRunner.Show();
             this.Close();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            if (!Program.userInfo.checkIsRegisterOnMarafon)
+            {
+                MessageBox.Show("Вы еще не зарегестрировались на марафон!", "", MessageBoxButtons.OK);
+            }
+            else
+            {
+                checkCancelButton = true;
+                FormMySponsors formMySponsors = new FormMySponsors();
+                formMySponsors.Show();
+                this.Close();
+            }
         }
     }
 }

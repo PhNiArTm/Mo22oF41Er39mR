@@ -13,8 +13,10 @@ namespace MARAFON
     using System.Collections.Generic;
 
     public partial class User
-    { 
+    {
+        public bool checkIsRegisterOnMarafon = false;
         public int RunnerId = 0;
+        public DateTime DateOfBirth = new DateTime();
         public string Gender = null;
         public string CountryCode = null;
         public string Email = null;

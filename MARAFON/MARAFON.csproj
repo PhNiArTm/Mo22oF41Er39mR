@@ -130,6 +130,12 @@
     <Compile Include="FormInfoForCharity.Designer.cs">
       <DependentUpon>FormInfoForCharity.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormInventory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormInventory.Designer.cs">
+      <DependentUpon>FormInventory.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormInformAboutMarafon.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -141,6 +147,12 @@
     </Compile>
     <Compile Include="FormInteractionMap.Designer.cs">
       <DependentUpon>FormInteractionMap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormInventoryReceipt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormInventoryReceipt.Designer.cs">
+      <DependentUpon>FormInventoryReceipt.cs</DependentUpon>
     </Compile>
     <Compile Include="FormMain.cs">
       <SubType>Form</SubType>
@@ -291,8 +303,11 @@
     <EmbeddedResource Include="FormInfoForCharity.resx">
       <DependentUpon>FormInfoForCharity.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormInteractionMap.resx">
-      <DependentUpon>FormInteractionMap.cs</DependentUpon>
+    <EmbeddedResource Include="FormInventory.resx">
+      <DependentUpon>FormInventory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormInventoryReceipt.resx">
+      <DependentUpon>FormInventoryReceipt.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormMain.resx">
       <DependentUpon>FormMain.cs</DependentUpon>
@@ -305,6 +320,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormMenuRunner.resx">
       <DependentUpon>FormMenuRunner.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMySponsors.resx">
+      <DependentUpon>FormMySponsors.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormPint.resx">
       <DependentUpon>FormPint.cs</DependentUpon>

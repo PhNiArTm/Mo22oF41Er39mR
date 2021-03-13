@@ -122,6 +122,7 @@ namespace MARAFON
             this.comboBoxRunnerData.Name = "comboBoxRunnerData";
             this.comboBoxRunnerData.Size = new System.Drawing.Size(139, 21);
             this.comboBoxRunnerData.TabIndex = 5;
+            this.comboBoxRunnerData.SelectedIndexChanged += new System.EventHandler(this.comboBoxRunnerData_SelectedIndexChanged);
             // 
             // labelCardAuthor
             // 
@@ -240,14 +241,12 @@ namespace MARAFON
             // 
             // labelFondInfo
             // 
-            this.labelFondInfo.AutoSize = true;
             this.labelFondInfo.Font = new System.Drawing.Font("Consolas", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.labelFondInfo.Location = new System.Drawing.Point(388, 158);
+            this.labelFondInfo.Location = new System.Drawing.Point(363, 158);
             this.labelFondInfo.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelFondInfo.Name = "labelFondInfo";
-            this.labelFondInfo.Size = new System.Drawing.Size(130, 22);
+            this.labelFondInfo.Size = new System.Drawing.Size(225, 22);
             this.labelFondInfo.TabIndex = 17;
-            this.labelFondInfo.Text = "Фонд кошелёк";
             this.labelFondInfo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // labelSummDonate
