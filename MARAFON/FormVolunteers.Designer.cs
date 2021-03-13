@@ -40,7 +40,7 @@ namespace MARAFON
             this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.button4 = new System.Windows.Forms.Button();
+            this.buttonImport = new System.Windows.Forms.Button();
             this.labelManagingМolunteers = new System.Windows.Forms.Label();
             this.labelKolvoVolonterov = new System.Windows.Forms.Label();
             this.labelSearchPo = new System.Windows.Forms.Label();
@@ -50,10 +50,9 @@ namespace MARAFON
             // 
             // buttonBack
             // 
-            this.buttonBack.Location = new System.Drawing.Point(16, 15);
-            this.buttonBack.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.buttonBack.Location = new System.Drawing.Point(12, 12);
             this.buttonBack.Name = "buttonBack";
-            this.buttonBack.Size = new System.Drawing.Size(100, 28);
+            this.buttonBack.Size = new System.Drawing.Size(75, 23);
             this.buttonBack.TabIndex = 0;
             this.buttonBack.Text = "Назад";
             this.buttonBack.UseVisualStyleBackColor = true;
@@ -61,20 +60,19 @@ namespace MARAFON
             // 
             // buttonLogout
             // 
-            this.buttonLogout.Location = new System.Drawing.Point(608, 15);
-            this.buttonLogout.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.buttonLogout.Location = new System.Drawing.Point(456, 12);
             this.buttonLogout.Name = "buttonLogout";
-            this.buttonLogout.Size = new System.Drawing.Size(100, 28);
+            this.buttonLogout.Size = new System.Drawing.Size(75, 23);
             this.buttonLogout.TabIndex = 1;
             this.buttonLogout.Text = "Logout";
             this.buttonLogout.UseVisualStyleBackColor = true;
             // 
             // buttonUpdate
             // 
-            this.buttonUpdate.Location = new System.Drawing.Point(140, 144);
-            this.buttonUpdate.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.buttonUpdate.Font = new System.Drawing.Font("Consolas", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.buttonUpdate.Location = new System.Drawing.Point(105, 117);
             this.buttonUpdate.Name = "buttonUpdate";
-            this.buttonUpdate.Size = new System.Drawing.Size(100, 28);
+            this.buttonUpdate.Size = new System.Drawing.Size(75, 23);
             this.buttonUpdate.TabIndex = 2;
             this.buttonUpdate.Text = "Обновить";
             this.buttonUpdate.UseVisualStyleBackColor = true;
@@ -83,30 +81,27 @@ namespace MARAFON
             // LabelMarathon
             // 
             this.LabelMarathon.AutoSize = true;
-            this.LabelMarathon.Location = new System.Drawing.Point(124, 21);
-            this.LabelMarathon.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.LabelMarathon.Location = new System.Drawing.Point(93, 17);
             this.LabelMarathon.Name = "LabelMarathon";
-            this.LabelMarathon.Size = new System.Drawing.Size(140, 17);
+            this.LabelMarathon.Size = new System.Drawing.Size(106, 13);
             this.LabelMarathon.TabIndex = 3;
             this.LabelMarathon.Text = "Marathon Skills 2016";
             // 
             // labelDowload
             // 
             this.labelDowload.AutoSize = true;
-            this.labelDowload.Location = new System.Drawing.Point(585, 91);
-            this.labelDowload.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelDowload.Location = new System.Drawing.Point(426, 75);
             this.labelDowload.Name = "labelDowload";
-            this.labelDowload.Size = new System.Drawing.Size(67, 17);
+            this.labelDowload.Size = new System.Drawing.Size(54, 13);
             this.labelDowload.TabIndex = 4;
             this.labelDowload.Text = "Загрузка";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(136, 91);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label3.Location = new System.Drawing.Point(102, 74);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(183, 17);
+            this.label3.Size = new System.Drawing.Size(140, 13);
             this.label3.TabIndex = 5;
             this.label3.Text = "Сортировка и фильтрация";
             // 
@@ -117,13 +112,13 @@ namespace MARAFON
             this.columnHeader2,
             this.columnHeader3,
             this.columnHeader4});
+            this.listViewVolonters.Font = new System.Drawing.Font("Consolas", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.listViewVolonters.FullRowSelect = true;
             this.listViewVolonters.GridLines = true;
             this.listViewVolonters.HideSelection = false;
-            this.listViewVolonters.Location = new System.Drawing.Point(16, 204);
-            this.listViewVolonters.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.listViewVolonters.Location = new System.Drawing.Point(12, 166);
             this.listViewVolonters.Name = "listViewVolonters";
-            this.listViewVolonters.Size = new System.Drawing.Size(691, 282);
+            this.listViewVolonters.Size = new System.Drawing.Size(519, 230);
             this.listViewVolonters.TabIndex = 6;
             this.listViewVolonters.UseCompatibleStateImageBehavior = false;
             this.listViewVolonters.View = System.Windows.Forms.View.Details;
@@ -148,43 +143,41 @@ namespace MARAFON
             this.columnHeader4.Text = "Пол";
             this.columnHeader4.Width = 115;
             // 
-            // button4
+            // buttonImport
             // 
-            this.button4.Location = new System.Drawing.Point(531, 111);
-            this.button4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(177, 28);
-            this.button4.TabIndex = 2;
-            this.button4.Text = "Загрузка волонтеров";
-            this.button4.UseVisualStyleBackColor = true;
+            this.buttonImport.Font = new System.Drawing.Font("Consolas", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.buttonImport.Location = new System.Drawing.Point(377, 90);
+            this.buttonImport.Name = "buttonImport";
+            this.buttonImport.Size = new System.Drawing.Size(154, 27);
+            this.buttonImport.TabIndex = 2;
+            this.buttonImport.Text = "Загрузка волонтеров";
+            this.buttonImport.UseVisualStyleBackColor = true;
+            this.buttonImport.Click += new System.EventHandler(this.buttonImport_Click);
             // 
             // labelManagingМolunteers
             // 
             this.labelManagingМolunteers.AutoSize = true;
-            this.labelManagingМolunteers.Location = new System.Drawing.Point(271, 49);
-            this.labelManagingМolunteers.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelManagingМolunteers.Location = new System.Drawing.Point(203, 40);
             this.labelManagingМolunteers.Name = "labelManagingМolunteers";
-            this.labelManagingМolunteers.Size = new System.Drawing.Size(179, 17);
+            this.labelManagingМolunteers.Size = new System.Drawing.Size(139, 13);
             this.labelManagingМolunteers.TabIndex = 3;
             this.labelManagingМolunteers.Text = "Управление волонтерами";
             // 
             // labelKolvoVolonterov
             // 
             this.labelKolvoVolonterov.AutoSize = true;
-            this.labelKolvoVolonterov.Location = new System.Drawing.Point(221, 185);
-            this.labelKolvoVolonterov.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelKolvoVolonterov.Location = new System.Drawing.Point(166, 150);
             this.labelKolvoVolonterov.Name = "labelKolvoVolonterov";
-            this.labelKolvoVolonterov.Size = new System.Drawing.Size(130, 17);
+            this.labelKolvoVolonterov.Size = new System.Drawing.Size(102, 13);
             this.labelKolvoVolonterov.TabIndex = 4;
             this.labelKolvoVolonterov.Text = "Всего волонтеров:";
             // 
             // labelSearchPo
             // 
             this.labelSearchPo.AutoSize = true;
-            this.labelSearchPo.Location = new System.Drawing.Point(12, 111);
-            this.labelSearchPo.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelSearchPo.Location = new System.Drawing.Point(9, 90);
             this.labelSearchPo.Name = "labelSearchPo";
-            this.labelSearchPo.Size = new System.Drawing.Size(117, 17);
+            this.labelSearchPo.Size = new System.Drawing.Size(90, 13);
             this.labelSearchPo.TabIndex = 5;
             this.labelSearchPo.Text = "Сортировать по:";
             // 
@@ -196,26 +189,24 @@ namespace MARAFON
             "Фамилия",
             "Страна",
             "Пол"});
-            this.comboBoxSort.Location = new System.Drawing.Point(140, 111);
-            this.comboBoxSort.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.comboBoxSort.Location = new System.Drawing.Point(105, 90);
             this.comboBoxSort.Name = "comboBoxSort";
-            this.comboBoxSort.Size = new System.Drawing.Size(181, 24);
+            this.comboBoxSort.Size = new System.Drawing.Size(137, 21);
             this.comboBoxSort.TabIndex = 7;
             // 
             // labelNumberOfVolunteers
             // 
             this.labelNumberOfVolunteers.AutoSize = true;
-            this.labelNumberOfVolunteers.Location = new System.Drawing.Point(365, 185);
-            this.labelNumberOfVolunteers.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelNumberOfVolunteers.Location = new System.Drawing.Point(274, 150);
             this.labelNumberOfVolunteers.Name = "labelNumberOfVolunteers";
-            this.labelNumberOfVolunteers.Size = new System.Drawing.Size(0, 17);
+            this.labelNumberOfVolunteers.Size = new System.Drawing.Size(0, 13);
             this.labelNumberOfVolunteers.TabIndex = 4;
             // 
             // FormVolunteers
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(719, 497);
+            this.ClientSize = new System.Drawing.Size(539, 404);
             this.Controls.Add(this.comboBoxSort);
             this.Controls.Add(this.listViewVolonters);
             this.Controls.Add(this.labelSearchPo);
@@ -225,11 +216,10 @@ namespace MARAFON
             this.Controls.Add(this.labelManagingМolunteers);
             this.Controls.Add(this.labelDowload);
             this.Controls.Add(this.LabelMarathon);
-            this.Controls.Add(this.button4);
+            this.Controls.Add(this.buttonImport);
             this.Controls.Add(this.buttonUpdate);
             this.Controls.Add(this.buttonLogout);
             this.Controls.Add(this.buttonBack);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "FormVolunteers";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormVolunteers";
@@ -248,7 +238,7 @@ namespace MARAFON
         private System.Windows.Forms.Label labelDowload;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.ListView listViewVolonters;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button buttonImport;
         private System.Windows.Forms.Label labelManagingМolunteers;
         private System.Windows.Forms.Label labelKolvoVolonterov;
         private System.Windows.Forms.Label labelSearchPo;

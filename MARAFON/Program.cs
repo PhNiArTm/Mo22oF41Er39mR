@@ -28,8 +28,14 @@ namespace MARAFON
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
+<<<<<<< HEAD
             formMain = new FormMyResults();
             Application.Run(formMain);
+=======
+            formMain = new FormMain();
+            Form ny = new FormVolunteers();
+            Application.Run(ny);
+>>>>>>> master
         }
         public static void UserInfoClear()
         {

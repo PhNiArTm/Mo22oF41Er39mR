@@ -103,5 +103,12 @@ namespace MARAFON
             Program.formMain.Show();
             this.Close();
         }
+
+        private void buttonImport_Click(object sender, EventArgs e)
+        {
+            Form frm = new FormLoadVolunteer();
+            frm.Show();
+            this.Hide();
+        }
     }
 }
