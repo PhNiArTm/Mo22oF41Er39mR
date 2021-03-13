@@ -43,38 +43,43 @@ namespace MARAFON
             // labelMARATHON
             // 
             this.labelMARATHON.AutoSize = true;
-            this.labelMARATHON.Location = new System.Drawing.Point(93, 17);
+            this.labelMARATHON.Location = new System.Drawing.Point(124, 21);
+            this.labelMARATHON.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelMARATHON.Name = "labelMARATHON";
-            this.labelMARATHON.Size = new System.Drawing.Size(135, 13);
+            this.labelMARATHON.Size = new System.Drawing.Size(173, 17);
             this.labelMARATHON.TabIndex = 0;
             this.labelMARATHON.Text = "MARATHON SKILLS 2016";
             // 
             // labelText
             // 
             this.labelText.AutoSize = true;
-            this.labelText.Location = new System.Drawing.Point(189, 45);
+            this.labelText.Location = new System.Drawing.Point(252, 55);
+            this.labelText.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelText.Name = "labelText";
-            this.labelText.Size = new System.Drawing.Size(263, 13);
+            this.labelText.Size = new System.Drawing.Size(337, 17);
             this.labelText.TabIndex = 1;
             this.labelText.Text = "Управление благотворительными организациями";
             // 
             // buttonBack
             // 
-            this.buttonBack.Location = new System.Drawing.Point(12, 12);
+            this.buttonBack.Location = new System.Drawing.Point(16, 15);
+            this.buttonBack.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.buttonBack.Name = "buttonBack";
-            this.buttonBack.Size = new System.Drawing.Size(75, 23);
+            this.buttonBack.Size = new System.Drawing.Size(100, 28);
             this.buttonBack.TabIndex = 2;
             this.buttonBack.Text = "Назад";
             this.buttonBack.UseVisualStyleBackColor = true;
             // 
             // buttonAdd
             // 
-            this.buttonAdd.Location = new System.Drawing.Point(12, 72);
+            this.buttonAdd.Location = new System.Drawing.Point(16, 89);
+            this.buttonAdd.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.buttonAdd.Name = "buttonAdd";
-            this.buttonAdd.Size = new System.Drawing.Size(126, 29);
+            this.buttonAdd.Size = new System.Drawing.Size(168, 36);
             this.buttonAdd.TabIndex = 3;
             this.buttonAdd.Text = "+ Добавить нового";
             this.buttonAdd.UseVisualStyleBackColor = true;
+            this.buttonAdd.Click += new System.EventHandler(this.buttonAdd_Click);
             // 
             // listViewCompany
             // 
@@ -85,9 +90,10 @@ namespace MARAFON
             this.listViewCompany.FullRowSelect = true;
             this.listViewCompany.GridLines = true;
             this.listViewCompany.HideSelection = false;
-            this.listViewCompany.Location = new System.Drawing.Point(12, 107);
+            this.listViewCompany.Location = new System.Drawing.Point(16, 132);
+            this.listViewCompany.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.listViewCompany.Name = "listViewCompany";
-            this.listViewCompany.Size = new System.Drawing.Size(681, 420);
+            this.listViewCompany.Size = new System.Drawing.Size(907, 516);
             this.listViewCompany.TabIndex = 4;
             this.listViewCompany.UseCompatibleStateImageBehavior = false;
             this.listViewCompany.View = System.Windows.Forms.View.Details;
@@ -109,26 +115,28 @@ namespace MARAFON
             // 
             // buttonEdit
             // 
-            this.buttonEdit.Location = new System.Drawing.Point(598, 72);
+            this.buttonEdit.Location = new System.Drawing.Point(797, 89);
+            this.buttonEdit.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.buttonEdit.Name = "buttonEdit";
-            this.buttonEdit.Size = new System.Drawing.Size(95, 29);
+            this.buttonEdit.Size = new System.Drawing.Size(127, 36);
             this.buttonEdit.TabIndex = 5;
             this.buttonEdit.Text = "Изменить";
             this.buttonEdit.UseVisualStyleBackColor = true;
             this.buttonEdit.Click += new System.EventHandler(this.buttonEdit_Click);
             // 
-            // FormMenageCharities
+            // FormMenageCharity
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(700, 532);
+            this.ClientSize = new System.Drawing.Size(933, 655);
             this.Controls.Add(this.buttonEdit);
             this.Controls.Add(this.listViewCompany);
             this.Controls.Add(this.buttonAdd);
             this.Controls.Add(this.buttonBack);
             this.Controls.Add(this.labelText);
             this.Controls.Add(this.labelMARATHON);
-            this.Name = "FormMenageCharities";
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Name = "FormMenageCharity";
             this.Text = "Marathon Skills 2016 – Manage charities";
             this.ResumeLayout(false);
             this.PerformLayout();

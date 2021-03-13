@@ -43,7 +43,7 @@ namespace MARAFON
             da.Fill(dt);
             for (int i = 0; i < dt.Rows.Count; i++)
             {
-                image.Images.Add(new Bitmap(String.Format("image/{0}", dt.Rows[i]["CharityLogo"].ToString())));
+                //image.Images.Add(new Bitmap(String.Format("image/{0}", dt.Rows[i]["CharityLogo"].ToString())));
 
                 ListViewItem listViewItem = new ListViewItem(new string[] { "", dt.Rows[i]["CharityName"].ToString(), dt.Rows[i]["CharityDescription"].ToString() });
                 listViewItem.ImageIndex = i;
@@ -58,8 +58,16 @@ namespace MARAFON
         {
             if (listViewCompany.SelectedItems.Count == 1)
             {
-                MessageBox.Show(listViewCompany.SelectedItems[0].SubItems[1].Text);
+                Program.companyName = listViewCompany.SelectedItems[0].SubItems[1].Text;
+                Form frm = new FormAddOrEditCompanyDonate();
+                frm.Show();
             }
+        }
+
+        private void buttonAdd_Click(object sender, EventArgs e)
+        {
+            Form frm = new FormAddOrEditCompanyDonate();
+            frm.Show();
         }
     }
 }

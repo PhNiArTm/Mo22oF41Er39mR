@@ -16,9 +16,10 @@ namespace MARAFON
             "password=PR02022002");
         public static User userInfo = new User();
         public static MySqlDataReader sqlDataReader = null;
+        public static string companyName = null;
 
         //Общая главная форма для избежания создания дубликатов
-        public static FormMySponsors formMain;
+        public static FormMenageCharity formMain;
         /// <summary>
         /// Главная точка входа для приложения.
         /// </summary>
@@ -27,7 +28,7 @@ namespace MARAFON
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            formMain = new FormMySponsors();
+            formMain = new FormMenageCharity();
             Application.Run(formMain);
         }
         public static void UserInfoClear()
