@@ -13,6 +13,7 @@ namespace MARAFON
 {
     public partial class FormInventory : Form
     {
+        private bool checkCancelButton = false;
         public int[] counts = new int[3];
         public char[] Ids = new char[3] { 'A', 'B', 'C' };
         public FormInventory()
@@ -140,6 +141,30 @@ namespace MARAFON
         {
             FormInventoryReceipt form = new FormInventoryReceipt();
             form.Show();
+            this.checkCancelButton = true;
+            this.Close();
+        }
+
+        private void FormInventory_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            if (!this.checkCancelButton)
+            {
+                Application.Exit();
+            }
+        }
+
+        private void buttonCancel_Click(object sender, EventArgs e)
+        {
+            this.checkCancelButton = true;
+            this.Close();
+        }
+
+        private void buttonLogout_Click(object sender, EventArgs e)
+        {
+            Program.UserInfoClear();
+            checkCancelButton = true;
+            Program.formMain.Show();
+            this.Close();
         }
     }
 }

@@ -61,6 +61,7 @@ namespace MARAFON
             this.buttonCancel.TabIndex = 8;
             this.buttonCancel.Text = "Назад";
             this.buttonCancel.UseVisualStyleBackColor = true;
+            this.buttonCancel.Click += new System.EventHandler(this.buttonCancel_Click);
             // 
             // buttonLogout
             // 
@@ -70,6 +71,7 @@ namespace MARAFON
             this.buttonLogout.TabIndex = 7;
             this.buttonLogout.Text = "Logout";
             this.buttonLogout.UseVisualStyleBackColor = true;
+            this.buttonLogout.Click += new System.EventHandler(this.buttonLogout_Click);
             // 
             // labelInventory
             // 
@@ -318,6 +320,7 @@ namespace MARAFON
             this.Name = "FormInventoryReceipt";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Поступление инвентаря";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FormInventoryReceipt_FormClosed);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
             this.ResumeLayout(false);

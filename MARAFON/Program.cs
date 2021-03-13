@@ -29,8 +29,13 @@ namespace MARAFON
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             formMain = new FormMain();
-            Form ny = new FormVolunteers();
-            Application.Run(ny);
+
+            //Заменить нижние две строки для теста переходов между формами
+            //FormInventory form = new FormInventory();
+            //form.Show();
+
+            Application.Run(formMain);
+
         }
         public static void UserInfoClear()
         {
