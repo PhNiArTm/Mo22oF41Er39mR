@@ -28,7 +28,7 @@ namespace MARAFON
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             formMain = new FormMain();
-            Application.Run(new FormInventory());
+            Application.Run(formMain);
         }
         public static void UserInfoClear()
         {
