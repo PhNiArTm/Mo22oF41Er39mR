@@ -13,6 +13,7 @@ namespace MARAFON
 {
     public partial class FormMyResults : Form
     {
+        private bool checkCancelButton = false;
         DateTime voteTime = new DateTime(2021, 04, 24, 6, 0, 0);
         public FormMyResults()
         {
@@ -67,6 +68,7 @@ namespace MARAFON
 
         private void buttonBack_Click(object sender, EventArgs e)
         {
+            checkCancelButton = true;
             FormMenuRunner frm = new FormMenuRunner();
             frm.Show();
             this.Close();
@@ -74,9 +76,18 @@ namespace MARAFON
 
         private void buttonLogout_Click(object sender, EventArgs e)
         {
+            checkCancelButton = true;
             Program.UserInfoClear();
             Program.formMain.Show();
             this.Close();
+        }
+
+        private void FormMyResults_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            if (!this.checkCancelButton)
+            {
+                Application.Exit();
+            }
         }
     }
 }

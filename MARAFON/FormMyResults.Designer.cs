@@ -132,7 +132,7 @@ namespace MARAFON
             this.labelNameTag.Location = new System.Drawing.Point(83, 10);
             this.labelNameTag.Margin = new System.Windows.Forms.Padding(2, 10, 10, 0);
             this.labelNameTag.Name = "labelNameTag";
-            this.labelNameTag.Size = new System.Drawing.Size(250, 57);
+            this.labelNameTag.Size = new System.Drawing.Size(315, 57);
             this.labelNameTag.TabIndex = 1;
             this.labelNameTag.Text = "MARATHON SKILLS 2021";
             this.labelNameTag.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -308,6 +308,7 @@ namespace MARAFON
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormMyResults";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FormMyResults_FormClosed);
             this.tableLayoutPanelAll.ResumeLayout(false);
             this.tableLayoutPanel2.ResumeLayout(false);
             this.tableLayoutPanel2.PerformLayout();

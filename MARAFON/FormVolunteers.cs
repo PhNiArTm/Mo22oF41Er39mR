@@ -106,6 +106,8 @@ namespace MARAFON
 
         private void buttonImport_Click(object sender, EventArgs e)
         {
+            this.checkCancelButton = true;
+            Program.formMain.Show();
             Form frm = new FormLoadVolunteer();
             frm.Show();
             this.Close();
@@ -119,8 +121,8 @@ namespace MARAFON
         private void buttonLogout_Click(object sender, EventArgs e)
         {
             Program.UserInfoClear();
-            FormMain frm = new FormMain();
-            frm.Show();
+            this.checkCancelButton = true;
+            Program.formMain.Show();
             this.Close();
         }
     }

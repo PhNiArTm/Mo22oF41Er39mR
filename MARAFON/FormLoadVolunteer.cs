@@ -15,6 +15,7 @@ namespace MARAFON
 {
     public partial class FormLoadVolunteer : Form
     {
+        private bool checkCancelButton = false;
         public OpenFileDialog fileInfo;
         bool checkImport = false;
         public FormLoadVolunteer()
@@ -86,9 +87,18 @@ namespace MARAFON
 
         private void buttonCancel_Click(object sender, EventArgs e)
         {
+            checkCancelButton = true;
             Form frm = new FormVolunteers();
             frm.Show();
-            this.Hide();
+            this.Close();
+        }
+
+        private void FormLoadVolunteer_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            if (!this.checkCancelButton)
+            {
+                Application.Exit();
+            }
         }
     }
 }

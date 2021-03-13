@@ -42,9 +42,10 @@ namespace MARAFON
             // buttonImportData
             // 
             this.buttonImportData.Font = new System.Drawing.Font("Consolas", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.buttonImportData.Location = new System.Drawing.Point(242, 93);
+            this.buttonImportData.Location = new System.Drawing.Point(323, 114);
+            this.buttonImportData.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.buttonImportData.Name = "buttonImportData";
-            this.buttonImportData.Size = new System.Drawing.Size(121, 27);
+            this.buttonImportData.Size = new System.Drawing.Size(161, 33);
             this.buttonImportData.TabIndex = 0;
             this.buttonImportData.Text = "Импортировать";
             this.buttonImportData.UseVisualStyleBackColor = true;
@@ -58,28 +59,31 @@ namespace MARAFON
             // 
             this.textBoxNamFile.Enabled = false;
             this.textBoxNamFile.Font = new System.Drawing.Font("Consolas", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBoxNamFile.Location = new System.Drawing.Point(18, 93);
+            this.textBoxNamFile.Location = new System.Drawing.Point(24, 114);
+            this.textBoxNamFile.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.textBoxNamFile.Multiline = true;
             this.textBoxNamFile.Name = "textBoxNamFile";
-            this.textBoxNamFile.Size = new System.Drawing.Size(209, 27);
+            this.textBoxNamFile.Size = new System.Drawing.Size(277, 32);
             this.textBoxNamFile.TabIndex = 1;
             // 
             // labelCSVName
             // 
             this.labelCSVName.AutoSize = true;
             this.labelCSVName.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.labelCSVName.Location = new System.Drawing.Point(15, 72);
+            this.labelCSVName.Location = new System.Drawing.Point(20, 89);
+            this.labelCSVName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelCSVName.Name = "labelCSVName";
-            this.labelCSVName.Size = new System.Drawing.Size(160, 18);
+            this.labelCSVName.Size = new System.Drawing.Size(200, 22);
             this.labelCSVName.TabIndex = 2;
             this.labelCSVName.Text = "CSV файл волонтеров";
             // 
             // labelTitle
             // 
             this.labelTitle.Font = new System.Drawing.Font("Consolas", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.labelTitle.Location = new System.Drawing.Point(44, 9);
+            this.labelTitle.Location = new System.Drawing.Point(59, 11);
+            this.labelTitle.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelTitle.Name = "labelTitle";
-            this.labelTitle.Size = new System.Drawing.Size(314, 48);
+            this.labelTitle.Size = new System.Drawing.Size(419, 59);
             this.labelTitle.TabIndex = 8;
             this.labelTitle.Text = "Загрузка волонтеров";
             this.labelTitle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -87,9 +91,10 @@ namespace MARAFON
             // buttonLoadDB
             // 
             this.buttonLoadDB.Font = new System.Drawing.Font("Consolas", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.buttonLoadDB.Location = new System.Drawing.Point(18, 129);
+            this.buttonLoadDB.Location = new System.Drawing.Point(24, 159);
+            this.buttonLoadDB.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.buttonLoadDB.Name = "buttonLoadDB";
-            this.buttonLoadDB.Size = new System.Drawing.Size(103, 30);
+            this.buttonLoadDB.Size = new System.Drawing.Size(137, 37);
             this.buttonLoadDB.TabIndex = 9;
             this.buttonLoadDB.Text = "Загрузить";
             this.buttonLoadDB.UseVisualStyleBackColor = true;
@@ -98,9 +103,10 @@ namespace MARAFON
             // buttonCancel
             // 
             this.buttonCancel.Font = new System.Drawing.Font("Consolas", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.buttonCancel.Location = new System.Drawing.Point(127, 129);
+            this.buttonCancel.Location = new System.Drawing.Point(169, 159);
+            this.buttonCancel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.buttonCancel.Name = "buttonCancel";
-            this.buttonCancel.Size = new System.Drawing.Size(100, 30);
+            this.buttonCancel.Size = new System.Drawing.Size(133, 37);
             this.buttonCancel.TabIndex = 10;
             this.buttonCancel.Text = "Отмена";
             this.buttonCancel.UseVisualStyleBackColor = true;
@@ -110,18 +116,19 @@ namespace MARAFON
             // 
             this.labelResultAdd.AutoSize = true;
             this.labelResultAdd.Font = new System.Drawing.Font("Consolas", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.labelResultAdd.Location = new System.Drawing.Point(15, 171);
+            this.labelResultAdd.Location = new System.Drawing.Point(20, 210);
+            this.labelResultAdd.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelResultAdd.Name = "labelResultAdd";
-            this.labelResultAdd.Size = new System.Drawing.Size(140, 14);
+            this.labelResultAdd.Size = new System.Drawing.Size(160, 18);
             this.labelResultAdd.TabIndex = 11;
             this.labelResultAdd.Text = "Успешно добавлено: ";
             this.labelResultAdd.Visible = false;
             // 
             // FormLoadVolunteer
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(406, 234);
+            this.ClientSize = new System.Drawing.Size(541, 288);
             this.Controls.Add(this.labelResultAdd);
             this.Controls.Add(this.buttonCancel);
             this.Controls.Add(this.buttonLoadDB);
@@ -129,8 +136,10 @@ namespace MARAFON
             this.Controls.Add(this.labelCSVName);
             this.Controls.Add(this.textBoxNamFile);
             this.Controls.Add(this.buttonImportData);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "FormLoadVolunteer";
             this.Text = "FormLoadVolunteer";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FormLoadVolunteer_FormClosed);
             this.ResumeLayout(false);
             this.PerformLayout();
 

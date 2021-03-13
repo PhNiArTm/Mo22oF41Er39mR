@@ -129,7 +129,7 @@ namespace MARAFON
             this.labelNameTag.Location = new System.Drawing.Point(83, 10);
             this.labelNameTag.Margin = new System.Windows.Forms.Padding(2, 10, 10, 0);
             this.labelNameTag.Name = "labelNameTag";
-            this.labelNameTag.Size = new System.Drawing.Size(250, 57);
+            this.labelNameTag.Size = new System.Drawing.Size(315, 57);
             this.labelNameTag.TabIndex = 1;
             this.labelNameTag.Text = "MARATHON SKILLS 2021";
             this.labelNameTag.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -296,7 +296,7 @@ namespace MARAFON
             this.checkBox42km.Location = new System.Drawing.Point(35, 3);
             this.checkBox42km.Margin = new System.Windows.Forms.Padding(35, 3, 3, 3);
             this.checkBox42km.Name = "checkBox42km";
-            this.checkBox42km.Size = new System.Drawing.Size(251, 22);
+            this.checkBox42km.Size = new System.Drawing.Size(276, 26);
             this.checkBox42km.TabIndex = 0;
             this.checkBox42km.Text = "42 км. Полный марафон (145$)";
             this.checkBox42km.UseVisualStyleBackColor = true;
@@ -309,7 +309,7 @@ namespace MARAFON
             this.checkBox21km.Location = new System.Drawing.Point(35, 35);
             this.checkBox21km.Margin = new System.Windows.Forms.Padding(35, 3, 3, 3);
             this.checkBox21km.Name = "checkBox21km";
-            this.checkBox21km.Size = new System.Drawing.Size(219, 22);
+            this.checkBox21km.Size = new System.Drawing.Size(272, 26);
             this.checkBox21km.TabIndex = 1;
             this.checkBox21km.Text = "21 км. Полумарафон (75$)";
             this.checkBox21km.UseVisualStyleBackColor = true;
@@ -322,7 +322,7 @@ namespace MARAFON
             this.checkBox5km.Location = new System.Drawing.Point(35, 67);
             this.checkBox5km.Margin = new System.Windows.Forms.Padding(35, 3, 3, 3);
             this.checkBox5km.Name = "checkBox5km";
-            this.checkBox5km.Size = new System.Drawing.Size(243, 22);
+            this.checkBox5km.Size = new System.Drawing.Size(276, 26);
             this.checkBox5km.TabIndex = 2;
             this.checkBox5km.Text = "5 км. Малая Дистанция (20$)";
             this.checkBox5km.UseVisualStyleBackColor = true;
@@ -406,10 +406,10 @@ namespace MARAFON
             // 
             this.labelAmountSponsore.AutoSize = true;
             this.labelAmountSponsore.Dock = System.Windows.Forms.DockStyle.Right;
-            this.labelAmountSponsore.Location = new System.Drawing.Point(112, 232);
+            this.labelAmountSponsore.Location = new System.Drawing.Point(98, 232);
             this.labelAmountSponsore.Margin = new System.Windows.Forms.Padding(0, 3, 0, 5);
             this.labelAmountSponsore.Name = "labelAmountSponsore";
-            this.labelAmountSponsore.Size = new System.Drawing.Size(49, 23);
+            this.labelAmountSponsore.Size = new System.Drawing.Size(63, 23);
             this.labelAmountSponsore.TabIndex = 8;
             this.labelAmountSponsore.Text = "Взнос:";
             this.labelAmountSponsore.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -418,10 +418,10 @@ namespace MARAFON
             // 
             this.labelSummSponsore.AutoSize = true;
             this.labelSummSponsore.Dock = System.Windows.Forms.DockStyle.Right;
-            this.labelSummSponsore.Location = new System.Drawing.Point(63, 270);
+            this.labelSummSponsore.Location = new System.Drawing.Point(35, 270);
             this.labelSummSponsore.Margin = new System.Windows.Forms.Padding(0, 10, 0, 10);
             this.labelSummSponsore.Name = "labelSummSponsore";
-            this.labelSummSponsore.Size = new System.Drawing.Size(98, 18);
+            this.labelSummSponsore.Size = new System.Drawing.Size(126, 18);
             this.labelSummSponsore.TabIndex = 9;
             this.labelSummSponsore.Text = "Сумма взноса:";
             this.labelSummSponsore.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -432,7 +432,7 @@ namespace MARAFON
             this.textBoxAmountSponsore.Location = new System.Drawing.Point(163, 270);
             this.textBoxAmountSponsore.Margin = new System.Windows.Forms.Padding(2, 10, 0, 0);
             this.textBoxAmountSponsore.Name = "textBoxAmountSponsore";
-            this.textBoxAmountSponsore.Size = new System.Drawing.Size(151, 23);
+            this.textBoxAmountSponsore.Size = new System.Drawing.Size(151, 27);
             this.textBoxAmountSponsore.TabIndex = 10;
             this.textBoxAmountSponsore.Text = "0";
             // 
@@ -501,7 +501,7 @@ namespace MARAFON
             this.comboBoxDeposit.Location = new System.Drawing.Point(2, 4);
             this.comboBoxDeposit.Margin = new System.Windows.Forms.Padding(2, 4, 0, 0);
             this.comboBoxDeposit.Name = "comboBoxDeposit";
-            this.comboBoxDeposit.Size = new System.Drawing.Size(122, 23);
+            this.comboBoxDeposit.Size = new System.Drawing.Size(122, 27);
             this.comboBoxDeposit.TabIndex = 12;
             // 
             // buttonInfoCompany

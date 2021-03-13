@@ -12,6 +12,7 @@ namespace MARAFON
 { 
     public partial class FormInformAboutMarafon : Form
     {
+        private bool checkCancelButton = false;
         public FormInformAboutMarafon()
         {
             InitializeComponent();
@@ -19,9 +20,18 @@ namespace MARAFON
 
         private void pictureBox4_Click(object sender, EventArgs e)
         {
+            checkCancelButton = true;
             FormInteractionMap formMap = new FormInteractionMap();
             formMap.Show();
-            this.Hide();
+            this.Close();
+        }
+
+        private void FormInformAboutMarafon_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            if (!this.checkCancelButton)
+            {
+                Application.Exit();
+            }
         }
     }
 }

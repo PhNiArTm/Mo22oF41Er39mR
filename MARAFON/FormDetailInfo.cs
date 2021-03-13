@@ -12,6 +12,7 @@ namespace MARAFON
 {
     public partial class FormDetailInfo : Form
     {
+        private bool checkCancelButton = false;
         public FormDetailInfo()
         {
             InitializeComponent();
@@ -21,21 +22,31 @@ namespace MARAFON
         {
             FormCompanyDonate frm = new FormCompanyDonate();
             frm.Show();
-            this.Hide();
+            this.Close();
         }
 
         private void buttonDurationMarathon_Click(object sender, EventArgs e)
         {
+            this.checkCancelButton = true;
             FormHowLong frm = new FormHowLong();
             frm.Show();
-            this.Hide();
+            this.Close();
         }
 
         private void buttonSkills2016_Click(object sender, EventArgs e)
         {
+            this.checkCancelButton = true;
             FormInformAboutMarafon frm = new FormInformAboutMarafon();
             frm.Show();
-            this.Hide();
+            this.Close();
+        }
+
+        private void FormDetailInfo_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            if (!this.checkCancelButton)
+            {
+                Application.Exit();
+            }
         }
     }
 }

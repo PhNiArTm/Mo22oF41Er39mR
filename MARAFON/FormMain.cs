@@ -12,6 +12,7 @@ namespace MARAFON
 {
     public partial class FormMain : Form
     {
+        private bool checkCancelButton = false;
         public object sender = null;
         public EventArgs e = null;
         public Label label = null;
@@ -43,32 +44,39 @@ namespace MARAFON
 
         private void buttonSponsore_Click(object sender, EventArgs e)
         {
+            checkCancelButton = true;
             Form frm = new FormSponsoreRunner();
             frm.Show();
             this.Hide();
         }
         private void FormMain_FormClosed(object sender, FormClosedEventArgs e)
         {
-            Application.Exit();
+            if (!this.checkCancelButton)
+            {
+                Application.Exit();
+            }
         }
         private void buttonLogin_Click(object sender, EventArgs e)
         {
+            checkCancelButton = true;
             FormLogin formLogin = new FormLogin();
             formLogin.Show();
             Program.formMain.Hide();
         }
         private void buttonRunner_Click(object sender, EventArgs e)
         {
+            checkCancelButton = true;
             FormRegisterAsARunner formRegisterAsARunner = new FormRegisterAsARunner();
-            this.Hide();
             formRegisterAsARunner.Show();
+            this.Hide();
         }
 
         private void buttonEventInfo_Click(object sender, EventArgs e)
         {
+            checkCancelButton = true;
             FormDetailInfo frm = new FormDetailInfo();
-            this.Hide();
             frm.Show();
+            this.Hide();
         }
     }
 }
