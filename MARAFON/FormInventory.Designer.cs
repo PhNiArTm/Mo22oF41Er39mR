@@ -425,8 +425,8 @@ namespace MARAFON
             this.labelSum7.TabIndex = 49;
             this.labelSum7.Text = "Сумма";
             this.labelSum7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // labelC7
             // 
             this.labelC7.AutoSize = true;
             this.labelC7.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -437,8 +437,8 @@ namespace MARAFON
             this.labelC7.TabIndex = 48;
             this.labelC7.Text = "123";
             this.labelC7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.labelC7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // labelRemains6
             // 
             this.labelRemains6.AutoSize = true;
             this.labelRemains6.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -449,8 +449,8 @@ namespace MARAFON
             this.labelRemains6.TabIndex = 47;
             this.labelRemains6.Text = "Остаток";
             this.labelRemains6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // labelSum6
             // 
             this.labelSum6.AutoSize = true;
             this.labelSum6.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -461,8 +461,8 @@ namespace MARAFON
             this.labelSum6.TabIndex = 46;
             this.labelSum6.Text = "Сумма";
             this.labelSum6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.label11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.label11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // labelC6
             // 
             this.labelC6.AutoSize = true;
             this.labelC6.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -473,8 +473,8 @@ namespace MARAFON
             this.labelC6.TabIndex = 45;
             this.labelC6.Text = "123";
             this.labelC6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.label12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.label12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // labelRemains5
             // 
             this.labelRemains5.AutoSize = true;
             this.labelRemains5.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -485,8 +485,8 @@ namespace MARAFON
             this.labelRemains5.TabIndex = 44;
             this.labelRemains5.Text = "Остаток";
             this.labelRemains5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.label13.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.label13.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // labelSum5
             // 
             this.labelSum5.AutoSize = true;
             this.labelSum5.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -497,8 +497,8 @@ namespace MARAFON
             this.labelSum5.TabIndex = 43;
             this.labelSum5.Text = "Сумма";
             this.labelSum5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.labelA1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.labelA1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // labelC5
             // 
             this.labelC5.AutoSize = true;
             this.labelC5.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -509,8 +509,8 @@ namespace MARAFON
             this.labelC5.TabIndex = 42;
             this.labelC5.Text = "123";
             this.labelC5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.labelB1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.labelB1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // labelB5
             // 
             this.labelB5.AutoSize = true;
             this.labelB5.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -521,8 +521,8 @@ namespace MARAFON
             this.labelB5.TabIndex = 41;
             this.labelB5.Text = "123";
             this.labelB5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.labelC1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.labelC1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // labelRemains4
             // 
             this.labelRemains4.AutoSize = true;
             this.labelRemains4.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -533,8 +533,8 @@ namespace MARAFON
             this.labelRemains4.TabIndex = 40;
             this.labelRemains4.Text = "Остаток";
             this.labelRemains4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.labelSum1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.labelSum1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // labelSum4
             // 
             this.labelSum4.AutoSize = true;
             this.labelSum4.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -545,8 +545,8 @@ namespace MARAFON
             this.labelSum4.TabIndex = 39;
             this.labelSum4.Text = "Сумма";
             this.labelSum4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.labelRemains1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.labelRemains1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // labelC4
             // 
             this.labelC4.AutoSize = true;
             this.labelC4.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -557,8 +557,8 @@ namespace MARAFON
             this.labelC4.TabIndex = 38;
             this.labelC4.Text = "123";
             this.labelC4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.labelA2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.labelA2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // labelB4
             // 
             this.labelB4.AutoSize = true;
             this.labelB4.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -569,9 +569,9 @@ namespace MARAFON
             this.labelB4.TabIndex = 37;
             this.labelB4.Text = "123";
             this.labelB4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.labelB2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // labelRemains3
-            // labelC2
+            // 
             this.labelRemains3.AutoSize = true;
             this.labelRemains3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.labelRemains3.Location = new System.Drawing.Point(651, 190);
@@ -581,9 +581,9 @@ namespace MARAFON
             this.labelRemains3.TabIndex = 36;
             this.labelRemains3.Text = "Остаток";
             this.labelRemains3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.labelC2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // labelSum3
-            // labelSum2
+            // 
             this.labelSum3.AutoSize = true;
             this.labelSum3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.labelSum3.Location = new System.Drawing.Point(521, 190);
@@ -605,8 +605,8 @@ namespace MARAFON
             this.labelC3.TabIndex = 34;
             this.labelC3.Text = "123";
             this.labelC3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.labelSum2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.labelSum2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // labelB3
             // 
             this.labelB3.AutoSize = true;
             this.labelB3.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -617,8 +617,6 @@ namespace MARAFON
             this.labelB3.TabIndex = 33;
             this.labelB3.Text = "123";
             this.labelB3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.labelRemains2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.labelRemains2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // labelA3
             // 
@@ -632,6 +630,8 @@ namespace MARAFON
             this.labelA3.Text = "123";
             this.labelA3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // labelRemains2
+            // 
             this.labelRemains2.AutoSize = true;
             this.labelRemains2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.labelRemains2.Location = new System.Drawing.Point(651, 149);
@@ -641,8 +641,8 @@ namespace MARAFON
             this.labelRemains2.TabIndex = 31;
             this.labelRemains2.Text = "Остаток";
             this.labelRemains2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.labelC3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.labelC3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // labelSum2
             // 
             this.labelSum2.AutoSize = true;
             this.labelSum2.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -653,8 +653,8 @@ namespace MARAFON
             this.labelSum2.TabIndex = 30;
             this.labelSum2.Text = "Сумма";
             this.labelSum2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.labelSum3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.labelSum3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // labelC2
             // 
             this.labelC2.AutoSize = true;
             this.labelC2.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -665,8 +665,8 @@ namespace MARAFON
             this.labelC2.TabIndex = 29;
             this.labelC2.Text = "123";
             this.labelC2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.labelRemains3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.labelRemains3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // labelB2
             // 
             this.labelB2.AutoSize = true;
             this.labelB2.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -677,8 +677,8 @@ namespace MARAFON
             this.labelB2.TabIndex = 28;
             this.labelB2.Text = "123";
             this.labelB2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.labelB4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.labelB4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // labelA2
             // 
             this.labelA2.AutoSize = true;
             this.labelA2.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -689,8 +689,8 @@ namespace MARAFON
             this.labelA2.TabIndex = 27;
             this.labelA2.Text = "123";
             this.labelA2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.labelC4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.labelC4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // labelRemains1
             // 
             this.labelRemains1.AutoSize = true;
             this.labelRemains1.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -701,8 +701,8 @@ namespace MARAFON
             this.labelRemains1.TabIndex = 26;
             this.labelRemains1.Text = "Остаток";
             this.labelRemains1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.labelSum4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.labelSum4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // labelSum1
             // 
             this.labelSum1.AutoSize = true;
             this.labelSum1.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -713,8 +713,8 @@ namespace MARAFON
             this.labelSum1.TabIndex = 25;
             this.labelSum1.Text = "Сумма";
             this.labelSum1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.labelRemains4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.labelRemains4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // labelC1
             // 
             this.labelC1.AutoSize = true;
             this.labelC1.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -725,8 +725,8 @@ namespace MARAFON
             this.labelC1.TabIndex = 24;
             this.labelC1.Text = "123";
             this.labelC1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.labelB5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.labelB5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // labelB1
             // 
             this.labelB1.AutoSize = true;
             this.labelB1.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -737,8 +737,8 @@ namespace MARAFON
             this.labelB1.TabIndex = 23;
             this.labelB1.Text = "123";
             this.labelB1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.labelC5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.labelC5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // labelA1
             // 
             this.labelA1.AutoSize = true;
             this.labelA1.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -749,8 +749,8 @@ namespace MARAFON
             this.labelA1.TabIndex = 8;
             this.labelA1.Text = "123";
             this.labelA1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.labelSum5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.labelSum5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // labelBlock1
             // 
             this.labelBlock1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.labelBlock1.Location = new System.Drawing.Point(131, 231);
@@ -760,9 +760,9 @@ namespace MARAFON
             this.labelBlock1.TabIndex = 8;
             this.labelBlock1.Text = "--------";
             this.labelBlock1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.labelRemains5.Text = "Остаток";
-            this.labelRemains5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.labelRemains5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label9
+            // 
             this.label9.AutoSize = true;
             this.tableLayoutPanel.SetColumnSpan(this.label9, 6);
             this.label9.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -773,9 +773,9 @@ namespace MARAFON
             this.label9.TabIndex = 17;
             this.label9.Text = "Состав комплекта";
             this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.labelC6.Text = "123";
-            this.labelC6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.labelC6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label8
+            // 
             this.label8.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label8.Location = new System.Drawing.Point(131, 272);
             this.label8.Margin = new System.Windows.Forms.Padding(1);
@@ -784,9 +784,9 @@ namespace MARAFON
             this.label8.TabIndex = 18;
             this.label8.Text = "--------";
             this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.labelSum6.TabIndex = 46;
-            this.labelSum6.Text = "Сумма";
-            this.labelSum6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label10
+            // 
             this.label10.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label10.Location = new System.Drawing.Point(131, 313);
             this.label10.Margin = new System.Windows.Forms.Padding(1);
@@ -795,9 +795,9 @@ namespace MARAFON
             this.label10.TabIndex = 19;
             this.label10.Text = "--------";
             this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.labelRemains6.Size = new System.Drawing.Size(134, 39);
-            this.labelRemains6.TabIndex = 47;
-            this.labelRemains6.Text = "Остаток";
+            // 
+            // label11
+            // 
             this.label11.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label11.Location = new System.Drawing.Point(131, 354);
             this.label11.Margin = new System.Windows.Forms.Padding(1);
@@ -806,9 +806,9 @@ namespace MARAFON
             this.label11.TabIndex = 20;
             this.label11.Text = "--------";
             this.label11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.labelC7.Name = "labelC7";
-            this.labelC7.Size = new System.Drawing.Size(128, 44);
-            this.labelC7.TabIndex = 48;
+            // 
+            // label12
+            // 
             this.label12.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label12.Location = new System.Drawing.Point(261, 354);
             this.label12.Margin = new System.Windows.Forms.Padding(1);
@@ -817,9 +817,9 @@ namespace MARAFON
             this.label12.TabIndex = 21;
             this.label12.Text = "--------";
             this.label12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.labelSum7.Margin = new System.Windows.Forms.Padding(1);
-            this.labelSum7.Name = "labelSum7";
-            this.labelSum7.Size = new System.Drawing.Size(128, 44);
+            // 
+            // label13
+            // 
             this.label13.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label13.Location = new System.Drawing.Point(261, 313);
             this.label13.Margin = new System.Windows.Forms.Padding(1);
@@ -828,14 +828,6 @@ namespace MARAFON
             this.label13.TabIndex = 22;
             this.label13.Text = "--------";
             this.label13.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.labelRemains7.Location = new System.Drawing.Point(651, 354);
-            this.labelRemains7.Margin = new System.Windows.Forms.Padding(1);
-            this.labelRemains7.Name = "labelRemains7";
-            this.labelRemains7.Size = new System.Drawing.Size(134, 44);
-            this.labelRemains7.TabIndex = 50;
-            this.labelRemains7.Text = "Остаток";
-            this.labelRemains7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.labelRemains7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // FormInventory
             // 
