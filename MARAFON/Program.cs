@@ -36,6 +36,10 @@ namespace MARAFON
 
             Application.Run(formMain);
 
+            formMain = new FormMain();
+            Form ny = new FormVolunteers();
+            Application.Run(ny);
+
         }
         public static void UserInfoClear()
         {
