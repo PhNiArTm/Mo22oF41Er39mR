@@ -291,6 +291,9 @@
     <EmbeddedResource Include="FormInventory.resx">
       <DependentUpon>FormInventory.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormInventoryReceipt.resx">
+      <DependentUpon>FormInventoryReceipt.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormMain.resx">
       <DependentUpon>FormMain.cs</DependentUpon>
     </EmbeddedResource>
