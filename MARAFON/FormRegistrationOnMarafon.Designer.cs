@@ -36,30 +36,30 @@ namespace MARAFON
             this.labelNameTag = new System.Windows.Forms.Label();
             this.labelEventTime = new System.Windows.Forms.Label();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
-            this.buttonCancel = new System.Windows.Forms.Button();
-            this.buttonRegister = new System.Windows.Forms.Button();
-            this.labelTitleRegister = new System.Windows.Forms.Label();
-            this.labelInfoRegister = new System.Windows.Forms.Label();
-            this.labelTypeMarathon = new System.Windows.Forms.Label();
-            this.labelDecision = new System.Windows.Forms.Label();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
-            this.checkBox42km = new System.Windows.Forms.CheckBox();
-            this.checkBox21km = new System.Windows.Forms.CheckBox();
-            this.checkBox5km = new System.Windows.Forms.CheckBox();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.checkBox2 = new System.Windows.Forms.CheckBox();
+            this.checkBox3 = new System.Windows.Forms.CheckBox();
             this.tableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
-            this.radioButtonTypeC = new System.Windows.Forms.RadioButton();
-            this.radioButtonTypeB = new System.Windows.Forms.RadioButton();
-            this.radioButtonTypeA = new System.Windows.Forms.RadioButton();
-            this.labelDetailsSponsore = new System.Windows.Forms.Label();
-            this.labelAmountSponsore = new System.Windows.Forms.Label();
-            this.labelSummSponsore = new System.Windows.Forms.Label();
-            this.textBoxAmountSponsore = new System.Windows.Forms.TextBox();
+            this.radioButton3 = new System.Windows.Forms.RadioButton();
+            this.radioButton2 = new System.Windows.Forms.RadioButton();
+            this.radioButton1 = new System.Windows.Forms.RadioButton();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.tableLayoutPanel6 = new System.Windows.Forms.TableLayoutPanel();
-            this.labelAmountFullRegister = new System.Windows.Forms.Label();
-            this.labelRegisterAmount = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
             this.tableLayoutPanel7 = new System.Windows.Forms.TableLayoutPanel();
             this.comboBoxDeposit = new System.Windows.Forms.ComboBox();
-            this.buttonInfoCompany = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
             this.timer = new System.Windows.Forms.Timer(this.components);
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
@@ -153,18 +153,18 @@ namespace MARAFON
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 23.74631F));
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 22.56637F));
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 53.53982F));
-            this.tableLayoutPanel3.Controls.Add(this.buttonCancel, 1, 7);
-            this.tableLayoutPanel3.Controls.Add(this.buttonRegister, 0, 7);
-            this.tableLayoutPanel3.Controls.Add(this.labelTitleRegister, 0, 0);
-            this.tableLayoutPanel3.Controls.Add(this.labelInfoRegister, 0, 1);
-            this.tableLayoutPanel3.Controls.Add(this.labelTypeMarathon, 0, 2);
-            this.tableLayoutPanel3.Controls.Add(this.labelDecision, 2, 2);
+            this.tableLayoutPanel3.Controls.Add(this.button2, 1, 7);
+            this.tableLayoutPanel3.Controls.Add(this.button1, 0, 7);
+            this.tableLayoutPanel3.Controls.Add(this.label1, 0, 0);
+            this.tableLayoutPanel3.Controls.Add(this.label2, 0, 1);
+            this.tableLayoutPanel3.Controls.Add(this.label3, 0, 2);
+            this.tableLayoutPanel3.Controls.Add(this.label4, 2, 2);
             this.tableLayoutPanel3.Controls.Add(this.tableLayoutPanel4, 0, 3);
             this.tableLayoutPanel3.Controls.Add(this.tableLayoutPanel5, 2, 3);
-            this.tableLayoutPanel3.Controls.Add(this.labelDetailsSponsore, 0, 4);
-            this.tableLayoutPanel3.Controls.Add(this.labelAmountSponsore, 0, 5);
-            this.tableLayoutPanel3.Controls.Add(this.labelSummSponsore, 0, 6);
-            this.tableLayoutPanel3.Controls.Add(this.textBoxAmountSponsore, 1, 6);
+            this.tableLayoutPanel3.Controls.Add(this.label5, 0, 4);
+            this.tableLayoutPanel3.Controls.Add(this.label7, 0, 5);
+            this.tableLayoutPanel3.Controls.Add(this.label8, 0, 6);
+            this.tableLayoutPanel3.Controls.Add(this.textBox1, 1, 6);
             this.tableLayoutPanel3.Controls.Add(this.tableLayoutPanel6, 2, 5);
             this.tableLayoutPanel3.Controls.Add(this.tableLayoutPanel7, 1, 5);
             this.tableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -183,91 +183,91 @@ namespace MARAFON
             this.tableLayoutPanel3.Size = new System.Drawing.Size(678, 337);
             this.tableLayoutPanel3.TabIndex = 3;
             // 
-            // buttonCancel
+            // button2
             // 
-            this.buttonCancel.BackColor = System.Drawing.Color.Silver;
-            this.buttonCancel.Dock = System.Windows.Forms.DockStyle.Left;
-            this.buttonCancel.FlatAppearance.BorderColor = System.Drawing.Color.Gray;
-            this.buttonCancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonCancel.Location = new System.Drawing.Point(163, 302);
-            this.buttonCancel.Margin = new System.Windows.Forms.Padding(2, 4, 2, 4);
-            this.buttonCancel.Name = "buttonCancel";
-            this.buttonCancel.Size = new System.Drawing.Size(61, 31);
-            this.buttonCancel.TabIndex = 17;
-            this.buttonCancel.TabStop = false;
-            this.buttonCancel.Text = "Отмена";
-            this.buttonCancel.UseVisualStyleBackColor = false;
-            this.buttonCancel.Click += new System.EventHandler(this.button2_Click);
+            this.button2.BackColor = System.Drawing.Color.Silver;
+            this.button2.Dock = System.Windows.Forms.DockStyle.Left;
+            this.button2.FlatAppearance.BorderColor = System.Drawing.Color.Gray;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Location = new System.Drawing.Point(163, 302);
+            this.button2.Margin = new System.Windows.Forms.Padding(2, 4, 2, 4);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(61, 31);
+            this.button2.TabIndex = 17;
+            this.button2.TabStop = false;
+            this.button2.Text = "Отмена";
+            this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
-            // buttonRegister
+            // button1
             // 
-            this.buttonRegister.BackColor = System.Drawing.Color.Silver;
-            this.buttonRegister.Dock = System.Windows.Forms.DockStyle.Right;
-            this.buttonRegister.FlatAppearance.BorderColor = System.Drawing.Color.Gray;
-            this.buttonRegister.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonRegister.Location = new System.Drawing.Point(62, 302);
-            this.buttonRegister.Margin = new System.Windows.Forms.Padding(2, 4, 2, 4);
-            this.buttonRegister.Name = "buttonRegister";
-            this.buttonRegister.Size = new System.Drawing.Size(97, 31);
-            this.buttonRegister.TabIndex = 16;
-            this.buttonRegister.TabStop = false;
-            this.buttonRegister.Text = "Регистрация";
-            this.buttonRegister.UseVisualStyleBackColor = false;
-            this.buttonRegister.Click += new System.EventHandler(this.button1_Click);
+            this.button1.BackColor = System.Drawing.Color.Silver;
+            this.button1.Dock = System.Windows.Forms.DockStyle.Right;
+            this.button1.FlatAppearance.BorderColor = System.Drawing.Color.Gray;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Location = new System.Drawing.Point(62, 302);
+            this.button1.Margin = new System.Windows.Forms.Padding(2, 4, 2, 4);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(97, 31);
+            this.button1.TabIndex = 16;
+            this.button1.TabStop = false;
+            this.button1.Text = "Регистрация";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // labelTitleRegister
+            // label1
             // 
-            this.labelTitleRegister.AutoSize = true;
-            this.tableLayoutPanel3.SetColumnSpan(this.labelTitleRegister, 3);
-            this.labelTitleRegister.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.labelTitleRegister.Font = new System.Drawing.Font("Consolas", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.labelTitleRegister.Location = new System.Drawing.Point(0, 0);
-            this.labelTitleRegister.Margin = new System.Windows.Forms.Padding(0);
-            this.labelTitleRegister.Name = "labelTitleRegister";
-            this.labelTitleRegister.Size = new System.Drawing.Size(678, 28);
-            this.labelTitleRegister.TabIndex = 0;
-            this.labelTitleRegister.Text = "Регистрация на марафон";
-            this.labelTitleRegister.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label1.AutoSize = true;
+            this.tableLayoutPanel3.SetColumnSpan(this.label1, 3);
+            this.label1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label1.Font = new System.Drawing.Font("Consolas", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label1.Location = new System.Drawing.Point(0, 0);
+            this.label1.Margin = new System.Windows.Forms.Padding(0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(678, 28);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Регистрация на марафон";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // labelInfoRegister
+            // label2
             // 
-            this.labelInfoRegister.AutoSize = true;
-            this.tableLayoutPanel3.SetColumnSpan(this.labelInfoRegister, 3);
-            this.labelInfoRegister.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.labelInfoRegister.Location = new System.Drawing.Point(0, 28);
-            this.labelInfoRegister.Margin = new System.Windows.Forms.Padding(0);
-            this.labelInfoRegister.Name = "labelInfoRegister";
-            this.labelInfoRegister.Size = new System.Drawing.Size(678, 45);
-            this.labelInfoRegister.TabIndex = 1;
-            this.labelInfoRegister.Text = "Пожалуйста, заполните всю информацию чтобы зарегистрироваться на Skills\r\nMarathon" +
+            this.label2.AutoSize = true;
+            this.tableLayoutPanel3.SetColumnSpan(this.label2, 3);
+            this.label2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label2.Location = new System.Drawing.Point(0, 28);
+            this.label2.Margin = new System.Windows.Forms.Padding(0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(678, 45);
+            this.label2.TabIndex = 1;
+            this.label2.Text = "Пожалуйста, заполните всю информацию чтобы зарегистрироваться на Skills\r\nMarathon" +
     " 2021 проводимом в Москве, Россия. С вами свяжутся после\r\nрегистрации для уточне" +
     "ния оплаты и другой информации.";
-            this.labelInfoRegister.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // labelTypeMarathon
+            // label3
             // 
-            this.labelTypeMarathon.AutoSize = true;
-            this.tableLayoutPanel3.SetColumnSpan(this.labelTypeMarathon, 2);
-            this.labelTypeMarathon.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.labelTypeMarathon.Location = new System.Drawing.Point(0, 73);
-            this.labelTypeMarathon.Margin = new System.Windows.Forms.Padding(0);
-            this.labelTypeMarathon.Name = "labelTypeMarathon";
-            this.labelTypeMarathon.Size = new System.Drawing.Size(314, 25);
-            this.labelTypeMarathon.TabIndex = 2;
-            this.labelTypeMarathon.Text = "Вид марафона";
-            this.labelTypeMarathon.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label3.AutoSize = true;
+            this.tableLayoutPanel3.SetColumnSpan(this.label3, 2);
+            this.label3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label3.Location = new System.Drawing.Point(0, 73);
+            this.label3.Margin = new System.Windows.Forms.Padding(0);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(314, 25);
+            this.label3.TabIndex = 2;
+            this.label3.Text = "Вид марафона";
+            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // labelDecision
+            // label4
             // 
-            this.labelDecision.AutoSize = true;
-            this.labelDecision.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.labelDecision.Location = new System.Drawing.Point(314, 73);
-            this.labelDecision.Margin = new System.Windows.Forms.Padding(0);
-            this.labelDecision.Name = "labelDecision";
-            this.labelDecision.Size = new System.Drawing.Size(364, 25);
-            this.labelDecision.TabIndex = 3;
-            this.labelDecision.Text = "Варианты комплектов";
-            this.labelDecision.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label4.AutoSize = true;
+            this.label4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label4.Location = new System.Drawing.Point(314, 73);
+            this.label4.Margin = new System.Windows.Forms.Padding(0);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(364, 25);
+            this.label4.TabIndex = 3;
+            this.label4.Text = "Варианты комплектов";
+            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // tableLayoutPanel4
             // 
@@ -275,9 +275,9 @@ namespace MARAFON
             this.tableLayoutPanel3.SetColumnSpan(this.tableLayoutPanel4, 2);
             this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel4.Controls.Add(this.checkBox42km, 0, 0);
-            this.tableLayoutPanel4.Controls.Add(this.checkBox21km, 0, 1);
-            this.tableLayoutPanel4.Controls.Add(this.checkBox5km, 0, 2);
+            this.tableLayoutPanel4.Controls.Add(this.checkBox1, 0, 0);
+            this.tableLayoutPanel4.Controls.Add(this.checkBox2, 0, 1);
+            this.tableLayoutPanel4.Controls.Add(this.checkBox3, 0, 2);
             this.tableLayoutPanel4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel4.Location = new System.Drawing.Point(0, 98);
             this.tableLayoutPanel4.Margin = new System.Windows.Forms.Padding(0);
@@ -289,7 +289,7 @@ namespace MARAFON
             this.tableLayoutPanel4.Size = new System.Drawing.Size(314, 96);
             this.tableLayoutPanel4.TabIndex = 4;
             // 
-            // checkBox42km
+            // checkBox1
             // 
             this.checkBox1.AutoSize = true;
             this.checkBox1.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
@@ -302,7 +302,7 @@ namespace MARAFON
             this.checkBox1.UseVisualStyleBackColor = true;
             this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
             // 
-            // checkBox21km
+            // checkBox2
             // 
             this.checkBox2.AutoSize = true;
             this.checkBox2.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
@@ -315,7 +315,7 @@ namespace MARAFON
             this.checkBox2.UseVisualStyleBackColor = true;
             this.checkBox2.CheckedChanged += new System.EventHandler(this.checkBox2_CheckedChanged);
             // 
-            // checkBox5km
+            // checkBox3
             // 
             this.checkBox3.AutoSize = true;
             this.checkBox3.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
@@ -332,9 +332,9 @@ namespace MARAFON
             // 
             this.tableLayoutPanel5.ColumnCount = 1;
             this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel5.Controls.Add(this.radioButtonTypeC, 0, 2);
-            this.tableLayoutPanel5.Controls.Add(this.radioButtonTypeB, 0, 1);
-            this.tableLayoutPanel5.Controls.Add(this.radioButtonTypeA, 0, 0);
+            this.tableLayoutPanel5.Controls.Add(this.radioButton3, 0, 2);
+            this.tableLayoutPanel5.Controls.Add(this.radioButton2, 0, 1);
+            this.tableLayoutPanel5.Controls.Add(this.radioButton1, 0, 0);
             this.tableLayoutPanel5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel5.Location = new System.Drawing.Point(314, 98);
             this.tableLayoutPanel5.Margin = new System.Windows.Forms.Padding(0);
@@ -347,62 +347,62 @@ namespace MARAFON
             this.tableLayoutPanel5.Size = new System.Drawing.Size(364, 131);
             this.tableLayoutPanel5.TabIndex = 5;
             // 
-            // radioButtonTypeC
+            // radioButton3
             // 
-            this.radioButtonTypeC.AutoSize = true;
-            this.radioButtonTypeC.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.radioButtonTypeC.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.radioButtonTypeC.Location = new System.Drawing.Point(3, 82);
-            this.radioButtonTypeC.Name = "radioButtonTypeC";
-            this.radioButtonTypeC.Size = new System.Drawing.Size(358, 46);
-            this.radioButtonTypeC.TabIndex = 2;
-            this.radioButtonTypeC.TabStop = true;
-            this.radioButtonTypeC.Text = "Вариант C($45): Вариант В + футболка + \r\nсувенирный буклет.";
-            this.radioButtonTypeC.UseVisualStyleBackColor = true;
-            this.radioButtonTypeC.CheckedChanged += new System.EventHandler(this.radioButton3_CheckedChanged);
+            this.radioButton3.AutoSize = true;
+            this.radioButton3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.radioButton3.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.radioButton3.Location = new System.Drawing.Point(3, 82);
+            this.radioButton3.Name = "radioButton3";
+            this.radioButton3.Size = new System.Drawing.Size(358, 46);
+            this.radioButton3.TabIndex = 2;
+            this.radioButton3.TabStop = true;
+            this.radioButton3.Text = "Вариант C($45): Вариант В + футболка + \r\nсувенирный буклет.";
+            this.radioButton3.UseVisualStyleBackColor = true;
+            this.radioButton3.CheckedChanged += new System.EventHandler(this.radioButton3_CheckedChanged);
             // 
-            // radioButtonTypeB
+            // radioButton2
             // 
-            this.radioButtonTypeB.AutoSize = true;
-            this.radioButtonTypeB.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.radioButtonTypeB.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.radioButtonTypeB.Location = new System.Drawing.Point(3, 31);
-            this.radioButtonTypeB.Name = "radioButtonTypeB";
-            this.radioButtonTypeB.Size = new System.Drawing.Size(358, 45);
-            this.radioButtonTypeB.TabIndex = 1;
-            this.radioButtonTypeB.TabStop = true;
-            this.radioButtonTypeB.Text = "Вариант B($20): Вариант А + бейсболка + \r\nбутылка воды.";
-            this.radioButtonTypeB.UseVisualStyleBackColor = true;
-            this.radioButtonTypeB.CheckedChanged += new System.EventHandler(this.radioButton2_CheckedChanged);
+            this.radioButton2.AutoSize = true;
+            this.radioButton2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.radioButton2.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.radioButton2.Location = new System.Drawing.Point(3, 31);
+            this.radioButton2.Name = "radioButton2";
+            this.radioButton2.Size = new System.Drawing.Size(358, 45);
+            this.radioButton2.TabIndex = 1;
+            this.radioButton2.TabStop = true;
+            this.radioButton2.Text = "Вариант B($20): Вариант А + бейсболка + \r\nбутылка воды.";
+            this.radioButton2.UseVisualStyleBackColor = true;
+            this.radioButton2.CheckedChanged += new System.EventHandler(this.radioButton2_CheckedChanged);
             // 
-            // radioButtonTypeA
+            // radioButton1
             // 
-            this.radioButtonTypeA.AutoSize = true;
-            this.radioButtonTypeA.Checked = true;
-            this.radioButtonTypeA.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.radioButtonTypeA.Location = new System.Drawing.Point(3, 3);
-            this.radioButtonTypeA.Name = "radioButtonTypeA";
-            this.radioButtonTypeA.Size = new System.Drawing.Size(358, 22);
-            this.radioButtonTypeA.TabIndex = 0;
-            this.radioButtonTypeA.TabStop = true;
-            this.radioButtonTypeA.Text = "Вариант А($0): Номер бегуна + RFID браслет.";
-            this.radioButtonTypeA.UseVisualStyleBackColor = true;
-            this.radioButtonTypeA.CheckedChanged += new System.EventHandler(this.radioButton1_CheckedChanged);
+            this.radioButton1.AutoSize = true;
+            this.radioButton1.Checked = true;
+            this.radioButton1.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.radioButton1.Location = new System.Drawing.Point(3, 3);
+            this.radioButton1.Name = "radioButton1";
+            this.radioButton1.Size = new System.Drawing.Size(358, 22);
+            this.radioButton1.TabIndex = 0;
+            this.radioButton1.TabStop = true;
+            this.radioButton1.Text = "Вариант А($0): Номер бегуна + RFID браслет.";
+            this.radioButton1.UseVisualStyleBackColor = true;
+            this.radioButton1.CheckedChanged += new System.EventHandler(this.radioButton1_CheckedChanged);
             // 
-            // labelDetailsSponsore
+            // label5
             // 
-            this.labelDetailsSponsore.AutoSize = true;
-            this.tableLayoutPanel3.SetColumnSpan(this.labelDetailsSponsore, 2);
-            this.labelDetailsSponsore.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.labelDetailsSponsore.Location = new System.Drawing.Point(2, 196);
-            this.labelDetailsSponsore.Margin = new System.Windows.Forms.Padding(2);
-            this.labelDetailsSponsore.Name = "labelDetailsSponsore";
-            this.labelDetailsSponsore.Size = new System.Drawing.Size(310, 31);
-            this.labelDetailsSponsore.TabIndex = 6;
-            this.labelDetailsSponsore.Text = "Детали спонсора";
-            this.labelDetailsSponsore.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label5.AutoSize = true;
+            this.tableLayoutPanel3.SetColumnSpan(this.label5, 2);
+            this.label5.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label5.Location = new System.Drawing.Point(2, 196);
+            this.label5.Margin = new System.Windows.Forms.Padding(2);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(310, 31);
+            this.label5.TabIndex = 6;
+            this.label5.Text = "Детали спонсора";
+            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // labelAmountSponsore
+            // label7
             // 
             this.label7.AutoSize = true;
             this.label7.Dock = System.Windows.Forms.DockStyle.Right;
@@ -414,7 +414,7 @@ namespace MARAFON
             this.label7.Text = "Взнос:";
             this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // labelSummSponsore
+            // label8
             // 
             this.label8.AutoSize = true;
             this.label8.Dock = System.Windows.Forms.DockStyle.Right;
@@ -426,7 +426,7 @@ namespace MARAFON
             this.label8.Text = "Сумма взноса:";
             this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // textBoxAmountSponsore
+            // textBox1
             // 
             this.textBox1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.textBox1.Location = new System.Drawing.Point(163, 270);
@@ -440,8 +440,8 @@ namespace MARAFON
             // 
             this.tableLayoutPanel6.ColumnCount = 1;
             this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel6.Controls.Add(this.labelAmountFullRegister, 0, 1);
-            this.tableLayoutPanel6.Controls.Add(this.labelRegisterAmount, 0, 0);
+            this.tableLayoutPanel6.Controls.Add(this.label6, 0, 1);
+            this.tableLayoutPanel6.Controls.Add(this.label9, 0, 0);
             this.tableLayoutPanel6.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel6.Location = new System.Drawing.Point(314, 229);
             this.tableLayoutPanel6.Margin = new System.Windows.Forms.Padding(0);
@@ -453,30 +453,30 @@ namespace MARAFON
             this.tableLayoutPanel6.Size = new System.Drawing.Size(364, 108);
             this.tableLayoutPanel6.TabIndex = 18;
             // 
-            // labelAmountFullRegister
+            // label6
             // 
-            this.labelAmountFullRegister.AutoSize = true;
-            this.labelAmountFullRegister.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.labelAmountFullRegister.Font = new System.Drawing.Font("Consolas", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.labelAmountFullRegister.Location = new System.Drawing.Point(2, 27);
-            this.labelAmountFullRegister.Margin = new System.Windows.Forms.Padding(2);
-            this.labelAmountFullRegister.Name = "labelAmountFullRegister";
-            this.labelAmountFullRegister.Size = new System.Drawing.Size(360, 79);
-            this.labelAmountFullRegister.TabIndex = 14;
-            this.labelAmountFullRegister.Text = "$0";
-            this.labelAmountFullRegister.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label6.AutoSize = true;
+            this.label6.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label6.Font = new System.Drawing.Font("Consolas", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label6.Location = new System.Drawing.Point(2, 27);
+            this.label6.Margin = new System.Windows.Forms.Padding(2);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(360, 79);
+            this.label6.TabIndex = 14;
+            this.label6.Text = "$0";
+            this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // labelRegisterAmount
+            // label9
             // 
-            this.labelRegisterAmount.AutoSize = true;
-            this.labelRegisterAmount.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.labelRegisterAmount.Location = new System.Drawing.Point(2, 2);
-            this.labelRegisterAmount.Margin = new System.Windows.Forms.Padding(2);
-            this.labelRegisterAmount.Name = "labelRegisterAmount";
-            this.labelRegisterAmount.Size = new System.Drawing.Size(360, 21);
-            this.labelRegisterAmount.TabIndex = 13;
-            this.labelRegisterAmount.Text = "Регистрационный взнос";
-            this.labelRegisterAmount.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label9.AutoSize = true;
+            this.label9.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label9.Location = new System.Drawing.Point(2, 2);
+            this.label9.Margin = new System.Windows.Forms.Padding(2);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(360, 21);
+            this.label9.TabIndex = 13;
+            this.label9.Text = "Регистрационный взнос";
+            this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // tableLayoutPanel7
             // 
@@ -484,7 +484,7 @@ namespace MARAFON
             this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 29F));
             this.tableLayoutPanel7.Controls.Add(this.comboBoxDeposit, 0, 0);
-            this.tableLayoutPanel7.Controls.Add(this.buttonInfoCompany, 1, 0);
+            this.tableLayoutPanel7.Controls.Add(this.button3, 1, 0);
             this.tableLayoutPanel7.Location = new System.Drawing.Point(161, 229);
             this.tableLayoutPanel7.Margin = new System.Windows.Forms.Padding(0);
             this.tableLayoutPanel7.Name = "tableLayoutPanel7";
@@ -504,19 +504,19 @@ namespace MARAFON
             this.comboBoxDeposit.Size = new System.Drawing.Size(122, 23);
             this.comboBoxDeposit.TabIndex = 12;
             // 
-            // buttonInfoCompany
+            // button3
             // 
-            this.buttonInfoCompany.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.buttonInfoCompany.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.buttonInfoCompany.Location = new System.Drawing.Point(124, 1);
-            this.buttonInfoCompany.Margin = new System.Windows.Forms.Padding(0, 1, 0, 1);
-            this.buttonInfoCompany.Name = "buttonInfoCompany";
-            this.buttonInfoCompany.Size = new System.Drawing.Size(29, 29);
-            this.buttonInfoCompany.TabIndex = 13;
-            this.buttonInfoCompany.Text = "i";
-            this.buttonInfoCompany.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.buttonInfoCompany.UseVisualStyleBackColor = true;
-            this.buttonInfoCompany.Click += new System.EventHandler(this.button3_Click);
+            this.button3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.button3.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.button3.Location = new System.Drawing.Point(124, 1);
+            this.button3.Margin = new System.Windows.Forms.Padding(0, 1, 0, 1);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(29, 29);
+            this.button3.TabIndex = 13;
+            this.button3.Text = "i";
+            this.button3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // timer
             // 
@@ -536,7 +536,7 @@ namespace MARAFON
             this.Name = "FormRegistrationOnMarafon";
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Регистрация на марафон";
+            this.Text = "FormRegistrationRunner";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FormRegistrationOnMarafon_FormClosed);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel2.ResumeLayout(false);
@@ -563,29 +563,29 @@ namespace MARAFON
         private System.Windows.Forms.Label labelEventTime;
         private System.Windows.Forms.Timer timer;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;
-        private System.Windows.Forms.Label labelTitleRegister;
-        private System.Windows.Forms.Label labelInfoRegister;
-        private System.Windows.Forms.Label labelTypeMarathon;
-        private System.Windows.Forms.Label labelDecision;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel4;
-        private System.Windows.Forms.CheckBox checkBox42km;
-        private System.Windows.Forms.CheckBox checkBox21km;
-        private System.Windows.Forms.CheckBox checkBox5km;
+        private System.Windows.Forms.CheckBox checkBox1;
+        private System.Windows.Forms.CheckBox checkBox2;
+        private System.Windows.Forms.CheckBox checkBox3;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel5;
-        private System.Windows.Forms.RadioButton radioButtonTypeC;
-        private System.Windows.Forms.RadioButton radioButtonTypeB;
-        private System.Windows.Forms.RadioButton radioButtonTypeA;
-        private System.Windows.Forms.Label labelDetailsSponsore;
-        private System.Windows.Forms.Label labelAmountSponsore;
-        private System.Windows.Forms.Label labelSummSponsore;
-        private System.Windows.Forms.TextBox textBoxAmountSponsore;
-        private System.Windows.Forms.Button buttonRegister;
+        private System.Windows.Forms.RadioButton radioButton3;
+        private System.Windows.Forms.RadioButton radioButton2;
+        private System.Windows.Forms.RadioButton radioButton1;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel6;
-        private System.Windows.Forms.Label labelAmountFullRegister;
-        private System.Windows.Forms.Label labelRegisterAmount;
-        private System.Windows.Forms.Button buttonCancel;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Button button2;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel7;
         private System.Windows.Forms.ComboBox comboBoxDeposit;
-        private System.Windows.Forms.Button buttonInfoCompany;
+        private System.Windows.Forms.Button button3;
     }
 }

@@ -57,48 +57,48 @@ namespace MARAFON
 
         private void checkBox1_CheckedChanged(object sender, EventArgs e)
         {
-            sum = checkBox42km.Checked ? sum += 145 : sum -= 145;
-            labelAmountFullRegister.Text = $"{sum}$";
+            sum = checkBox1.Checked ? sum += 145 : sum -= 145;
+            label9.Text = $"{sum}$";
         }
         private void checkBox2_CheckedChanged(object sender, EventArgs e)
         {
-            sum = checkBox21km.Checked ? sum += 75 : sum -= 75;
-            labelAmountFullRegister.Text = $"{sum}$";
+            sum = checkBox2.Checked ? sum += 75 : sum -= 75;
+            label9.Text = $"{sum}$";
         }
 
         private void checkBox3_CheckedChanged(object sender, EventArgs e)
         {
-            sum = checkBox5km.Checked ? sum += 20 : sum -= 20;
-            labelAmountFullRegister.Text = $"{sum}$";
+            sum = checkBox3.Checked ? sum += 20 : sum -= 20;
+            label9.Text = $"{sum}$";
         }
 
         private void radioButton1_CheckedChanged(object sender, EventArgs e)
         {
-            sum = radioButtonTypeA.Checked ? sum += 0 : sum -= 0;
-            labelAmountFullRegister.Text = $"{sum}$";
+            sum = radioButton1.Checked ? sum += 0 : sum -= 0;
+            label9.Text = $"{sum}$";
             raceKitOption = "A";
         }
 
         private void radioButton2_CheckedChanged(object sender, EventArgs e)
         {
-            sum = radioButtonTypeB.Checked ? sum += 20 : sum -= 20;
-            labelAmountFullRegister.Text = $"{sum}$";
+            sum = radioButton2.Checked ? sum += 20 : sum -= 20;
+            label9.Text = $"{sum}$";
             raceKitOption = "B";
         }
 
         private void radioButton3_CheckedChanged(object sender, EventArgs e)
         {
-            sum = radioButtonTypeC.Checked ? sum += 45 : sum -= 45;
-            labelAmountFullRegister.Text = $"{sum}$";
+            sum = radioButton1.Checked ? sum += 45 : sum -= 45;
+            label9.Text = $"{sum}$";
             raceKitOption = "C";
         }
         private void button1_Click(object sender, EventArgs e)
         {
-            if(!checkBox42km.Checked && !checkBox21km.Checked && !checkBox5km.Checked)
+            if(!checkBox1.Checked && !checkBox2.Checked && !checkBox3.Checked)
             {
                 MessageBox.Show("Выберите один из марафонов!");
             }
-            else if(textBoxAmountSponsore.Text == "0")
+            else if(textBox1.Text == "0")
             {
                 DialogResult result = MessageBox.Show("Вы уверены, что хотите пожертвовать 0$?", "", MessageBoxButtons.YesNo);
                 if (result == DialogResult.Yes)
