@@ -18,8 +18,8 @@ namespace MARAFON
         public FormInventory()
         {
             InitializeComponent();
-            Program.formMain.label = labelTimer;
-            Program.formMain.timerEvent_Tick(Program.formMain.sender, Program.formMain.e);
+            //Program.formMain.label = labelTimer;
+            //Program.formMain.timerEvent_Tick(Program.formMain.sender, Program.formMain.e);
             int count_reg_runners = getCountRunners();
             labelCountRunners.Text = count_reg_runners.ToString();
             fillPanel();

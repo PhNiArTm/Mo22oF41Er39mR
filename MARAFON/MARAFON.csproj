@@ -178,6 +178,12 @@
     <Compile Include="FormMenuRunner.Designer.cs">
       <DependentUpon>FormMenuRunner.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormMyResults.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMyResults.Designer.cs">
+      <DependentUpon>FormMyResults.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormMySponsors.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -320,6 +326,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormMenuRunner.resx">
       <DependentUpon>FormMenuRunner.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMyResults.resx">
+      <DependentUpon>FormMyResults.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormMySponsors.resx">
       <DependentUpon>FormMySponsors.cs</DependentUpon>

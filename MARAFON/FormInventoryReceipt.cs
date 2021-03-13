@@ -18,8 +18,8 @@ namespace MARAFON
         public FormInventoryReceipt()
         {
             InitializeComponent();
-            Program.formMain.label = labelTimer;
-            Program.formMain.timerEvent_Tick(Program.formMain.sender, Program.formMain.e);
+            //Program.formMain.label = labelTimer;
+            //Program.formMain.timerEvent_Tick(Program.formMain.sender, Program.formMain.e);
             updateCountLabels();
         }
 
