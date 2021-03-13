@@ -618,17 +618,17 @@ namespace MARAFON
             this.labelB3.Text = "123";
             this.labelB3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // labelA3
+            // labelC3
             // 
-            this.labelA3.AutoSize = true;
-            this.labelA3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.labelA3.Location = new System.Drawing.Point(99, 153);
-            this.labelA3.Margin = new System.Windows.Forms.Padding(1);
-            this.labelA3.Name = "labelA3";
-            this.labelA3.Size = new System.Drawing.Size(96, 31);
-            this.labelA3.TabIndex = 32;
-            this.labelA3.Text = "123";
-            this.labelA3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.labelC3.AutoSize = true;
+            this.labelC3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.labelC3.Location = new System.Drawing.Point(391, 190);
+            this.labelC3.Margin = new System.Windows.Forms.Padding(1);
+            this.labelC3.Name = "labelC3";
+            this.labelC3.Size = new System.Drawing.Size(128, 39);
+            this.labelC3.TabIndex = 34;
+            this.labelC3.Text = "123";
+            this.labelC3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // labelRemains2
             // 
