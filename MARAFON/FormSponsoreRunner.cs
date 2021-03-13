@@ -14,10 +14,12 @@ namespace MARAFON
     public partial class FormSponsoreRunner : Form
     {
         string messageError;
+        int idRunner;
         public FormSponsoreRunner()
         {
             InitializeComponent();
             showRunner();
+            comboBoxRunnerData.SelectedIndex = 0;
         }
 
         private void label3_Click(object sender, EventArgs e)
@@ -64,7 +66,8 @@ namespace MARAFON
                 {
                     comboBoxRunnerData.Items.Add($"{reader.GetString("RegistrationId")}. {reader.GetString("FirstName")}  {reader.GetString("LastName")}");
                 }
-                comboBoxRunnerData.SelectedIndex = 0;
+                reader.Close();
+                comboBoxRunnerData.SelectedIndex = 1;
             }
             catch { }
             finally { Program.connection.Close(); }
@@ -128,6 +131,16 @@ namespace MARAFON
             {
                 e.Handled = true;
             }
+        }
+        private void comboBoxRunnerData_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            idRunner = Convert.ToInt32(comboBoxRunnerData.SelectedItem.ToString().Split('.')[0]);
+            Program.connection.Open();
+            MySqlCommand SelectCharity = new MySqlCommand($"SELECT `CharityName` FROM `Charity` WHERE `CharityId` =(SELECT `CharityId` FROM `Registration` WHERE `RegistrationId` = '{idRunner}')", Program.connection);
+            Program.sqlDataReader = SelectCharity.ExecuteReader();
+            Program.sqlDataReader.Read();
+            labelFondInfo.Text = Program.sqlDataReader.GetString("CharityName");
+            Program.connection.Close();
         }
     }
 }

@@ -15,6 +15,7 @@ namespace MARAFON
     public partial class FormLogin : Form
     {
         private bool checkCancelButton = false;
+        DateTime voteTime = new DateTime(2021, 04, 24, 6, 0, 0);
 
         public FormLogin()
         {
@@ -40,12 +41,14 @@ namespace MARAFON
                         Program.userInfo.LastName = Program.sqlDataReader.GetString("LastName");
                         Program.userInfo.RoleId = Program.sqlDataReader.GetString("RoleId");
                         Program.sqlDataReader.Close();
-                        sqlCommand = new MySqlCommand($"SELECT RunnerId, Gender, CountryCode FROM Runner WHERE Email='{textBoxEmail.Text}'", Program.connection);
+                        sqlCommand = new MySqlCommand($"SELECT RunnerId, Gender, CountryCode, DateOfBirth, IsCheckROM FROM Runner WHERE Email='{textBoxEmail.Text}'", Program.connection);
                         Program.sqlDataReader = sqlCommand.ExecuteReader();
                         Program.sqlDataReader.Read();
                         Program.userInfo.Gender = Program.sqlDataReader.GetString("Gender");
                         Program.userInfo.CountryCode = Program.sqlDataReader.GetString("CountryCode");
+                        Program.userInfo.DateOfBirth = Program.sqlDataReader.GetDateTime("DateOfBirth");
                         Program.userInfo.RunnerId = Program.sqlDataReader.GetInt32("RunnerId");
+                        Program.userInfo.checkIsRegisterOnMarafon = Program.sqlDataReader.GetBoolean("IsCheckROM");
                         Program.sqlDataReader.Close();
                         sqlCommand = new MySqlCommand($"SELECT CountryName FROM Country WHERE CountryCode='{Program.userInfo.CountryCode}'", Program.connection);
                         Program.sqlDataReader = sqlCommand.ExecuteReader();
@@ -100,6 +103,19 @@ namespace MARAFON
             {
                 Application.Exit();
             }
+        }
+        private void buttonBack_Click(object sender, EventArgs e)
+        {
+            checkCancelButton = true;
+            Program.formMain.Show();
+            this.Close();
+        }
+
+        private void timer_Tick(object sender, EventArgs e)
+        {
+            TimeSpan TimeRemaining = voteTime - DateTime.Now;
+            labelEventTime.Text = TimeRemaining.Days + " дней " + TimeRemaining.Hours + " часов " + TimeRemaining.Minutes + " минут " + TimeRemaining.Seconds + " секунд.";
+
         }
     }
 }

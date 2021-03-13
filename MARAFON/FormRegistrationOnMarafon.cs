@@ -117,16 +117,18 @@ namespace MARAFON
         }
         void GoToMenu()
         {
-                Program.connection.Open();
-                MySqlCommand command = new MySqlCommand($"INSERT INTO Registration (RunnerId, RegistrationDateTime, RaceKitOptionId, RegistrationStatusId, Cost, CharityId, SponsorshipTarget) VALUES ({Program.userInfo.RunnerId}, @Time, '{raceKitOption}', \"1\", {sum}, {comboBoxDeposit.SelectedIndex + 1}, {textBox1.Text})", Program.connection);
-                command.Parameters.AddWithValue("@Time", DateTime.UtcNow);
-                command.Prepare();
-                command.ExecuteNonQuery();
-                Program.connection.Close();
-                FormMenuRunner formMenuRunner = new FormMenuRunner();
-                checkCancelButton = true;
-                formMenuRunner.Show();
-                this.Close();
+            Program.connection.Open();
+            MySqlCommand command = new MySqlCommand($"INSERT INTO Registration (RunnerId, RegistrationDateTime, RaceKitOptionId, RegistrationStatusId, Cost, CharityId, SponsorshipTarget) VALUES ({Program.userInfo.RunnerId}, @Time, '{raceKitOption}', \"1\", {sum}, {comboBoxDeposit.SelectedIndex + 1}, {textBox1.Text})", Program.connection);
+            command.Parameters.AddWithValue("@Time", DateTime.UtcNow);
+            command.ExecuteNonQuery();
+            MySqlCommand Newcommand = new MySqlCommand($"UPDATE Runner SET `IsCheckROM`= '1' WHERE RunnerId = {Program.userInfo.RunnerId}", Program.connection);
+            Newcommand.ExecuteNonQuery();
+            Program.connection.Close();
+            FormMenuRunner formMenuRunner = new FormMenuRunner();
+            Program.userInfo.checkIsRegisterOnMarafon = true;
+            checkCancelButton = true;
+            formMenuRunner.Show();
+            this.Close();
         }
         private void button3_Click(object sender, EventArgs e)
         {

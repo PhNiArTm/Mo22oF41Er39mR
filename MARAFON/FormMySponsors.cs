@@ -13,8 +13,11 @@ namespace MARAFON
 {
     public partial class FormMySponsors : Form
     {
+        bool checkCancelButton = false;
         int fullDonate = 0;
         string infocompany;
+        public static string nameOfCharitySponsor = null;
+        public static string discOfCharitySponsor = null;
         public FormMySponsors()
         {
             InitializeComponent();
@@ -25,42 +28,66 @@ namespace MARAFON
         {
             listViewSponsorsInfo.Items.Clear();
             Program.connection.Open();
-            string sql = "SELECT Sponsorship.SponsorName, Sponsorship.Amount FROM Sponsorship JOIN Runner ON Runner.Email='" + Program.userInfo.Email + "'";
+            string sql = $"SELECT `SponsorName`, `Amount` FROM `Sponsorship` WHERE `RegistrationId`=(SELECT `RegistrationId` FROM `Registration` WHERE `RunnerId`='{Program.userInfo.RunnerId}')";
             MySqlCommand sqlCommand = new MySqlCommand(sql, Program.connection);
             ListViewItem item = new ListViewItem();
             MySqlDataReader reader = sqlCommand.ExecuteReader();
             while (reader.Read())
             {
-                item = new ListViewItem(new string[]
-                {
-                    Convert.ToString(reader["SponsorName"]),
-                    Convert.ToString(reader["Amount"]) + "$",
-                });
+                item = new ListViewItem(new string[]{ Convert.ToString(reader["SponsorName"]), Convert.ToString(reader["Amount"]) + "$", });
                 fullDonate += Convert.ToInt32(reader["Amount"]);
                 listViewSponsorsInfo.Items.Add(item);
             }
+            reader.Close();
             Program.connection.Close();
-            labelFullMoney.Text = fullDonate.ToString();
+            labelFullDonate.Text = $"Всего: {fullDonate}$";
         }
         public void getCompanyInfo()
         {
             Program.connection.Open();
-            string sql = "SELECT Charity.CharityName, Charity.CharityDescription, Charity.CharityLogo FROM Charity WHERE Charity.CharityId=(SELECT Registration.CharityId FROM Registration JOIN Runner ON Runner.Email='" + Program.userInfo.Email + "')";
+            string sql = $"SELECT Charity.CharityName, Charity.CharityDescription, Charity.CharityLogo FROM Charity WHERE Charity.CharityId=(SELECT Registration.CharityId FROM Registration WHERE RunnerId = {Program.userInfo.RunnerId})";
             MySqlCommand sqlCommand = new MySqlCommand(sql, Program.connection);
             ListViewItem item = new ListViewItem();
             MySqlDataReader reader = sqlCommand.ExecuteReader();
-            while (reader.Read())
-            {
-                infocompany = reader["CharityDescription"].ToString();
-                labelNameCompany.Text = reader["CharityName"].ToString();
-                //pictureBoxLogoCompany.Image = Image.FromFile("image/" + reader["CharityLogo"].ToString());
-            }
+            reader.Read();
+            infocompany = reader["CharityDescription"].ToString();
+            labelNameCompany.Text = reader["CharityName"].ToString();
+            reader.Close();
             Program.connection.Close();
         }
-
         private void buttonWatchInfo_Click(object sender, EventArgs e)
         {
-            MessageBox.Show(infocompany);
+            nameOfCharitySponsor = labelNameCompany.Text;
+            Program.connection.Open();
+            String SelectCharity = $"SELECT CharityDescription FROM Charity WHERE CharityName = '{nameOfCharitySponsor}'";
+            MySqlCommand sqlCommand = new MySqlCommand(SelectCharity, Program.connection);
+            Program.sqlDataReader = sqlCommand.ExecuteReader();
+            Program.sqlDataReader.Read();
+            discOfCharitySponsor = Program.sqlDataReader.GetString("CharityDescription");
+            Program.connection.Close();
+            FormInfoForCharity formInfoForCharity = new FormInfoForCharity();
+            formInfoForCharity.Show();
+        }
+        private void FormMySponsors_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            if (!checkCancelButton)
+            {
+                Application.Exit();
+            }
+        }
+        private void buttonLogout_Click(object sender, EventArgs e)
+        {
+            Program.UserInfoClear();
+            checkCancelButton = true;
+            Program.formMain.Show();
+            this.Close();
+        }
+        private void buttonBack_Click(object sender, EventArgs e)
+        {
+            checkCancelButton = true;
+            FormMenuRunner formMenuRunner = new FormMenuRunner();
+            formMenuRunner.Show();
+            this.Close();
         }
     }
 }

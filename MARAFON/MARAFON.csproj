@@ -294,6 +294,9 @@
     <EmbeddedResource Include="FormMenuRunner.resx">
       <DependentUpon>FormMenuRunner.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormMySponsors.resx">
+      <DependentUpon>FormMySponsors.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormPint.resx">
       <DependentUpon>FormPint.cs</DependentUpon>
     </EmbeddedResource>

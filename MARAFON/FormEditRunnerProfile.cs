@@ -30,6 +30,7 @@ namespace MARAFON
             textBoxSurname.Text = Program.userInfo.LastName;
             textBoxPassword.Text = Program.userInfo.Password;
             textBoxRepeatPassword.Text = Program.userInfo.Password;
+            dateTimePickerBirthday.Value = Program.userInfo.DateOfBirth;
         }
         private void ShowGenders()
         {
@@ -101,6 +102,7 @@ namespace MARAFON
                 Program.userInfo.CountryName = countryName;
                 Program.userInfo.Password = textBoxPassword.Text;
                 Program.userInfo.Gender = comboBoxGender.Text;
+                Program.userInfo.DateOfBirth = dateTimePickerBirthday.Value;
                 Program.connection.Close();
                 ExitForm();
             }
@@ -111,7 +113,8 @@ namespace MARAFON
                 && textBoxPassword.Text == Program.userInfo.Password
                 && textBoxSurname.Text == Program.userInfo.LastName
                 && comboBoxCountry.Text == $"{Program.userInfo.CountryName} {Program.userInfo.CountryCode}"
-                && comboBoxGender.Text == Program.userInfo.Gender;
+                && comboBoxGender.Text == Program.userInfo.Gender
+                && dateTimePickerBirthday.Value == Program.userInfo.DateOfBirth;
         }
         private void textBoxRepeatPassword_TextChanged(object sender, EventArgs e)
         {

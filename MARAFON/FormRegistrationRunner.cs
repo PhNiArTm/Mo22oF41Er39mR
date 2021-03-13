@@ -102,7 +102,7 @@ namespace MARAFON
                 string InsertUser = $"INSERT INTO `User` (`Email`,`Password`,`FirstName`,`LastName`,`RoleId`) VALUES ('{textBoxEmail.Text}','{textBoxPassword.Text}','{textBoxName.Text.ToUpper()}','{textBoxSurname.Text.ToUpper()}','R')";
                 MySqlCommand sqlCommand = new MySqlCommand(InsertUser, Program.connection);
                 sqlCommand.ExecuteNonQuery();
-                string InsertRunner = $"INSERT INTO `Runner` (`Email`,`Gender`,`DateOfBirth`,`CountryCode`) VALUES ('{textBoxEmail.Text}','{comboBoxGender.SelectedItem}','{dateTimePickerBirthday.Value}','{countryCode.Remove(0, countryCodeLength)}')";
+                string InsertRunner = $"INSERT INTO `Runner` (`Email`,`Gender`,`DateOfBirth`,`CountryCode`, `IsCheckROM`) VALUES ('{textBoxEmail.Text}','{comboBoxGender.SelectedItem}','{dateTimePickerBirthday.Value}','{countryCode.Remove(0, countryCodeLength)}','false')";
                 sqlCommand = new MySqlCommand(InsertRunner, Program.connection);
                 sqlCommand.ExecuteNonQuery();
                 string SelectUser = $"SELECT Email, Password, FirstName, LastName, RoleId FROM User WHERE Email='{textBoxEmail.Text}'";
@@ -115,13 +115,14 @@ namespace MARAFON
                 Program.userInfo.LastName = Program.sqlDataReader.GetString("LastName");
                 Program.userInfo.RoleId = Program.sqlDataReader.GetString("RoleId");
                 Program.sqlDataReader.Close();
-                string SelectRunner = $"SELECT RunnerId, CountryCode, Gender FROM Runner WHERE Email='{textBoxEmail.Text}'";
+                string SelectRunner = $"SELECT RunnerId, CountryCode, Gender, IsCheckROM FROM Runner WHERE Email='{textBoxEmail.Text}'";
                 sqlCommand = new MySqlCommand(SelectRunner, Program.connection);
                 Program.sqlDataReader = sqlCommand.ExecuteReader();
                 Program.sqlDataReader.Read();
                 Program.userInfo.Gender = Program.sqlDataReader.GetString("Gender");
                 Program.userInfo.CountryCode = Program.sqlDataReader.GetString("CountryCode");
                 Program.userInfo.RunnerId = Program.sqlDataReader.GetInt32("RunnerId");
+                Program.userInfo.checkIsRegisterOnMarafon = Program.sqlDataReader.GetBoolean("IsCheckROM");
                 Program.sqlDataReader.Close();
                 sqlCommand = new MySqlCommand($"SELECT CountryName FROM Country WHERE CountryCode='{Program.userInfo.CountryCode}'", Program.connection);
                 Program.sqlDataReader = sqlCommand.ExecuteReader();

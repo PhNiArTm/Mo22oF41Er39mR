@@ -32,6 +32,8 @@ namespace MARAFON
             this.components = new System.ComponentModel.Container();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
+            this.labelCheckDifficult = new System.Windows.Forms.Label();
+            this.labelCheckPassword = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.buttonCancel = new System.Windows.Forms.Button();
             this.buttonSave = new System.Windows.Forms.Button();
@@ -62,8 +64,6 @@ namespace MARAFON
             this.buttonLogout = new System.Windows.Forms.Button();
             this.labelNameTag = new System.Windows.Forms.Label();
             this.timer = new System.Windows.Forms.Timer(this.components);
-            this.labelCheckPassword = new System.Windows.Forms.Label();
-            this.labelCheckDifficult = new System.Windows.Forms.Label();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
             this.tableLayoutPanel4.SuspendLayout();
@@ -137,6 +137,31 @@ namespace MARAFON
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 8.5F));
             this.tableLayoutPanel3.Size = new System.Drawing.Size(678, 337);
             this.tableLayoutPanel3.TabIndex = 5;
+            // 
+            // labelCheckDifficult
+            // 
+            this.tableLayoutPanel3.SetColumnSpan(this.labelCheckDifficult, 2);
+            this.labelCheckDifficult.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.labelCheckDifficult.Font = new System.Drawing.Font("Consolas", 9F);
+            this.labelCheckDifficult.Location = new System.Drawing.Point(340, 220);
+            this.labelCheckDifficult.Margin = new System.Windows.Forms.Padding(2, 2, 175, 2);
+            this.labelCheckDifficult.Name = "labelCheckDifficult";
+            this.labelCheckDifficult.Size = new System.Drawing.Size(163, 24);
+            this.labelCheckDifficult.TabIndex = 36;
+            this.labelCheckDifficult.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.labelCheckDifficult.MouseHover += new System.EventHandler(this.labelCheckDifficult_MouseHover);
+            // 
+            // labelCheckPassword
+            // 
+            this.tableLayoutPanel3.SetColumnSpan(this.labelCheckPassword, 2);
+            this.labelCheckPassword.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.labelCheckPassword.Font = new System.Drawing.Font("Consolas", 9F);
+            this.labelCheckPassword.Location = new System.Drawing.Point(340, 248);
+            this.labelCheckPassword.Margin = new System.Windows.Forms.Padding(2, 2, 175, 2);
+            this.labelCheckPassword.Name = "labelCheckPassword";
+            this.labelCheckPassword.Size = new System.Drawing.Size(163, 24);
+            this.labelCheckPassword.TabIndex = 35;
+            this.labelCheckPassword.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label7
             // 
@@ -213,7 +238,7 @@ namespace MARAFON
             this.dateTimePickerBirthday.Location = new System.Drawing.Point(171, 164);
             this.dateTimePickerBirthday.Margin = new System.Windows.Forms.Padding(2);
             this.dateTimePickerBirthday.MaxDate = new System.DateTime(2011, 3, 10, 0, 0, 0, 0);
-            this.dateTimePickerBirthday.MinDate = new System.DateTime(1951, 3, 10, 0, 0, 0, 0);
+            this.dateTimePickerBirthday.MinDate = new System.DateTime(1921, 3, 10, 0, 0, 0, 0);
             this.dateTimePickerBirthday.Name = "dateTimePickerBirthday";
             this.dateTimePickerBirthday.Size = new System.Drawing.Size(165, 25);
             this.dateTimePickerBirthday.TabIndex = 24;
@@ -527,31 +552,6 @@ namespace MARAFON
             this.timer.Enabled = true;
             this.timer.Interval = 1000;
             this.timer.Tick += new System.EventHandler(this.timer_Tick);
-            // 
-            // labelCheckPassword
-            // 
-            this.tableLayoutPanel3.SetColumnSpan(this.labelCheckPassword, 2);
-            this.labelCheckPassword.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.labelCheckPassword.Font = new System.Drawing.Font("Consolas", 9F);
-            this.labelCheckPassword.Location = new System.Drawing.Point(340, 248);
-            this.labelCheckPassword.Margin = new System.Windows.Forms.Padding(2, 2, 175, 2);
-            this.labelCheckPassword.Name = "labelCheckPassword";
-            this.labelCheckPassword.Size = new System.Drawing.Size(163, 24);
-            this.labelCheckPassword.TabIndex = 35;
-            this.labelCheckPassword.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // labelCheckDifficult
-            // 
-            this.tableLayoutPanel3.SetColumnSpan(this.labelCheckDifficult, 2);
-            this.labelCheckDifficult.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.labelCheckDifficult.Font = new System.Drawing.Font("Consolas", 9F);
-            this.labelCheckDifficult.Location = new System.Drawing.Point(340, 220);
-            this.labelCheckDifficult.Margin = new System.Windows.Forms.Padding(2, 2, 175, 2);
-            this.labelCheckDifficult.Name = "labelCheckDifficult";
-            this.labelCheckDifficult.Size = new System.Drawing.Size(163, 24);
-            this.labelCheckDifficult.TabIndex = 36;
-            this.labelCheckDifficult.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.labelCheckDifficult.MouseHover += new System.EventHandler(this.labelCheckDifficult_MouseHover);
             // 
             // FormEditRunnerProfile
             // 
