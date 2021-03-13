@@ -18,7 +18,7 @@ namespace MARAFON
         public static MySqlDataReader sqlDataReader = null;
 
         //Общая главная форма для избежания создания дубликатов
-        public static Form formMain;
+        public static FormMain formMain;
         /// <summary>
         /// Главная точка входа для приложения.
         /// </summary>
@@ -28,7 +28,7 @@ namespace MARAFON
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             formMain = new FormMain();
-            Application.Run(new FormInventory());
+            Application.Run(formMain);
         }
         public static void UserInfoClear()
         {

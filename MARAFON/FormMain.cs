@@ -12,8 +12,8 @@ namespace MARAFON
 {
     public partial class FormMain : Form
     {
-        public object sender;
-        public EventArgs e;
+        public object sender = null;
+        public EventArgs e = null;
         public Label label = null;
         DateTime voteTime = new DateTime(2021, 04, 24, 6, 0, 0);
         public FormMain()
