@@ -91,6 +91,7 @@ namespace MARAFON
         }
         private void buttonRegistration_Click(object sender, EventArgs e)
         {
+            int age = dateTimePickerBirthday.Value.Year > 2003 ? 1 : dateTimePickerBirthday.Value.Year > 1991 ? 2 : dateTimePickerBirthday.Value.Year > 1981 ? 3 : dateTimePickerBirthday.Value.Year > 1964 ? 4 : dateTimePickerBirthday.Value.Year > 1950 ? 5 : 6;
             string countryCode = comboBoxCountry.SelectedItem.ToString();
             int countryCodeLength = countryCode.Length - 3;
             if (!CheckData()) MessageBox.Show("Исправьте ошибки!");
@@ -99,16 +100,19 @@ namespace MARAFON
             else
             {
                 Program.connection.Open();
+                string Age = $"{dateTimePickerBirthday.Value.Year}.{dateTimePickerBirthday.Value.Month}.{dateTimePickerBirthday.Value.Day}";
+                Program.userInfo.DateOfBirth = Convert.ToDateTime(Age);
                 string InsertUser = $"INSERT INTO `User` (`Email`,`Password`,`FirstName`,`LastName`,`RoleId`) VALUES ('{textBoxEmail.Text}','{textBoxPassword.Text}','{textBoxName.Text.ToUpper()}','{textBoxSurname.Text.ToUpper()}','R')";
                 MySqlCommand sqlCommand = new MySqlCommand(InsertUser, Program.connection);
                 sqlCommand.ExecuteNonQuery();
-                string InsertRunner = $"INSERT INTO `Runner` (`Email`,`Gender`,`DateOfBirth`,`CountryCode`, `IsCheckROM`) VALUES ('{textBoxEmail.Text}','{comboBoxGender.SelectedItem}','{dateTimePickerBirthday.Value}','{countryCode.Remove(0, countryCodeLength)}','false')";
+                string InsertRunner = $"INSERT INTO `Runner` (`Email`,`Gender`,`DateOfBirth`,`CountryCode`, `IsCheckROM`) VALUES ('{textBoxEmail.Text}','{comboBoxGender.SelectedItem}','{Age}','{countryCode.Remove(0, countryCodeLength)}','false')";
                 sqlCommand = new MySqlCommand(InsertRunner, Program.connection);
                 sqlCommand.ExecuteNonQuery();
                 string SelectUser = $"SELECT Email, Password, FirstName, LastName, RoleId FROM User WHERE Email='{textBoxEmail.Text}'";
                 sqlCommand = new MySqlCommand(SelectUser, Program.connection);
                 Program.sqlDataReader = sqlCommand.ExecuteReader();
                 Program.sqlDataReader.Read();
+                Program.userInfo.AgeGroup = age;
                 Program.userInfo.Email = Program.sqlDataReader.GetString("Email");
                 Program.userInfo.Password = Program.sqlDataReader.GetString("Password");
                 Program.userInfo.FirstName = Program.sqlDataReader.GetString("FirstName");

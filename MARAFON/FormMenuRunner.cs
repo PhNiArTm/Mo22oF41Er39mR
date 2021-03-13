@@ -82,5 +82,13 @@ namespace MARAFON
                 this.Close();
             }
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            FormMyResults formMyResults = new FormMyResults();
+            checkCancelButton = true;
+            formMyResults.Show();
+            this.Close();
+        }
     }
 }
