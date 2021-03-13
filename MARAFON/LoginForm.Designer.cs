@@ -33,16 +33,16 @@ namespace MARAFON
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.labelEventTime = new System.Windows.Forms.Label();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
-            this.labelNameTag = new System.Windows.Forms.Label();
             this.buttonBack = new System.Windows.Forms.Button();
+            this.labelNameTag = new System.Windows.Forms.Label();
+            this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.textBoxPassword = new System.Windows.Forms.TextBox();
             this.textBoxEmail = new System.Windows.Forms.TextBox();
             this.labelEmail = new System.Windows.Forms.Label();
-            this.buttonLogin = new System.Windows.Forms.Button();
             this.labelPassword = new System.Windows.Forms.Label();
-            this.buttonCancel = new System.Windows.Forms.Button();
             this.labelFormAuth = new System.Windows.Forms.Label();
-            this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
+            this.buttonCancel = new System.Windows.Forms.Button();
+            this.buttonLogin = new System.Windows.Forms.Button();
             this.timer = new System.Windows.Forms.Timer(this.components);
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
@@ -98,20 +98,6 @@ namespace MARAFON
             this.tableLayoutPanel2.Size = new System.Drawing.Size(678, 67);
             this.tableLayoutPanel2.TabIndex = 1;
             // 
-            // labelNameTag
-            // 
-            this.labelNameTag.AutoSize = true;
-            this.labelNameTag.Dock = System.Windows.Forms.DockStyle.Left;
-            this.labelNameTag.Font = new System.Drawing.Font("Consolas", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.labelNameTag.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.labelNameTag.Location = new System.Drawing.Point(83, 10);
-            this.labelNameTag.Margin = new System.Windows.Forms.Padding(2, 10, 10, 0);
-            this.labelNameTag.Name = "labelNameTag";
-            this.labelNameTag.Size = new System.Drawing.Size(250, 57);
-            this.labelNameTag.TabIndex = 1;
-            this.labelNameTag.Text = "MARATHON SKILLS 2021";
-            this.labelNameTag.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
             // buttonBack
             // 
             this.buttonBack.BackColor = System.Drawing.Color.Silver;
@@ -128,111 +114,19 @@ namespace MARAFON
             this.buttonBack.UseVisualStyleBackColor = false;
             this.buttonBack.Click += new System.EventHandler(this.buttonBack_Click);
             // 
-            // textBoxPassword
+            // labelNameTag
             // 
-            this.tableLayoutPanel3.SetColumnSpan(this.textBoxPassword, 2);
-            this.textBoxPassword.Dock = System.Windows.Forms.DockStyle.Top;
-            this.textBoxPassword.Font = new System.Drawing.Font("Consolas", 13.75F);
-            this.textBoxPassword.Location = new System.Drawing.Point(200, 182);
-            this.textBoxPassword.Margin = new System.Windows.Forms.Padding(200, 2, 200, 2);
-            this.textBoxPassword.Name = "textBoxPassword";
-            this.textBoxPassword.Size = new System.Drawing.Size(278, 29);
-            this.textBoxPassword.TabIndex = 1;
-            this.textBoxPassword.TabStop = false;
-            this.textBoxPassword.Text = "Aj4fC247$";
-            this.textBoxPassword.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // textBoxEmail
-            // 
-            this.tableLayoutPanel3.SetColumnSpan(this.textBoxEmail, 2);
-            this.textBoxEmail.Dock = System.Windows.Forms.DockStyle.Top;
-            this.textBoxEmail.Font = new System.Drawing.Font("Consolas", 13.75F);
-            this.textBoxEmail.Location = new System.Drawing.Point(200, 110);
-            this.textBoxEmail.Margin = new System.Windows.Forms.Padding(200, 2, 200, 2);
-            this.textBoxEmail.Name = "textBoxEmail";
-            this.textBoxEmail.Size = new System.Drawing.Size(278, 29);
-            this.textBoxEmail.TabIndex = 0;
-            this.textBoxEmail.TabStop = false;
-            this.textBoxEmail.Text = "aaron.whalen@hr.gov";
-            this.textBoxEmail.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // labelEmail
-            // 
-            this.labelEmail.AutoSize = true;
-            this.tableLayoutPanel3.SetColumnSpan(this.labelEmail, 2);
-            this.labelEmail.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.labelEmail.Font = new System.Drawing.Font("Consolas", 13.75F);
-            this.labelEmail.Location = new System.Drawing.Point(3, 83);
-            this.labelEmail.Margin = new System.Windows.Forms.Padding(3);
-            this.labelEmail.Name = "labelEmail";
-            this.labelEmail.Size = new System.Drawing.Size(672, 22);
-            this.labelEmail.TabIndex = 7;
-            this.labelEmail.Text = "Email";
-            this.labelEmail.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            // 
-            // buttonLogin
-            // 
-            this.buttonLogin.BackColor = System.Drawing.Color.Silver;
-            this.buttonLogin.Dock = System.Windows.Forms.DockStyle.Right;
-            this.buttonLogin.FlatAppearance.BorderColor = System.Drawing.Color.Gray;
-            this.buttonLogin.FlatAppearance.BorderSize = 2;
-            this.buttonLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonLogin.Font = new System.Drawing.Font("Consolas", 11.75F);
-            this.buttonLogin.Location = new System.Drawing.Point(219, 272);
-            this.buttonLogin.Margin = new System.Windows.Forms.Padding(5, 16, 10, 16);
-            this.buttonLogin.Name = "buttonLogin";
-            this.buttonLogin.Size = new System.Drawing.Size(110, 49);
-            this.buttonLogin.TabIndex = 3;
-            this.buttonLogin.TabStop = false;
-            this.buttonLogin.Text = "Логин";
-            this.buttonLogin.UseVisualStyleBackColor = false;
-            this.buttonLogin.Click += new System.EventHandler(this.buttonLogin_Click);
-            // 
-            // labelPassword
-            // 
-            this.labelPassword.AutoSize = true;
-            this.tableLayoutPanel3.SetColumnSpan(this.labelPassword, 2);
-            this.labelPassword.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.labelPassword.Font = new System.Drawing.Font("Consolas", 13.75F);
-            this.labelPassword.Location = new System.Drawing.Point(3, 155);
-            this.labelPassword.Margin = new System.Windows.Forms.Padding(3);
-            this.labelPassword.Name = "labelPassword";
-            this.labelPassword.Size = new System.Drawing.Size(672, 22);
-            this.labelPassword.TabIndex = 8;
-            this.labelPassword.Text = "Password";
-            this.labelPassword.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            // 
-            // buttonCancel
-            // 
-            this.buttonCancel.BackColor = System.Drawing.Color.Silver;
-            this.buttonCancel.Dock = System.Windows.Forms.DockStyle.Left;
-            this.buttonCancel.FlatAppearance.BorderColor = System.Drawing.Color.Gray;
-            this.buttonCancel.FlatAppearance.BorderSize = 2;
-            this.buttonCancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonCancel.Font = new System.Drawing.Font("Consolas", 11.75F);
-            this.buttonCancel.Location = new System.Drawing.Point(349, 272);
-            this.buttonCancel.Margin = new System.Windows.Forms.Padding(10, 16, 10, 16);
-            this.buttonCancel.Name = "buttonCancel";
-            this.buttonCancel.Size = new System.Drawing.Size(110, 49);
-            this.buttonCancel.TabIndex = 4;
-            this.buttonCancel.TabStop = false;
-            this.buttonCancel.Text = "Cancel";
-            this.buttonCancel.UseVisualStyleBackColor = false;
-            this.buttonCancel.Click += new System.EventHandler(this.buttonCancel_Click);
-            // 
-            // labelFormAuth
-            // 
-            this.labelFormAuth.AutoSize = true;
-            this.tableLayoutPanel3.SetColumnSpan(this.labelFormAuth, 2);
-            this.labelFormAuth.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.labelFormAuth.Font = new System.Drawing.Font("Consolas", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.labelFormAuth.Location = new System.Drawing.Point(2, 2);
-            this.labelFormAuth.Margin = new System.Windows.Forms.Padding(2);
-            this.labelFormAuth.Name = "labelFormAuth";
-            this.labelFormAuth.Size = new System.Drawing.Size(674, 71);
-            this.labelFormAuth.TabIndex = 5;
-            this.labelFormAuth.Text = "Форма авторизации";
-            this.labelFormAuth.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.labelNameTag.AutoSize = true;
+            this.labelNameTag.Dock = System.Windows.Forms.DockStyle.Left;
+            this.labelNameTag.Font = new System.Drawing.Font("Consolas", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelNameTag.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.labelNameTag.Location = new System.Drawing.Point(83, 10);
+            this.labelNameTag.Margin = new System.Windows.Forms.Padding(2, 10, 10, 0);
+            this.labelNameTag.Name = "labelNameTag";
+            this.labelNameTag.Size = new System.Drawing.Size(250, 57);
+            this.labelNameTag.TabIndex = 1;
+            this.labelNameTag.Text = "MARATHON SKILLS 2021";
+            this.labelNameTag.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // tableLayoutPanel3
             // 
@@ -260,6 +154,112 @@ namespace MARAFON
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel3.Size = new System.Drawing.Size(678, 337);
             this.tableLayoutPanel3.TabIndex = 4;
+            // 
+            // textBoxPassword
+            // 
+            this.tableLayoutPanel3.SetColumnSpan(this.textBoxPassword, 2);
+            this.textBoxPassword.Dock = System.Windows.Forms.DockStyle.Top;
+            this.textBoxPassword.Font = new System.Drawing.Font("Consolas", 13.75F);
+            this.textBoxPassword.Location = new System.Drawing.Point(200, 182);
+            this.textBoxPassword.Margin = new System.Windows.Forms.Padding(200, 2, 200, 2);
+            this.textBoxPassword.Name = "textBoxPassword";
+            this.textBoxPassword.Size = new System.Drawing.Size(278, 29);
+            this.textBoxPassword.TabIndex = 1;
+            this.textBoxPassword.TabStop = false;
+            this.textBoxPassword.Text = "PCAnFgp0";
+            this.textBoxPassword.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // textBoxEmail
+            // 
+            this.tableLayoutPanel3.SetColumnSpan(this.textBoxEmail, 2);
+            this.textBoxEmail.Dock = System.Windows.Forms.DockStyle.Top;
+            this.textBoxEmail.Font = new System.Drawing.Font("Consolas", 13.75F);
+            this.textBoxEmail.Location = new System.Drawing.Point(200, 110);
+            this.textBoxEmail.Margin = new System.Windows.Forms.Padding(200, 2, 200, 2);
+            this.textBoxEmail.Name = "textBoxEmail";
+            this.textBoxEmail.Size = new System.Drawing.Size(278, 29);
+            this.textBoxEmail.TabIndex = 0;
+            this.textBoxEmail.TabStop = false;
+            this.textBoxEmail.Text = "pkonopacki110@outlook.com";
+            this.textBoxEmail.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // labelEmail
+            // 
+            this.labelEmail.AutoSize = true;
+            this.tableLayoutPanel3.SetColumnSpan(this.labelEmail, 2);
+            this.labelEmail.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.labelEmail.Font = new System.Drawing.Font("Consolas", 13.75F);
+            this.labelEmail.Location = new System.Drawing.Point(3, 83);
+            this.labelEmail.Margin = new System.Windows.Forms.Padding(3);
+            this.labelEmail.Name = "labelEmail";
+            this.labelEmail.Size = new System.Drawing.Size(672, 22);
+            this.labelEmail.TabIndex = 7;
+            this.labelEmail.Text = "Email";
+            this.labelEmail.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            // 
+            // labelPassword
+            // 
+            this.labelPassword.AutoSize = true;
+            this.tableLayoutPanel3.SetColumnSpan(this.labelPassword, 2);
+            this.labelPassword.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.labelPassword.Font = new System.Drawing.Font("Consolas", 13.75F);
+            this.labelPassword.Location = new System.Drawing.Point(3, 155);
+            this.labelPassword.Margin = new System.Windows.Forms.Padding(3);
+            this.labelPassword.Name = "labelPassword";
+            this.labelPassword.Size = new System.Drawing.Size(672, 22);
+            this.labelPassword.TabIndex = 8;
+            this.labelPassword.Text = "Password";
+            this.labelPassword.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            // 
+            // labelFormAuth
+            // 
+            this.labelFormAuth.AutoSize = true;
+            this.tableLayoutPanel3.SetColumnSpan(this.labelFormAuth, 2);
+            this.labelFormAuth.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.labelFormAuth.Font = new System.Drawing.Font("Consolas", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelFormAuth.Location = new System.Drawing.Point(2, 2);
+            this.labelFormAuth.Margin = new System.Windows.Forms.Padding(2);
+            this.labelFormAuth.Name = "labelFormAuth";
+            this.labelFormAuth.Size = new System.Drawing.Size(674, 71);
+            this.labelFormAuth.TabIndex = 5;
+            this.labelFormAuth.Text = "Форма авторизации";
+            this.labelFormAuth.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // buttonCancel
+            // 
+            this.buttonCancel.BackColor = System.Drawing.Color.Silver;
+            this.buttonCancel.Dock = System.Windows.Forms.DockStyle.Left;
+            this.buttonCancel.FlatAppearance.BorderColor = System.Drawing.Color.Gray;
+            this.buttonCancel.FlatAppearance.BorderSize = 2;
+            this.buttonCancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonCancel.Font = new System.Drawing.Font("Consolas", 11.75F);
+            this.buttonCancel.Location = new System.Drawing.Point(349, 272);
+            this.buttonCancel.Margin = new System.Windows.Forms.Padding(10, 16, 10, 16);
+            this.buttonCancel.Name = "buttonCancel";
+            this.buttonCancel.Size = new System.Drawing.Size(110, 49);
+            this.buttonCancel.TabIndex = 4;
+            this.buttonCancel.TabStop = false;
+            this.buttonCancel.Text = "Cancel";
+            this.buttonCancel.UseVisualStyleBackColor = false;
+            this.buttonCancel.Click += new System.EventHandler(this.buttonCancel_Click);
+            // 
+            // buttonLogin
+            // 
+            this.buttonLogin.BackColor = System.Drawing.Color.Silver;
+            this.buttonLogin.Dock = System.Windows.Forms.DockStyle.Right;
+            this.buttonLogin.FlatAppearance.BorderColor = System.Drawing.Color.Gray;
+            this.buttonLogin.FlatAppearance.BorderSize = 2;
+            this.buttonLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonLogin.Font = new System.Drawing.Font("Consolas", 11.75F);
+            this.buttonLogin.Location = new System.Drawing.Point(219, 272);
+            this.buttonLogin.Margin = new System.Windows.Forms.Padding(5, 16, 10, 16);
+            this.buttonLogin.Name = "buttonLogin";
+            this.buttonLogin.Size = new System.Drawing.Size(110, 49);
+            this.buttonLogin.TabIndex = 3;
+            this.buttonLogin.TabStop = false;
+            this.buttonLogin.Text = "Логин";
+            this.buttonLogin.UseVisualStyleBackColor = false;
+            this.buttonLogin.Click += new System.EventHandler(this.buttonLogin_Click);
             // 
             // timer
             // 

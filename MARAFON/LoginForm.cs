@@ -50,6 +50,8 @@ namespace MARAFON
                         Program.userInfo.RunnerId = Program.sqlDataReader.GetInt32("RunnerId");
                         Program.userInfo.checkIsRegisterOnMarafon = Program.sqlDataReader.GetBoolean("IsCheckROM");
                         Program.sqlDataReader.Close();
+                        DateTime Age = Program.userInfo.DateOfBirth;
+                        Program.userInfo.AgeGroup = Age.Year > 2003 ? 1 : Age.Year > 1991 ? 2 : Age.Year > 1981 ? 3 : Age.Year > 1964 ? 4 : Age.Year > 1950 ? 5 : 6;
                         sqlCommand = new MySqlCommand($"SELECT CountryName FROM Country WHERE CountryCode='{Program.userInfo.CountryCode}'", Program.connection);
                         Program.sqlDataReader = sqlCommand.ExecuteReader();
                         Program.sqlDataReader.Read();

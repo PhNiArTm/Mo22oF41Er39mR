@@ -48,6 +48,7 @@ namespace MARAFON
             userInfo.LastName = null;
             userInfo.Password = null;
             userInfo.RoleId = null;
+            userInfo.AgeGroup = 0;
             userInfo.RunnerId = 0;
         }
     }

@@ -16,8 +16,8 @@ namespace MARAFON
     public partial class FormRegistrationOnMarafon : Form
     {
         DateTime voteTime = new DateTime(2021, 04, 24, 6, 0, 0);
-        public static string nameOfCharity = null;
-        public static string discOfCharity = null;
+        public static string nameOfCharity = "";
+        public static string discOfCharity = "";
         private bool checkCancelButton = false;
         int sum = 0;
         string raceKitOption = "A";
@@ -118,7 +118,7 @@ namespace MARAFON
         void GoToMenu()
         {
             Program.connection.Open();
-            MySqlCommand command = new MySqlCommand($"INSERT INTO Registration (RunnerId, RegistrationDateTime, RaceKitOptionId, RegistrationStatusId, Cost, CharityId, SponsorshipTarget) VALUES ({Program.userInfo.RunnerId}, @Time, '{raceKitOption}', \"1\", {sum}, {comboBoxDeposit.SelectedIndex + 1}, {textBoxAmountSponsore.Text})", Program.connection);
+            MySqlCommand command = new MySqlCommand($"INSERT INTO Registration (RunnerId, RegistrationDateTime, RaceKitOptionId, RegistrationStatusId, Cost, CharityId, SponsorshipTarget, AgeId) VALUES ({Program.userInfo.RunnerId}, @Time, '{raceKitOption}', \"1\", {sum}, {comboBoxDeposit.SelectedIndex + 1}, {textBox1.Text}, {Program.userInfo.AgeGroup})", Program.connection);
             command.Parameters.AddWithValue("@Time", DateTime.UtcNow);
             command.ExecuteNonQuery();
             MySqlCommand Newcommand = new MySqlCommand($"UPDATE Runner SET `IsCheckROM`= '1' WHERE RunnerId = {Program.userInfo.RunnerId}", Program.connection);

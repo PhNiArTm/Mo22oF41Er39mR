@@ -15,7 +15,7 @@ namespace MARAFON
         public FormInfoForCharity()
         {
             InitializeComponent();
-            if (String.Empty == (FormRegistrationOnMarafon.nameOfCharity))
+            if (!(String.Empty == (FormRegistrationOnMarafon.nameOfCharity)))
             {
                 label1.Text = FormRegistrationOnMarafon.nameOfCharity;
                 label2.Text = FormRegistrationOnMarafon.discOfCharity;

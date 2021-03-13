@@ -83,6 +83,14 @@ namespace MARAFON
             }
         }
 
+        private void button4_Click(object sender, EventArgs e)
+        {
+            FormMyResults formMyResults = new FormMyResults();
+            checkCancelButton = true;
+            formMyResults.Show();
+            this.Close();
+        }
+
         private void buttonContactInfo_Click(object sender, EventArgs e)
         {
             FormContactCoordinatore frm = new FormContactCoordinatore();

@@ -88,6 +88,7 @@ namespace MARAFON
             if (CheckEdit()) MessageBox.Show("Данные не изменены");
             else
             {
+                DateTime Age = dateTimePickerBirthday.Value;
                 string countryCode = comboBoxCountry.Text.Remove(0, comboBoxCountry.Text.Length - 3);
                 string countryName = comboBoxCountry.Text.Remove(comboBoxCountry.Text.Length - 4);
                 Program.connection.Open();
@@ -103,6 +104,7 @@ namespace MARAFON
                 Program.userInfo.Password = textBoxPassword.Text;
                 Program.userInfo.Gender = comboBoxGender.Text;
                 Program.userInfo.DateOfBirth = dateTimePickerBirthday.Value;
+                Program.userInfo.AgeGroup = Age.Year > 2003 ? 1 : Age.Year > 1991 ? 2 : Age.Year > 1981 ? 3 : Age.Year > 1964 ? 4 : Age.Year > 1950 ? 5 : 6;
                 Program.connection.Close();
                 ExitForm();
             }

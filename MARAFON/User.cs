@@ -15,6 +15,7 @@ namespace MARAFON
     public partial class User
     {
         public bool checkIsRegisterOnMarafon = false;
+        public int AgeGroup = 0;
         public int RunnerId = 0;
         public DateTime DateOfBirth = new DateTime();
         public string Gender = null;
