@@ -36,11 +36,11 @@ namespace MARAFON
             this.button6 = new System.Windows.Forms.Button();
             this.labelNameTag = new System.Windows.Forms.Label();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.buttonEditProfile = new System.Windows.Forms.Button();
+            this.buttonMyResult = new System.Windows.Forms.Button();
+            this.buttonMySponsore = new System.Windows.Forms.Button();
+            this.buttonContactInfo = new System.Windows.Forms.Button();
+            this.buttonRegisterMarathon = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.timer = new System.Windows.Forms.Timer(this.components);
             this.tableLayoutPanel1.SuspendLayout();
@@ -132,11 +132,11 @@ namespace MARAFON
             this.tableLayoutPanel3.ColumnCount = 2;
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel3.Controls.Add(this.button5, 0, 2);
-            this.tableLayoutPanel3.Controls.Add(this.button4, 1, 1);
-            this.tableLayoutPanel3.Controls.Add(this.button3, 1, 2);
-            this.tableLayoutPanel3.Controls.Add(this.button2, 0, 3);
-            this.tableLayoutPanel3.Controls.Add(this.button1, 0, 1);
+            this.tableLayoutPanel3.Controls.Add(this.buttonEditProfile, 0, 2);
+            this.tableLayoutPanel3.Controls.Add(this.buttonMyResult, 1, 1);
+            this.tableLayoutPanel3.Controls.Add(this.buttonMySponsore, 1, 2);
+            this.tableLayoutPanel3.Controls.Add(this.buttonContactInfo, 0, 3);
+            this.tableLayoutPanel3.Controls.Add(this.buttonRegisterMarathon, 0, 1);
             this.tableLayoutPanel3.Controls.Add(this.label1, 0, 0);
             this.tableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel3.Location = new System.Drawing.Point(0, 67);
@@ -150,68 +150,69 @@ namespace MARAFON
             this.tableLayoutPanel3.Size = new System.Drawing.Size(678, 337);
             this.tableLayoutPanel3.TabIndex = 4;
             // 
-            // button5
+            // buttonEditProfile
             // 
-            this.button5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button5.Font = new System.Drawing.Font("Consolas", 15F);
-            this.button5.Location = new System.Drawing.Point(50, 178);
-            this.button5.Margin = new System.Windows.Forms.Padding(50, 10, 10, 10);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(279, 64);
-            this.button5.TabIndex = 4;
-            this.button5.Text = "Редактирование профиля";
-            this.button5.UseVisualStyleBackColor = true;
-            this.button5.Click += new System.EventHandler(this.button5_Click);
+            this.buttonEditProfile.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.buttonEditProfile.Font = new System.Drawing.Font("Consolas", 15F);
+            this.buttonEditProfile.Location = new System.Drawing.Point(50, 178);
+            this.buttonEditProfile.Margin = new System.Windows.Forms.Padding(50, 10, 10, 10);
+            this.buttonEditProfile.Name = "buttonEditProfile";
+            this.buttonEditProfile.Size = new System.Drawing.Size(279, 64);
+            this.buttonEditProfile.TabIndex = 4;
+            this.buttonEditProfile.Text = "Редактирование профиля";
+            this.buttonEditProfile.UseVisualStyleBackColor = true;
+            this.buttonEditProfile.Click += new System.EventHandler(this.button5_Click);
             // 
-            // button4
+            // buttonMyResult
             // 
-            this.button4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button4.Font = new System.Drawing.Font("Consolas", 15F);
-            this.button4.Location = new System.Drawing.Point(349, 94);
-            this.button4.Margin = new System.Windows.Forms.Padding(10, 10, 50, 10);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(279, 64);
-            this.button4.TabIndex = 3;
-            this.button4.Text = "Мои результаты";
-            this.button4.UseVisualStyleBackColor = true;
+            this.buttonMyResult.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.buttonMyResult.Font = new System.Drawing.Font("Consolas", 15F);
+            this.buttonMyResult.Location = new System.Drawing.Point(349, 94);
+            this.buttonMyResult.Margin = new System.Windows.Forms.Padding(10, 10, 50, 10);
+            this.buttonMyResult.Name = "buttonMyResult";
+            this.buttonMyResult.Size = new System.Drawing.Size(279, 64);
+            this.buttonMyResult.TabIndex = 3;
+            this.buttonMyResult.Text = "Мои результаты";
+            this.buttonMyResult.UseVisualStyleBackColor = true;
             // 
-            // button3
+            // buttonMySponsore
             // 
-            this.button3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button3.Font = new System.Drawing.Font("Consolas", 15F);
-            this.button3.Location = new System.Drawing.Point(349, 178);
-            this.button3.Margin = new System.Windows.Forms.Padding(10, 10, 50, 10);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(279, 64);
-            this.button3.TabIndex = 2;
-            this.button3.Text = "Мой спонсор";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.buttonMySponsore.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.buttonMySponsore.Font = new System.Drawing.Font("Consolas", 15F);
+            this.buttonMySponsore.Location = new System.Drawing.Point(349, 178);
+            this.buttonMySponsore.Margin = new System.Windows.Forms.Padding(10, 10, 50, 10);
+            this.buttonMySponsore.Name = "buttonMySponsore";
+            this.buttonMySponsore.Size = new System.Drawing.Size(279, 64);
+            this.buttonMySponsore.TabIndex = 2;
+            this.buttonMySponsore.Text = "Мой спонсор";
+            this.buttonMySponsore.UseVisualStyleBackColor = true;
+            this.buttonMySponsore.Click += new System.EventHandler(this.button3_Click);
             // 
-            // button2
+            // buttonContactInfo
             // 
-            this.button2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button2.Font = new System.Drawing.Font("Consolas", 15F);
-            this.button2.Location = new System.Drawing.Point(50, 262);
-            this.button2.Margin = new System.Windows.Forms.Padding(50, 10, 10, 10);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(279, 65);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "Контакты";
-            this.button2.UseVisualStyleBackColor = true;
+            this.buttonContactInfo.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.buttonContactInfo.Font = new System.Drawing.Font("Consolas", 15F);
+            this.buttonContactInfo.Location = new System.Drawing.Point(50, 262);
+            this.buttonContactInfo.Margin = new System.Windows.Forms.Padding(50, 10, 10, 10);
+            this.buttonContactInfo.Name = "buttonContactInfo";
+            this.buttonContactInfo.Size = new System.Drawing.Size(279, 65);
+            this.buttonContactInfo.TabIndex = 1;
+            this.buttonContactInfo.Text = "Контакты";
+            this.buttonContactInfo.UseVisualStyleBackColor = true;
+            this.buttonContactInfo.Click += new System.EventHandler(this.buttonContactInfo_Click);
             // 
-            // button1
+            // buttonRegisterMarathon
             // 
-            this.button1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button1.Font = new System.Drawing.Font("Consolas", 15F);
-            this.button1.Location = new System.Drawing.Point(50, 94);
-            this.button1.Margin = new System.Windows.Forms.Padding(50, 10, 10, 10);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(279, 64);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Регистрация на марафон";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.buttonRegisterMarathon.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.buttonRegisterMarathon.Font = new System.Drawing.Font("Consolas", 15F);
+            this.buttonRegisterMarathon.Location = new System.Drawing.Point(50, 94);
+            this.buttonRegisterMarathon.Margin = new System.Windows.Forms.Padding(50, 10, 10, 10);
+            this.buttonRegisterMarathon.Name = "buttonRegisterMarathon";
+            this.buttonRegisterMarathon.Size = new System.Drawing.Size(279, 64);
+            this.buttonRegisterMarathon.TabIndex = 0;
+            this.buttonRegisterMarathon.Text = "Регистрация на марафон";
+            this.buttonRegisterMarathon.UseVisualStyleBackColor = true;
+            this.buttonRegisterMarathon.Click += new System.EventHandler(this.button1_Click);
             // 
             // label1
             // 
@@ -262,11 +263,11 @@ namespace MARAFON
         private System.Windows.Forms.Label labelNameTag;
         private System.Windows.Forms.Label labelEventTime;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button buttonEditProfile;
+        private System.Windows.Forms.Button buttonMyResult;
+        private System.Windows.Forms.Button buttonMySponsore;
+        private System.Windows.Forms.Button buttonContactInfo;
+        private System.Windows.Forms.Button buttonRegisterMarathon;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Timer timer;
         private System.Windows.Forms.Button button6;

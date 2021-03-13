@@ -42,13 +42,13 @@ namespace MARAFON
             this.labelSponsoreInfo = new System.Windows.Forms.Label();
             this.labelGender = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
-            this.timer = new System.Windows.Forms.Timer(this.components);
             this.listViewResults = new System.Windows.Forms.ListView();
             this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader5 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.timer = new System.Windows.Forms.Timer(this.components);
             this.tableLayoutPanelAll.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             this.tableLayoutPanelCenter.SuspendLayout();
@@ -105,6 +105,7 @@ namespace MARAFON
             this.buttonBack.TabStop = false;
             this.buttonBack.Text = "Назад";
             this.buttonBack.UseVisualStyleBackColor = false;
+            this.buttonBack.Click += new System.EventHandler(this.buttonBack_Click);
             // 
             // buttonLogout
             // 
@@ -120,6 +121,7 @@ namespace MARAFON
             this.buttonLogout.TabStop = false;
             this.buttonLogout.Text = "Logout";
             this.buttonLogout.UseVisualStyleBackColor = false;
+            this.buttonLogout.Click += new System.EventHandler(this.buttonLogout_Click);
             // 
             // labelNameTag
             // 
@@ -234,12 +236,6 @@ namespace MARAFON
             this.button1.Text = "Показать все результаты";
             this.button1.UseVisualStyleBackColor = true;
             // 
-            // timer
-            // 
-            this.timer.Enabled = true;
-            this.timer.Interval = 1000;
-            this.timer.Tick += new System.EventHandler(this.timer_Tick);
-            // 
             // listViewResults
             // 
             this.listViewResults.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
@@ -292,6 +288,12 @@ namespace MARAFON
             this.columnHeader5.Text = "Место в группе";
             this.columnHeader5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.columnHeader5.Width = 120;
+            // 
+            // timer
+            // 
+            this.timer.Enabled = true;
+            this.timer.Interval = 1000;
+            this.timer.Tick += new System.EventHandler(this.timer_Tick);
             // 
             // FormMyResults
             // 

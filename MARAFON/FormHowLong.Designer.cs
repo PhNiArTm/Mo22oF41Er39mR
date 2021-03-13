@@ -74,25 +74,25 @@ namespace MARAFON
             // 
             // labelInfo
             // 
-            this.labelInfo.AutoSize = true;
             this.labelInfo.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.labelInfo.Location = new System.Drawing.Point(112, 454);
-            this.labelInfo.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.labelInfo.Location = new System.Drawing.Point(7, 369);
+            this.labelInfo.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelInfo.Name = "labelInfo";
-            this.labelInfo.Size = new System.Drawing.Size(402, 28);
+            this.labelInfo.Size = new System.Drawing.Size(429, 30);
             this.labelInfo.TabIndex = 10;
-            this.labelInfo.Text = "прыфывамсвфывапролшгывапрольти";
+            this.labelInfo.Text = "Дистанция: 150км";
             this.labelInfo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // tabControlLong
             // 
             this.tabControlLong.Controls.Add(this.tabPageSpeed);
             this.tabControlLong.Controls.Add(this.tabPageDistance);
-            this.tabControlLong.Location = new System.Drawing.Point(620, 105);
-            this.tabControlLong.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.tabControlLong.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.tabControlLong.Location = new System.Drawing.Point(462, 86);
+            this.tabControlLong.Margin = new System.Windows.Forms.Padding(4);
             this.tabControlLong.Name = "tabControlLong";
             this.tabControlLong.SelectedIndex = 0;
-            this.tabControlLong.Size = new System.Drawing.Size(444, 475);
+            this.tabControlLong.Size = new System.Drawing.Size(333, 386);
             this.tabControlLong.TabIndex = 9;
             // 
             // tabPageSpeed
@@ -108,11 +108,11 @@ namespace MARAFON
             this.tabPageSpeed.Controls.Add(this.pictureBoxWorm);
             this.tabPageSpeed.Controls.Add(this.pictureBoxCapybara);
             this.tabPageSpeed.Controls.Add(this.pictureBoxSloth);
-            this.tabPageSpeed.Location = new System.Drawing.Point(4, 25);
-            this.tabPageSpeed.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.tabPageSpeed.Location = new System.Drawing.Point(4, 28);
+            this.tabPageSpeed.Margin = new System.Windows.Forms.Padding(4);
             this.tabPageSpeed.Name = "tabPageSpeed";
-            this.tabPageSpeed.Padding = new System.Windows.Forms.Padding(5, 5, 5, 5);
-            this.tabPageSpeed.Size = new System.Drawing.Size(436, 446);
+            this.tabPageSpeed.Padding = new System.Windows.Forms.Padding(4);
+            this.tabPageSpeed.Size = new System.Drawing.Size(325, 354);
             this.tabPageSpeed.TabIndex = 0;
             this.tabPageSpeed.Text = "Скорость";
             // 
@@ -120,21 +120,22 @@ namespace MARAFON
             // 
             this.labelSloth.AutoSize = true;
             this.labelSloth.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.labelSloth.Location = new System.Drawing.Point(208, 28);
-            this.labelSloth.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.labelSloth.Location = new System.Drawing.Point(147, 26);
+            this.labelSloth.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelSloth.Name = "labelSloth";
-            this.labelSloth.Size = new System.Drawing.Size(65, 23);
+            this.labelSloth.Size = new System.Drawing.Size(54, 19);
             this.labelSloth.TabIndex = 20;
             this.labelSloth.Text = "Sloth";
+            this.labelSloth.Click += new System.EventHandler(this.labelSloth_Click);
             // 
             // labelCapybara
             // 
             this.labelCapybara.AutoSize = true;
             this.labelCapybara.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.labelCapybara.Location = new System.Drawing.Point(208, 113);
-            this.labelCapybara.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.labelCapybara.Location = new System.Drawing.Point(147, 93);
+            this.labelCapybara.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelCapybara.Name = "labelCapybara";
-            this.labelCapybara.Size = new System.Drawing.Size(98, 23);
+            this.labelCapybara.Size = new System.Drawing.Size(81, 19);
             this.labelCapybara.TabIndex = 19;
             this.labelCapybara.Text = "Capybara";
             // 
@@ -142,10 +143,10 @@ namespace MARAFON
             // 
             this.labelJaguar.AutoSize = true;
             this.labelJaguar.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.labelJaguar.Location = new System.Drawing.Point(208, 369);
-            this.labelJaguar.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.labelJaguar.Location = new System.Drawing.Point(147, 300);
+            this.labelJaguar.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelJaguar.Name = "labelJaguar";
-            this.labelJaguar.Size = new System.Drawing.Size(76, 23);
+            this.labelJaguar.Size = new System.Drawing.Size(63, 19);
             this.labelJaguar.TabIndex = 18;
             this.labelJaguar.Text = "Jaguar";
             // 
@@ -153,10 +154,10 @@ namespace MARAFON
             // 
             this.labelWorm.AutoSize = true;
             this.labelWorm.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.labelWorm.Location = new System.Drawing.Point(208, 198);
-            this.labelWorm.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.labelWorm.Location = new System.Drawing.Point(147, 161);
+            this.labelWorm.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelWorm.Name = "labelWorm";
-            this.labelWorm.Size = new System.Drawing.Size(54, 23);
+            this.labelWorm.Size = new System.Drawing.Size(45, 19);
             this.labelWorm.TabIndex = 17;
             this.labelWorm.Text = "Worm";
             // 
@@ -164,19 +165,19 @@ namespace MARAFON
             // 
             this.labelF1Car.AutoSize = true;
             this.labelF1Car.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.labelF1Car.Location = new System.Drawing.Point(208, 288);
-            this.labelF1Car.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.labelF1Car.Location = new System.Drawing.Point(147, 230);
+            this.labelF1Car.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelF1Car.Name = "labelF1Car";
-            this.labelF1Car.Size = new System.Drawing.Size(76, 23);
+            this.labelF1Car.Size = new System.Drawing.Size(63, 19);
             this.labelF1Car.TabIndex = 16;
             this.labelF1Car.Text = "F1 Car";
             // 
             // pictureBoxJaguar
             // 
-            this.pictureBoxJaguar.Location = new System.Drawing.Point(12, 350);
-            this.pictureBoxJaguar.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
+            this.pictureBoxJaguar.Location = new System.Drawing.Point(9, 284);
+            this.pictureBoxJaguar.Margin = new System.Windows.Forms.Padding(5);
             this.pictureBoxJaguar.Name = "pictureBoxJaguar";
-            this.pictureBoxJaguar.Size = new System.Drawing.Size(167, 73);
+            this.pictureBoxJaguar.Size = new System.Drawing.Size(125, 59);
             this.pictureBoxJaguar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBoxJaguar.TabIndex = 15;
             this.pictureBoxJaguar.TabStop = false;
@@ -184,10 +185,10 @@ namespace MARAFON
             // 
             // pictureBoxF1Car
             // 
-            this.pictureBoxF1Car.Location = new System.Drawing.Point(12, 265);
-            this.pictureBoxF1Car.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
+            this.pictureBoxF1Car.Location = new System.Drawing.Point(9, 215);
+            this.pictureBoxF1Car.Margin = new System.Windows.Forms.Padding(5);
             this.pictureBoxF1Car.Name = "pictureBoxF1Car";
-            this.pictureBoxF1Car.Size = new System.Drawing.Size(167, 73);
+            this.pictureBoxF1Car.Size = new System.Drawing.Size(125, 59);
             this.pictureBoxF1Car.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBoxF1Car.TabIndex = 11;
             this.pictureBoxF1Car.TabStop = false;
@@ -195,10 +196,10 @@ namespace MARAFON
             // 
             // pictureBoxWorm
             // 
-            this.pictureBoxWorm.Location = new System.Drawing.Point(12, 180);
-            this.pictureBoxWorm.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
+            this.pictureBoxWorm.Location = new System.Drawing.Point(9, 146);
+            this.pictureBoxWorm.Margin = new System.Windows.Forms.Padding(5);
             this.pictureBoxWorm.Name = "pictureBoxWorm";
-            this.pictureBoxWorm.Size = new System.Drawing.Size(167, 73);
+            this.pictureBoxWorm.Size = new System.Drawing.Size(125, 59);
             this.pictureBoxWorm.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBoxWorm.TabIndex = 12;
             this.pictureBoxWorm.TabStop = false;
@@ -206,10 +207,10 @@ namespace MARAFON
             // 
             // pictureBoxCapybara
             // 
-            this.pictureBoxCapybara.Location = new System.Drawing.Point(12, 96);
-            this.pictureBoxCapybara.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
+            this.pictureBoxCapybara.Location = new System.Drawing.Point(9, 78);
+            this.pictureBoxCapybara.Margin = new System.Windows.Forms.Padding(5);
             this.pictureBoxCapybara.Name = "pictureBoxCapybara";
-            this.pictureBoxCapybara.Size = new System.Drawing.Size(167, 73);
+            this.pictureBoxCapybara.Size = new System.Drawing.Size(125, 59);
             this.pictureBoxCapybara.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBoxCapybara.TabIndex = 14;
             this.pictureBoxCapybara.TabStop = false;
@@ -217,10 +218,10 @@ namespace MARAFON
             // 
             // pictureBoxSloth
             // 
-            this.pictureBoxSloth.Location = new System.Drawing.Point(12, 11);
-            this.pictureBoxSloth.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
+            this.pictureBoxSloth.Location = new System.Drawing.Point(9, 9);
+            this.pictureBoxSloth.Margin = new System.Windows.Forms.Padding(5);
             this.pictureBoxSloth.Name = "pictureBoxSloth";
-            this.pictureBoxSloth.Size = new System.Drawing.Size(167, 73);
+            this.pictureBoxSloth.Size = new System.Drawing.Size(125, 59);
             this.pictureBoxSloth.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBoxSloth.TabIndex = 13;
             this.pictureBoxSloth.TabStop = false;
@@ -239,11 +240,11 @@ namespace MARAFON
             this.tabPageDistance.Controls.Add(this.pictureBoxRonaldinho);
             this.tabPageDistance.Controls.Add(this.pictureBoxPairOfHavaianas);
             this.tabPageDistance.Controls.Add(this.pictureBoxFootballField);
-            this.tabPageDistance.Location = new System.Drawing.Point(4, 25);
-            this.tabPageDistance.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.tabPageDistance.Location = new System.Drawing.Point(4, 22);
+            this.tabPageDistance.Margin = new System.Windows.Forms.Padding(4);
             this.tabPageDistance.Name = "tabPageDistance";
-            this.tabPageDistance.Padding = new System.Windows.Forms.Padding(5, 5, 5, 5);
-            this.tabPageDistance.Size = new System.Drawing.Size(436, 446);
+            this.tabPageDistance.Padding = new System.Windows.Forms.Padding(4);
+            this.tabPageDistance.Size = new System.Drawing.Size(325, 360);
             this.tabPageDistance.TabIndex = 1;
             this.tabPageDistance.Text = "Дистанция";
             // 
@@ -251,10 +252,10 @@ namespace MARAFON
             // 
             this.labelPairOfHavaianas.AutoSize = true;
             this.labelPairOfHavaianas.Font = new System.Drawing.Font("Consolas", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.labelPairOfHavaianas.Location = new System.Drawing.Point(192, 31);
-            this.labelPairOfHavaianas.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.labelPairOfHavaianas.Location = new System.Drawing.Point(144, 25);
+            this.labelPairOfHavaianas.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelPairOfHavaianas.Name = "labelPairOfHavaianas";
-            this.labelPairOfHavaianas.Size = new System.Drawing.Size(162, 20);
+            this.labelPairOfHavaianas.Size = new System.Drawing.Size(126, 15);
             this.labelPairOfHavaianas.TabIndex = 30;
             this.labelPairOfHavaianas.Text = "Pair of Havaianas";
             // 
@@ -262,10 +263,10 @@ namespace MARAFON
             // 
             this.labelFootballField.AutoSize = true;
             this.labelFootballField.Font = new System.Drawing.Font("Consolas", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.labelFootballField.Location = new System.Drawing.Point(192, 112);
-            this.labelFootballField.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.labelFootballField.Location = new System.Drawing.Point(144, 91);
+            this.labelFootballField.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelFootballField.Name = "labelFootballField";
-            this.labelFootballField.Size = new System.Drawing.Size(135, 20);
+            this.labelFootballField.Size = new System.Drawing.Size(105, 15);
             this.labelFootballField.TabIndex = 29;
             this.labelFootballField.Text = "Football Field";
             // 
@@ -273,10 +274,10 @@ namespace MARAFON
             // 
             this.labelRonaldinho.AutoSize = true;
             this.labelRonaldinho.Font = new System.Drawing.Font("Consolas", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.labelRonaldinho.Location = new System.Drawing.Point(192, 198);
-            this.labelRonaldinho.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.labelRonaldinho.Location = new System.Drawing.Point(144, 161);
+            this.labelRonaldinho.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelRonaldinho.Name = "labelRonaldinho";
-            this.labelRonaldinho.Size = new System.Drawing.Size(99, 20);
+            this.labelRonaldinho.Size = new System.Drawing.Size(77, 15);
             this.labelRonaldinho.TabIndex = 28;
             this.labelRonaldinho.Text = "Ronaldinho";
             // 
@@ -284,10 +285,10 @@ namespace MARAFON
             // 
             this.labelAirbusA380.AutoSize = true;
             this.labelAirbusA380.Font = new System.Drawing.Font("Consolas", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.labelAirbusA380.Location = new System.Drawing.Point(192, 287);
-            this.labelAirbusA380.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.labelAirbusA380.Location = new System.Drawing.Point(144, 233);
+            this.labelAirbusA380.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelAirbusA380.Name = "labelAirbusA380";
-            this.labelAirbusA380.Size = new System.Drawing.Size(243, 20);
+            this.labelAirbusA380.Size = new System.Drawing.Size(189, 15);
             this.labelAirbusA380.TabIndex = 27;
             this.labelAirbusA380.Text = "Насколько длинный марафон?";
             // 
@@ -295,19 +296,19 @@ namespace MARAFON
             // 
             this.labelBus.AutoSize = true;
             this.labelBus.Font = new System.Drawing.Font("Consolas", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.labelBus.Location = new System.Drawing.Point(192, 372);
-            this.labelBus.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.labelBus.Location = new System.Drawing.Point(144, 302);
+            this.labelBus.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelBus.Name = "labelBus";
-            this.labelBus.Size = new System.Drawing.Size(36, 20);
+            this.labelBus.Size = new System.Drawing.Size(28, 15);
             this.labelBus.TabIndex = 26;
             this.labelBus.Text = "Bus";
             // 
             // pictureBoxBus
             // 
-            this.pictureBoxBus.Location = new System.Drawing.Point(12, 348);
-            this.pictureBoxBus.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
+            this.pictureBoxBus.Location = new System.Drawing.Point(9, 283);
+            this.pictureBoxBus.Margin = new System.Windows.Forms.Padding(5);
             this.pictureBoxBus.Name = "pictureBoxBus";
-            this.pictureBoxBus.Size = new System.Drawing.Size(167, 73);
+            this.pictureBoxBus.Size = new System.Drawing.Size(125, 59);
             this.pictureBoxBus.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBoxBus.TabIndex = 25;
             this.pictureBoxBus.TabStop = false;
@@ -315,10 +316,10 @@ namespace MARAFON
             // 
             // pictureBoxAirbusA380
             // 
-            this.pictureBoxAirbusA380.Location = new System.Drawing.Point(12, 263);
-            this.pictureBoxAirbusA380.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
+            this.pictureBoxAirbusA380.Location = new System.Drawing.Point(9, 214);
+            this.pictureBoxAirbusA380.Margin = new System.Windows.Forms.Padding(5);
             this.pictureBoxAirbusA380.Name = "pictureBoxAirbusA380";
-            this.pictureBoxAirbusA380.Size = new System.Drawing.Size(167, 73);
+            this.pictureBoxAirbusA380.Size = new System.Drawing.Size(125, 59);
             this.pictureBoxAirbusA380.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBoxAirbusA380.TabIndex = 21;
             this.pictureBoxAirbusA380.TabStop = false;
@@ -326,10 +327,10 @@ namespace MARAFON
             // 
             // pictureBoxRonaldinho
             // 
-            this.pictureBoxRonaldinho.Location = new System.Drawing.Point(12, 178);
-            this.pictureBoxRonaldinho.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
+            this.pictureBoxRonaldinho.Location = new System.Drawing.Point(9, 145);
+            this.pictureBoxRonaldinho.Margin = new System.Windows.Forms.Padding(5);
             this.pictureBoxRonaldinho.Name = "pictureBoxRonaldinho";
-            this.pictureBoxRonaldinho.Size = new System.Drawing.Size(167, 73);
+            this.pictureBoxRonaldinho.Size = new System.Drawing.Size(125, 59);
             this.pictureBoxRonaldinho.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBoxRonaldinho.TabIndex = 24;
             this.pictureBoxRonaldinho.TabStop = false;
@@ -337,10 +338,10 @@ namespace MARAFON
             // 
             // pictureBoxPairOfHavaianas
             // 
-            this.pictureBoxPairOfHavaianas.Location = new System.Drawing.Point(12, 9);
-            this.pictureBoxPairOfHavaianas.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
+            this.pictureBoxPairOfHavaianas.Location = new System.Drawing.Point(9, 7);
+            this.pictureBoxPairOfHavaianas.Margin = new System.Windows.Forms.Padding(5);
             this.pictureBoxPairOfHavaianas.Name = "pictureBoxPairOfHavaianas";
-            this.pictureBoxPairOfHavaianas.Size = new System.Drawing.Size(167, 73);
+            this.pictureBoxPairOfHavaianas.Size = new System.Drawing.Size(125, 59);
             this.pictureBoxPairOfHavaianas.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBoxPairOfHavaianas.TabIndex = 22;
             this.pictureBoxPairOfHavaianas.TabStop = false;
@@ -348,10 +349,10 @@ namespace MARAFON
             // 
             // pictureBoxFootballField
             // 
-            this.pictureBoxFootballField.Location = new System.Drawing.Point(12, 94);
-            this.pictureBoxFootballField.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
+            this.pictureBoxFootballField.Location = new System.Drawing.Point(9, 76);
+            this.pictureBoxFootballField.Margin = new System.Windows.Forms.Padding(5);
             this.pictureBoxFootballField.Name = "pictureBoxFootballField";
-            this.pictureBoxFootballField.Size = new System.Drawing.Size(167, 73);
+            this.pictureBoxFootballField.Size = new System.Drawing.Size(125, 59);
             this.pictureBoxFootballField.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBoxFootballField.TabIndex = 23;
             this.pictureBoxFootballField.TabStop = false;
@@ -361,20 +362,20 @@ namespace MARAFON
             // 
             this.labelNameLong.AutoSize = true;
             this.labelNameLong.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.labelNameLong.Location = new System.Drawing.Point(175, 105);
-            this.labelNameLong.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.labelNameLong.Location = new System.Drawing.Point(131, 85);
+            this.labelNameLong.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelNameLong.Name = "labelNameLong";
-            this.labelNameLong.Size = new System.Drawing.Size(194, 28);
+            this.labelNameLong.Size = new System.Drawing.Size(150, 22);
             this.labelNameLong.TabIndex = 8;
             this.labelNameLong.Text = "Имя выбранного";
             this.labelNameLong.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // pictureBoxMain
             // 
-            this.pictureBoxMain.Location = new System.Drawing.Point(9, 146);
-            this.pictureBoxMain.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.pictureBoxMain.Location = new System.Drawing.Point(7, 119);
+            this.pictureBoxMain.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBoxMain.Name = "pictureBoxMain";
-            this.pictureBoxMain.Size = new System.Drawing.Size(572, 300);
+            this.pictureBoxMain.Size = new System.Drawing.Size(429, 244);
             this.pictureBoxMain.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBoxMain.TabIndex = 7;
             this.pictureBoxMain.TabStop = false;
@@ -383,26 +384,26 @@ namespace MARAFON
             // 
             this.labelSponsoreTitle.AutoSize = true;
             this.labelSponsoreTitle.Font = new System.Drawing.Font("Consolas", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.labelSponsoreTitle.Location = new System.Drawing.Point(269, 11);
-            this.labelSponsoreTitle.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelSponsoreTitle.Location = new System.Drawing.Point(194, 9);
             this.labelSponsoreTitle.Name = "labelSponsoreTitle";
-            this.labelSponsoreTitle.Size = new System.Drawing.Size(467, 38);
+            this.labelSponsoreTitle.Size = new System.Drawing.Size(390, 32);
             this.labelSponsoreTitle.TabIndex = 6;
             this.labelSponsoreTitle.Text = "Насколько долгий марафон?";
             // 
             // FormHowLong
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1077, 597);
+            this.ClientSize = new System.Drawing.Size(808, 485);
             this.Controls.Add(this.labelInfo);
             this.Controls.Add(this.tabControlLong);
             this.Controls.Add(this.labelNameLong);
             this.Controls.Add(this.pictureBoxMain);
             this.Controls.Add(this.labelSponsoreTitle);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "FormHowLong";
-            this.Text = "Насколько длинный марафон?";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Насколько долгий марафон?";
             this.tabControlLong.ResumeLayout(false);
             this.tabPageSpeed.ResumeLayout(false);
             this.tabPageSpeed.PerformLayout();

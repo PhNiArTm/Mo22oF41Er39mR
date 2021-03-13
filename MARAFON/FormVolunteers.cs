@@ -108,7 +108,20 @@ namespace MARAFON
         {
             Form frm = new FormLoadVolunteer();
             frm.Show();
-            this.Hide();
+            this.Close();
+        }
+
+        private void comboBoxSort_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void buttonLogout_Click(object sender, EventArgs e)
+        {
+            Program.UserInfoClear();
+            FormMain frm = new FormMain();
+            frm.Show();
+            this.Close();
         }
     }
 }

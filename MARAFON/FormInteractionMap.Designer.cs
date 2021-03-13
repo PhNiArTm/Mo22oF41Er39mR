@@ -330,7 +330,7 @@ namespace MARAFON
             this.Controls.Add(this.pictureBox1);
             this.Name = "FormInteractionMap";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "FormMap";
+            this.Text = "Интерактивная карта";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();

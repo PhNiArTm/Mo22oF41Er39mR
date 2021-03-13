@@ -16,5 +16,26 @@ namespace MARAFON
         {
             InitializeComponent();
         }
+
+        private void buttonDonateCompany_Click(object sender, EventArgs e)
+        {
+            FormCompanyDonate frm = new FormCompanyDonate();
+            frm.Show();
+            this.Hide();
+        }
+
+        private void buttonDurationMarathon_Click(object sender, EventArgs e)
+        {
+            FormHowLong frm = new FormHowLong();
+            frm.Show();
+            this.Hide();
+        }
+
+        private void buttonSkills2016_Click(object sender, EventArgs e)
+        {
+            FormInformAboutMarafon frm = new FormInformAboutMarafon();
+            frm.Show();
+            this.Hide();
+        }
     }
 }

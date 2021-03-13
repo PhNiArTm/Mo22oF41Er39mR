@@ -32,7 +32,6 @@ namespace MARAFON
             this.buttonBack = new System.Windows.Forms.Button();
             this.buttonLogout = new System.Windows.Forms.Button();
             this.buttonUpdate = new System.Windows.Forms.Button();
-            this.LabelMarathon = new System.Windows.Forms.Label();
             this.labelDowload = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.listViewVolonters = new System.Windows.Forms.ListView();
@@ -50,9 +49,10 @@ namespace MARAFON
             // 
             // buttonBack
             // 
+            this.buttonBack.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.buttonBack.Location = new System.Drawing.Point(12, 12);
             this.buttonBack.Name = "buttonBack";
-            this.buttonBack.Size = new System.Drawing.Size(75, 23);
+            this.buttonBack.Size = new System.Drawing.Size(74, 23);
             this.buttonBack.TabIndex = 0;
             this.buttonBack.Text = "Назад";
             this.buttonBack.UseVisualStyleBackColor = true;
@@ -60,17 +60,19 @@ namespace MARAFON
             // 
             // buttonLogout
             // 
+            this.buttonLogout.Font = new System.Drawing.Font("Consolas", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.buttonLogout.Location = new System.Drawing.Point(456, 12);
             this.buttonLogout.Name = "buttonLogout";
             this.buttonLogout.Size = new System.Drawing.Size(75, 23);
             this.buttonLogout.TabIndex = 1;
             this.buttonLogout.Text = "Logout";
             this.buttonLogout.UseVisualStyleBackColor = true;
+            this.buttonLogout.Click += new System.EventHandler(this.buttonLogout_Click);
             // 
             // buttonUpdate
             // 
             this.buttonUpdate.Font = new System.Drawing.Font("Consolas", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.buttonUpdate.Location = new System.Drawing.Point(105, 117);
+            this.buttonUpdate.Location = new System.Drawing.Point(120, 120);
             this.buttonUpdate.Name = "buttonUpdate";
             this.buttonUpdate.Size = new System.Drawing.Size(75, 23);
             this.buttonUpdate.TabIndex = 2;
@@ -78,30 +80,23 @@ namespace MARAFON
             this.buttonUpdate.UseVisualStyleBackColor = true;
             this.buttonUpdate.Click += new System.EventHandler(this.buttonUpdate_Click);
             // 
-            // LabelMarathon
-            // 
-            this.LabelMarathon.AutoSize = true;
-            this.LabelMarathon.Location = new System.Drawing.Point(93, 17);
-            this.LabelMarathon.Name = "LabelMarathon";
-            this.LabelMarathon.Size = new System.Drawing.Size(106, 13);
-            this.LabelMarathon.TabIndex = 3;
-            this.LabelMarathon.Text = "Marathon Skills 2016";
-            // 
             // labelDowload
             // 
             this.labelDowload.AutoSize = true;
-            this.labelDowload.Location = new System.Drawing.Point(426, 75);
+            this.labelDowload.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelDowload.Location = new System.Drawing.Point(420, 69);
             this.labelDowload.Name = "labelDowload";
-            this.labelDowload.Size = new System.Drawing.Size(54, 13);
+            this.labelDowload.Size = new System.Drawing.Size(72, 18);
             this.labelDowload.TabIndex = 4;
             this.labelDowload.Text = "Загрузка";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(102, 74);
+            this.label3.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label3.Location = new System.Drawing.Point(33, 66);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(140, 13);
+            this.label3.Size = new System.Drawing.Size(192, 18);
             this.label3.TabIndex = 5;
             this.label3.Text = "Сортировка и фильтрация";
             // 
@@ -112,7 +107,7 @@ namespace MARAFON
             this.columnHeader2,
             this.columnHeader3,
             this.columnHeader4});
-            this.listViewVolonters.Font = new System.Drawing.Font("Consolas", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.listViewVolonters.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.listViewVolonters.FullRowSelect = true;
             this.listViewVolonters.GridLines = true;
             this.listViewVolonters.HideSelection = false;
@@ -157,42 +152,47 @@ namespace MARAFON
             // labelManagingМolunteers
             // 
             this.labelManagingМolunteers.AutoSize = true;
-            this.labelManagingМolunteers.Location = new System.Drawing.Point(203, 40);
+            this.labelManagingМolunteers.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelManagingМolunteers.Location = new System.Drawing.Point(146, 13);
             this.labelManagingМolunteers.Name = "labelManagingМolunteers";
-            this.labelManagingМolunteers.Size = new System.Drawing.Size(139, 13);
+            this.labelManagingМolunteers.Size = new System.Drawing.Size(230, 22);
             this.labelManagingМolunteers.TabIndex = 3;
             this.labelManagingМolunteers.Text = "Управление волонтерами";
             // 
             // labelKolvoVolonterov
             // 
             this.labelKolvoVolonterov.AutoSize = true;
-            this.labelKolvoVolonterov.Location = new System.Drawing.Point(166, 150);
+            this.labelKolvoVolonterov.Font = new System.Drawing.Font("Consolas", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelKolvoVolonterov.Location = new System.Drawing.Point(175, 148);
             this.labelKolvoVolonterov.Name = "labelKolvoVolonterov";
-            this.labelKolvoVolonterov.Size = new System.Drawing.Size(102, 13);
+            this.labelKolvoVolonterov.Size = new System.Drawing.Size(126, 15);
             this.labelKolvoVolonterov.TabIndex = 4;
             this.labelKolvoVolonterov.Text = "Всего волонтеров:";
             // 
             // labelSearchPo
             // 
             this.labelSearchPo.AutoSize = true;
+            this.labelSearchPo.Font = new System.Drawing.Font("Consolas", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.labelSearchPo.Location = new System.Drawing.Point(9, 90);
             this.labelSearchPo.Name = "labelSearchPo";
-            this.labelSearchPo.Size = new System.Drawing.Size(90, 13);
+            this.labelSearchPo.Size = new System.Drawing.Size(112, 15);
             this.labelSearchPo.TabIndex = 5;
             this.labelSearchPo.Text = "Сортировать по:";
             // 
             // comboBoxSort
             // 
+            this.comboBoxSort.Font = new System.Drawing.Font("Consolas", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.comboBoxSort.FormattingEnabled = true;
             this.comboBoxSort.Items.AddRange(new object[] {
             "Имя",
             "Фамилия",
             "Страна",
             "Пол"});
-            this.comboBoxSort.Location = new System.Drawing.Point(105, 90);
+            this.comboBoxSort.Location = new System.Drawing.Point(120, 91);
             this.comboBoxSort.Name = "comboBoxSort";
-            this.comboBoxSort.Size = new System.Drawing.Size(137, 21);
+            this.comboBoxSort.Size = new System.Drawing.Size(137, 23);
             this.comboBoxSort.TabIndex = 7;
+            this.comboBoxSort.SelectedIndexChanged += new System.EventHandler(this.comboBoxSort_SelectedIndexChanged);
             // 
             // labelNumberOfVolunteers
             // 
@@ -215,14 +215,13 @@ namespace MARAFON
             this.Controls.Add(this.label3);
             this.Controls.Add(this.labelManagingМolunteers);
             this.Controls.Add(this.labelDowload);
-            this.Controls.Add(this.LabelMarathon);
             this.Controls.Add(this.buttonImport);
             this.Controls.Add(this.buttonUpdate);
             this.Controls.Add(this.buttonLogout);
             this.Controls.Add(this.buttonBack);
             this.Name = "FormVolunteers";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "FormVolunteers";
+            this.Text = "Просмотр волонтёров";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FormVolunteers_FormClosed);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -234,7 +233,6 @@ namespace MARAFON
         private System.Windows.Forms.Button buttonBack;
         private System.Windows.Forms.Button buttonLogout;
         private System.Windows.Forms.Button buttonUpdate;
-        private System.Windows.Forms.Label LabelMarathon;
         private System.Windows.Forms.Label labelDowload;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.ListView listViewVolonters;

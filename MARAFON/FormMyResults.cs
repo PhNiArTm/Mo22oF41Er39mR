@@ -64,5 +64,19 @@ namespace MARAFON
             e.Graphics.FillRectangle(Brushes.DarkGray, e.Bounds);
             e.DrawText();
         }
+
+        private void buttonBack_Click(object sender, EventArgs e)
+        {
+            FormMenuRunner frm = new FormMenuRunner();
+            frm.Show();
+            this.Close();
+        }
+
+        private void buttonLogout_Click(object sender, EventArgs e)
+        {
+            Program.UserInfoClear();
+            Program.formMain.Show();
+            this.Close();
+        }
     }
 }

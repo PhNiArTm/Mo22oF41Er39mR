@@ -140,6 +140,22 @@ namespace MARAFON
         {
             FormInventoryReceipt form = new FormInventoryReceipt();
             form.Show();
+            this.Close();
+        }
+
+        private void buttonLogout_Click(object sender, EventArgs e)
+        {
+            Program.UserInfoClear();
+            FormMain frm = new FormMain();
+            frm.Show();
+            this.Close();
+        }
+
+        private void buttonCancel_Click(object sender, EventArgs e)
+        {
+            FormMenuAdmin frm = new FormMenuAdmin();
+            frm.Show();
+            this.Close();
         }
     }
 }

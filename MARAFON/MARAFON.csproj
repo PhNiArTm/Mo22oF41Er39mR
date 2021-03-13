@@ -313,8 +313,17 @@
     <EmbeddedResource Include="FormEditRunnerProfile.resx">
       <DependentUpon>FormEditRunnerProfile.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormHowLong.resx">
+      <DependentUpon>FormHowLong.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormInfoForCharity.resx">
       <DependentUpon>FormInfoForCharity.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormInformAboutMarafon.resx">
+      <DependentUpon>FormInformAboutMarafon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormInteractionMap.resx">
+      <DependentUpon>FormInteractionMap.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormInventory.resx">
       <DependentUpon>FormInventory.cs</DependentUpon>

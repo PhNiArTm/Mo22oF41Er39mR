@@ -21,6 +21,7 @@ namespace MARAFON
         {
             FormInteractionMap formMap = new FormInteractionMap();
             formMap.Show();
+            this.Hide();
         }
     }
 }

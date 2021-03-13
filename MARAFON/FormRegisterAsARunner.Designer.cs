@@ -189,7 +189,7 @@ namespace MARAFON
             this.Name = "FormRegisterAsARunner";
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "FormRegisterAsARunner";
+            this.Text = "Проверка бегуна";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FormRegisterAsARunner_FormClosed);
             this.tableLayoutPanelUp.ResumeLayout(false);
             this.tableLayoutPanelUp.PerformLayout();

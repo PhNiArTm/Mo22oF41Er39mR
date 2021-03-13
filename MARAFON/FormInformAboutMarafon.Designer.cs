@@ -29,7 +29,6 @@ namespace MARAFON
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormInformAboutMarafon));
             this.labelInfo = new System.Windows.Forms.Label();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.label1 = new System.Windows.Forms.Label();
@@ -49,9 +48,10 @@ namespace MARAFON
             // labelInfo
             // 
             this.labelInfo.AutoSize = true;
-            this.labelInfo.Location = new System.Drawing.Point(300, 51);
+            this.labelInfo.Font = new System.Drawing.Font("Consolas", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelInfo.Location = new System.Drawing.Point(173, 37);
             this.labelInfo.Name = "labelInfo";
-            this.labelInfo.Size = new System.Drawing.Size(184, 13);
+            this.labelInfo.Size = new System.Drawing.Size(441, 28);
             this.labelInfo.TabIndex = 0;
             this.labelInfo.Text = "Информация о Marathon Skills 2016";
             // 
@@ -68,13 +68,11 @@ namespace MARAFON
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(3, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(420, 299);
+            this.label1.Size = new System.Drawing.Size(0, 13);
             this.label1.TabIndex = 1;
-            //this.label1.Text = resources.GetString("label1.Text");
             // 
             // pictureBox1
             // 
-            //this.pictureBox1.Image = global::Balvanca.Properties.Resources.teatro_municipal;
             this.pictureBox1.Location = new System.Drawing.Point(178, 313);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(125, 65);
@@ -84,7 +82,6 @@ namespace MARAFON
             // 
             // pictureBox2
             // 
-            //this.pictureBox2.Image = global::Balvanca.Properties.Resources.banco_banespa;
             this.pictureBox2.Location = new System.Drawing.Point(43, 236);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(125, 65);
@@ -94,7 +91,6 @@ namespace MARAFON
             // 
             // pictureBox3
             // 
-            //this.pictureBox3.Image = global::Balvanca.Properties.Resources.marathon_image;
             this.pictureBox3.Location = new System.Drawing.Point(178, 236);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(125, 65);
@@ -104,7 +100,6 @@ namespace MARAFON
             // 
             // pictureBox4
             // 
-            //this.pictureBox4.Image = global::Balvanca.Properties.Resources.marathon_skills_2016_marathon_map;
             this.pictureBox4.Location = new System.Drawing.Point(43, 88);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(260, 142);
@@ -115,7 +110,6 @@ namespace MARAFON
             // 
             // pictureBox5
             // 
-            //this.pictureBox5.Image = global::Balvanca.Properties.Resources.ibirapuera_park_lake;
             this.pictureBox5.Location = new System.Drawing.Point(43, 313);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(125, 65);
@@ -135,8 +129,8 @@ namespace MARAFON
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.labelInfo);
             this.Controls.Add(this.pictureBox5);
-            this.Name = "Form1";
-            this.Text = "Form1";
+            this.Name = "FormInformAboutMarafon";
+            this.Text = "Информация о марафоне";
             this.flowLayoutPanel1.ResumeLayout(false);
             this.flowLayoutPanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

@@ -69,5 +69,12 @@ namespace MARAFON
             Form frm = new FormAddOrEditCompanyDonate();
             frm.Show();
         }
+
+        private void buttonBack_Click_1(object sender, EventArgs e)
+        {
+            FormMenuAdmin frm = new FormMenuAdmin();
+            frm.Show();
+            this.Hide();
+        }
     }
 }

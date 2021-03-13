@@ -51,6 +51,7 @@ namespace MARAFON
             this.buttonSkills2016.TabIndex = 1;
             this.buttonSkills2016.Text = "Marathon Skills 2016";
             this.buttonSkills2016.UseVisualStyleBackColor = false;
+            this.buttonSkills2016.Click += new System.EventHandler(this.buttonSkills2016_Click);
             // 
             // buttonDurationMarathon
             // 
@@ -66,6 +67,7 @@ namespace MARAFON
             this.buttonDurationMarathon.TabIndex = 2;
             this.buttonDurationMarathon.Text = "Насколько долгий марафон";
             this.buttonDurationMarathon.UseVisualStyleBackColor = false;
+            this.buttonDurationMarathon.Click += new System.EventHandler(this.buttonDurationMarathon_Click);
             // 
             // buttonLastResult
             // 
@@ -96,6 +98,7 @@ namespace MARAFON
             this.buttonDonateCompany.TabIndex = 4;
             this.buttonDonateCompany.Text = "Благотворительные организации";
             this.buttonDonateCompany.UseVisualStyleBackColor = false;
+            this.buttonDonateCompany.Click += new System.EventHandler(this.buttonDonateCompany_Click);
             // 
             // buttonBMI
             // 

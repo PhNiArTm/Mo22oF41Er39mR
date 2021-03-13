@@ -63,5 +63,12 @@ namespace MARAFON
             this.Hide();
             formRegisterAsARunner.Show();
         }
+
+        private void buttonEventInfo_Click(object sender, EventArgs e)
+        {
+            FormDetailInfo frm = new FormDetailInfo();
+            this.Hide();
+            frm.Show();
+        }
     }
 }

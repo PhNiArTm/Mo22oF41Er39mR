@@ -45,6 +45,7 @@ namespace MARAFON
             this.columnHeaderLogo,
             this.columnHeaderName,
             this.columnHeaderDescription});
+            this.listViewInfoCompany.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.listViewInfoCompany.HideSelection = false;
             this.listViewInfoCompany.Location = new System.Drawing.Point(13, 87);
             this.listViewInfoCompany.Margin = new System.Windows.Forms.Padding(4);

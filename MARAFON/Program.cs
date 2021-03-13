@@ -19,7 +19,7 @@ namespace MARAFON
         public static string companyName = null;
 
         //Общая главная форма для избежания создания дубликатов
-        public static FormMyResults formMain;
+        public static FormMain formMain;
         /// <summary>
         /// Главная точка входа для приложения.
         /// </summary>
@@ -28,14 +28,8 @@ namespace MARAFON
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-<<<<<<< HEAD
-            formMain = new FormMyResults();
-            Application.Run(formMain);
-=======
             formMain = new FormMain();
-            Form ny = new FormVolunteers();
-            Application.Run(ny);
->>>>>>> master
+            Application.Run(formMain);
         }
         public static void UserInfoClear()
         {

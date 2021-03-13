@@ -134,5 +134,10 @@ namespace MARAFON
         {
             selectType(ListImage.Bus);
         }
+
+        private void labelSloth_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

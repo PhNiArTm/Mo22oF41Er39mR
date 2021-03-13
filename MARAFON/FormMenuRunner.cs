@@ -82,5 +82,11 @@ namespace MARAFON
                 this.Close();
             }
         }
+
+        private void buttonContactInfo_Click(object sender, EventArgs e)
+        {
+            FormContactCoordinatore frm = new FormContactCoordinatore();
+            frm.Show();
+        }
     }
 }

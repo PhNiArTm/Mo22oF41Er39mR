@@ -32,7 +32,7 @@ namespace MARAFON
             this.components = new System.ComponentModel.Container();
             this.buttonRunner = new System.Windows.Forms.Button();
             this.buttonSponsore = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.buttonEventInfo = new System.Windows.Forms.Button();
             this.timerEvent = new System.Windows.Forms.Timer(this.components);
             this.buttonLogin = new System.Windows.Forms.Button();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
@@ -83,23 +83,24 @@ namespace MARAFON
             this.buttonSponsore.UseVisualStyleBackColor = false;
             this.buttonSponsore.Click += new System.EventHandler(this.buttonSponsore_Click);
             // 
-            // button1
+            // buttonEventInfo
             // 
-            this.button1.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.tableLayoutPanel3.SetColumnSpan(this.button1, 2);
-            this.button1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button1.FlatAppearance.BorderColor = System.Drawing.Color.DarkGray;
-            this.button1.FlatAppearance.BorderSize = 2;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Consolas", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button1.Location = new System.Drawing.Point(150, 176);
-            this.button1.Margin = new System.Windows.Forms.Padding(150, 20, 150, 0);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(378, 58);
-            this.button1.TabIndex = 2;
-            this.button1.TabStop = false;
-            this.button1.Text = "Я хочу узнать о событии";
-            this.button1.UseVisualStyleBackColor = false;
+            this.buttonEventInfo.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.tableLayoutPanel3.SetColumnSpan(this.buttonEventInfo, 2);
+            this.buttonEventInfo.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.buttonEventInfo.FlatAppearance.BorderColor = System.Drawing.Color.DarkGray;
+            this.buttonEventInfo.FlatAppearance.BorderSize = 2;
+            this.buttonEventInfo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonEventInfo.Font = new System.Drawing.Font("Consolas", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.buttonEventInfo.Location = new System.Drawing.Point(150, 176);
+            this.buttonEventInfo.Margin = new System.Windows.Forms.Padding(150, 20, 150, 0);
+            this.buttonEventInfo.Name = "buttonEventInfo";
+            this.buttonEventInfo.Size = new System.Drawing.Size(378, 58);
+            this.buttonEventInfo.TabIndex = 2;
+            this.buttonEventInfo.TabStop = false;
+            this.buttonEventInfo.Text = "Я хочу узнать о событии";
+            this.buttonEventInfo.UseVisualStyleBackColor = false;
+            this.buttonEventInfo.Click += new System.EventHandler(this.buttonEventInfo_Click);
             // 
             // timerEvent
             // 
@@ -132,7 +133,7 @@ namespace MARAFON
             this.tableLayoutPanel3.Controls.Add(this.buttonRunner, 0, 0);
             this.tableLayoutPanel3.Controls.Add(this.buttonLogin, 1, 3);
             this.tableLayoutPanel3.Controls.Add(this.buttonSponsore, 0, 1);
-            this.tableLayoutPanel3.Controls.Add(this.button1, 0, 2);
+            this.tableLayoutPanel3.Controls.Add(this.buttonEventInfo, 0, 2);
             this.tableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel3.Location = new System.Drawing.Point(0, 112);
             this.tableLayoutPanel3.Margin = new System.Windows.Forms.Padding(0);
@@ -234,7 +235,7 @@ namespace MARAFON
 
         private System.Windows.Forms.Button buttonRunner;
         private System.Windows.Forms.Button buttonSponsore;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button buttonEventInfo;
         private System.Windows.Forms.Timer timerEvent;
         private System.Windows.Forms.Button buttonLogin;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;
