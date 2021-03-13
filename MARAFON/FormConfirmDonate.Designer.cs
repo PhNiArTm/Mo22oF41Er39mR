@@ -63,36 +63,34 @@ namespace MARAFON
             // 
             // labelNameRunner
             // 
-            this.labelNameRunner.AutoSize = true;
             this.labelNameRunner.Font = new System.Drawing.Font("Consolas", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.labelNameRunner.Location = new System.Drawing.Point(45, 113);
+            this.labelNameRunner.Location = new System.Drawing.Point(11, 113);
             this.labelNameRunner.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelNameRunner.Name = "labelNameRunner";
-            this.labelNameRunner.Size = new System.Drawing.Size(485, 37);
+            this.labelNameRunner.Size = new System.Drawing.Size(542, 37);
             this.labelNameRunner.TabIndex = 3;
             this.labelNameRunner.Text = "Иван Прудов(204) из Russia";
+            this.labelNameRunner.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // labelFund
             // 
-            this.labelFund.AutoSize = true;
             this.labelFund.Font = new System.Drawing.Font("Consolas", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.labelFund.Location = new System.Drawing.Point(166, 161);
+            this.labelFund.Location = new System.Drawing.Point(11, 161);
             this.labelFund.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelFund.Name = "labelFund";
-            this.labelFund.Size = new System.Drawing.Size(233, 37);
+            this.labelFund.Size = new System.Drawing.Size(542, 37);
             this.labelFund.TabIndex = 4;
-            this.labelFund.Text = "Фонд кошелёк";
+            this.labelFund.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // labelCountDonate
             // 
-            this.labelCountDonate.AutoSize = true;
             this.labelCountDonate.Font = new System.Drawing.Font("Consolas", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.labelCountDonate.Location = new System.Drawing.Point(160, 207);
+            this.labelCountDonate.Location = new System.Drawing.Point(11, 207);
             this.labelCountDonate.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelCountDonate.Name = "labelCountDonate";
-            this.labelCountDonate.Size = new System.Drawing.Size(242, 75);
+            this.labelCountDonate.Size = new System.Drawing.Size(542, 75);
             this.labelCountDonate.TabIndex = 5;
-            this.labelCountDonate.Text = "$23.00";
+            this.labelCountDonate.Text = "$0.00";
             this.labelCountDonate.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // buttonBMR

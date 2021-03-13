@@ -240,7 +240,7 @@ namespace MARAFON
             this.dateTimePickerBirthday.MaxDate = new System.DateTime(2011, 3, 10, 0, 0, 0, 0);
             this.dateTimePickerBirthday.MinDate = new System.DateTime(1921, 3, 10, 0, 0, 0, 0);
             this.dateTimePickerBirthday.Name = "dateTimePickerBirthday";
-            this.dateTimePickerBirthday.Size = new System.Drawing.Size(165, 29);
+            this.dateTimePickerBirthday.Size = new System.Drawing.Size(165, 25);
             this.dateTimePickerBirthday.TabIndex = 24;
             this.dateTimePickerBirthday.TabStop = false;
             this.dateTimePickerBirthday.Value = new System.DateTime(2000, 1, 1, 0, 0, 0, 0);
@@ -253,7 +253,7 @@ namespace MARAFON
             this.comboBoxCountry.Location = new System.Drawing.Point(171, 192);
             this.comboBoxCountry.Margin = new System.Windows.Forms.Padding(2);
             this.comboBoxCountry.Name = "comboBoxCountry";
-            this.comboBoxCountry.Size = new System.Drawing.Size(165, 27);
+            this.comboBoxCountry.Size = new System.Drawing.Size(165, 23);
             this.comboBoxCountry.TabIndex = 23;
             // 
             // textBoxRepeatPassword
@@ -263,7 +263,7 @@ namespace MARAFON
             this.textBoxRepeatPassword.Location = new System.Drawing.Point(171, 248);
             this.textBoxRepeatPassword.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxRepeatPassword.Name = "textBoxRepeatPassword";
-            this.textBoxRepeatPassword.Size = new System.Drawing.Size(165, 29);
+            this.textBoxRepeatPassword.Size = new System.Drawing.Size(165, 25);
             this.textBoxRepeatPassword.TabIndex = 21;
             this.textBoxRepeatPassword.TabStop = false;
             this.textBoxRepeatPassword.TextChanged += new System.EventHandler(this.textBoxRepeatPassword_TextChanged);
@@ -275,7 +275,7 @@ namespace MARAFON
             this.textBoxPassword.Location = new System.Drawing.Point(171, 220);
             this.textBoxPassword.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxPassword.Name = "textBoxPassword";
-            this.textBoxPassword.Size = new System.Drawing.Size(165, 29);
+            this.textBoxPassword.Size = new System.Drawing.Size(165, 25);
             this.textBoxPassword.TabIndex = 20;
             this.textBoxPassword.TabStop = false;
             this.textBoxPassword.TextChanged += new System.EventHandler(this.textBoxRepeatPassword_TextChanged);
@@ -289,7 +289,7 @@ namespace MARAFON
             this.textBoxSurname.Location = new System.Drawing.Point(171, 108);
             this.textBoxSurname.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxSurname.Name = "textBoxSurname";
-            this.textBoxSurname.Size = new System.Drawing.Size(165, 29);
+            this.textBoxSurname.Size = new System.Drawing.Size(165, 25);
             this.textBoxSurname.TabIndex = 18;
             this.textBoxSurname.TabStop = false;
             // 
@@ -371,7 +371,7 @@ namespace MARAFON
             this.textBoxName.Location = new System.Drawing.Point(171, 80);
             this.textBoxName.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxName.Name = "textBoxName";
-            this.textBoxName.Size = new System.Drawing.Size(165, 29);
+            this.textBoxName.Size = new System.Drawing.Size(165, 25);
             this.textBoxName.TabIndex = 11;
             this.textBoxName.TabStop = false;
             // 
@@ -395,7 +395,7 @@ namespace MARAFON
             this.comboBoxGender.Location = new System.Drawing.Point(171, 136);
             this.comboBoxGender.Margin = new System.Windows.Forms.Padding(2);
             this.comboBoxGender.Name = "comboBoxGender";
-            this.comboBoxGender.Size = new System.Drawing.Size(165, 27);
+            this.comboBoxGender.Size = new System.Drawing.Size(165, 23);
             this.comboBoxGender.TabIndex = 22;
             // 
             // tableLayoutPanel4
@@ -453,7 +453,7 @@ namespace MARAFON
             this.textBoxPhotoPath.Location = new System.Drawing.Point(28, 108);
             this.textBoxPhotoPath.Margin = new System.Windows.Forms.Padding(2, 5, 2, 2);
             this.textBoxPhotoPath.Name = "textBoxPhotoPath";
-            this.textBoxPhotoPath.Size = new System.Drawing.Size(166, 29);
+            this.textBoxPhotoPath.Size = new System.Drawing.Size(166, 25);
             this.textBoxPhotoPath.TabIndex = 37;
             this.textBoxPhotoPath.TabStop = false;
             // 
@@ -542,7 +542,7 @@ namespace MARAFON
             this.labelNameTag.Location = new System.Drawing.Point(83, 10);
             this.labelNameTag.Margin = new System.Windows.Forms.Padding(2, 10, 10, 0);
             this.labelNameTag.Name = "labelNameTag";
-            this.labelNameTag.Size = new System.Drawing.Size(315, 57);
+            this.labelNameTag.Size = new System.Drawing.Size(250, 57);
             this.labelNameTag.TabIndex = 1;
             this.labelNameTag.Text = "MARATHON SKILLS 2021";
             this.labelNameTag.TextAlign = System.Drawing.ContentAlignment.TopCenter;

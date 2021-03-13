@@ -90,5 +90,13 @@ namespace MARAFON
             formMyResults.Show();
             this.Close();
         }
+
+        private void buttonContactInfo_Click(object sender, EventArgs e)
+        {
+            FormContactCoordinatore formContact = new FormContactCoordinatore();
+            checkCancelButton = true;
+            formContact.Show();
+            this.Close();
+        }
     }
 }

@@ -13,8 +13,12 @@ namespace MARAFON
 {
     public partial class FormSponsoreRunner : Form
     {
+        bool checkCancelButton = false;
         string messageError;
         int idRunner;
+        public static string[] fullName;
+        public static string sponsorName;
+        public static int num;
         public FormSponsoreRunner()
         {
             InitializeComponent();
@@ -109,21 +113,27 @@ namespace MARAFON
             }
             else
             {
+                fullName = comboBoxRunnerData.SelectedItem.ToString().Split(new char[] { ' ', '.' });
+                num = money;
                 int idRunner = Convert.ToInt32(comboBoxRunnerData.SelectedItem.ToString().Split('.')[0]);
                 string sql = String.Format("INSERT INTO Sponsorship (SponsorName, RegistrationId, Amount) VALUES ('{0}', '{1}', '{2}')", name, idRunner, money);
                 Program.connection.Open();
                 MySqlCommand command = new MySqlCommand(sql, Program.connection);
                 command.ExecuteNonQuery();
                 Program.connection.Close();
+                FormConfirmDonate formConfirmDonate = new FormConfirmDonate();
+                checkCancelButton = true;
+                formConfirmDonate.Show();
+                this.Close();
             }
         }
-
         private void FormSponsoreRunner_FormClosed(object sender, FormClosedEventArgs e)
         {
-            FormMain formMain = new FormMain();
-            formMain.Show();
+            if (!checkCancelButton)
+            {
+                Application.Exit();
+            }
         }
-
         private void textBoxNumberCardData_KeyPress(object sender, KeyPressEventArgs e)
         {
             char num = e.KeyChar;
@@ -140,6 +150,7 @@ namespace MARAFON
             Program.sqlDataReader = SelectCharity.ExecuteReader();
             Program.sqlDataReader.Read();
             labelFondInfo.Text = Program.sqlDataReader.GetString("CharityName");
+            sponsorName = Program.sqlDataReader.GetString("CharityName");
             Program.connection.Close();
         }
     }

@@ -165,16 +165,16 @@ namespace MARAFON
             // 
             // buttonMyResult
             // 
-            this.button4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button4.Font = new System.Drawing.Font("Consolas", 15F);
-            this.button4.Location = new System.Drawing.Point(349, 94);
-            this.button4.Margin = new System.Windows.Forms.Padding(10, 10, 50, 10);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(279, 64);
-            this.button4.TabIndex = 3;
-            this.button4.Text = "Мои результаты";
-            this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
+            this.buttonMyResult.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.buttonMyResult.Font = new System.Drawing.Font("Consolas", 15F);
+            this.buttonMyResult.Location = new System.Drawing.Point(349, 94);
+            this.buttonMyResult.Margin = new System.Windows.Forms.Padding(10, 10, 50, 10);
+            this.buttonMyResult.Name = "buttonMyResult";
+            this.buttonMyResult.Size = new System.Drawing.Size(279, 64);
+            this.buttonMyResult.TabIndex = 3;
+            this.buttonMyResult.Text = "Мои результаты";
+            this.buttonMyResult.UseVisualStyleBackColor = true;
+            this.buttonMyResult.Click += new System.EventHandler(this.button4_Click);
             // 
             // buttonMySponsore
             // 
